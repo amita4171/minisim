@@ -1,142 +1,286 @@
 {
-  "swarm_probability_yes": 0.4008,
-  "mean_score": 0.3966,
-  "median_score": 0.386,
-  "stdev": 0.1553,
+  "swarm_probability_yes": 0.4031,
   "confidence_interval": [
-    0.3536,
-    0.4397
+    0.3614,
+    0.4584
   ],
+  "aggregation_method": "calibrated_confidence_weighted_extremized",
+  "mean_score": 0.4099,
+  "median_score": 0.4326,
+  "stdev": 0.175,
+  "diversity_score": 0.175,
   "n_agents": 50,
+  "n_rounds": 3,
+  "convergence_round": 2,
+  "opinion_clusters": [
+    {
+      "label": "pollster_emerging_markets_specialist_yes",
+      "mean_score": 0.6505,
+      "n_agents": 11,
+      "dominant_backgrounds": [
+        "Pollster",
+        "Emerging Markets Specialist"
+      ]
+    },
+    {
+      "label": "quantitative_trader_supply_chain_analyst_no",
+      "mean_score": 0.2775,
+      "n_agents": 27,
+      "dominant_backgrounds": [
+        "Quantitative Trader",
+        "Supply Chain Analyst"
+      ]
+    },
+    {
+      "label": "uncertain_centrists",
+      "mean_score": 0.4875,
+      "n_agents": 12,
+      "dominant_backgrounds": [
+        "mixed"
+      ]
+    }
+  ],
   "clusters": {
     "yes_leaning": 7,
-    "no_leaning": 26,
-    "uncertain": 17
+    "no_leaning": 24,
+    "uncertain": 19
   },
   "top_yes_voices": [
     {
       "name": "Aisha Stewart",
       "background": "Behavioral Economist",
-      "final_score": 0.6101,
+      "final_score": 0.6129,
       "initial_score": 0.6815,
       "confidence": 0.95,
       "reasoning": "Congressional dynamics around caucus cohesion levels suggest YES probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.68. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.61. Round 3 deliberation: peers averaged 0.31. My risk-seeking and opportunistic tendency led me to shifted downward by 0.06. Historical shutdown probability given current polarization levels is higher than base rate."
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.61 (from initial 0.68 \u2014 shifted down by 0.07). Confidence: 0.95. Continuing resolution mechanics provide escape valves that reduce shutdown duration."
+    },
+    {
+      "name": "Katherine Walker",
+      "background": "Climate Scientist",
+      "final_score": 0.6215,
+      "initial_score": 0.5924,
+      "confidence": 0.8248,
+      "reasoning": "As a Climate Scientist, I focus on legislative calendar pressure and leadership negotiation leverage. These suggest P(YES) = 0.59. The YES case depends heavily on individual legislator defections resolving favorably.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.62 (from initial 0.59 \u2014 remained largely stable). Confidence: 0.82. Electoral incentives often override ideological positions near deadlines."
     },
     {
       "name": "Jessica Green",
       "background": "Pollster",
-      "final_score": 0.6322,
+      "final_score": 0.6889,
       "initial_score": 0.6516,
-      "confidence": 0.7668,
+      "confidence": 0.7117,
       "reasoning": "Congressional dynamics around appropriations committee dynamics suggest YES probability. My analysis of media narrative framing reinforces this at P(YES) = 0.65. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.63. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
-    },
-    {
-      "name": "Michelle Jackson",
-      "background": "Historical Analogist",
-      "final_score": 0.5095,
-      "initial_score": 0.4688,
-      "confidence": 0.9241,
-      "reasoning": "Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.47. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.51. Round 3 deliberation: peers averaged 0.50. My narrative-driven and qualitative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.69 (from initial 0.65 \u2014 remained largely stable). Confidence: 0.71. Electoral incentives often override ideological positions near deadlines."
     }
   ],
   "top_no_voices": [
     {
       "name": "Ahmed King",
       "background": "Central Bank Watcher",
-      "final_score": 0.1233,
+      "final_score": 0.1671,
       "initial_score": 0.0778,
-      "confidence": 0.7643,
+      "confidence": 0.8015,
       "reasoning": "As a Central Bank Watcher, I focus on public opinion polls and legislative calendar pressure. These suggest P(YES) = 0.08. The NO case depends heavily on individual legislator defections resolving favorably.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.12. Peer views ranged from 0.10 to 0.50. I adjusted upward to 0.12. The narrow majority makes individual holdouts disproportionately powerful."
-    },
-    {
-      "name": "Robert Collins",
-      "background": "Central Bank Watcher",
-      "final_score": 0.2177,
-      "initial_score": 0.1685,
-      "confidence": 0.7713,
-      "reasoning": "From my Central Bank Watcher perspective, I assess P(YES) = 0.17. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.22. After seeing 5 peer opinions (avg 0.41), I shifted upward by 0.04. Electoral incentives often override ideological positions near deadlines."
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.17 (from initial 0.08 \u2014 shifted up by 0.09). Confidence: 0.80. The narrow majority makes individual holdouts disproportionately powerful."
     },
     {
       "name": "Richard Young",
       "background": "Labor Economist",
-      "final_score": 0.3638,
+      "final_score": 0.2955,
       "initial_score": 0.2962,
-      "confidence": 0.9144,
+      "confidence": 0.8434,
       "reasoning": "From my Labor Economist perspective, I assess P(YES) = 0.30. leadership negotiation leverage is the primary driver. media narrative framing adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.36. Peer views ranged from 0.18 to 0.51. I adjusted minimally to 0.36. The timing relative to recess creates underappreciated pressure."
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.30 (from initial 0.30 \u2014 remained largely stable). Confidence: 0.84. Electoral incentives often override ideological positions near deadlines."
+    },
+    {
+      "name": "Robert Collins",
+      "background": "Central Bank Watcher",
+      "final_score": 0.2963,
+      "initial_score": 0.1685,
+      "confidence": 0.802,
+      "reasoning": "From my Central Bank Watcher perspective, I assess P(YES) = 0.17. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.30 (from initial 0.17 \u2014 shifted up by 0.13). Confidence: 0.80. Historical shutdown probability given current polarization levels is higher than base rate."
     }
   ],
+  "dissenting_voices": [
+    {
+      "name": "Yuki Phillips",
+      "background": "Quantitative Trader",
+      "final_score": 0.0456,
+      "initial_score": 0.0232,
+      "confidence": 0.4446,
+      "reasoning": "As a Quantitative Trader, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.02. The NO case depends heavily on individual legislator defections resolving favorably.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.05 (from initial 0.02 \u2014 remained largely stable). Confidence: 0.44. The narrow majority makes individual holdouts disproportionately powerful.",
+      "z_score": 2.08
+    },
+    {
+      "name": "Patricia Nelson",
+      "background": "Geopolitical Strategist",
+      "final_score": 0.7557,
+      "initial_score": 0.8622,
+      "confidence": 0.3482,
+      "reasoning": "Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.86. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.76 (from initial 0.86 \u2014 shifted down by 0.11). Confidence: 0.35. The narrow majority makes individual holdouts disproportionately powerful.",
+      "z_score": 1.98
+    },
+    {
+      "name": "Steven Lopez",
+      "background": "Political Analyst",
+      "final_score": 0.7391,
+      "initial_score": 0.8196,
+      "confidence": 0.5152,
+      "reasoning": "Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.82. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.74 (from initial 0.82 \u2014 shifted down by 0.08). Confidence: 0.52. Electoral incentives often override ideological positions near deadlines.",
+      "z_score": 1.88
+    },
+    {
+      "name": "Rebecca Santos",
+      "background": "Retail Investor",
+      "final_score": 0.7214,
+      "initial_score": 0.7504,
+      "confidence": 0.4307,
+      "reasoning": "As a Retail Investor, I focus on partisan polarization depth and electoral incentive structure. These suggest P(YES) = 0.75. The YES case depends heavily on individual legislator defections resolving favorably.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.72 (from initial 0.75 \u2014 remained largely stable). Confidence: 0.43. Media pressure typically forces last-minute compromise.",
+      "z_score": 1.78
+    },
+    {
+      "name": "Rachel Chen",
+      "background": "Constitutional Lawyer",
+      "final_score": 0.1,
+      "initial_score": 0.1753,
+      "confidence": 0.3737,
+      "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of public opinion polls reinforces this at P(YES) = 0.18. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.10 (from initial 0.18 \u2014 shifted down by 0.08). Confidence: 0.37. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+      "z_score": 1.77
+    }
+  ],
+  "mind_changers": [
+    {
+      "name": "Olga Lewis",
+      "background": "Supply Chain Analyst",
+      "final_score": 0.227,
+      "initial_score": 0.02,
+      "confidence": 0.3134,
+      "reasoning": "From my Supply Chain Analyst perspective, I assess P(YES) = 0.02. appropriations committee dynamics is the primary driver. electoral incentive structure adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.23 (from initial 0.02 \u2014 shifted up by 0.21). Confidence: 0.31. Public opinion data suggests backlash risk is asymmetric across parties.",
+      "shift": 0.207,
+      "shift_direction": "toward YES"
+    },
+    {
+      "name": "Priya Baker",
+      "background": "Sovereign Wealth Fund Analyst",
+      "final_score": 0.4458,
+      "initial_score": 0.3162,
+      "confidence": 0.4688,
+      "reasoning": "From my Sovereign Wealth Fund Analyst perspective, I assess P(YES) = 0.32. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.45 (from initial 0.32 \u2014 shifted up by 0.13). Confidence: 0.47. Public opinion data suggests backlash risk is asymmetric across parties.",
+      "shift": 0.1296,
+      "shift_direction": "toward YES"
+    },
+    {
+      "name": "Robert Collins",
+      "background": "Central Bank Watcher",
+      "final_score": 0.2963,
+      "initial_score": 0.1685,
+      "confidence": 0.802,
+      "reasoning": "From my Central Bank Watcher perspective, I assess P(YES) = 0.17. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.30 (from initial 0.17 \u2014 shifted up by 0.13). Confidence: 0.80. Historical shutdown probability given current polarization levels is higher than base rate.",
+      "shift": 0.1278,
+      "shift_direction": "toward YES"
+    },
+    {
+      "name": "Laura Harris",
+      "background": "Conspiracy Skeptic",
+      "final_score": 0.1387,
+      "initial_score": 0.02,
+      "confidence": 0.4802,
+      "reasoning": "From my Conspiracy Skeptic perspective, I assess P(YES) = 0.02. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.14 (from initial 0.02 \u2014 shifted up by 0.12). Confidence: 0.48. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+      "shift": 0.1187,
+      "shift_direction": "toward YES"
+    },
+    {
+      "name": "Patricia Nelson",
+      "background": "Geopolitical Strategist",
+      "final_score": 0.7557,
+      "initial_score": 0.8622,
+      "confidence": 0.3482,
+      "reasoning": "Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.86. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
+      "last_reflection": "Round 4 (Final Forecast): P(YES) = 0.76 (from initial 0.86 \u2014 shifted down by 0.11). Confidence: 0.35. The narrow majority makes individual holdouts disproportionately powerful.",
+      "shift": -0.1065,
+      "shift_direction": "toward NO"
+    }
+  ],
+  "reasoning_shift_summary": "After deliberation, 12 agents shifted toward YES, 11 shifted toward NO, and 27 remained stable. Diversity score: 0.175.",
   "convergence": [
     {
       "round": 0,
-      "mean_score": 0.398808,
-      "stdev": 0.20612950143845327,
+      "mean_score": 0.3988,
+      "stdev": 0.2061,
       "min": 0.02,
       "max": 0.8622
     },
     {
       "round": 1,
-      "mean_score": 0.401322,
-      "stdev": 0.18393827967721196,
-      "min": 0.0627,
-      "max": 0.8252
+      "mean_score": 0.4059,
+      "stdev": 0.1926,
+      "min": 0.0601,
+      "max": 0.8113
     },
     {
       "round": 2,
-      "mean_score": 0.396506,
-      "stdev": 0.17165696501084568,
-      "min": 0.0944,
-      "max": 0.7722
+      "mean_score": 0.4155,
+      "stdev": 0.1896,
+      "min": 0.0369,
+      "max": 0.8145
     },
     {
       "round": 3,
-      "mean_score": 0.396646,
-      "stdev": 0.15532562138019232,
-      "min": 0.1021,
-      "max": 0.7198
+      "mean_score": 0.4099,
+      "stdev": 0.175,
+      "min": 0.0456,
+      "max": 0.7557
     }
   ],
   "opinion_shifts": [
     {
       "round": 1,
-      "mean_shift": 0.028438000000000005,
-      "max_shift": 0.12449999999999999
+      "mean_shift": 0.0289,
+      "max_shift": 0.076
     },
     {
       "round": 2,
-      "mean_shift": 0.017284,
-      "max_shift": 0.0625
+      "mean_shift": 0.0262,
+      "max_shift": 0.0769
     },
     {
       "round": 3,
-      "mean_shift": 0.017420000000000005,
-      "max_shift": 0.06330000000000002
+      "mean_shift": 0.0228,
+      "max_shift": 0.0717
     }
   ],
   "histogram": {
-    "0.0-0.1": 0,
-    "0.1-0.2": 5,
-    "0.2-0.3": 11,
-    "0.3-0.4": 10,
+    "0.0-0.1": 1,
+    "0.1-0.2": 4,
+    "0.2-0.3": 13,
+    "0.3-0.4": 6,
     "0.4-0.5": 10,
-    "0.5-0.6": 7,
-    "0.6-0.7": 5,
-    "0.7-0.8": 2,
+    "0.5-0.6": 9,
+    "0.6-0.7": 4,
+    "0.7-0.8": 3,
     "0.8-0.9": 0,
     "0.9-1.0": 0
   },
+  "brier_score": null,
   "market_price": 0.35,
-  "swarm_vs_market_delta": 0.0508,
+  "edge": 0.0531,
+  "swarm_vs_market_delta": 0.0531,
   "timing": {
     "world_build_ms": 0,
     "agent_gen_ms": 0,
-    "sim_loop_ms": 2,
-    "total_ms": 2
+    "sim_loop_ms": 3,
+    "total_ms": 3
   },
   "agents": [
     {
@@ -148,25 +292,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.544,
-      "final_score": 0.5112,
+      "final_score": 0.5269,
       "score_history": [
         0.544,
-        0.5126,
-        0.5104,
-        0.5112
+        0.5783,
+        0.5781,
+        0.5269
       ],
-      "confidence": 0.691,
+      "confidence": 0.6931,
       "reasoning": "As a Macro Economist, I focus on partisan polarization depth and media narrative framing. These suggest P(YES) = 0.54. The YES case depends heavily on judicial rulings affecting legislative authority resolving favorably.",
       "key_factors": [
         "partisan polarization depth",
         "media narrative framing",
         "judicial rulings affecting legislative authority"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $37B",
+          "quality": 3.2,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Leadership whip count shows 66 holdouts in majority caucus",
+          "quality": 2.7,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Polling shows 32% blame the opposition for shutdown scenario",
+          "quality": 4.8,
+          "source_type": "survey"
+        }
+      ],
+      "critique_received": "Challenged by Thomas Perez (Demographer)",
+      "disagreement_type": "methodological (different analytical frameworks)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.54. As a Macro Economist, I focus on partisan polarization depth and media narrative framing. These suggest P(YES) = 0.54. The YES case depends heavily on judicial rulings affecting legislative authority resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.51. Round 1 deliberation: peers averaged 0.47. My cautious and evidence-driven tendency led me to shifted downward by 0.03. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.51. Peer views ranged from 0.26 to 0.67. I adjusted minimally to 0.51. Media pressure typically forces last-minute compromise."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Michelle Jackson: P(YES)=0.47; Anthony Carter: P(YES)=0.24; Christina Morris: P(YES)=0.35]. Avg evidence quality: 3.6/5. Updated to P(YES) = 0.58. The timing relative to recess creates underappreciated pressure.",
+        "Round 3 (Critique): Debated Thomas Perez (Demographer, P(YES)=0.43). Disagreement: methodological (different analytical frameworks). Updated to P(YES) = 0.58. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.53 (from initial 0.54 \u2014 remained largely stable). Confidence: 0.69. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
@@ -178,25 +342,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.1457,
-      "final_score": 0.2018,
+      "final_score": 0.1578,
       "score_history": [
         0.1457,
-        0.1864,
-        0.182,
-        0.2018
+        0.1505,
+        0.1545,
+        0.1578
       ],
-      "confidence": 0.6746,
+      "confidence": 0.6604,
       "reasoning": "From my Quantitative Trader perspective, I assess P(YES) = 0.15. appropriations committee dynamics is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "appropriations committee dynamics",
         "caucus cohesion levels",
         "public protest or activism waves"
       ],
+      "evidence": [
+        {
+          "claim": "Continuing resolution expires in 25 days",
+          "quality": 2.6,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $64B",
+          "quality": 2.7,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Polling shows 22% blame the opposition for shutdown scenario",
+          "quality": 3.9,
+          "source_type": "historical analog"
+        }
+      ],
+      "critique_received": "Challenged by Carlos Anderson (Bayesian Statistician)",
+      "disagreement_type": "methodological (different analytical frameworks)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.15. From my Quantitative Trader perspective, I assess P(YES) = 0.15. appropriations committee dynamics is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.19. After seeing 5 peer opinions (avg 0.44), I shifted upward by 0.04. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.18. After seeing 5 peer opinions (avg 0.46), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.20. Peer views ranged from 0.09 to 0.77. I adjusted minimally to 0.20. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Amanda Edwards: P(YES)=0.48; James Kim: P(YES)=0.58; Robert Collins: P(YES)=0.17]. Avg evidence quality: 3.4/5. Updated to P(YES) = 0.15. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3 (Critique): Debated Carlos Anderson (Bayesian Statistician, P(YES)=0.27). Disagreement: methodological (different analytical frameworks). Updated to P(YES) = 0.15. The timing relative to recess creates underappreciated pressure.",
+        "Round 4 (Final Forecast): P(YES) = 0.16 (from initial 0.15 \u2014 remained largely stable). Confidence: 0.66. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
@@ -208,25 +392,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.5297,
-      "final_score": 0.4616,
+      "final_score": 0.5102,
       "score_history": [
         0.5297,
-        0.51,
-        0.4768,
-        0.4616
+        0.4965,
+        0.4793,
+        0.5102
       ],
-      "confidence": 0.5054,
+      "confidence": 0.5138,
       "reasoning": "As a Data Scientist, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.53. The YES case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "media narrative framing",
         "legislative calendar pressure",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Congressional approval at 77% \u2014 above historical average",
+          "quality": 3.2,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "34 appropriations bills passed out of 12 required",
+          "quality": 3.2,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Polling shows 58% blame the opposition for shutdown scenario",
+          "quality": 5.0,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Matthew Scott (Hedge Fund PM)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.53. As a Data Scientist, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.53. The YES case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.30), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.48. Peer views ranged from 0.26 to 0.78. I adjusted downward to 0.48. Electoral incentives often override ideological positions near deadlines.",
-        "Round 3: Updated to P(YES) = 0.46. Peer views ranged from 0.14 to 0.51. I adjusted minimally to 0.46. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Christina Morris: P(YES)=0.35; Rachel Chen: P(YES)=0.18; Christopher Hall: P(YES)=0.32]. Avg evidence quality: 4.2/5. Updated to P(YES) = 0.50. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3 (Critique): Debated Matthew Scott (Hedge Fund PM, P(YES)=0.25). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.48. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 4 (Final Forecast): P(YES) = 0.51 (from initial 0.53 \u2014 remained largely stable). Confidence: 0.51. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
@@ -238,25 +442,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.3962,
-      "final_score": 0.4079,
+      "final_score": 0.4754,
       "score_history": [
         0.3962,
-        0.3774,
-        0.3972,
-        0.4079
+        0.4447,
+        0.4827,
+        0.4754
       ],
-      "confidence": 0.4142,
+      "confidence": 0.4069,
       "reasoning": "From my Insurance Actuary perspective, I assess P(YES) = 0.40. media narrative framing is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
       "key_factors": [
         "media narrative framing",
         "caucus cohesion levels",
         "judicial rulings affecting legislative authority"
       ],
+      "evidence": [
+        {
+          "claim": "Leadership whip count shows 24 holdouts in majority caucus",
+          "quality": 2.7,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $15B",
+          "quality": 4.8,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Continuing resolution expires in 34 days",
+          "quality": 2.7,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Lisa Rodriguez (Sovereign Wealth Fund Analyst)",
+      "disagreement_type": "minor (largely aligned with nuance differences)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.40. From my Insurance Actuary perspective, I assess P(YES) = 0.40. media narrative framing is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.38. Peer views ranged from 0.24 to 0.82. I adjusted minimally to 0.38. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.40. Peer views ranged from 0.23 to 0.78. I adjusted minimally to 0.40. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.41. Peer views ranged from 0.11 to 0.77. I adjusted minimally to 0.41. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Elizabeth Parker: P(YES)=0.13; George Nakamura: P(YES)=0.57; Steven Lopez: P(YES)=0.82]. Avg evidence quality: 3.4/5. Updated to P(YES) = 0.44. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3 (Critique): Debated Lisa Rodriguez (Sovereign Wealth Fund Analyst, P(YES)=0.52). Disagreement: minor (largely aligned with nuance differences). Updated to P(YES) = 0.48. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.48 (from initial 0.40 \u2014 shifted up by 0.08). Confidence: 0.41. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
@@ -268,25 +492,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.5093,
-      "final_score": 0.5223,
+      "final_score": 0.4591,
       "score_history": [
         0.5093,
-        0.5116,
-        0.5127,
-        0.5223
+        0.4519,
+        0.4543,
+        0.4591
       ],
-      "confidence": 0.6917,
+      "confidence": 0.6643,
       "reasoning": "Congressional dynamics around electoral incentive structure suggest YES probability. My analysis of appropriations committee dynamics reinforces this at P(YES) = 0.51. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
       "key_factors": [
         "electoral incentive structure",
         "appropriations committee dynamics",
         "public protest or activism waves"
       ],
+      "evidence": [
+        {
+          "claim": "64 appropriations bills passed out of 12 required",
+          "quality": 3.8,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Continuing resolution expires in 57 days",
+          "quality": 3.1,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $51B",
+          "quality": 3.8,
+          "source_type": "expert analysis"
+        }
+      ],
+      "critique_received": "Challenged by Charles Patel (Energy Sector Analyst)",
+      "disagreement_type": "methodological (different analytical frameworks)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.51. Congressional dynamics around electoral incentive structure suggest YES probability. My analysis of appropriations committee dynamics reinforces this at P(YES) = 0.51. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.51. Peer views ranged from 0.29 to 0.61. I adjusted minimally to 0.51. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.57), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.52. Round 3 deliberation: peers averaged 0.39. My skeptical and devil's advocate tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Steven Lopez: P(YES)=0.82; Emily Robinson: P(YES)=0.51; Olga Lewis: P(YES)=0.02]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.45. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+        "Round 3 (Critique): Debated Charles Patel (Energy Sector Analyst, P(YES)=0.27). Disagreement: methodological (different analytical frameworks). Updated to P(YES) = 0.45. Electoral incentives often override ideological positions near deadlines.",
+        "Round 4 (Final Forecast): P(YES) = 0.46 (from initial 0.51 \u2014 shifted down by 0.05). Confidence: 0.66. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
@@ -298,25 +542,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.2581,
-      "final_score": 0.3251,
+      "final_score": 0.3334,
       "score_history": [
         0.2581,
-        0.2852,
-        0.2872,
-        0.3251
+        0.2782,
+        0.3422,
+        0.3334
       ],
-      "confidence": 0.374,
+      "confidence": 0.3258,
       "reasoning": "From my Supply Chain Analyst perspective, I assess P(YES) = 0.26. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "electoral incentive structure",
         "media narrative framing",
         "public protest or activism waves"
       ],
+      "evidence": [
+        {
+          "claim": "Polling shows 33% blame the opposition for shutdown scenario",
+          "quality": 3.1,
+          "source_type": "survey"
+        },
+        {
+          "claim": "17 appropriations bills passed out of 12 required",
+          "quality": 2.7,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Continuing resolution expires in 29 days",
+          "quality": 4.5,
+          "source_type": "survey"
+        }
+      ],
+      "critique_received": "Challenged by Steven Lopez (Political Analyst)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.26. From my Supply Chain Analyst perspective, I assess P(YES) = 0.26. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.29. After seeing 5 peer opinions (avg 0.26), I shifted upward by 0.03. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.29. Peer views ranged from 0.07 to 0.83. I adjusted minimally to 0.29. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.33. Peer views ranged from 0.37 to 0.67. I adjusted upward to 0.33. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Robert Collins: P(YES)=0.17; Yuki Phillips: P(YES)=0.02; George Nakamura: P(YES)=0.57]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.28. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3 (Critique): Debated Steven Lopez (Political Analyst, P(YES)=0.78). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.34. Electoral incentives often override ideological positions near deadlines.",
+        "Round 4 (Final Forecast): P(YES) = 0.33 (from initial 0.26 \u2014 shifted up by 0.08). Confidence: 0.33. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
@@ -328,25 +592,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.1685,
-      "final_score": 0.2177,
+      "final_score": 0.2963,
       "score_history": [
         0.1685,
-        0.2058,
-        0.1729,
-        0.2177
+        0.2352,
+        0.2822,
+        0.2963
       ],
-      "confidence": 0.7713,
+      "confidence": 0.802,
       "reasoning": "From my Central Bank Watcher perspective, I assess P(YES) = 0.17. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "appropriations committee dynamics",
         "public opinion polls",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Leadership whip count shows 42 holdouts in majority caucus",
+          "quality": 3.2,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Congressional approval at 53% \u2014 above historical average",
+          "quality": 4.0,
+          "source_type": "market data"
+        },
+        {
+          "claim": "21 appropriations bills passed out of 12 required",
+          "quality": 2.6,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Ashley Williams (Emerging Markets Specialist)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.17. From my Central Bank Watcher perspective, I assess P(YES) = 0.17. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.21. Peer views ranged from 0.19 to 0.86. I adjusted upward to 0.21. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.17. After seeing 5 peer opinions (avg 0.23), I shifted downward by 0.03. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 3: Updated to P(YES) = 0.22. After seeing 5 peer opinions (avg 0.41), I shifted upward by 0.04. Electoral incentives often override ideological positions near deadlines."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Maria Garcia: P(YES)=0.15; Rachel Chen: P(YES)=0.18; Katherine Walker: P(YES)=0.59]. Avg evidence quality: 3.9/5. Updated to P(YES) = 0.24. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3 (Critique): Debated Ashley Williams (Emerging Markets Specialist, P(YES)=0.61). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.28. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+        "Round 4 (Final Forecast): P(YES) = 0.30 (from initial 0.17 \u2014 shifted up by 0.13). Confidence: 0.80. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
@@ -358,25 +642,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.4829,
-      "final_score": 0.4439,
+      "final_score": 0.5253,
       "score_history": [
         0.4829,
-        0.4599,
-        0.4413,
-        0.4439
+        0.4963,
+        0.5169,
+        0.5253
       ],
-      "confidence": 0.3892,
+      "confidence": 0.4348,
       "reasoning": "From my Sovereign Wealth Fund Analyst perspective, I assess P(YES) = 0.48. leadership negotiation leverage is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "leadership negotiation leverage",
         "caucus cohesion levels",
         "public protest or activism waves"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $32B",
+          "quality": 4.5,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Continuing resolution expires in 36 days",
+          "quality": 2.6,
+          "source_type": "market data"
+        },
+        {
+          "claim": "56 appropriations bills passed out of 12 required",
+          "quality": 2.6,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Sarah Hernandez (Insurance Actuary)",
+      "disagreement_type": "minor (largely aligned with nuance differences)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.48. From my Sovereign Wealth Fund Analyst perspective, I assess P(YES) = 0.48. leadership negotiation leverage is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.36), I shifted downward by 0.02. Electoral incentives often override ideological positions near deadlines.",
-        "Round 2: Updated to P(YES) = 0.44. Round 2 deliberation: peers averaged 0.28. My narrative-driven and qualitative tendency led me to held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.44. After seeing 5 peer opinions (avg 0.37), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Ashley Williams: P(YES)=0.61; Ahmed King: P(YES)=0.08; Christopher Hall: P(YES)=0.32]. Avg evidence quality: 4.0/5. Updated to P(YES) = 0.50. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 3 (Critique): Debated Sarah Hernandez (Insurance Actuary, P(YES)=0.44). Disagreement: minor (largely aligned with nuance differences). Updated to P(YES) = 0.52. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 4 (Final Forecast): P(YES) = 0.53 (from initial 0.48 \u2014 remained largely stable). Confidence: 0.43. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
@@ -388,25 +692,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.2928,
-      "final_score": 0.2936,
+      "final_score": 0.3707,
       "score_history": [
         0.2928,
-        0.3061,
-        0.3049,
-        0.2936
+        0.3314,
+        0.3736,
+        0.3707
       ],
-      "confidence": 0.6845,
+      "confidence": 0.6912,
       "reasoning": "From my Retired Central Banker perspective, I assess P(YES) = 0.29. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "caucus cohesion levels",
         "electoral incentive structure",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $10B",
+          "quality": 3.4,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Continuing resolution expires in 34 days",
+          "quality": 3.2,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Leadership whip count shows 34 holdouts in majority caucus",
+          "quality": 4.2,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Wei Sanchez (Data Scientist)",
+      "disagreement_type": "minor (largely aligned with nuance differences)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.29. From my Retired Central Banker perspective, I assess P(YES) = 0.29. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.31. Round 1 deliberation: peers averaged 0.30. My risk-averse and conservative tendency led me to held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.30. Peer views ranged from 0.07 to 0.69. I adjusted minimally to 0.30. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.29. Round 3 deliberation: peers averaged 0.30. My risk-averse and conservative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Nicole Mitchell: P(YES)=0.67; Richard Young: P(YES)=0.30; Kevin Reed: P(YES)=0.46]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.33. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3 (Critique): Debated Wei Sanchez (Data Scientist, P(YES)=0.40). Disagreement: minor (largely aligned with nuance differences). Updated to P(YES) = 0.37. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.37 (from initial 0.29 \u2014 shifted up by 0.08). Confidence: 0.69. Media pressure typically forces last-minute compromise."
       ]
     },
     {
@@ -418,25 +742,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.5076,
-      "final_score": 0.5006,
+      "final_score": 0.5141,
       "score_history": [
         0.5076,
-        0.4986,
-        0.496,
-        0.5006
+        0.5115,
+        0.5153,
+        0.5141
       ],
-      "confidence": 0.6169,
+      "confidence": 0.6249,
       "reasoning": "Congressional dynamics around media narrative framing suggest YES probability. My analysis of caucus cohesion levels reinforces this at P(YES) = 0.51. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
       "key_factors": [
         "media narrative framing",
         "caucus cohesion levels",
         "judicial rulings affecting legislative authority"
       ],
+      "evidence": [
+        {
+          "claim": "Leadership whip count shows 30 holdouts in majority caucus",
+          "quality": 4.4,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "36 appropriations bills passed out of 12 required",
+          "quality": 3.0,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Continuing resolution expires in 58 days",
+          "quality": 4.2,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Michelle Jackson (Historical Analogist)",
+      "disagreement_type": "minor (largely aligned with nuance differences)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.51. Congressional dynamics around media narrative framing suggest YES probability. My analysis of caucus cohesion levels reinforces this at P(YES) = 0.51. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.50. After seeing 5 peer opinions (avg 0.48), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.50. After seeing 5 peer opinions (avg 0.45), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.50. Peer views ranged from 0.36 to 0.74. I adjusted minimally to 0.50. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Fatima O'Brien: P(YES)=0.36; Matthew Scott: P(YES)=0.22; David Clark: P(YES)=0.50]. Avg evidence quality: 3.9/5. Updated to P(YES) = 0.51. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 3 (Critique): Debated Michelle Jackson (Historical Analogist, P(YES)=0.46). Disagreement: minor (largely aligned with nuance differences). Updated to P(YES) = 0.52. The timing relative to recess creates underappreciated pressure.",
+        "Round 4 (Final Forecast): P(YES) = 0.51 (from initial 0.51 \u2014 remained largely stable). Confidence: 0.62. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
@@ -448,25 +792,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.2962,
-      "final_score": 0.3638,
+      "final_score": 0.2955,
       "score_history": [
         0.2962,
-        0.351,
-        0.3533,
-        0.3638
+        0.2888,
+        0.2886,
+        0.2955
       ],
-      "confidence": 0.9144,
+      "confidence": 0.8434,
       "reasoning": "From my Labor Economist perspective, I assess P(YES) = 0.30. leadership negotiation leverage is the primary driver. media narrative framing adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "leadership negotiation leverage",
         "media narrative framing",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $15B",
+          "quality": 3.4,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Polling shows 8% blame the majority for shutdown scenario",
+          "quality": 4.4,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Continuing resolution expires in 35 days",
+          "quality": 4.5,
+          "source_type": "survey"
+        }
+      ],
+      "critique_received": "Challenged by George Nakamura (Defense Contractor Exec)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.30. From my Labor Economist perspective, I assess P(YES) = 0.30. leadership negotiation leverage is the primary driver. media narrative framing adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.35. Round 1 deliberation: peers averaged 0.43. My cautious and evidence-driven tendency led me to shifted upward by 0.05. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 2: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.31), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.36. Peer views ranged from 0.18 to 0.51. I adjusted minimally to 0.36. The timing relative to recess creates underappreciated pressure."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Megan Hill: P(YES)=0.32; Daniel Martin: P(YES)=0.23; Priya Baker: P(YES)=0.32]. Avg evidence quality: 3.6/5. Updated to P(YES) = 0.29. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3 (Critique): Debated George Nakamura (Defense Contractor Exec, P(YES)=0.56). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.29. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 4 (Final Forecast): P(YES) = 0.30 (from initial 0.30 \u2014 remained largely stable). Confidence: 0.84. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
@@ -478,25 +842,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.6516,
-      "final_score": 0.6322,
+      "final_score": 0.6889,
       "score_history": [
         0.6516,
-        0.639,
-        0.6238,
-        0.6322
+        0.681,
+        0.7211,
+        0.6889
       ],
-      "confidence": 0.7668,
+      "confidence": 0.7117,
       "reasoning": "Congressional dynamics around appropriations committee dynamics suggest YES probability. My analysis of media narrative framing reinforces this at P(YES) = 0.65. Historical precedent and individual legislator defections create non-trivial forecast risk.",
       "key_factors": [
         "appropriations committee dynamics",
         "media narrative framing",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $28B",
+          "quality": 3.2,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Polling shows 77% blame the opposition for shutdown scenario",
+          "quality": 2.5,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Continuing resolution expires in 72 days",
+          "quality": 3.3,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Megan Hill (Venture Capitalist)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.65. Congressional dynamics around appropriations committee dynamics suggest YES probability. My analysis of media narrative framing reinforces this at P(YES) = 0.65. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.64. Round 1 deliberation: peers averaged 0.30. My bold and contrarian tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.62. Peer views ranged from 0.17 to 0.78. I adjusted minimally to 0.62. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.63. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Kenneth Lee: P(YES)=0.46; Steven Lopez: P(YES)=0.82; Priya Baker: P(YES)=0.32]. Avg evidence quality: 3.8/5. Updated to P(YES) = 0.68. The timing relative to recess creates underappreciated pressure.",
+        "Round 3 (Critique): Debated Megan Hill (Venture Capitalist, P(YES)=0.28). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.72. Electoral incentives often override ideological positions near deadlines.",
+        "Round 4 (Final Forecast): P(YES) = 0.69 (from initial 0.65 \u2014 remained largely stable). Confidence: 0.71. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
@@ -508,25 +892,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.4149,
-      "final_score": 0.4474,
+      "final_score": 0.4578,
       "score_history": [
         0.4149,
-        0.461,
-        0.4322,
-        0.4474
+        0.4338,
+        0.4531,
+        0.4578
       ],
-      "confidence": 0.5556,
+      "confidence": 0.5529,
       "reasoning": "From my Demographer perspective, I assess P(YES) = 0.41. partisan polarization depth is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "partisan polarization depth",
         "leadership negotiation leverage",
         "public protest or activism waves"
       ],
+      "evidence": [
+        {
+          "claim": "Congressional approval at 32% \u2014 below historical average",
+          "quality": 3.5,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $-7B",
+          "quality": 3.2,
+          "source_type": "official data"
+        },
+        {
+          "claim": "16 appropriations bills passed out of 12 required",
+          "quality": 4.5,
+          "source_type": "survey"
+        }
+      ],
+      "critique_received": "Challenged by James Kim (Macro Economist)",
+      "disagreement_type": "methodological (different analytical frameworks)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.41. From my Demographer perspective, I assess P(YES) = 0.41. partisan polarization depth is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.52), I shifted upward by 0.05. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.43. Peer views ranged from 0.17 to 0.69. I adjusted downward to 0.43. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.45. Round 3 deliberation: peers averaged 0.42. My analytical and methodical tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Olga Lewis: P(YES)=0.02; Michelle Jackson: P(YES)=0.47; Aisha Stewart: P(YES)=0.68]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.43. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 3 (Critique): Debated James Kim (Macro Economist, P(YES)=0.58). Disagreement: methodological (different analytical frameworks). Updated to P(YES) = 0.45. Electoral incentives often override ideological positions near deadlines.",
+        "Round 4 (Final Forecast): P(YES) = 0.46 (from initial 0.41 \u2014 remained largely stable). Confidence: 0.55. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
@@ -538,25 +942,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.4783,
-      "final_score": 0.3942,
+      "final_score": 0.5255,
       "score_history": [
         0.4783,
-        0.4267,
-        0.3995,
-        0.3942
+        0.4494,
+        0.4981,
+        0.5255
       ],
-      "confidence": 0.4427,
+      "confidence": 0.3889,
       "reasoning": "From my Agricultural Economist perspective, I assess P(YES) = 0.48. public opinion polls is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "public opinion polls",
         "caucus cohesion levels",
         "public protest or activism waves"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $5B",
+          "quality": 3.1,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Leadership whip count shows 15 holdouts in majority caucus",
+          "quality": 2.8,
+          "source_type": "market data"
+        },
+        {
+          "claim": "34 appropriations bills passed out of 12 required",
+          "quality": 3.3,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Edward Campbell (Union Organizer)",
+      "disagreement_type": "minor (largely aligned with nuance differences)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.48. From my Agricultural Economist perspective, I assess P(YES) = 0.48. public opinion polls is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.43. Round 1 deliberation: peers averaged 0.40. My intuitive and pattern-matching tendency led me to shifted downward by 0.05. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.40. Peer views ranged from 0.07 to 0.54. I adjusted downward to 0.40. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.39. Round 3 deliberation: peers averaged 0.34. My intuitive and pattern-matching tendency led me to held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Lisa Rodriguez: P(YES)=0.50; Jessica Green: P(YES)=0.68; Rebecca Santos: P(YES)=0.75]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.45. Media pressure typically forces last-minute compromise.",
+        "Round 3 (Critique): Debated Edward Campbell (Union Organizer, P(YES)=0.58). Disagreement: minor (largely aligned with nuance differences). Updated to P(YES) = 0.50. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.53 (from initial 0.48 \u2014 remained largely stable). Confidence: 0.39. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
@@ -568,25 +992,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.3164,
-      "final_score": 0.2598,
+      "final_score": 0.2739,
       "score_history": [
         0.3164,
-        0.2694,
-        0.255,
-        0.2598
+        0.2695,
+        0.2736,
+        0.2739
       ],
-      "confidence": 0.4898,
+      "confidence": 0.4665,
       "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.32. Historical precedent and individual legislator defections create non-trivial forecast risk.",
       "key_factors": [
         "appropriations committee dynamics",
         "partisan polarization depth",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $13B",
+          "quality": 4.2,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Leadership whip count shows 33 holdouts in majority caucus",
+          "quality": 4.4,
+          "source_type": "official data"
+        },
+        {
+          "claim": "39 appropriations bills passed out of 12 required",
+          "quality": 4.2,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Michael Adams (Bayesian Statistician)",
+      "disagreement_type": "methodological (different analytical frameworks)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.32. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.32. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.27. Peer views ranged from 0.32 to 0.77. I adjusted downward to 0.27. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.40), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.26. Round 3 deliberation: peers averaged 0.51. My skeptical and devil's advocate tendency led me to held my position largely steady. Media pressure typically forces last-minute compromise."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Matthew Scott: P(YES)=0.22; Raj Gonzalez: P(YES)=0.44; James Kim: P(YES)=0.58]. Avg evidence quality: 3.4/5. Updated to P(YES) = 0.27. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3 (Critique): Debated Michael Adams (Bayesian Statistician, P(YES)=0.45). Disagreement: methodological (different analytical frameworks). Updated to P(YES) = 0.27. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 4 (Final Forecast): P(YES) = 0.27 (from initial 0.32 \u2014 remained largely stable). Confidence: 0.47. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
@@ -598,25 +1042,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.6143,
-      "final_score": 0.5337,
+      "final_score": 0.5904,
       "score_history": [
         0.6143,
-        0.543,
-        0.5542,
-        0.5337
+        0.6374,
+        0.6069,
+        0.5904
       ],
-      "confidence": 0.5154,
+      "confidence": 0.5292,
       "reasoning": "As a Emerging Markets Specialist, I focus on media narrative framing and partisan polarization depth. These suggest P(YES) = 0.61. The YES case depends heavily on judicial rulings affecting legislative authority resolving favorably.",
       "key_factors": [
         "media narrative framing",
         "partisan polarization depth",
         "judicial rulings affecting legislative authority"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $58B",
+          "quality": 3.8,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "34 appropriations bills passed out of 12 required",
+          "quality": 4.2,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Polling shows 58% blame the opposition for shutdown scenario",
+          "quality": 3.1,
+          "source_type": "expert analysis"
+        }
+      ],
+      "critique_received": "Challenged by Robert Collins (Central Bank Watcher)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.61. As a Emerging Markets Specialist, I focus on media narrative framing and partisan polarization depth. These suggest P(YES) = 0.61. The YES case depends heavily on judicial rulings affecting legislative authority resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.54. Round 1 deliberation: peers averaged 0.32. My consensus-seeking and diplomatic tendency led me to shifted downward by 0.07. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.55. Round 2 deliberation: peers averaged 0.48. My consensus-seeking and diplomatic tendency led me to held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.53. Round 3 deliberation: peers averaged 0.45. My consensus-seeking and diplomatic tendency led me to shifted downward by 0.02. The narrow majority makes individual holdouts disproportionately powerful."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Rachel Chen: P(YES)=0.18; Fatima O'Brien: P(YES)=0.36; Ahmed King: P(YES)=0.08]. Avg evidence quality: 3.9/5. Updated to P(YES) = 0.64. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 3 (Critique): Debated Robert Collins (Central Bank Watcher, P(YES)=0.24). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.61. Media pressure typically forces last-minute compromise.",
+        "Round 4 (Final Forecast): P(YES) = 0.59 (from initial 0.61 \u2014 remained largely stable). Confidence: 0.53. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
@@ -628,25 +1092,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.2341,
-      "final_score": 0.2698,
+      "final_score": 0.2995,
       "score_history": [
         0.2341,
-        0.2646,
-        0.2715,
-        0.2698
+        0.2401,
+        0.2712,
+        0.2995
       ],
-      "confidence": 0.3477,
+      "confidence": 0.3546,
       "reasoning": "As a Pharmaceutical Exec, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.23. The NO case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "appropriations committee dynamics",
         "caucus cohesion levels",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Leadership whip count shows 26 holdouts in majority caucus",
+          "quality": 4.1,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Polling shows 24% blame the majority for shutdown scenario",
+          "quality": 3.0,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Continuing resolution expires in -1 days",
+          "quality": 3.7,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Brian White (Biotech Researcher)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.23. As a Pharmaceutical Exec, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.23. The NO case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.57), I shifted upward by 0.03. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 2: Updated to P(YES) = 0.27. Peer views ranged from 0.17 to 0.62. I adjusted minimally to 0.27. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.27. Peer views ranged from 0.10 to 0.67. I adjusted minimally to 0.27. Media pressure typically forces last-minute compromise."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Charles Patel: P(YES)=0.27; Elizabeth Parker: P(YES)=0.13; Jessica Green: P(YES)=0.68]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.24. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 3 (Critique): Debated Brian White (Biotech Researcher, P(YES)=0.50). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.27. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.30 (from initial 0.23 \u2014 shifted up by 0.07). Confidence: 0.35. Media pressure typically forces last-minute compromise."
       ]
     },
     {
@@ -658,25 +1142,45 @@
       "temp_tier": "contrarian",
       "temperature": 0.9,
       "initial_score": 0.3612,
-      "final_score": 0.3587,
+      "final_score": 0.3735,
       "score_history": [
         0.3612,
-        0.3506,
-        0.3494,
-        0.3587
+        0.3783,
+        0.3618,
+        0.3735
       ],
-      "confidence": 0.3497,
+      "confidence": 0.3462,
       "reasoning": "From my Investigative Journalist perspective, I assess P(YES) = 0.36. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "appropriations committee dynamics",
         "public opinion polls",
         "public protest or activism waves"
       ],
+      "evidence": [
+        {
+          "claim": "Continuing resolution expires in 7 days",
+          "quality": 3.1,
+          "source_type": "market data"
+        },
+        {
+          "claim": "42 appropriations bills passed out of 12 required",
+          "quality": 4.4,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $31B",
+          "quality": 4.8,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Anthony Carter (Tech Executive)",
+      "disagreement_type": "minor (largely aligned with nuance differences)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.36. From my Investigative Journalist perspective, I assess P(YES) = 0.36. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.33), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.36. Peer views ranged from 0.20 to 0.74. I adjusted minimally to 0.36. Electoral incentives often override ideological positions near deadlines."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Aisha Stewart: P(YES)=0.68; Elizabeth Parker: P(YES)=0.13; Joseph Mueller: P(YES)=0.34]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.38. The timing relative to recess creates underappreciated pressure.",
+        "Round 3 (Critique): Debated Anthony Carter (Tech Executive, P(YES)=0.28). Disagreement: minor (largely aligned with nuance differences). Updated to P(YES) = 0.36. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 4 (Final Forecast): P(YES) = 0.37 (from initial 0.36 \u2014 remained largely stable). Confidence: 0.35. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
@@ -688,25 +1192,45 @@
       "temp_tier": "contrarian",
       "temperature": 0.9,
       "initial_score": 0.2242,
-      "final_score": 0.2496,
+      "final_score": 0.2469,
       "score_history": [
         0.2242,
-        0.2285,
-        0.2308,
-        0.2496
+        0.2494,
+        0.2637,
+        0.2469
       ],
-      "confidence": 0.2932,
+      "confidence": 0.2726,
       "reasoning": "As a Hedge Fund PM, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.22. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
       "key_factors": [
         "media narrative framing",
         "legislative calendar pressure",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Leadership whip count shows 49 holdouts in majority caucus",
+          "quality": 4.1,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $18B",
+          "quality": 3.5,
+          "source_type": "official data"
+        },
+        {
+          "claim": "43 appropriations bills passed out of 12 required",
+          "quality": 3.1,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by David Clark (Data Scientist)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.22. As a Hedge Fund PM, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.22. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.23. Round 1 deliberation: peers averaged 0.18. My risk-averse and conservative tendency led me to held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.23. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.25. Peer views ranged from 0.10 to 0.44. I adjusted minimally to 0.25. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Yuki Phillips: P(YES)=0.02; Rebecca Santos: P(YES)=0.75; Lisa Rodriguez: P(YES)=0.50]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.25. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3 (Critique): Debated David Clark (Data Scientist, P(YES)=0.48). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.26. The timing relative to recess creates underappreciated pressure.",
+        "Round 4 (Final Forecast): P(YES) = 0.25 (from initial 0.22 \u2014 remained largely stable). Confidence: 0.27. Cross-party coalitions on specific spending areas can break overall gridlock."
       ]
     },
     {
@@ -718,25 +1242,45 @@
       "temp_tier": "contrarian",
       "temperature": 0.9,
       "initial_score": 0.6653,
-      "final_score": 0.6207,
+      "final_score": 0.5955,
       "score_history": [
         0.6653,
-        0.6866,
-        0.6742,
-        0.6207
+        0.6116,
+        0.6591,
+        0.5955
       ],
-      "confidence": 0.3756,
+      "confidence": 0.4003,
       "reasoning": "As a Academic Historian, I focus on leadership negotiation leverage and legislative calendar pressure. These suggest P(YES) = 0.67. The YES case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "leadership negotiation leverage",
         "legislative calendar pressure",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $50B",
+          "quality": 3.6,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Continuing resolution expires in 68 days",
+          "quality": 3.3,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Polling shows 68% blame the majority for shutdown scenario",
+          "quality": 2.7,
+          "source_type": "expert analysis"
+        }
+      ],
+      "critique_received": "Challenged by Ahmed King (Central Bank Watcher)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.67. As a Academic Historian, I focus on leadership negotiation leverage and legislative calendar pressure. These suggest P(YES) = 0.67. The YES case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.69. Round 1 deliberation: peers averaged 0.59. My risk-seeking and opportunistic tendency led me to shifted upward by 0.02. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.67. Peer views ranged from 0.26 to 0.83. I adjusted minimally to 0.67. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.62. After seeing 5 peer opinions (avg 0.32), I shifted downward by 0.05. The timing relative to recess creates underappreciated pressure."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Sarah Hernandez: P(YES)=0.44; Ahmed King: P(YES)=0.08; Aisha Stewart: P(YES)=0.68]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.61. The timing relative to recess creates underappreciated pressure.",
+        "Round 3 (Critique): Debated Ahmed King (Central Bank Watcher, P(YES)=0.10). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.66. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 4 (Final Forecast): P(YES) = 0.60 (from initial 0.67 \u2014 shifted down by 0.07). Confidence: 0.40. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
@@ -748,25 +1292,45 @@
       "temp_tier": "contrarian",
       "temperature": 0.9,
       "initial_score": 0.7654,
-      "final_score": 0.6314,
+      "final_score": 0.6845,
       "score_history": [
         0.7654,
-        0.6982,
-        0.6733,
-        0.6314
+        0.7475,
+        0.7163,
+        0.6845
       ],
-      "confidence": 0.2812,
+      "confidence": 0.2527,
       "reasoning": "From my Military Intel Analyst perspective, I assess P(YES) = 0.77. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
       "key_factors": [
         "caucus cohesion levels",
         "electoral incentive structure",
         "judicial rulings affecting legislative authority"
       ],
+      "evidence": [
+        {
+          "claim": "33 appropriations bills passed out of 12 required",
+          "quality": 4.8,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Leadership whip count shows 55 holdouts in majority caucus",
+          "quality": 3.2,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Continuing resolution expires in 6 days",
+          "quality": 2.9,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Laura Harris (Conspiracy Skeptic)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.77. From my Military Intel Analyst perspective, I assess P(YES) = 0.77. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.70. Round 1 deliberation: peers averaged 0.28. My cautious and evidence-driven tendency led me to shifted downward by 0.07. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.67. Peer views ranged from 0.18 to 0.58. I adjusted downward to 0.67. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.63. Peer views ranged from 0.10 to 0.51. I adjusted downward to 0.63. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Olga Lewis: P(YES)=0.02; Edward Campbell: P(YES)=0.53; Matthew Scott: P(YES)=0.25]. Avg evidence quality: 3.8/5. Updated to P(YES) = 0.75. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+        "Round 3 (Critique): Debated Laura Harris (Conspiracy Skeptic, P(YES)=0.06). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.72. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 4 (Final Forecast): P(YES) = 0.68 (from initial 0.77 \u2014 shifted down by 0.08). Confidence: 0.25. Continuing resolution mechanics provide escape valves that reduce shutdown duration."
       ]
     },
     {
@@ -778,25 +1342,45 @@
       "temp_tier": "contrarian",
       "temperature": 0.9,
       "initial_score": 0.1753,
-      "final_score": 0.1485,
+      "final_score": 0.1,
       "score_history": [
         0.1753,
-        0.1708,
-        0.1436,
-        0.1485
+        0.1871,
+        0.1102,
+        0.1
       ],
-      "confidence": 0.3921,
+      "confidence": 0.3737,
       "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of public opinion polls reinforces this at P(YES) = 0.18. Historical precedent and individual legislator defections create non-trivial forecast risk.",
       "key_factors": [
         "appropriations committee dynamics",
         "public opinion polls",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Polling shows 51% blame the majority for shutdown scenario",
+          "quality": 4.5,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Leadership whip count shows 31 holdouts in majority caucus",
+          "quality": 4.7,
+          "source_type": "official data"
+        },
+        {
+          "claim": "54 appropriations bills passed out of 12 required",
+          "quality": 3.4,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Katherine Walker (Climate Scientist)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.18. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of public opinion polls reinforces this at P(YES) = 0.18. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.17. Peer views ranged from 0.02 to 0.52. I adjusted minimally to 0.17. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 2: Updated to P(YES) = 0.14. Round 2 deliberation: peers averaged 0.32. My bold and contrarian tendency led me to shifted downward by 0.03. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.15. Peer views ranged from 0.33 to 0.62. I adjusted minimally to 0.15. The narrow majority makes individual holdouts disproportionately powerful."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Ashley Williams: P(YES)=0.64; Raj Gonzalez: P(YES)=0.44; Elizabeth Parker: P(YES)=0.13]. Avg evidence quality: 3.5/5. Updated to P(YES) = 0.19. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+        "Round 3 (Critique): Debated Katherine Walker (Climate Scientist, P(YES)=0.64). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.11. Electoral incentives often override ideological positions near deadlines.",
+        "Round 4 (Final Forecast): P(YES) = 0.10 (from initial 0.18 \u2014 shifted down by 0.08). Confidence: 0.37. Continuing resolution mechanics provide escape valves that reduce shutdown duration."
       ]
     },
     {
@@ -808,25 +1392,45 @@
       "temp_tier": "contrarian",
       "temperature": 0.9,
       "initial_score": 0.3435,
-      "final_score": 0.3488,
+      "final_score": 0.2747,
       "score_history": [
         0.3435,
-        0.3434,
-        0.3308,
-        0.3488
+        0.2998,
+        0.301,
+        0.2747
       ],
-      "confidence": 0.3865,
+      "confidence": 0.3743,
       "reasoning": "As a Commodity Trader, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.34. The NO case depends heavily on public protest or activism waves resolving favorably.",
       "key_factors": [
         "partisan polarization depth",
         "leadership negotiation leverage",
         "public protest or activism waves"
       ],
+      "evidence": [
+        {
+          "claim": "Polling shows 48% blame the majority for shutdown scenario",
+          "quality": 3.1,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Congressional approval at 33% \u2014 below historical average",
+          "quality": 3.9,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Leadership whip count shows 23 holdouts in majority caucus",
+          "quality": 4.1,
+          "source_type": "historical analog"
+        }
+      ],
+      "critique_received": "Challenged by Kevin Reed (Fintech Founder)",
+      "disagreement_type": "methodological (different analytical frameworks)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.34. As a Commodity Trader, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.34. The NO case depends heavily on public protest or activism waves resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.37), I held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.33. Peer views ranged from 0.14 to 0.51. I adjusted minimally to 0.33. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.38), I held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Anthony Carter: P(YES)=0.24; David Clark: P(YES)=0.50; James Kim: P(YES)=0.58]. Avg evidence quality: 3.6/5. Updated to P(YES) = 0.30. Media pressure typically forces last-minute compromise.",
+        "Round 3 (Critique): Debated Kevin Reed (Fintech Founder, P(YES)=0.48). Disagreement: methodological (different analytical frameworks). Updated to P(YES) = 0.30. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.27 (from initial 0.34 \u2014 shifted down by 0.07). Confidence: 0.37. Media pressure typically forces last-minute compromise."
       ]
     },
     {
@@ -838,25 +1442,45 @@
       "temp_tier": "contrarian",
       "temperature": 0.9,
       "initial_score": 0.02,
-      "final_score": 0.1402,
+      "final_score": 0.1387,
       "score_history": [
         0.02,
-        0.0627,
-        0.1067,
-        0.1402
+        0.0601,
+        0.1145,
+        0.1387
       ],
-      "confidence": 0.5126,
+      "confidence": 0.4802,
       "reasoning": "From my Conspiracy Skeptic perspective, I assess P(YES) = 0.02. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
       "key_factors": [
         "partisan polarization depth",
         "public opinion polls",
         "judicial rulings affecting legislative authority"
       ],
+      "evidence": [
+        {
+          "claim": "Leadership whip count shows 12 holdouts in majority caucus",
+          "quality": 2.9,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Continuing resolution expires in 34 days",
+          "quality": 3.8,
+          "source_type": "survey"
+        },
+        {
+          "claim": "24 appropriations bills passed out of 12 required",
+          "quality": 4.5,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Andrew Evans (Military Intel Analyst)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.02. From my Conspiracy Skeptic perspective, I assess P(YES) = 0.02. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.06. Peer views ranged from 0.30 to 0.43. I adjusted upward to 0.06. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.11. Round 2 deliberation: peers averaged 0.36. My intuitive and pattern-matching tendency led me to shifted upward by 0.04. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 3: Updated to P(YES) = 0.14. Round 3 deliberation: peers averaged 0.48. My intuitive and pattern-matching tendency led me to shifted upward by 0.03. Electoral incentives often override ideological positions near deadlines."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Raj Gonzalez: P(YES)=0.44; Charles Patel: P(YES)=0.27; William Thompson: P(YES)=0.33]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.06. The timing relative to recess creates underappreciated pressure.",
+        "Round 3 (Critique): Debated Andrew Evans (Military Intel Analyst, P(YES)=0.72). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.11. Electoral incentives often override ideological positions near deadlines.",
+        "Round 4 (Final Forecast): P(YES) = 0.14 (from initial 0.02 \u2014 shifted up by 0.12). Confidence: 0.48. Continuing resolution mechanics provide escape valves that reduce shutdown duration."
       ]
     },
     {
@@ -868,25 +1492,45 @@
       "temp_tier": "contrarian",
       "temperature": 0.9,
       "initial_score": 0.3221,
-      "final_score": 0.284,
+      "final_score": 0.3566,
       "score_history": [
         0.3221,
-        0.3113,
-        0.2986,
-        0.284
+        0.36,
+        0.3385,
+        0.3566
       ],
-      "confidence": 0.5332,
+      "confidence": 0.4791,
       "reasoning": "From my Short Seller perspective, I assess P(YES) = 0.32. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
       "key_factors": [
         "electoral incentive structure",
         "media narrative framing",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Continuing resolution expires in 17 days",
+          "quality": 3.6,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Congressional approval at 29% \u2014 below historical average",
+          "quality": 2.6,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Polling shows 4% blame the opposition for shutdown scenario",
+          "quality": 3.4,
+          "source_type": "survey"
+        }
+      ],
+      "critique_received": "Challenged by Hans Turner (Retired Central Banker)",
+      "disagreement_type": "methodological (different analytical frameworks)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.32. From my Short Seller perspective, I assess P(YES) = 0.32. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.31. After seeing 5 peer opinions (avg 0.28), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.30. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 3: Updated to P(YES) = 0.28. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. The timing relative to recess creates underappreciated pressure."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Fatima O'Brien: P(YES)=0.36; Raj Gonzalez: P(YES)=0.44; Rachel Chen: P(YES)=0.19]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.36. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 3 (Critique): Debated Hans Turner (Retired Central Banker, P(YES)=0.23). Disagreement: methodological (different analytical frameworks). Updated to P(YES) = 0.34. Electoral incentives often override ideological positions near deadlines.",
+        "Round 4 (Final Forecast): P(YES) = 0.36 (from initial 0.32 \u2014 remained largely stable). Confidence: 0.48. Continuing resolution mechanics provide escape valves that reduce shutdown duration."
       ]
     },
     {
@@ -898,25 +1542,45 @@
       "temp_tier": "creative",
       "temperature": 1.2,
       "initial_score": 0.3218,
-      "final_score": 0.3777,
+      "final_score": 0.3129,
       "score_history": [
         0.3218,
-        0.3246,
-        0.3592,
-        0.3777
+        0.2815,
+        0.3098,
+        0.3129
       ],
-      "confidence": 0.4354,
+      "confidence": 0.4627,
       "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.32. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
       "key_factors": [
         "appropriations committee dynamics",
         "leadership negotiation leverage",
         "judicial rulings affecting legislative authority"
       ],
+      "evidence": [
+        {
+          "claim": "Continuing resolution expires in 50 days",
+          "quality": 3.6,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Leadership whip count shows 37 holdouts in majority caucus",
+          "quality": 3.2,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $26B",
+          "quality": 3.2,
+          "source_type": "historical analog"
+        }
+      ],
+      "critique_received": "Challenged by Jessica Green (Pollster)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.32. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.32. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.32. Peer views ranged from 0.24 to 0.69. I adjusted minimally to 0.32. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.36. Round 2 deliberation: peers averaged 0.42. My consensus-seeking and diplomatic tendency led me to shifted upward by 0.03. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.38. Round 3 deliberation: peers averaged 0.34. My consensus-seeking and diplomatic tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [George Nakamura: P(YES)=0.57; Ahmed King: P(YES)=0.08; Rachel Chen: P(YES)=0.19]. Avg evidence quality: 3.8/5. Updated to P(YES) = 0.28. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3 (Critique): Debated Jessica Green (Pollster, P(YES)=0.72). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.31. Media pressure typically forces last-minute compromise.",
+        "Round 4 (Final Forecast): P(YES) = 0.31 (from initial 0.32 \u2014 remained largely stable). Confidence: 0.46. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
@@ -928,25 +1592,45 @@
       "temp_tier": "creative",
       "temperature": 1.2,
       "initial_score": 0.2372,
-      "final_score": 0.2869,
+      "final_score": 0.2928,
       "score_history": [
         0.2372,
-        0.259,
-        0.2751,
-        0.2869
+        0.2832,
+        0.283,
+        0.2928
       ],
-      "confidence": 0.6254,
+      "confidence": 0.614,
       "reasoning": "Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.24. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
       "key_factors": [
         "caucus cohesion levels",
         "leadership negotiation leverage",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Polling shows -0% blame the majority for shutdown scenario",
+          "quality": 2.8,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Continuing resolution expires in 39 days",
+          "quality": 3.9,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Congressional approval at 48% \u2014 below historical average",
+          "quality": 3.5,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Stephanie Allen (Investigative Journalist)",
+      "disagreement_type": "minor (largely aligned with nuance differences)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.24. Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.24. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.49), I shifted upward by 0.02. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 2: Updated to P(YES) = 0.28. After seeing 5 peer opinions (avg 0.35), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.29. After seeing 5 peer opinions (avg 0.40), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Ahmed King: P(YES)=0.08; Megan Hill: P(YES)=0.28; Ashley Williams: P(YES)=0.64]. Avg evidence quality: 4.0/5. Updated to P(YES) = 0.28. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3 (Critique): Debated Stephanie Allen (Investigative Journalist, P(YES)=0.38). Disagreement: minor (largely aligned with nuance differences). Updated to P(YES) = 0.28. The timing relative to recess creates underappreciated pressure.",
+        "Round 4 (Final Forecast): P(YES) = 0.29 (from initial 0.24 \u2014 shifted up by 0.06). Confidence: 0.61. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
@@ -958,25 +1642,45 @@
       "temp_tier": "creative",
       "temperature": 1.2,
       "initial_score": 0.1287,
-      "final_score": 0.1809,
+      "final_score": 0.2323,
       "score_history": [
         0.1287,
-        0.1652,
-        0.176,
-        0.1809
+        0.1642,
+        0.1966,
+        0.2323
       ],
-      "confidence": 0.477,
+      "confidence": 0.4934,
       "reasoning": "From my Crypto Analyst perspective, I assess P(YES) = 0.13. caucus cohesion levels is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "caucus cohesion levels",
         "public opinion polls",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Continuing resolution expires in 33 days",
+          "quality": 2.8,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $52B",
+          "quality": 3.5,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Polling shows 33% blame the opposition for shutdown scenario",
+          "quality": 4.2,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Kenneth Lee (AI Safety Researcher)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.13. From my Crypto Analyst perspective, I assess P(YES) = 0.13. caucus cohesion levels is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.17. Round 1 deliberation: peers averaged 0.38. My narrative-driven and qualitative tendency led me to shifted upward by 0.04. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.18. Round 2 deliberation: peers averaged 0.21. My narrative-driven and qualitative tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.18. Round 3 deliberation: peers averaged 0.31. My narrative-driven and qualitative tendency led me to held my position largely steady. The timing relative to recess creates underappreciated pressure."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Wei Sanchez: P(YES)=0.41; Rebecca Santos: P(YES)=0.75; Maria Garcia: P(YES)=0.15]. Avg evidence quality: 3.9/5. Updated to P(YES) = 0.16. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 3 (Critique): Debated Kenneth Lee (AI Safety Researcher, P(YES)=0.48). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.20. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+        "Round 4 (Final Forecast): P(YES) = 0.23 (from initial 0.13 \u2014 shifted up by 0.10). Confidence: 0.49. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
@@ -988,25 +1692,45 @@
       "temp_tier": "creative",
       "temperature": 1.2,
       "initial_score": 0.4619,
-      "final_score": 0.4405,
+      "final_score": 0.4331,
       "score_history": [
         0.4619,
-        0.4557,
-        0.4423,
-        0.4405
+        0.4772,
+        0.476,
+        0.4331
       ],
-      "confidence": 0.5551,
+      "confidence": 0.5328,
       "reasoning": "Congressional dynamics around public opinion polls suggest NO probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.46. Historical precedent and individual legislator defections create non-trivial forecast risk.",
       "key_factors": [
         "public opinion polls",
         "legislative calendar pressure",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Leadership whip count shows 44 holdouts in majority caucus",
+          "quality": 4.5,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Congressional approval at 29% \u2014 below historical average",
+          "quality": 4.9,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $8B",
+          "quality": 3.9,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Joseph Mueller (Commodity Trader)",
+      "disagreement_type": "methodological (different analytical frameworks)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.46. Congressional dynamics around public opinion polls suggest NO probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.46. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.46. Peer views ranged from 0.26 to 0.82. I adjusted minimally to 0.46. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.44. Round 2 deliberation: peers averaged 0.47. My risk-averse and conservative tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.44. Peer views ranged from 0.09 to 0.63. I adjusted minimally to 0.44. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Thomas Perez: P(YES)=0.43; Edward Campbell: P(YES)=0.53; George Nakamura: P(YES)=0.57]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.48. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3 (Critique): Debated Joseph Mueller (Commodity Trader, P(YES)=0.30). Disagreement: methodological (different analytical frameworks). Updated to P(YES) = 0.48. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.43 (from initial 0.46 \u2014 remained largely stable). Confidence: 0.53. Media pressure typically forces last-minute compromise."
       ]
     },
     {
@@ -1018,25 +1742,45 @@
       "temp_tier": "creative",
       "temperature": 1.2,
       "initial_score": 0.7504,
-      "final_score": 0.644,
+      "final_score": 0.7214,
       "score_history": [
         0.7504,
-        0.717,
-        0.6711,
-        0.644
+        0.735,
+        0.746,
+        0.7214
       ],
-      "confidence": 0.4311,
+      "confidence": 0.4307,
       "reasoning": "As a Retail Investor, I focus on partisan polarization depth and electoral incentive structure. These suggest P(YES) = 0.75. The YES case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "partisan polarization depth",
         "electoral incentive structure",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $72B",
+          "quality": 4.1,
+          "source_type": "survey"
+        },
+        {
+          "claim": "53 appropriations bills passed out of 12 required",
+          "quality": 5.0,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Leadership whip count shows 64 holdouts in majority caucus",
+          "quality": 4.4,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Diana Wright (Management Consultant)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.75. As a Retail Investor, I focus on partisan polarization depth and electoral incentive structure. These suggest P(YES) = 0.75. The YES case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.72. Peer views ranged from 0.02 to 0.69. I adjusted downward to 0.72. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.67. After seeing 5 peer opinions (avg 0.46), I shifted downward by 0.05. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.64. Peer views ranged from 0.10 to 0.62. I adjusted downward to 0.64. The narrow majority makes individual holdouts disproportionately powerful."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Jennifer Roberts: P(YES)=0.28; Diana Wright: P(YES)=0.27; Steven Lopez: P(YES)=0.82]. Avg evidence quality: 3.3/5. Updated to P(YES) = 0.73. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3 (Critique): Debated Diana Wright (Management Consultant, P(YES)=0.28). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.75. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+        "Round 4 (Final Forecast): P(YES) = 0.72 (from initial 0.75 \u2014 remained largely stable). Confidence: 0.43. Media pressure typically forces last-minute compromise."
       ]
     },
     {
@@ -1048,25 +1792,45 @@
       "temp_tier": "creative",
       "temperature": 1.2,
       "initial_score": 0.516,
-      "final_score": 0.4842,
+      "final_score": 0.4533,
       "score_history": [
         0.516,
-        0.4678,
-        0.4697,
-        0.4842
+        0.4965,
+        0.4722,
+        0.4533
       ],
-      "confidence": 0.3723,
+      "confidence": 0.365,
       "reasoning": "Congressional dynamics around legislative calendar pressure suggest YES probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.52. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
       "key_factors": [
         "legislative calendar pressure",
         "partisan polarization depth",
         "public protest or activism waves"
       ],
+      "evidence": [
+        {
+          "claim": "54 appropriations bills passed out of 12 required",
+          "quality": 3.9,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Leadership whip count shows 59 holdouts in majority caucus",
+          "quality": 3.8,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $39B",
+          "quality": 3.0,
+          "source_type": "historical analog"
+        }
+      ],
+      "critique_received": "Challenged by Daniel Martin (Pharmaceutical Exec)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.52. Congressional dynamics around legislative calendar pressure suggest YES probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.52. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.47. Peer views ranged from 0.26 to 0.51. I adjusted downward to 0.47. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.47. Round 2 deliberation: peers averaged 0.41. My cautious and evidence-driven tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.48. Round 3 deliberation: peers averaged 0.45. My cautious and evidence-driven tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Megan Hill: P(YES)=0.28; Jessica Green: P(YES)=0.68; Elizabeth Parker: P(YES)=0.16]. Avg evidence quality: 3.4/5. Updated to P(YES) = 0.50. Media pressure typically forces last-minute compromise.",
+        "Round 3 (Critique): Debated Daniel Martin (Pharmaceutical Exec, P(YES)=0.27). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.47. Media pressure typically forces last-minute compromise.",
+        "Round 4 (Final Forecast): P(YES) = 0.45 (from initial 0.52 \u2014 shifted down by 0.06). Confidence: 0.36. Cross-party coalitions on specific spending areas can break overall gridlock."
       ]
     },
     {
@@ -1078,25 +1842,45 @@
       "temp_tier": "creative",
       "temperature": 1.2,
       "initial_score": 0.5924,
-      "final_score": 0.5498,
+      "final_score": 0.6215,
       "score_history": [
         0.5924,
-        0.5763,
-        0.5749,
-        0.5498
+        0.5994,
+        0.6384,
+        0.6215
       ],
-      "confidence": 0.8115,
+      "confidence": 0.8248,
       "reasoning": "As a Climate Scientist, I focus on legislative calendar pressure and leadership negotiation leverage. These suggest P(YES) = 0.59. The YES case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "legislative calendar pressure",
         "leadership negotiation leverage",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $38B",
+          "quality": 4.2,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Congressional approval at 30% \u2014 below historical average",
+          "quality": 3.8,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Polling shows 50% blame the majority for shutdown scenario",
+          "quality": 2.9,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Rachel Chen (Constitutional Lawyer)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.59. As a Climate Scientist, I focus on legislative calendar pressure and leadership negotiation leverage. These suggest P(YES) = 0.59. The YES case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.58. Peer views ranged from 0.19 to 0.86. I adjusted minimally to 0.58. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.57. Round 2 deliberation: peers averaged 0.34. My bold and contrarian tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.55. Round 3 deliberation: peers averaged 0.34. My bold and contrarian tendency led me to shifted downward by 0.03. The narrow majority makes individual holdouts disproportionately powerful."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Patricia Nelson: P(YES)=0.86; James Kim: P(YES)=0.58; Hans Turner: P(YES)=0.24]. Avg evidence quality: 3.8/5. Updated to P(YES) = 0.60. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+        "Round 3 (Critique): Debated Rachel Chen (Constitutional Lawyer, P(YES)=0.19). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.64. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 4 (Final Forecast): P(YES) = 0.62 (from initial 0.59 \u2014 remained largely stable). Confidence: 0.82. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
@@ -1108,25 +1892,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.8196,
-      "final_score": 0.7198,
+      "final_score": 0.7391,
       "score_history": [
         0.8196,
-        0.7822,
-        0.7366,
-        0.7198
+        0.8015,
+        0.7825,
+        0.7391
       ],
-      "confidence": 0.5155,
+      "confidence": 0.5152,
       "reasoning": "Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.82. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
       "key_factors": [
         "partisan polarization depth",
         "electoral incentive structure",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "49 appropriations bills passed out of 12 required",
+          "quality": 2.9,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Polling shows 34% blame the opposition for shutdown scenario",
+          "quality": 3.4,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Continuing resolution expires in 28 days",
+          "quality": 3.9,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Jennifer Roberts (Supply Chain Analyst)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.82. Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.82. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.78. After seeing 5 peer opinions (avg 0.39), I shifted downward by 0.04. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.74. Peer views ranged from 0.26 to 0.48. I adjusted downward to 0.74. Electoral incentives often override ideological positions near deadlines.",
-        "Round 3: Updated to P(YES) = 0.72. After seeing 5 peer opinions (avg 0.52), I held my position largely steady. Media pressure typically forces last-minute compromise."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [James Kim: P(YES)=0.58; Aisha Stewart: P(YES)=0.68; George Nakamura: P(YES)=0.57]. Avg evidence quality: 3.6/5. Updated to P(YES) = 0.80. The timing relative to recess creates underappreciated pressure.",
+        "Round 3 (Critique): Debated Jennifer Roberts (Supply Chain Analyst, P(YES)=0.28). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.78. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 4 (Final Forecast): P(YES) = 0.74 (from initial 0.82 \u2014 shifted down by 0.08). Confidence: 0.52. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
@@ -1138,25 +1942,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.8622,
-      "final_score": 0.7089,
+      "final_score": 0.7557,
       "score_history": [
         0.8622,
-        0.8252,
-        0.7722,
-        0.7089
+        0.8113,
+        0.8145,
+        0.7557
       ],
-      "confidence": 0.3555,
+      "confidence": 0.3482,
       "reasoning": "Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.86. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
       "key_factors": [
         "partisan polarization depth",
         "electoral incentive structure",
         "public protest or activism waves"
       ],
+      "evidence": [
+        {
+          "claim": "56 appropriations bills passed out of 12 required",
+          "quality": 2.5,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $28B",
+          "quality": 4.2,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Congressional approval at 51% \u2014 above historical average",
+          "quality": 4.0,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Fatima O'Brien (Insurance Actuary)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.86. Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.86. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.83. Round 1 deliberation: peers averaged 0.39. My intuitive and pattern-matching tendency led me to shifted downward by 0.04. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.77. After seeing 5 peer opinions (avg 0.31), I shifted downward by 0.05. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.71. After seeing 5 peer opinions (avg 0.31), I shifted downward by 0.06. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Yuki Phillips: P(YES)=0.02; Laura Harris: P(YES)=0.06; Priya Baker: P(YES)=0.32]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.81. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 3 (Critique): Debated Fatima O'Brien (Insurance Actuary, P(YES)=0.41). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.81. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.76 (from initial 0.86 \u2014 shifted down by 0.11). Confidence: 0.35. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
@@ -1168,25 +1992,45 @@
       "temp_tier": "contrarian",
       "temperature": 0.9,
       "initial_score": 0.5315,
-      "final_score": 0.5299,
+      "final_score": 0.5643,
       "score_history": [
         0.5315,
-        0.547,
-        0.5272,
-        0.5299
+        0.5481,
+        0.5764,
+        0.5643
       ],
-      "confidence": 0.6726,
+      "confidence": 0.6795,
       "reasoning": "From my Union Organizer perspective, I assess P(YES) = 0.53. media narrative framing is the primary driver. public opinion polls adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
       "key_factors": [
         "media narrative framing",
         "public opinion polls",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Polling shows 60% blame the opposition for shutdown scenario",
+          "quality": 4.3,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Continuing resolution expires in 65 days",
+          "quality": 4.0,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $37B",
+          "quality": 4.0,
+          "source_type": "expert analysis"
+        }
+      ],
+      "critique_received": "Challenged by Amanda Edwards (Agricultural Economist)",
+      "disagreement_type": "minor (largely aligned with nuance differences)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.53. From my Union Organizer perspective, I assess P(YES) = 0.53. media narrative framing is the primary driver. public opinion polls adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.55. Round 1 deliberation: peers averaged 0.42. My skeptical and devil's advocate tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines.",
-        "Round 2: Updated to P(YES) = 0.53. After seeing 5 peer opinions (avg 0.59), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.53. Round 3 deliberation: peers averaged 0.49. My skeptical and devil's advocate tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Megan Hill: P(YES)=0.28; Wei Sanchez: P(YES)=0.41; Diana Wright: P(YES)=0.27]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.55. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+        "Round 3 (Critique): Debated Amanda Edwards (Agricultural Economist, P(YES)=0.45). Disagreement: minor (largely aligned with nuance differences). Updated to P(YES) = 0.58. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 4 (Final Forecast): P(YES) = 0.56 (from initial 0.53 \u2014 remained largely stable). Confidence: 0.68. Continuing resolution mechanics provide escape valves that reduce shutdown duration."
       ]
     },
     {
@@ -1198,25 +2042,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.3495,
-      "final_score": 0.3459,
+      "final_score": 0.249,
       "score_history": [
         0.3495,
-        0.3741,
-        0.3398,
-        0.3459
+        0.3273,
+        0.2898,
+        0.249
       ],
-      "confidence": 0.5028,
+      "confidence": 0.538,
       "reasoning": "As a Real Estate Developer, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.35. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
       "key_factors": [
         "partisan polarization depth",
         "leadership negotiation leverage",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Polling shows 39% blame the opposition for shutdown scenario",
+          "quality": 4.3,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Congressional approval at 21% \u2014 below historical average",
+          "quality": 4.0,
+          "source_type": "official data"
+        },
+        {
+          "claim": "31 appropriations bills passed out of 12 required",
+          "quality": 4.4,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Yuki Phillips (Quantitative Trader)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.35. As a Real Estate Developer, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.35. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.37. Peer views ranged from 0.06 to 0.72. I adjusted upward to 0.37. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.26), I shifted downward by 0.03. Electoral incentives often override ideological positions near deadlines.",
-        "Round 3: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.39), I held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Olga Lewis: P(YES)=0.02; Rachel Chen: P(YES)=0.19; Wei Sanchez: P(YES)=0.41]. Avg evidence quality: 3.8/5. Updated to P(YES) = 0.33. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3 (Critique): Debated Yuki Phillips (Quantitative Trader, P(YES)=0.04). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.29. Electoral incentives often override ideological positions near deadlines.",
+        "Round 4 (Final Forecast): P(YES) = 0.25 (from initial 0.35 \u2014 shifted down by 0.10). Confidence: 0.54. Media pressure typically forces last-minute compromise."
       ]
     },
     {
@@ -1228,25 +2092,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.5731,
-      "final_score": 0.49,
+      "final_score": 0.5811,
       "score_history": [
         0.5731,
-        0.5225,
-        0.5103,
-        0.49
+        0.599,
+        0.56,
+        0.5811
       ],
-      "confidence": 0.5813,
+      "confidence": 0.5729,
       "reasoning": "From my Defense Contractor Exec perspective, I assess P(YES) = 0.57. caucus cohesion levels is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "caucus cohesion levels",
         "leadership negotiation leverage",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Continuing resolution expires in 60 days",
+          "quality": 2.6,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $31B",
+          "quality": 4.0,
+          "source_type": "survey"
+        },
+        {
+          "claim": "53 appropriations bills passed out of 12 required",
+          "quality": 3.7,
+          "source_type": "survey"
+        }
+      ],
+      "critique_received": "Challenged by Richard Young (Labor Economist)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.57. From my Defense Contractor Exec perspective, I assess P(YES) = 0.57. caucus cohesion levels is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.52. Round 1 deliberation: peers averaged 0.40. My data-obsessed and quantitative tendency led me to shifted downward by 0.05. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.51. Peer views ranged from 0.26 to 0.67. I adjusted minimally to 0.51. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.49. Peer views ranged from 0.15 to 0.53. I adjusted downward to 0.49. The timing relative to recess creates underappreciated pressure."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Steven Lopez: P(YES)=0.80; Ashley Williams: P(YES)=0.64; Elizabeth Parker: P(YES)=0.16]. Avg evidence quality: 3.6/5. Updated to P(YES) = 0.60. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 3 (Critique): Debated Richard Young (Labor Economist, P(YES)=0.29). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.56. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 4 (Final Forecast): P(YES) = 0.58 (from initial 0.57 \u2014 remained largely stable). Confidence: 0.57. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
@@ -1258,25 +2142,45 @@
       "temp_tier": "contrarian",
       "temperature": 0.9,
       "initial_score": 0.4688,
-      "final_score": 0.5095,
+      "final_score": 0.4539,
       "score_history": [
         0.4688,
-        0.518,
-        0.5089,
-        0.5095
+        0.4614,
+        0.4929,
+        0.4539
       ],
-      "confidence": 0.9241,
+      "confidence": 0.8862,
       "reasoning": "Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.47. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
       "key_factors": [
         "electoral incentive structure",
         "legislative calendar pressure",
         "judicial rulings affecting legislative authority"
       ],
+      "evidence": [
+        {
+          "claim": "26 appropriations bills passed out of 12 required",
+          "quality": 4.4,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Leadership whip count shows 20 holdouts in majority caucus",
+          "quality": 3.1,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $31B",
+          "quality": 3.3,
+          "source_type": "survey"
+        }
+      ],
+      "critique_received": "Challenged by Emily Robinson (Behavioral Economist)",
+      "disagreement_type": "minor (largely aligned with nuance differences)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.47. Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.47. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.52. After seeing 5 peer opinions (avg 0.38), I shifted upward by 0.05. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.51. Peer views ranged from 0.33 to 0.67. I adjusted minimally to 0.51. Electoral incentives often override ideological positions near deadlines.",
-        "Round 3: Updated to P(YES) = 0.51. Round 3 deliberation: peers averaged 0.50. My narrative-driven and qualitative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Brian White: P(YES)=0.50; Elizabeth Parker: P(YES)=0.16; Anthony Carter: P(YES)=0.28]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.46. The timing relative to recess creates underappreciated pressure.",
+        "Round 3 (Critique): Debated Emily Robinson (Behavioral Economist, P(YES)=0.52). Disagreement: minor (largely aligned with nuance differences). Updated to P(YES) = 0.49. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.45 (from initial 0.47 \u2014 remained largely stable). Confidence: 0.89. Continuing resolution mechanics provide escape valves that reduce shutdown duration."
       ]
     },
     {
@@ -1288,25 +2192,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.4635,
-      "final_score": 0.449,
+      "final_score": 0.487,
       "score_history": [
         0.4635,
-        0.4511,
-        0.4357,
-        0.449
+        0.4828,
+        0.4758,
+        0.487
       ],
-      "confidence": 0.6127,
+      "confidence": 0.5788,
       "reasoning": "As a AI Safety Researcher, I focus on partisan polarization depth and legislative calendar pressure. These suggest P(YES) = 0.46. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
       "key_factors": [
         "partisan polarization depth",
         "legislative calendar pressure",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Continuing resolution expires in 41 days",
+          "quality": 2.9,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "45 appropriations bills passed out of 12 required",
+          "quality": 3.8,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $36B",
+          "quality": 3.1,
+          "source_type": "survey"
+        }
+      ],
+      "critique_received": "Challenged by Elizabeth Parker (Crypto Analyst)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.46. As a AI Safety Researcher, I focus on partisan polarization depth and legislative calendar pressure. These suggest P(YES) = 0.46. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.45. Round 1 deliberation: peers averaged 0.34. My risk-averse and conservative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines.",
-        "Round 2: Updated to P(YES) = 0.44. Peer views ranged from 0.27 to 0.55. I adjusted minimally to 0.44. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.45. Round 3 deliberation: peers averaged 0.46. My risk-averse and conservative tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Katherine Walker: P(YES)=0.60; Hans Turner: P(YES)=0.24; Michael Adams: P(YES)=0.45]. Avg evidence quality: 3.6/5. Updated to P(YES) = 0.48. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3 (Critique): Debated Elizabeth Parker (Crypto Analyst, P(YES)=0.20). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.48. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 4 (Final Forecast): P(YES) = 0.49 (from initial 0.46 \u2014 remained largely stable). Confidence: 0.58. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
@@ -1318,25 +2242,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.2715,
-      "final_score": 0.342,
+      "final_score": 0.2958,
       "score_history": [
         0.2715,
-        0.3356,
-        0.3513,
-        0.342
+        0.2814,
+        0.2517,
+        0.2958
       ],
-      "confidence": 0.5511,
+      "confidence": 0.5424,
       "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of media narrative framing reinforces this at P(YES) = 0.27. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
       "key_factors": [
         "appropriations committee dynamics",
         "media narrative framing",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Leadership whip count shows 35 holdouts in majority caucus",
+          "quality": 3.7,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Continuing resolution expires in 23 days",
+          "quality": 2.7,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $39B",
+          "quality": 4.5,
+          "source_type": "historical analog"
+        }
+      ],
+      "critique_received": "Challenged by Rebecca Santos (Retail Investor)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.27. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of media narrative framing reinforces this at P(YES) = 0.27. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.34. Peer views ranged from 0.38 to 0.70. I adjusted upward to 0.34. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.32), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.34. Round 3 deliberation: peers averaged 0.43. My risk-seeking and opportunistic tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Olga Lewis: P(YES)=0.02; Michelle Jackson: P(YES)=0.46; Wei Sanchez: P(YES)=0.41]. Avg evidence quality: 3.8/5. Updated to P(YES) = 0.28. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 3 (Critique): Debated Rebecca Santos (Retail Investor, P(YES)=0.75). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.25. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+        "Round 4 (Final Forecast): P(YES) = 0.30 (from initial 0.27 \u2014 remained largely stable). Confidence: 0.54. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
@@ -1348,25 +2292,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.44,
-      "final_score": 0.4542,
+      "final_score": 0.4321,
       "score_history": [
         0.44,
-        0.4696,
-        0.4785,
-        0.4542
+        0.4655,
+        0.4621,
+        0.4321
       ],
-      "confidence": 0.8094,
+      "confidence": 0.8177,
       "reasoning": "From my Macro Economist perspective, I assess P(YES) = 0.44. media narrative framing is the primary driver. partisan polarization depth adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
       "key_factors": [
         "media narrative framing",
         "partisan polarization depth",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Leadership whip count shows 40 holdouts in majority caucus",
+          "quality": 3.8,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Continuing resolution expires in 46 days",
+          "quality": 2.7,
+          "source_type": "survey"
+        },
+        {
+          "claim": "26 appropriations bills passed out of 12 required",
+          "quality": 3.5,
+          "source_type": "survey"
+        }
+      ],
+      "critique_received": "Challenged by Olga Lewis (Supply Chain Analyst)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.44. From my Macro Economist perspective, I assess P(YES) = 0.44. media narrative framing is the primary driver. partisan polarization depth adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.47. Round 1 deliberation: peers averaged 0.37. My cautious and evidence-driven tendency led me to shifted upward by 0.03. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.48. Peer views ranged from 0.36 to 0.67. I adjusted minimally to 0.48. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 3: Updated to P(YES) = 0.45. Peer views ranged from 0.20 to 0.64. I adjusted downward to 0.45. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Priya Baker: P(YES)=0.32; Katherine Walker: P(YES)=0.60; Megan Hill: P(YES)=0.28]. Avg evidence quality: 3.6/5. Updated to P(YES) = 0.47. The timing relative to recess creates underappreciated pressure.",
+        "Round 3 (Critique): Debated Olga Lewis (Supply Chain Analyst, P(YES)=0.08). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.46. The timing relative to recess creates underappreciated pressure.",
+        "Round 4 (Final Forecast): P(YES) = 0.43 (from initial 0.44 \u2014 remained largely stable). Confidence: 0.82. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
@@ -1378,25 +2342,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.0232,
-      "final_score": 0.1021,
+      "final_score": 0.0456,
       "score_history": [
         0.0232,
-        0.0735,
-        0.0988,
-        0.1021
+        0.0715,
+        0.0369,
+        0.0456
       ],
-      "confidence": 0.4398,
+      "confidence": 0.4446,
       "reasoning": "As a Quantitative Trader, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.02. The NO case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "appropriations committee dynamics",
         "caucus cohesion levels",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Defense spending gap between chambers: $20B",
+          "quality": 3.8,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Congressional approval at 42% \u2014 below historical average",
+          "quality": 4.6,
+          "source_type": "official data"
+        },
+        {
+          "claim": "25 appropriations bills passed out of 12 required",
+          "quality": 2.7,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Christina Morris (Real Estate Developer)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.02. As a Quantitative Trader, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.02. The NO case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.07. Peer views ranged from 0.32 to 0.70. I adjusted upward to 0.07. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.10. Round 2 deliberation: peers averaged 0.43. My bold and contrarian tendency led me to shifted upward by 0.03. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.10. After seeing 5 peer opinions (avg 0.32), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Jessica Green: P(YES)=0.68; James Kim: P(YES)=0.58; Hans Turner: P(YES)=0.24]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.07. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+        "Round 3 (Critique): Debated Christina Morris (Real Estate Developer, P(YES)=0.33). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.04. Electoral incentives often override ideological positions near deadlines.",
+        "Round 4 (Final Forecast): P(YES) = 0.05 (from initial 0.02 \u2014 remained largely stable). Confidence: 0.44. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
@@ -1408,25 +2392,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.4148,
-      "final_score": 0.4072,
+      "final_score": 0.3837,
       "score_history": [
         0.4148,
-        0.4154,
-        0.4138,
-        0.4072
+        0.3991,
+        0.3741,
+        0.3837
       ],
-      "confidence": 0.605,
+      "confidence": 0.5921,
       "reasoning": "Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.41. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
       "key_factors": [
         "caucus cohesion levels",
         "partisan polarization depth",
         "judicial rulings affecting legislative authority"
       ],
+      "evidence": [
+        {
+          "claim": "38 appropriations bills passed out of 12 required",
+          "quality": 3.2,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $29B",
+          "quality": 4.8,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Polling shows 9% blame the majority for shutdown scenario",
+          "quality": 3.7,
+          "source_type": "survey"
+        }
+      ],
+      "critique_received": "Challenged by William Thompson (Retired Central Banker)",
+      "disagreement_type": "minor (largely aligned with nuance differences)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.41. Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.41. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.42. After seeing 5 peer opinions (avg 0.36), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.41. After seeing 5 peer opinions (avg 0.36), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.41. Round 3 deliberation: peers averaged 0.40. My analytical and methodical tendency led me to held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Olga Lewis: P(YES)=0.02; Hans Turner: P(YES)=0.24; Carlos Anderson: P(YES)=0.30]. Avg evidence quality: 3.6/5. Updated to P(YES) = 0.40. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3 (Critique): Debated William Thompson (Retired Central Banker, P(YES)=0.37). Disagreement: minor (largely aligned with nuance differences). Updated to P(YES) = 0.37. The timing relative to recess creates underappreciated pressure.",
+        "Round 4 (Final Forecast): P(YES) = 0.38 (from initial 0.41 \u2014 remained largely stable). Confidence: 0.59. Cross-party coalitions on specific spending areas can break overall gridlock."
       ]
     },
     {
@@ -1438,25 +2442,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.3592,
-      "final_score": 0.3583,
+      "final_score": 0.4617,
       "score_history": [
         0.3592,
-        0.3625,
-        0.3739,
-        0.3583
+        0.4077,
+        0.4548,
+        0.4617
       ],
-      "confidence": 0.7463,
+      "confidence": 0.6924,
       "reasoning": "As a Insurance Actuary, I focus on leadership negotiation leverage and partisan polarization depth. These suggest P(YES) = 0.36. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
       "key_factors": [
         "leadership negotiation leverage",
         "partisan polarization depth",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "40 appropriations bills passed out of 12 required",
+          "quality": 3.4,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Continuing resolution expires in 12 days",
+          "quality": 3.8,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $-3B",
+          "quality": 3.9,
+          "source_type": "official data"
+        }
+      ],
+      "critique_received": "Challenged by Patricia Nelson (Geopolitical Strategist)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.36. As a Insurance Actuary, I focus on leadership negotiation leverage and partisan polarization depth. These suggest P(YES) = 0.36. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.36. Peer views ranged from 0.17 to 0.69. I adjusted minimally to 0.36. Electoral incentives often override ideological positions near deadlines.",
-        "Round 2: Updated to P(YES) = 0.37. After seeing 5 peer opinions (avg 0.38), I held my position largely steady. Electoral incentives often override ideological positions near deadlines.",
-        "Round 3: Updated to P(YES) = 0.36. After seeing 5 peer opinions (avg 0.38), I held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Lisa Rodriguez: P(YES)=0.50; Diana Wright: P(YES)=0.28; Patricia Nelson: P(YES)=0.81]. Avg evidence quality: 3.9/5. Updated to P(YES) = 0.41. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 3 (Critique): Debated Patricia Nelson (Geopolitical Strategist, P(YES)=0.81). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.45. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.46 (from initial 0.36 \u2014 shifted up by 0.10). Confidence: 0.69. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
@@ -1468,25 +2492,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.2989,
-      "final_score": 0.2913,
+      "final_score": 0.2345,
       "score_history": [
         0.2989,
-        0.2804,
-        0.2662,
-        0.2913
+        0.265,
+        0.2703,
+        0.2345
       ],
-      "confidence": 0.4984,
+      "confidence": 0.4952,
       "reasoning": "As a Bayesian Statistician, I focus on appropriations committee dynamics and legislative calendar pressure. These suggest P(YES) = 0.30. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
       "key_factors": [
         "appropriations committee dynamics",
         "legislative calendar pressure",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "33 appropriations bills passed out of 12 required",
+          "quality": 4.5,
+          "source_type": "official data"
+        },
+        {
+          "claim": "Polling shows 39% blame the opposition for shutdown scenario",
+          "quality": 4.2,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $56B",
+          "quality": 3.1,
+          "source_type": "survey"
+        }
+      ],
+      "critique_received": "Challenged by Maria Garcia (Quantitative Trader)",
+      "disagreement_type": "methodological (different analytical frameworks)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.30. As a Bayesian Statistician, I focus on appropriations committee dynamics and legislative calendar pressure. These suggest P(YES) = 0.30. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.28. Round 1 deliberation: peers averaged 0.42. My skeptical and devil's advocate tendency led me to held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.27. After seeing 5 peer opinions (avg 0.40), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.29. Peer views ranged from 0.09 to 0.63. I adjusted upward to 0.29. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Megan Hill: P(YES)=0.28; Patricia Nelson: P(YES)=0.81; Amanda Edwards: P(YES)=0.45]. Avg evidence quality: 3.6/5. Updated to P(YES) = 0.27. Media pressure typically forces last-minute compromise.",
+        "Round 3 (Critique): Debated Maria Garcia (Quantitative Trader, P(YES)=0.15). Disagreement: methodological (different analytical frameworks). Updated to P(YES) = 0.27. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 4 (Final Forecast): P(YES) = 0.23 (from initial 0.30 \u2014 shifted down by 0.06). Confidence: 0.50. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
@@ -1498,25 +2542,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.02,
-      "final_score": 0.2587,
+      "final_score": 0.227,
       "score_history": [
         0.02,
-        0.1445,
-        0.207,
-        0.2587
+        0.0802,
+        0.1553,
+        0.227
       ],
-      "confidence": 0.3638,
+      "confidence": 0.3134,
       "reasoning": "From my Supply Chain Analyst perspective, I assess P(YES) = 0.02. appropriations committee dynamics is the primary driver. electoral incentive structure adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
       "key_factors": [
         "appropriations committee dynamics",
         "electoral incentive structure",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "38 appropriations bills passed out of 12 required",
+          "quality": 4.2,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Continuing resolution expires in 24 days",
+          "quality": 2.6,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Congressional approval at 64% \u2014 above historical average",
+          "quality": 3.7,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Raj Gonzalez (Macro Economist)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": true,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.02. From my Supply Chain Analyst perspective, I assess P(YES) = 0.02. appropriations committee dynamics is the primary driver. electoral incentive structure adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.14. After seeing 5 peer opinions (avg 0.42), I shifted upward by 0.12. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.21. After seeing 5 peer opinions (avg 0.36), I shifted upward by 0.06. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.46), I shifted upward by 0.05. Electoral incentives often override ideological positions near deadlines."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Priya Baker: P(YES)=0.32; William Thompson: P(YES)=0.33; Kevin Reed: P(YES)=0.48]. Avg evidence quality: 3.6/5. Updated to P(YES) = 0.08. Continuing resolution mechanics provide escape valves that reduce shutdown duration.",
+        "Round 3 (Critique): Debated Raj Gonzalez (Macro Economist, P(YES)=0.46). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.16. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 4 (Final Forecast): P(YES) = 0.23 (from initial 0.02 \u2014 shifted up by 0.21). Confidence: 0.31. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
@@ -1528,25 +2592,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.0778,
-      "final_score": 0.1233,
+      "final_score": 0.1671,
       "score_history": [
         0.0778,
-        0.075,
-        0.0944,
-        0.1233
+        0.1038,
+        0.1531,
+        0.1671
       ],
-      "confidence": 0.7643,
+      "confidence": 0.8015,
       "reasoning": "As a Central Bank Watcher, I focus on public opinion polls and legislative calendar pressure. These suggest P(YES) = 0.08. The NO case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "public opinion polls",
         "legislative calendar pressure",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "Leadership whip count shows 25 holdouts in majority caucus",
+          "quality": 5.0,
+          "source_type": "survey"
+        },
+        {
+          "claim": "34 appropriations bills passed out of 12 required",
+          "quality": 4.4,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $22B",
+          "quality": 4.5,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Nicole Mitchell (Academic Historian)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.08. As a Central Bank Watcher, I focus on public opinion polls and legislative calendar pressure. These suggest P(YES) = 0.08. The NO case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.07. Peer views ranged from 0.19 to 0.46. I adjusted minimally to 0.07. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.09. Round 2 deliberation: peers averaged 0.36. My data-obsessed and quantitative tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.12. Peer views ranged from 0.10 to 0.50. I adjusted upward to 0.12. The narrow majority makes individual holdouts disproportionately powerful."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Edward Campbell: P(YES)=0.55; Christopher Hall: P(YES)=0.36; Rebecca Santos: P(YES)=0.73]. Avg evidence quality: 3.8/5. Updated to P(YES) = 0.10. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 3 (Critique): Debated Nicole Mitchell (Academic Historian, P(YES)=0.66). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.15. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 4 (Final Forecast): P(YES) = 0.17 (from initial 0.08 \u2014 shifted up by 0.09). Confidence: 0.80. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
@@ -1558,25 +2642,45 @@
       "temp_tier": "analyst",
       "temperature": 0.3,
       "initial_score": 0.3162,
-      "final_score": 0.3403,
+      "final_score": 0.4458,
       "score_history": [
         0.3162,
-        0.3215,
-        0.337,
-        0.3403
+        0.3922,
+        0.4325,
+        0.4458
       ],
-      "confidence": 0.4835,
+      "confidence": 0.4688,
       "reasoning": "From my Sovereign Wealth Fund Analyst perspective, I assess P(YES) = 0.32. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "partisan polarization depth",
         "public opinion polls",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Polling shows 44% blame the opposition for shutdown scenario",
+          "quality": 3.2,
+          "source_type": "survey"
+        },
+        {
+          "claim": "Leadership whip count shows 20 holdouts in majority caucus",
+          "quality": 4.8,
+          "source_type": "official data"
+        },
+        {
+          "claim": "64 appropriations bills passed out of 12 required",
+          "quality": 2.8,
+          "source_type": "historical analog"
+        }
+      ],
+      "critique_received": "Challenged by Aisha Stewart (Behavioral Economist)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.32. From my Sovereign Wealth Fund Analyst perspective, I assess P(YES) = 0.32. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.32. Peer views ranged from 0.32 to 0.51. I adjusted minimally to 0.32. Electoral incentives often override ideological positions near deadlines.",
-        "Round 2: Updated to P(YES) = 0.34. Peer views ranged from 0.40 to 0.67. I adjusted minimally to 0.34. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.34. Round 3 deliberation: peers averaged 0.43. My narrative-driven and qualitative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Elizabeth Parker: P(YES)=0.16; Robert Collins: P(YES)=0.24; Emily Robinson: P(YES)=0.51]. Avg evidence quality: 3.3/5. Updated to P(YES) = 0.39. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3 (Critique): Debated Aisha Stewart (Behavioral Economist, P(YES)=0.67). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.43. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.45 (from initial 0.32 \u2014 shifted up by 0.13). Confidence: 0.47. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
@@ -1588,25 +2692,45 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.2431,
-      "final_score": 0.2593,
+      "final_score": 0.222,
       "score_history": [
         0.2431,
-        0.2684,
-        0.2592,
-        0.2593
+        0.2318,
+        0.2395,
+        0.222
       ],
-      "confidence": 0.7133,
+      "confidence": 0.6712,
       "reasoning": "Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.24. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
       "key_factors": [
         "electoral incentive structure",
         "leadership negotiation leverage",
         "unexpected crisis diverting attention"
       ],
+      "evidence": [
+        {
+          "claim": "Polling shows 7% blame the opposition for shutdown scenario",
+          "quality": 5.0,
+          "source_type": "historical analog"
+        },
+        {
+          "claim": "44 appropriations bills passed out of 12 required",
+          "quality": 4.1,
+          "source_type": "expert analysis"
+        },
+        {
+          "claim": "Defense spending gap between chambers: $22B",
+          "quality": 4.3,
+          "source_type": "market data"
+        }
+      ],
+      "critique_received": "Challenged by Christopher Hall (Short Seller)",
+      "disagreement_type": "methodological (different analytical frameworks)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.24. Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.24. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.27. Peer views ranged from 0.07 to 0.55. I adjusted upward to 0.27. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.26. Round 2 deliberation: peers averaged 0.27. My risk-averse and conservative tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. The timing relative to recess creates underappreciated pressure."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Diana Wright: P(YES)=0.28; Katherine Walker: P(YES)=0.60; Stephanie Allen: P(YES)=0.38]. Avg evidence quality: 3.7/5. Updated to P(YES) = 0.23. The timing relative to recess creates underappreciated pressure.",
+        "Round 3 (Critique): Debated Christopher Hall (Short Seller, P(YES)=0.34). Disagreement: methodological (different analytical frameworks). Updated to P(YES) = 0.24. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.22 (from initial 0.24 \u2014 remained largely stable). Confidence: 0.67. Cross-party coalitions on specific spending areas can break overall gridlock."
       ]
     },
     {
@@ -1618,12 +2742,12 @@
       "temp_tier": "calibrator",
       "temperature": 0.5,
       "initial_score": 0.6815,
-      "final_score": 0.6101,
+      "final_score": 0.6129,
       "score_history": [
         0.6815,
-        0.6736,
-        0.6679,
-        0.6101
+        0.6599,
+        0.6716,
+        0.6129
       ],
       "confidence": 0.95,
       "reasoning": "Congressional dynamics around caucus cohesion levels suggest YES probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.68. Historical precedent and individual legislator defections create non-trivial forecast risk.",
@@ -1632,11 +2756,31 @@
         "legislative calendar pressure",
         "individual legislator defections"
       ],
+      "evidence": [
+        {
+          "claim": "68 appropriations bills passed out of 12 required",
+          "quality": 4.3,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Continuing resolution expires in 36 days",
+          "quality": 4.4,
+          "source_type": "market data"
+        },
+        {
+          "claim": "Congressional approval at 49% \u2014 below historical average",
+          "quality": 2.6,
+          "source_type": "expert analysis"
+        }
+      ],
+      "critique_received": "Challenged by Priya Baker (Sovereign Wealth Fund Analyst)",
+      "disagreement_type": "empirical (different facts weighted)",
+      "mind_changed": false,
       "memory_stream": [
         "Initial assessment: P(YES) = 0.68. Congressional dynamics around caucus cohesion levels suggest YES probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.68. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.67. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 2: Updated to P(YES) = 0.67. Peer views ranged from 0.26 to 0.53. I adjusted minimally to 0.67. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.61. Round 3 deliberation: peers averaged 0.31. My risk-seeking and opportunistic tendency led me to shifted downward by 0.06. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Round 2 (Evidence Exchange): Reviewed peer evidence. Peers: [Laura Harris: P(YES)=0.06; Brian White: P(YES)=0.50; Michelle Jackson: P(YES)=0.46]. Avg evidence quality: 3.4/5. Updated to P(YES) = 0.66. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3 (Critique): Debated Priya Baker (Sovereign Wealth Fund Analyst, P(YES)=0.39). Disagreement: empirical (different facts weighted). Updated to P(YES) = 0.67. Cross-party coalitions on specific spending areas can break overall gridlock.",
+        "Round 4 (Final Forecast): P(YES) = 0.61 (from initial 0.68 \u2014 shifted down by 0.07). Confidence: 0.95. Continuing resolution mechanics provide escape valves that reduce shutdown duration."
       ]
     }
   ],
@@ -1816,7 +2960,7 @@
   "question": "Will there be a US government shutdown before July 2026?",
   "config": {
     "n_agents": 50,
-    "rounds": 3,
+    "rounds": 4,
     "peer_sample_size": 5,
     "mode": "offline"
   }

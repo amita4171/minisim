@@ -14,67 +14,67 @@
         },
         {
           "round": 1,
-          "mean_score": 0.4486,
-          "stdev": 0.17,
-          "min": 0.0788,
-          "max": 0.84
+          "mean_score": 0.4533,
+          "stdev": 0.1745,
+          "min": 0.0404,
+          "max": 0.8807
         },
         {
           "round": 2,
-          "mean_score": 0.4467,
-          "stdev": 0.1595,
-          "min": 0.1348,
-          "max": 0.8191
+          "mean_score": 0.4493,
+          "stdev": 0.1719,
+          "min": 0.0774,
+          "max": 0.8943
         },
         {
           "round": 3,
-          "mean_score": 0.4434,
-          "stdev": 0.1447,
-          "min": 0.1514,
-          "max": 0.7716
+          "mean_score": 0.4497,
+          "stdev": 0.1607,
+          "min": 0.0916,
+          "max": 0.8911
         }
       ],
       "opinion_shifts": [
         {
           "round": 1,
-          "mean_shift": 0.0279,
-          "max_shift": 0.1343
+          "mean_shift": 0.0289,
+          "max_shift": 0.1258
         },
         {
           "round": 2,
-          "mean_shift": 0.0182,
-          "max_shift": 0.0571
+          "mean_shift": 0.0241,
+          "max_shift": 0.0705
         },
         {
           "round": 3,
-          "mean_shift": 0.0156,
-          "max_shift": 0.0516
+          "mean_shift": 0.018,
+          "max_shift": 0.0573
         }
       ],
       "initial_std": 0.187,
-      "final_std": 0.1447,
-      "diversity_preserved": false,
+      "final_std": 0.1607,
+      "diversity_preserved": true,
       "convergence_round": null,
       "tier_diversity": {
         "analyst": {
           "n": 18,
-          "mean": 0.4071,
-          "stdev": 0.1391
+          "mean": 0.4086,
+          "stdev": 0.1284
         },
         "calibrator": {
           "n": 15,
-          "mean": 0.45,
-          "stdev": 0.0794
+          "mean": 0.4566,
+          "stdev": 0.1129
         },
         "contrarian": {
           "n": 10,
-          "mean": 0.4161,
-          "stdev": 0.1718
+          "mean": 0.4097,
+          "stdev": 0.1851
         },
         "creative": {
           "n": 7,
-          "mean": 0.5613,
-          "stdev": 0.1886
+          "mean": 0.5977,
+          "stdev": 0.2229
         }
       }
     },
@@ -92,349 +92,325 @@
         },
         {
           "round": 1,
-          "mean_score": 0.4486,
-          "stdev": 0.17,
-          "min": 0.0788,
-          "max": 0.84
+          "mean_score": 0.4533,
+          "stdev": 0.1745,
+          "min": 0.0404,
+          "max": 0.8807
         },
         {
           "round": 2,
-          "mean_score": 0.4467,
-          "stdev": 0.1595,
-          "min": 0.1348,
-          "max": 0.8191
+          "mean_score": 0.4493,
+          "stdev": 0.1719,
+          "min": 0.0774,
+          "max": 0.8943
         },
         {
           "round": 3,
-          "mean_score": 0.4434,
-          "stdev": 0.1447,
-          "min": 0.1514,
-          "max": 0.7716
+          "mean_score": 0.4497,
+          "stdev": 0.1607,
+          "min": 0.0916,
+          "max": 0.8911
         },
         {
           "round": 4,
-          "mean_score": 0.4414,
-          "stdev": 0.1367,
-          "min": 0.1594,
-          "max": 0.7481
-        },
-        {
-          "round": 5,
-          "mean_score": 0.44,
-          "stdev": 0.1288,
-          "min": 0.1728,
-          "max": 0.7205
+          "mean_score": 0.4484,
+          "stdev": 0.1525,
+          "min": 0.1254,
+          "max": 0.865
         }
       ],
       "opinion_shifts": [
         {
           "round": 1,
-          "mean_shift": 0.0279,
-          "max_shift": 0.1343
+          "mean_shift": 0.0289,
+          "max_shift": 0.1258
         },
         {
           "round": 2,
-          "mean_shift": 0.0182,
-          "max_shift": 0.0571
+          "mean_shift": 0.0241,
+          "max_shift": 0.0705
         },
         {
           "round": 3,
-          "mean_shift": 0.0156,
-          "max_shift": 0.0516
+          "mean_shift": 0.018,
+          "max_shift": 0.0573
         },
         {
           "round": 4,
-          "mean_shift": 0.0142,
-          "max_shift": 0.0538
-        },
-        {
-          "round": 5,
-          "mean_shift": 0.0118,
-          "max_shift": 0.0386
+          "mean_shift": 0.0105,
+          "max_shift": 0.0338
         }
       ],
       "initial_std": 0.187,
-      "final_std": 0.1288,
-      "diversity_preserved": false,
-      "convergence_round": null,
-      "tier_diversity": {
-        "analyst": {
-          "n": 18,
-          "mean": 0.405,
-          "stdev": 0.1298
-        },
-        "calibrator": {
-          "n": 15,
-          "mean": 0.4516,
-          "stdev": 0.0723
-        },
-        "contrarian": {
-          "n": 10,
-          "mean": 0.4175,
-          "stdev": 0.1494
-        },
-        "creative": {
-          "n": 7,
-          "mean": 0.5372,
-          "stdev": 0.1619
-        }
-      }
-    },
-    {
-      "question": "Will there be a US government shutdown before July 2026?",
-      "n_rounds": 3,
-      "n_agents": 50,
-      "round_data": [
-        {
-          "round": 0,
-          "mean_score": 0.4663,
-          "stdev": 0.1646,
-          "min": 0.02,
-          "max": 0.98
-        },
-        {
-          "round": 1,
-          "mean_score": 0.4668,
-          "stdev": 0.1503,
-          "min": 0.1133,
-          "max": 0.964
-        },
-        {
-          "round": 2,
-          "mean_score": 0.4676,
-          "stdev": 0.1371,
-          "min": 0.1379,
-          "max": 0.9463
-        },
-        {
-          "round": 3,
-          "mean_score": 0.4644,
-          "stdev": 0.1281,
-          "min": 0.164,
-          "max": 0.9276
-        }
-      ],
-      "opinion_shifts": [
-        {
-          "round": 1,
-          "mean_shift": 0.0271,
-          "max_shift": 0.1378
-        },
-        {
-          "round": 2,
-          "mean_shift": 0.0181,
-          "max_shift": 0.0654
-        },
-        {
-          "round": 3,
-          "mean_shift": 0.0149,
-          "max_shift": 0.0519
-        }
-      ],
-      "initial_std": 0.1646,
-      "final_std": 0.1281,
-      "diversity_preserved": false,
-      "convergence_round": null,
-      "tier_diversity": {
-        "analyst": {
-          "n": 18,
-          "mean": 0.4409,
-          "stdev": 0.0984
-        },
-        "calibrator": {
-          "n": 15,
-          "mean": 0.4521,
-          "stdev": 0.0927
-        },
-        "contrarian": {
-          "n": 10,
-          "mean": 0.4996,
-          "stdev": 0.2015
-        },
-        "creative": {
-          "n": 7,
-          "mean": 0.5012,
-          "stdev": 0.141
-        }
-      }
-    },
-    {
-      "question": "Will there be a US government shutdown before July 2026?",
-      "n_rounds": 5,
-      "n_agents": 50,
-      "round_data": [
-        {
-          "round": 0,
-          "mean_score": 0.4663,
-          "stdev": 0.1646,
-          "min": 0.02,
-          "max": 0.98
-        },
-        {
-          "round": 1,
-          "mean_score": 0.4668,
-          "stdev": 0.1503,
-          "min": 0.1133,
-          "max": 0.964
-        },
-        {
-          "round": 2,
-          "mean_score": 0.4676,
-          "stdev": 0.1371,
-          "min": 0.1379,
-          "max": 0.9463
-        },
-        {
-          "round": 3,
-          "mean_score": 0.4644,
-          "stdev": 0.1281,
-          "min": 0.164,
-          "max": 0.9276
-        },
-        {
-          "round": 4,
-          "mean_score": 0.4649,
-          "stdev": 0.1208,
-          "min": 0.1872,
-          "max": 0.9191
-        },
-        {
-          "round": 5,
-          "mean_score": 0.4647,
-          "stdev": 0.1172,
-          "min": 0.1866,
-          "max": 0.9086
-        }
-      ],
-      "opinion_shifts": [
-        {
-          "round": 1,
-          "mean_shift": 0.0271,
-          "max_shift": 0.1378
-        },
-        {
-          "round": 2,
-          "mean_shift": 0.0181,
-          "max_shift": 0.0654
-        },
-        {
-          "round": 3,
-          "mean_shift": 0.0149,
-          "max_shift": 0.0519
-        },
-        {
-          "round": 4,
-          "mean_shift": 0.0144,
-          "max_shift": 0.0413
-        },
-        {
-          "round": 5,
-          "mean_shift": 0.0105,
-          "max_shift": 0.0413
-        }
-      ],
-      "initial_std": 0.1646,
-      "final_std": 0.1172,
-      "diversity_preserved": false,
-      "convergence_round": null,
-      "tier_diversity": {
-        "analyst": {
-          "n": 18,
-          "mean": 0.4425,
-          "stdev": 0.0944
-        },
-        "calibrator": {
-          "n": 15,
-          "mean": 0.4546,
-          "stdev": 0.0877
-        },
-        "contrarian": {
-          "n": 10,
-          "mean": 0.5014,
-          "stdev": 0.1831
-        },
-        "creative": {
-          "n": 7,
-          "mean": 0.4911,
-          "stdev": 0.1181
-        }
-      }
-    },
-    {
-      "question": "Will AI replace more than 10% of US white-collar jobs by 2028?",
-      "n_rounds": 3,
-      "n_agents": 50,
-      "round_data": [
-        {
-          "round": 0,
-          "mean_score": 0.4388,
-          "stdev": 0.2186,
-          "min": 0.02,
-          "max": 0.98
-        },
-        {
-          "round": 1,
-          "mean_score": 0.438,
-          "stdev": 0.1942,
-          "min": 0.0729,
-          "max": 0.9388
-        },
-        {
-          "round": 2,
-          "mean_score": 0.4375,
-          "stdev": 0.1793,
-          "min": 0.0947,
-          "max": 0.8919
-        },
-        {
-          "round": 3,
-          "mean_score": 0.4395,
-          "stdev": 0.1659,
-          "min": 0.1304,
-          "max": 0.8768
-        }
-      ],
-      "opinion_shifts": [
-        {
-          "round": 1,
-          "mean_shift": 0.0319,
-          "max_shift": 0.1433
-        },
-        {
-          "round": 2,
-          "mean_shift": 0.0204,
-          "max_shift": 0.0678
-        },
-        {
-          "round": 3,
-          "mean_shift": 0.0153,
-          "max_shift": 0.0639
-        }
-      ],
-      "initial_std": 0.2186,
-      "final_std": 0.1659,
+      "final_std": 0.1525,
       "diversity_preserved": true,
       "convergence_round": null,
       "tier_diversity": {
         "analyst": {
           "n": 18,
-          "mean": 0.3806,
-          "stdev": 0.0987
+          "mean": 0.4091,
+          "stdev": 0.1267
         },
         "calibrator": {
           "n": 15,
-          "mean": 0.4272,
-          "stdev": 0.115
+          "mean": 0.4523,
+          "stdev": 0.102
         },
         "contrarian": {
           "n": 10,
-          "mean": 0.3861,
-          "stdev": 0.1887
+          "mean": 0.4142,
+          "stdev": 0.1735
         },
         "creative": {
           "n": 7,
-          "mean": 0.6933,
-          "stdev": 0.1489
+          "mean": 0.59,
+          "stdev": 0.2119
+        }
+      }
+    },
+    {
+      "question": "Will there be a US government shutdown before July 2026?",
+      "n_rounds": 3,
+      "n_agents": 50,
+      "round_data": [
+        {
+          "round": 0,
+          "mean_score": 0.4663,
+          "stdev": 0.1646,
+          "min": 0.02,
+          "max": 0.98
+        },
+        {
+          "round": 1,
+          "mean_score": 0.47,
+          "stdev": 0.1599,
+          "min": 0.0262,
+          "max": 0.98
+        },
+        {
+          "round": 2,
+          "mean_score": 0.4603,
+          "stdev": 0.1578,
+          "min": 0.02,
+          "max": 0.98
+        },
+        {
+          "round": 3,
+          "mean_score": 0.4614,
+          "stdev": 0.1509,
+          "min": 0.0619,
+          "max": 0.9466
+        }
+      ],
+      "opinion_shifts": [
+        {
+          "round": 1,
+          "mean_shift": 0.0252,
+          "max_shift": 0.083
+        },
+        {
+          "round": 2,
+          "mean_shift": 0.0195,
+          "max_shift": 0.0703
+        },
+        {
+          "round": 3,
+          "mean_shift": 0.0168,
+          "max_shift": 0.0484
+        }
+      ],
+      "initial_std": 0.1646,
+      "final_std": 0.1509,
+      "diversity_preserved": true,
+      "convergence_round": null,
+      "tier_diversity": {
+        "analyst": {
+          "n": 18,
+          "mean": 0.4523,
+          "stdev": 0.093
+        },
+        "calibrator": {
+          "n": 15,
+          "mean": 0.4449,
+          "stdev": 0.1216
+        },
+        "contrarian": {
+          "n": 10,
+          "mean": 0.4773,
+          "stdev": 0.2621
+        },
+        "creative": {
+          "n": 7,
+          "mean": 0.4971,
+          "stdev": 0.1454
+        }
+      }
+    },
+    {
+      "question": "Will there be a US government shutdown before July 2026?",
+      "n_rounds": 5,
+      "n_agents": 50,
+      "round_data": [
+        {
+          "round": 0,
+          "mean_score": 0.4663,
+          "stdev": 0.1646,
+          "min": 0.02,
+          "max": 0.98
+        },
+        {
+          "round": 1,
+          "mean_score": 0.47,
+          "stdev": 0.1599,
+          "min": 0.0262,
+          "max": 0.98
+        },
+        {
+          "round": 2,
+          "mean_score": 0.4603,
+          "stdev": 0.1578,
+          "min": 0.02,
+          "max": 0.98
+        },
+        {
+          "round": 3,
+          "mean_score": 0.4614,
+          "stdev": 0.1509,
+          "min": 0.0619,
+          "max": 0.9466
+        },
+        {
+          "round": 4,
+          "mean_score": 0.4634,
+          "stdev": 0.1456,
+          "min": 0.0708,
+          "max": 0.9396
+        }
+      ],
+      "opinion_shifts": [
+        {
+          "round": 1,
+          "mean_shift": 0.0252,
+          "max_shift": 0.083
+        },
+        {
+          "round": 2,
+          "mean_shift": 0.0195,
+          "max_shift": 0.0703
+        },
+        {
+          "round": 3,
+          "mean_shift": 0.0168,
+          "max_shift": 0.0484
+        },
+        {
+          "round": 4,
+          "mean_shift": 0.0104,
+          "max_shift": 0.0339
+        }
+      ],
+      "initial_std": 0.1646,
+      "final_std": 0.1456,
+      "diversity_preserved": false,
+      "convergence_round": null,
+      "tier_diversity": {
+        "analyst": {
+          "n": 18,
+          "mean": 0.4515,
+          "stdev": 0.0919
+        },
+        "calibrator": {
+          "n": 15,
+          "mean": 0.4517,
+          "stdev": 0.1159
+        },
+        "contrarian": {
+          "n": 10,
+          "mean": 0.4789,
+          "stdev": 0.2542
+        },
+        "creative": {
+          "n": 7,
+          "mean": 0.4971,
+          "stdev": 0.1353
+        }
+      }
+    },
+    {
+      "question": "Will AI replace more than 10% of US white-collar jobs by 2028?",
+      "n_rounds": 3,
+      "n_agents": 50,
+      "round_data": [
+        {
+          "round": 0,
+          "mean_score": 0.4388,
+          "stdev": 0.2186,
+          "min": 0.02,
+          "max": 0.98
+        },
+        {
+          "round": 1,
+          "mean_score": 0.443,
+          "stdev": 0.2074,
+          "min": 0.0792,
+          "max": 0.98
+        },
+        {
+          "round": 2,
+          "mean_score": 0.4382,
+          "stdev": 0.2026,
+          "min": 0.0423,
+          "max": 0.9479
+        },
+        {
+          "round": 3,
+          "mean_score": 0.4387,
+          "stdev": 0.1905,
+          "min": 0.0821,
+          "max": 0.9113
+        }
+      ],
+      "opinion_shifts": [
+        {
+          "round": 1,
+          "mean_shift": 0.0289,
+          "max_shift": 0.0885
+        },
+        {
+          "round": 2,
+          "mean_shift": 0.0277,
+          "max_shift": 0.1097
+        },
+        {
+          "round": 3,
+          "mean_shift": 0.0204,
+          "max_shift": 0.0715
+        }
+      ],
+      "initial_std": 0.2186,
+      "final_std": 0.1905,
+      "diversity_preserved": true,
+      "convergence_round": null,
+      "tier_diversity": {
+        "analyst": {
+          "n": 18,
+          "mean": 0.3842,
+          "stdev": 0.1366
+        },
+        "calibrator": {
+          "n": 15,
+          "mean": 0.4175,
+          "stdev": 0.1241
+        },
+        "contrarian": {
+          "n": 10,
+          "mean": 0.3775,
+          "stdev": 0.2014
+        },
+        "creative": {
+          "n": 7,
+          "mean": 0.7119,
+          "stdev": 0.208
         }
       }
     },
@@ -452,91 +428,79 @@
         },
         {
           "round": 1,
-          "mean_score": 0.438,
-          "stdev": 0.1942,
-          "min": 0.0729,
-          "max": 0.9388
+          "mean_score": 0.443,
+          "stdev": 0.2074,
+          "min": 0.0792,
+          "max": 0.98
         },
         {
           "round": 2,
-          "mean_score": 0.4375,
-          "stdev": 0.1793,
-          "min": 0.0947,
-          "max": 0.8919
+          "mean_score": 0.4382,
+          "stdev": 0.2026,
+          "min": 0.0423,
+          "max": 0.9479
         },
         {
           "round": 3,
-          "mean_score": 0.4395,
-          "stdev": 0.1659,
-          "min": 0.1304,
-          "max": 0.8768
+          "mean_score": 0.4387,
+          "stdev": 0.1905,
+          "min": 0.0821,
+          "max": 0.9113
         },
         {
           "round": 4,
-          "mean_score": 0.4422,
-          "stdev": 0.1536,
-          "min": 0.1799,
-          "max": 0.8426
-        },
-        {
-          "round": 5,
-          "mean_score": 0.4437,
-          "stdev": 0.1416,
-          "min": 0.2007,
-          "max": 0.8108
+          "mean_score": 0.4393,
+          "stdev": 0.1827,
+          "min": 0.0834,
+          "max": 0.8963
         }
       ],
       "opinion_shifts": [
         {
           "round": 1,
-          "mean_shift": 0.0319,
-          "max_shift": 0.1433
+          "mean_shift": 0.0289,
+          "max_shift": 0.0885
         },
         {
           "round": 2,
-          "mean_shift": 0.0204,
-          "max_shift": 0.0678
+          "mean_shift": 0.0277,
+          "max_shift": 0.1097
         },
         {
           "round": 3,
-          "mean_shift": 0.0153,
-          "max_shift": 0.0639
+          "mean_shift": 0.0204,
+          "max_shift": 0.0715
         },
         {
           "round": 4,
-          "mean_shift": 0.0164,
-          "max_shift": 0.0495
-        },
-        {
-          "round": 5,
-          "mean_shift": 0.0126,
-          "max_shift": 0.0524
+          "mean_shift": 0.0116,
+          "max_shift": 0.0446
         }
       ],
       "initial_std": 0.2186,
-      "final_std": 0.1416,
-      "diversity_preserved": false,
+      "final_std": 0.1827,
+      "diversity_preserved": true,
       "convergence_round": null,
       "tier_diversity": {
         "analyst": {
           "n": 18,
-          "mean": 0.3924,
-          "stdev": 0.0861
+          "mean": 0.3836,
+          "stdev": 0.1318
         },
         "calibrator": {
           "n": 15,
-          "mean": 0.4323,
-          "stdev": 0.0893
+          "mean": 0.4227,
+          "stdev": 0.12
         },
         "contrarian": {
           "n": 10,
-          "mean": 0.4002,
-          "stdev": 0.1672
+          "mean": 0.3811,
+          "stdev": 0.1954
         },
         "creative": {
           "n": 7,
-          "mean": 0.6618,
-          "stdev": 0.124
+          "mean": 0.7014,
+          "stdev": 0.1915
         }
       }
     }
@@ -544,14 +508,14 @@
   "n_archetypes": 40,
   "summary": {
     "3_round_final_stds": [
-      0.1447,
-      0.1281,
-      0.1659
+      0.1607,
+      0.1509,
+      0.1905
     ],
     "5_round_final_stds": [
-      0.1288,
-      0.1172,
-      0.1416
+      0.1525,
+      0.1456,
+      0.1827
     ],
     "mode_collapse_detected": false
   }

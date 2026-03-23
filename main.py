@@ -105,14 +105,33 @@ def main():
     # Print results
     print(f"\n{'=' * 60}")
     print(f"SWARM PROBABILITY (YES): {result['swarm_probability_yes']:.4f}")
+    print(f"Aggregation: {result.get('aggregation_method', 'weighted_mean')}")
     print(f"Mean: {result['mean_score']:.4f} | Median: {result['median_score']:.4f} | StDev: {result['stdev']:.4f}")
+    print(f"Diversity Score: {result.get('diversity_score', 0):.4f}")
     print(f"95% CI: [{result['confidence_interval'][0]:.4f}, {result['confidence_interval'][1]:.4f}]")
     print(f"Clusters — YES: {result['clusters']['yes_leaning']}, NO: {result['clusters']['no_leaning']}, Uncertain: {result['clusters']['uncertain']}")
 
+    if result.get("opinion_clusters"):
+        print("\n--- Opinion Clusters ---")
+        for c in result["opinion_clusters"]:
+            print(f"  {c['label']}: {c['n_agents']} agents, mean={c['mean_score']:.3f}")
+
     if args.market_price is not None:
-        delta = result.get("swarm_vs_market_delta", 0)
-        direction = "ABOVE" if delta > 0 else "BELOW"
-        print(f"Swarm vs Market: {direction} by {abs(delta):.4f}")
+        edge = result.get("edge", 0)
+        direction = "ABOVE" if edge > 0 else "BELOW"
+        print(f"\nSwarm vs Market: {direction} by {abs(edge):.4f} (edge)")
+
+    if result.get("mind_changers"):
+        print(f"\n--- Mind Changers ({len(result['mind_changers'])}) ---")
+        for mc in result["mind_changers"][:3]:
+            print(f"  {mc['name']} ({mc['background']}): {mc['initial_score']:.2f} -> {mc['final_score']:.2f} ({mc['shift_direction']})")
+
+    if result.get("dissenting_voices"):
+        print(f"\n--- Dissenting Voices ({len(result['dissenting_voices'])}) ---")
+        for dv in result["dissenting_voices"][:3]:
+            print(f"  {dv['name']} ({dv['background']}): {dv['final_score']:.2f} (z={dv.get('z_score', 0):.1f})")
+
+    print(f"\n{result.get('reasoning_shift_summary', '')}")
 
     print_timing(result["timing"])
     print_histogram(result.get("histogram", {}))
