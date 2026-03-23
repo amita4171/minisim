@@ -1,137 +1,137 @@
 {
-  "swarm_probability_yes": 0.4545,
-  "mean_score": 0.4457,
-  "median_score": 0.4358,
-  "stdev": 0.1,
+  "swarm_probability_yes": 0.4347,
+  "mean_score": 0.4288,
+  "median_score": 0.4052,
+  "stdev": 0.1514,
   "confidence_interval": [
-    0.418,
-    0.4735
+    0.3868,
+    0.4708
   ],
   "n_agents": 50,
   "clusters": {
-    "yes_leaning": 4,
-    "no_leaning": 15,
-    "uncertain": 31
+    "yes_leaning": 5,
+    "no_leaning": 23,
+    "uncertain": 22
   },
   "top_yes_voices": [
     {
-      "name": "Hans Turner",
-      "background": "Tech Executive",
-      "final_score": 0.7101,
-      "initial_score": 0.7946,
-      "confidence": 0.8901,
-      "reasoning": "My Tech Executive experience tells me organizational change management is the critical variable. Combined with enterprise adoption velocity, I estimate P(YES) = 0.79. The YES scenario is likely, but public backlash against automation makes this a wide-confidence forecast.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.71. Round 3 deliberation: peers averaged 0.43. My risk-averse and conservative tendency led me to shifted downward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected."
-    },
-    {
       "name": "Matthew Scott",
-      "background": "Insurance Actuary",
-      "final_score": 0.5377,
-      "initial_score": 0.6242,
+      "background": "Hedge Fund PM",
+      "final_score": 0.8483,
+      "initial_score": 0.98,
       "confidence": 0.8804,
-      "reasoning": "From a Insurance Actuary standpoint, workforce retraining capacity is evolving rapidly. cost reduction from automation suggests P(YES) = 0.62. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.54. After seeing 5 peer opinions (avg 0.42), I shifted downward by 0.03. The 10% threshold is much higher than current displacement rates."
+      "reasoning": "From a Hedge Fund PM standpoint, workforce retraining capacity is evolving rapidly. cost reduction from automation suggests P(YES) = 0.98. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.85. After seeing 5 peer opinions (avg 0.43), I shifted downward by 0.04. The 10% threshold is much higher than current displacement rates."
     },
     {
-      "name": "Nicole Mitchell",
-      "background": "Retail Investor",
-      "final_score": 0.5279,
-      "initial_score": 0.5893,
-      "confidence": 0.8029,
-      "reasoning": "My Retail Investor experience tells me AI capability acceleration is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.59. The YES scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.53. Peer views ranged from 0.42 to 0.58. I adjusted downward to 0.53. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
+      "name": "Anthony Carter",
+      "background": "Tech Executive",
+      "final_score": 0.767,
+      "initial_score": 0.98,
+      "confidence": 0.6795,
+      "reasoning": "From a Tech Executive standpoint, cost reduction from automation is evolving rapidly. AI capability acceleration suggests P(YES) = 0.98. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.77. Peer views ranged from 0.21 to 0.85. I adjusted downward to 0.77. The open-source model ecosystem is accelerating adoption faster than expected."
+    },
+    {
+      "name": "Priya Baker",
+      "background": "Sovereign Wealth Fund Analyst",
+      "final_score": 0.5374,
+      "initial_score": 0.4746,
+      "confidence": 0.9407,
+      "reasoning": "My Sovereign Wealth Fund Analyst experience tells me organizational change management is the critical variable. Combined with enterprise adoption velocity, I estimate P(YES) = 0.47. The NO scenario is a toss-up, but public backlash against automation makes this a wide-confidence forecast.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.54. After seeing 5 peer opinions (avg 0.52), I held my position largely steady. Regulatory friction will slow deployment more than technological capability."
     }
   ],
   "top_no_voices": [
     {
-      "name": "Daniel Martin",
-      "background": "Military Intel Analyst",
-      "final_score": 0.2836,
-      "initial_score": 0.2091,
-      "confidence": 0.7537,
-      "reasoning": "My Military Intel Analyst experience tells me organizational change management is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.21. The NO scenario is likely, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.28. Peer views ranged from 0.34 to 0.64. I adjusted upward to 0.28. The open-source model ecosystem is accelerating adoption faster than expected."
+      "name": "Hans Turner",
+      "background": "Retired Central Banker",
+      "final_score": 0.1987,
+      "initial_score": 0.1165,
+      "confidence": 0.7601,
+      "reasoning": "My Retired Central Banker experience tells me AI capability acceleration is the critical variable. Combined with cost reduction from automation, I estimate P(YES) = 0.12. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.20. Round 3 deliberation: peers averaged 0.45. My risk-averse and conservative tendency led me to shifted upward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected."
     },
     {
-      "name": "Richard Young",
-      "background": "Constitutional Lawyer",
-      "final_score": 0.3011,
-      "initial_score": 0.2034,
-      "confidence": 0.6693,
-      "reasoning": "From a Constitutional Lawyer standpoint, venture funding into AI agents is evolving slowly. enterprise adoption velocity suggests P(YES) = 0.20. Key risk: AI reliability and hallucination rates could accelerate or brake the timeline significantly.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.30. Round 3 deliberation: peers averaged 0.46. My cautious and evidence-driven tendency led me to shifted upward by 0.03. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
+      "name": "Nicole Mitchell",
+      "background": "Academic Historian",
+      "final_score": 0.2824,
+      "initial_score": 0.1704,
+      "confidence": 0.8029,
+      "reasoning": "My Academic Historian experience tells me enterprise adoption velocity is the critical variable. Combined with organizational change management, I estimate P(YES) = 0.17. The NO scenario is likely, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.28. Peer views ranged from 0.31 to 0.60. I adjusted minimally to 0.28. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
     },
     {
-      "name": "Aisha Stewart",
-      "background": "Labor Economist",
-      "final_score": 0.3996,
-      "initial_score": 0.3427,
-      "confidence": 0.7579,
-      "reasoning": "My Labor Economist experience tells me AI capability acceleration is the critical variable. Combined with cost reduction from automation, I estimate P(YES) = 0.34. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.40. Peer views ranged from 0.35 to 0.62. I adjusted minimally to 0.40. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
+      "name": "Sarah Hernandez",
+      "background": "Insurance Actuary",
+      "final_score": 0.19,
+      "initial_score": 0.0961,
+      "confidence": 0.6044,
+      "reasoning": "Analyzing AI capability acceleration alongside regulatory framework development, I arrive at P(YES) = 0.10. My Insurance Actuary lens emphasizes that unexpected technical breakthroughs or limitations is often underestimated in technology adoption forecasts. The NO case is likely.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.19. Round 3 deliberation: peers averaged 0.38. My intuitive and pattern-matching tendency led me to shifted upward by 0.04. Organizational change management is the real bottleneck, not technology."
     }
   ],
   "convergence": [
     {
       "round": 0,
-      "mean_score": 0.433454,
-      "stdev": 0.15838907559989027,
-      "min": 0.0661,
-      "max": 0.7946
+      "mean_score": 0.41997,
+      "stdev": 0.1959991568599108,
+      "min": 0.02,
+      "max": 0.98
     },
     {
       "round": 1,
-      "mean_score": 0.43951,
-      "stdev": 0.13886117020908595,
-      "min": 0.129,
-      "max": 0.7704
+      "mean_score": 0.424904,
+      "stdev": 0.1772180669372612,
+      "min": 0.0478,
+      "max": 0.9527
     },
     {
       "round": 2,
-      "mean_score": 0.440732,
-      "stdev": 0.11862464802210097,
-      "min": 0.1821,
-      "max": 0.7373
+      "mean_score": 0.426144,
+      "stdev": 0.16205056928033804,
+      "min": 0.0874,
+      "max": 0.8879
     },
     {
       "round": 3,
-      "mean_score": 0.445734,
-      "stdev": 0.10000637042974118,
-      "min": 0.27,
-      "max": 0.7101
+      "mean_score": 0.428794,
+      "stdev": 0.15136990293412267,
+      "min": 0.0938,
+      "max": 0.8483
     }
   ],
   "opinion_shifts": [
     {
       "round": 1,
-      "mean_shift": 0.030776,
-      "max_shift": 0.13069999999999998
+      "mean_shift": 0.028789999999999996,
+      "max_shift": 0.1078
     },
     {
       "round": 2,
-      "mean_shift": 0.028834,
-      "max_shift": 0.09939999999999999
+      "mean_shift": 0.021183999999999998,
+      "max_shift": 0.07529999999999992
     },
     {
       "round": 3,
-      "mean_shift": 0.022102,
-      "max_shift": 0.09419999999999998
+      "mean_shift": 0.015718,
+      "max_shift": 0.045900000000000024
     }
   ],
   "histogram": {
-    "0.0-0.1": 0,
-    "0.1-0.2": 0,
-    "0.2-0.3": 3,
-    "0.3-0.4": 12,
-    "0.4-0.5": 21,
+    "0.0-0.1": 1,
+    "0.1-0.2": 2,
+    "0.2-0.3": 5,
+    "0.3-0.4": 15,
+    "0.4-0.5": 12,
     "0.5-0.6": 10,
-    "0.6-0.7": 3,
+    "0.6-0.7": 2,
     "0.7-0.8": 1,
-    "0.8-0.9": 0,
+    "0.8-0.9": 2,
     "0.9-1.0": 0
   },
   "market_price": 0.25,
-  "swarm_vs_market_delta": 0.2045,
+  "swarm_vs_market_delta": 0.1847,
   "timing": {
     "world_build_ms": 0,
     "agent_gen_ms": 0,
@@ -145,13 +145,15 @@
       "background_category": "Macro Economist",
       "background_detail": "PhD economist focused on monetary policy, inflation dynamics, and central bank behavior. Tracks PCE, CPI, employment data, and Fed minutes closely.",
       "personality": "cautious and evidence-driven",
+      "temp_tier": "analyst",
+      "temperature": 0.3,
       "initial_score": 0.3954,
-      "final_score": 0.3261,
+      "final_score": 0.3204,
       "score_history": [
         0.3954,
-        0.3526,
-        0.3404,
-        0.3261
+        0.3596,
+        0.3335,
+        0.3204
       ],
       "confidence": 0.2785,
       "reasoning": "My Macro Economist experience tells me organizational change management is the critical variable. Combined with cost reduction from automation, I estimate P(YES) = 0.40. The NO scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
@@ -162,9 +164,9 @@
       ],
       "memory_stream": [
         "Initial assessment: P(YES) = 0.40. My Macro Economist experience tells me organizational change management is the critical variable. Combined with cost reduction from automation, I estimate P(YES) = 0.40. The NO scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.36), I shifted downward by 0.04. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 2: Updated to P(YES) = 0.34. Peer views ranged from 0.27 to 0.57. I adjusted minimally to 0.34. The 10% threshold is much higher than current displacement rates.",
-        "Round 3: Updated to P(YES) = 0.33. After seeing 5 peer opinions (avg 0.33), I held my position largely steady. Regulatory friction will slow deployment more than technological capability."
+        "Round 1: Updated to P(YES) = 0.36. After seeing 5 peer opinions (avg 0.42), I shifted downward by 0.04. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 2: Updated to P(YES) = 0.33. Peer views ranged from 0.23 to 0.57. I adjusted downward to 0.33. The 10% threshold is much higher than current displacement rates.",
+        "Round 3: Updated to P(YES) = 0.32. After seeing 5 peer opinions (avg 0.32), I held my position largely steady. Regulatory friction will slow deployment more than technological capability."
       ]
     },
     {
@@ -173,390 +175,418 @@
       "background_category": "Quantitative Trader",
       "background_detail": "Builds systematic models, thinks in probabilities and base rates. Uses options-implied probabilities and historical analogs.",
       "personality": "bold and contrarian",
-      "initial_score": 0.4105,
-      "final_score": 0.3393,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.3755,
+      "final_score": 0.3293,
       "score_history": [
-        0.4105,
-        0.3866,
-        0.3605,
-        0.3393
+        0.3755,
+        0.3676,
+        0.3523,
+        0.3293
       ],
       "confidence": 0.4485,
-      "reasoning": "Analyzing AI capability acceleration alongside organizational change management, I arrive at P(YES) = 0.41. My Quantitative Trader lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
+      "reasoning": "Analyzing AI capability acceleration alongside organizational change management, I arrive at P(YES) = 0.38. My Quantitative Trader lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
       "key_factors": [
         "AI capability acceleration",
         "organizational change management",
         "regulatory intervention timing"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.41. Analyzing AI capability acceleration alongside organizational change management, I arrive at P(YES) = 0.41. My Quantitative Trader lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
-        "Round 1: Updated to P(YES) = 0.39. Peer views ranged from 0.26 to 0.79. I adjusted downward to 0.39. Regulatory friction will slow deployment more than technological capability.",
-        "Round 2: Updated to P(YES) = 0.36. Round 2 deliberation: peers averaged 0.41. My bold and contrarian tendency led me to shifted downward by 0.03. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 3: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.48), I shifted downward by 0.02. The 10% threshold is much higher than current displacement rates."
+        "Initial assessment: P(YES) = 0.38. Analyzing AI capability acceleration alongside organizational change management, I arrive at P(YES) = 0.38. My Quantitative Trader lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
+        "Round 1: Updated to P(YES) = 0.37. Peer views ranged from 0.12 to 0.73. I adjusted minimally to 0.37. Regulatory friction will slow deployment more than technological capability.",
+        "Round 2: Updated to P(YES) = 0.35. Round 2 deliberation: peers averaged 0.33. My bold and contrarian tendency led me to held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 3: Updated to P(YES) = 0.33. After seeing 5 peer opinions (avg 0.45), I shifted downward by 0.02. The 10% threshold is much higher than current displacement rates."
       ]
     },
     {
       "id": 2,
       "name": "David Clark",
-      "background_category": "Political Analyst",
-      "background_detail": "Tracks legislative dynamics, lobbying, regulatory shifts, and election cycles. Deep knowledge of Congressional mechanics.",
+      "background_category": "Data Scientist",
+      "background_detail": "Relies on statistical models, historical base rates, and ensemble methods. Skeptical of narratives without data.",
       "personality": "analytical and methodical",
-      "initial_score": 0.2347,
-      "final_score": 0.3067,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.4347,
+      "final_score": 0.355,
       "score_history": [
-        0.2347,
-        0.2397,
-        0.2662,
-        0.3067
+        0.4347,
+        0.3968,
+        0.3597,
+        0.355
       ],
       "confidence": 0.5192,
-      "reasoning": "From a Political Analyst standpoint, open-source model proliferation is evolving slowly. cost reduction from automation suggests P(YES) = 0.23. Key risk: AI reliability and hallucination rates could accelerate or brake the timeline significantly.",
+      "reasoning": "From a Data Scientist standpoint, open-source model proliferation is evolving gradually. cost reduction from automation suggests P(YES) = 0.43. Key risk: AI reliability and hallucination rates could accelerate or brake the timeline significantly.",
       "key_factors": [
         "open-source model proliferation",
         "cost reduction from automation",
         "AI reliability and hallucination rates"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.23. From a Political Analyst standpoint, open-source model proliferation is evolving slowly. cost reduction from automation suggests P(YES) = 0.23. Key risk: AI reliability and hallucination rates could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.24. Peer views ranged from 0.18 to 0.57. I adjusted minimally to 0.24. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 2: Updated to P(YES) = 0.27. After seeing 5 peer opinions (avg 0.51), I shifted upward by 0.03. The 10% threshold is much higher than current displacement rates.",
-        "Round 3: Updated to P(YES) = 0.31. After seeing 5 peer opinions (avg 0.48), I shifted upward by 0.04. Organizational change management is the real bottleneck, not technology."
+        "Initial assessment: P(YES) = 0.43. From a Data Scientist standpoint, open-source model proliferation is evolving gradually. cost reduction from automation suggests P(YES) = 0.43. Key risk: AI reliability and hallucination rates could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.40. Peer views ranged from 0.28 to 0.47. I adjusted downward to 0.40. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 2: Updated to P(YES) = 0.36. After seeing 5 peer opinions (avg 0.30), I shifted downward by 0.04. The 10% threshold is much higher than current displacement rates.",
+        "Round 3: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.33), I held my position largely steady. Organizational change management is the real bottleneck, not technology."
       ]
     },
     {
       "id": 3,
       "name": "Sarah Hernandez",
-      "background_category": "Investigative Journalist",
-      "background_detail": "Skeptical by nature, hunts for hidden information and contrarian angles. Distrusts consensus narratives.",
+      "background_category": "Insurance Actuary",
+      "background_detail": "Probabilistic thinker focused on tail risks, base rates, and mortality/morbidity tables. Conservative estimator.",
       "personality": "intuitive and pattern-matching",
-      "initial_score": 0.0661,
-      "final_score": 0.2763,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.0961,
+      "final_score": 0.19,
       "score_history": [
-        0.0661,
-        0.129,
-        0.1821,
-        0.2763
+        0.0961,
+        0.1003,
+        0.1456,
+        0.19
       ],
       "confidence": 0.6044,
-      "reasoning": "Analyzing AI capability acceleration alongside regulatory framework development, I arrive at P(YES) = 0.07. My Investigative Journalist lens emphasizes that unexpected technical breakthroughs or limitations is often underestimated in technology adoption forecasts. The NO case is likely.",
+      "reasoning": "Analyzing AI capability acceleration alongside regulatory framework development, I arrive at P(YES) = 0.10. My Insurance Actuary lens emphasizes that unexpected technical breakthroughs or limitations is often underestimated in technology adoption forecasts. The NO case is likely.",
       "key_factors": [
         "AI capability acceleration",
         "regulatory framework development",
         "unexpected technical breakthroughs or limitations"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.07. Analyzing AI capability acceleration alongside regulatory framework development, I arrive at P(YES) = 0.07. My Investigative Journalist lens emphasizes that unexpected technical breakthroughs or limitations is often underestimated in technology adoption forecasts. The NO case is likely.",
-        "Round 1: Updated to P(YES) = 0.13. Round 1 deliberation: peers averaged 0.47. My intuitive and pattern-matching tendency led me to shifted upward by 0.06. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 2: Updated to P(YES) = 0.18. Peer views ranged from 0.27 to 0.54. I adjusted upward to 0.18. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 3: Updated to P(YES) = 0.28. Round 3 deliberation: peers averaged 0.49. My intuitive and pattern-matching tendency led me to shifted upward by 0.09. Organizational change management is the real bottleneck, not technology."
+        "Initial assessment: P(YES) = 0.10. Analyzing AI capability acceleration alongside regulatory framework development, I arrive at P(YES) = 0.10. My Insurance Actuary lens emphasizes that unexpected technical breakthroughs or limitations is often underestimated in technology adoption forecasts. The NO case is likely.",
+        "Round 1: Updated to P(YES) = 0.10. Round 1 deliberation: peers averaged 0.44. My intuitive and pattern-matching tendency led me to held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 2: Updated to P(YES) = 0.15. Peer views ranged from 0.26 to 0.87. I adjusted upward to 0.15. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 3: Updated to P(YES) = 0.19. Round 3 deliberation: peers averaged 0.38. My intuitive and pattern-matching tendency led me to shifted upward by 0.04. Organizational change management is the real bottleneck, not technology."
       ]
     },
     {
       "id": 4,
       "name": "Michael Adams",
-      "background_category": "Venture Capitalist",
-      "background_detail": "Pattern-matches across industries, optimistic bias toward innovation and disruption. Sees technology as deflationary.",
+      "background_category": "Bayesian Statistician",
+      "background_detail": "Updates beliefs incrementally using prior distributions. Resists large jumps without strong evidence.",
       "personality": "skeptical and devil's advocate",
-      "initial_score": 0.5643,
-      "final_score": 0.6368,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.3018,
+      "final_score": 0.2854,
       "score_history": [
-        0.5643,
-        0.6084,
-        0.6234,
-        0.6368
+        0.3018,
+        0.3208,
+        0.3101,
+        0.2854
       ],
       "confidence": 0.6079,
-      "reasoning": "From a Venture Capitalist standpoint, enterprise adoption velocity is evolving gradually. cost reduction from automation suggests P(YES) = 0.56. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+      "reasoning": "From a Bayesian Statistician standpoint, enterprise adoption velocity is evolving slowly. cost reduction from automation suggests P(YES) = 0.30. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
       "key_factors": [
         "enterprise adoption velocity",
         "cost reduction from automation",
         "public backlash against automation"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.56. From a Venture Capitalist standpoint, enterprise adoption velocity is evolving gradually. cost reduction from automation suggests P(YES) = 0.56. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.61. Round 1 deliberation: peers averaged 0.49. My skeptical and devil's advocate tendency led me to shifted upward by 0.04. Regulatory friction will slow deployment more than technological capability.",
-        "Round 2: Updated to P(YES) = 0.62. Round 2 deliberation: peers averaged 0.50. My skeptical and devil's advocate tendency led me to held my position largely steady. The 10% threshold is much higher than current displacement rates.",
-        "Round 3: Updated to P(YES) = 0.64. After seeing 5 peer opinions (avg 0.50), I held my position largely steady. The 10% threshold is much higher than current displacement rates."
+        "Initial assessment: P(YES) = 0.30. From a Bayesian Statistician standpoint, enterprise adoption velocity is evolving slowly. cost reduction from automation suggests P(YES) = 0.30. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.32. Round 1 deliberation: peers averaged 0.39. My skeptical and devil's advocate tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
+        "Round 2: Updated to P(YES) = 0.31. Round 2 deliberation: peers averaged 0.39. My skeptical and devil's advocate tendency led me to held my position largely steady. The 10% threshold is much higher than current displacement rates.",
+        "Round 3: Updated to P(YES) = 0.29. After seeing 5 peer opinions (avg 0.44), I shifted downward by 0.02. The 10% threshold is much higher than current displacement rates."
       ]
     },
     {
       "id": 5,
       "name": "Jennifer Roberts",
-      "background_category": "Retired Central Banker",
-      "background_detail": "Deep institutional knowledge of Fed/ECB decision-making processes. Understands the politics inside the FOMC.",
+      "background_category": "Supply Chain Analyst",
+      "background_detail": "Tracks real-economy signals \u2014 shipping data, commodity flows, inventory cycles, and manufacturing PMIs.",
       "personality": "consensus-seeking and diplomatic",
-      "initial_score": 0.18,
-      "final_score": 0.413,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.28,
+      "final_score": 0.4048,
       "score_history": [
-        0.18,
-        0.2668,
-        0.339,
-        0.413
+        0.28,
+        0.3373,
+        0.3708,
+        0.4048
       ],
       "confidence": 0.4361,
-      "reasoning": "My Retired Central Banker experience tells me enterprise adoption velocity is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.18. The NO scenario is likely, but regulatory intervention timing makes this a wide-confidence forecast.",
+      "reasoning": "My Supply Chain Analyst experience tells me enterprise adoption velocity is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.28. The NO scenario is likely, but regulatory intervention timing makes this a wide-confidence forecast.",
       "key_factors": [
         "enterprise adoption velocity",
         "workforce retraining capacity",
         "regulatory intervention timing"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.18. My Retired Central Banker experience tells me enterprise adoption velocity is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.18. The NO scenario is likely, but regulatory intervention timing makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.27. After seeing 5 peer opinions (avg 0.41), I shifted upward by 0.09. Regulatory friction will slow deployment more than technological capability.",
-        "Round 2: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.42), I shifted upward by 0.07. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.41. Peer views ranged from 0.36 to 0.64. I adjusted upward to 0.41. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
+        "Initial assessment: P(YES) = 0.28. My Supply Chain Analyst experience tells me enterprise adoption velocity is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.28. The NO scenario is likely, but regulatory intervention timing makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.57), I shifted upward by 0.06. Regulatory friction will slow deployment more than technological capability.",
+        "Round 2: Updated to P(YES) = 0.37. After seeing 5 peer opinions (avg 0.41), I shifted upward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.40. Peer views ranged from 0.29 to 0.82. I adjusted upward to 0.40. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
       ]
     },
     {
       "id": 6,
       "name": "Robert Collins",
-      "background_category": "Behavioral Economist",
-      "background_detail": "Studies cognitive biases, market sentiment, and herd behavior. Believes markets systematically misprice tail events.",
+      "background_category": "Central Bank Watcher",
+      "background_detail": "Parses every Fed speech, dot plot, and minutes release. Expert at reading between the lines of central bank communication.",
       "personality": "data-obsessed and quantitative",
-      "initial_score": 0.4589,
-      "final_score": 0.4472,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.3289,
+      "final_score": 0.3495,
       "score_history": [
-        0.4589,
-        0.4193,
-        0.4416,
-        0.4472
+        0.3289,
+        0.315,
+        0.3389,
+        0.3495
       ],
       "confidence": 0.5131,
-      "reasoning": "My Behavioral Economist experience tells me enterprise adoption velocity is the critical variable. Combined with venture funding into AI agents, I estimate P(YES) = 0.46. The NO scenario is a toss-up, but regulatory intervention timing makes this a wide-confidence forecast.",
+      "reasoning": "My Central Bank Watcher experience tells me enterprise adoption velocity is the critical variable. Combined with venture funding into AI agents, I estimate P(YES) = 0.33. The NO scenario is likely, but regulatory intervention timing makes this a wide-confidence forecast.",
       "key_factors": [
         "enterprise adoption velocity",
         "venture funding into AI agents",
         "regulatory intervention timing"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.46. My Behavioral Economist experience tells me enterprise adoption velocity is the critical variable. Combined with venture funding into AI agents, I estimate P(YES) = 0.46. The NO scenario is a toss-up, but regulatory intervention timing makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.42. After seeing 5 peer opinions (avg 0.38), I shifted downward by 0.04. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
-        "Round 2: Updated to P(YES) = 0.44. Round 2 deliberation: peers averaged 0.43. My data-obsessed and quantitative tendency led me to shifted upward by 0.02. The 10% threshold is much higher than current displacement rates.",
-        "Round 3: Updated to P(YES) = 0.45. Peer views ranged from 0.33 to 0.64. I adjusted minimally to 0.45. The 10% threshold is much higher than current displacement rates."
+        "Initial assessment: P(YES) = 0.33. My Central Bank Watcher experience tells me enterprise adoption velocity is the critical variable. Combined with venture funding into AI agents, I estimate P(YES) = 0.33. The NO scenario is likely, but regulatory intervention timing makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.32. After seeing 5 peer opinions (avg 0.47), I held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
+        "Round 2: Updated to P(YES) = 0.34. Round 2 deliberation: peers averaged 0.36. My data-obsessed and quantitative tendency led me to shifted upward by 0.02. The 10% threshold is much higher than current displacement rates.",
+        "Round 3: Updated to P(YES) = 0.35. Peer views ranged from 0.18 to 0.54. I adjusted minimally to 0.35. The 10% threshold is much higher than current displacement rates."
       ]
     },
     {
       "id": 7,
       "name": "Lisa Rodriguez",
-      "background_category": "Geopolitical Strategist",
-      "background_detail": "Analyzes international relations, trade wars, sanctions, and their second-order effects on domestic policy.",
+      "background_category": "Sovereign Wealth Fund Analyst",
+      "background_detail": "Manages long-term national reserves. Thinks in decades, tracks global macro imbalances and structural shifts.",
       "personality": "narrative-driven and qualitative",
-      "initial_score": 0.2531,
-      "final_score": 0.3417,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.2831,
+      "final_score": 0.3105,
       "score_history": [
-        0.2531,
-        0.2733,
-        0.299,
-        0.3417
+        0.2831,
+        0.2574,
+        0.275,
+        0.3105
       ],
       "confidence": 0.4032,
-      "reasoning": "My Geopolitical Strategist experience tells me venture funding into AI agents is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.25. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
+      "reasoning": "My Sovereign Wealth Fund Analyst experience tells me venture funding into AI agents is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.28. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
       "key_factors": [
         "venture funding into AI agents",
         "AI capability acceleration",
         "unexpected technical breakthroughs or limitations"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.25. My Geopolitical Strategist experience tells me venture funding into AI agents is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.25. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.27. After seeing 5 peer opinions (avg 0.52), I shifted upward by 0.02. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 2: Updated to P(YES) = 0.30. Peer views ranged from 0.28 to 0.57. I adjusted upward to 0.30. Regulatory friction will slow deployment more than technological capability.",
-        "Round 3: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.45), I shifted upward by 0.04. Organizational change management is the real bottleneck, not technology."
+        "Initial assessment: P(YES) = 0.28. My Sovereign Wealth Fund Analyst experience tells me venture funding into AI agents is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.28. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.39), I shifted downward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 2: Updated to P(YES) = 0.28. Peer views ranged from 0.36 to 0.54. I adjusted minimally to 0.28. Regulatory friction will slow deployment more than technological capability.",
+        "Round 3: Updated to P(YES) = 0.31. After seeing 5 peer opinions (avg 0.51), I shifted upward by 0.04. Organizational change management is the real bottleneck, not technology."
       ]
     },
     {
       "id": 8,
       "name": "William Thompson",
-      "background_category": "Data Scientist",
-      "background_detail": "Relies on statistical models, historical base rates, and ensemble methods. Skeptical of narratives without data.",
+      "background_category": "Retired Central Banker",
+      "background_detail": "Deep institutional knowledge of Fed/ECB decision-making processes. Understands the politics inside the FOMC.",
       "personality": "risk-averse and conservative",
-      "initial_score": 0.6311,
-      "final_score": 0.6003,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.4529,
+      "final_score": 0.4863,
       "score_history": [
-        0.6311,
-        0.6374,
-        0.6224,
-        0.6003
+        0.4529,
+        0.4853,
+        0.4836,
+        0.4863
       ],
       "confidence": 0.5274,
-      "reasoning": "From a Data Scientist standpoint, AI capability acceleration is evolving rapidly. enterprise adoption velocity suggests P(YES) = 0.63. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+      "reasoning": "From a Retired Central Banker standpoint, AI capability acceleration is evolving gradually. enterprise adoption velocity suggests P(YES) = 0.45. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
       "key_factors": [
         "AI capability acceleration",
         "enterprise adoption velocity",
         "public backlash against automation"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.63. From a Data Scientist standpoint, AI capability acceleration is evolving rapidly. enterprise adoption velocity suggests P(YES) = 0.63. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.64. Round 1 deliberation: peers averaged 0.40. My risk-averse and conservative tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
-        "Round 2: Updated to P(YES) = 0.62. Round 2 deliberation: peers averaged 0.47. My risk-averse and conservative tendency led me to held my position largely steady. The 10% threshold is much higher than current displacement rates.",
-        "Round 3: Updated to P(YES) = 0.60. Peer views ranged from 0.25 to 0.49. I adjusted downward to 0.60. Organizational change management is the real bottleneck, not technology."
+        "Initial assessment: P(YES) = 0.45. From a Retired Central Banker standpoint, AI capability acceleration is evolving gradually. enterprise adoption velocity suggests P(YES) = 0.45. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.49. Round 1 deliberation: peers averaged 0.43. My risk-averse and conservative tendency led me to shifted upward by 0.03. Regulatory friction will slow deployment more than technological capability.",
+        "Round 2: Updated to P(YES) = 0.48. Round 2 deliberation: peers averaged 0.37. My risk-averse and conservative tendency led me to held my position largely steady. The 10% threshold is much higher than current displacement rates.",
+        "Round 3: Updated to P(YES) = 0.49. Peer views ranged from 0.21 to 0.80. I adjusted minimally to 0.49. Organizational change management is the real bottleneck, not technology."
       ]
     },
     {
       "id": 9,
       "name": "Emily Robinson",
-      "background_category": "Hedge Fund PM",
-      "background_detail": "Risk-adjusted thinker, contrarian when consensus is strong. Looks for asymmetric bets and mispriced risk.",
+      "background_category": "Behavioral Economist",
+      "background_detail": "Studies cognitive biases, market sentiment, and herd behavior. Believes markets systematically misprice tail events.",
       "personality": "risk-seeking and opportunistic",
-      "initial_score": 0.4294,
-      "final_score": 0.4201,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.456,
+      "final_score": 0.4399,
       "score_history": [
-        0.4294,
-        0.4138,
-        0.396,
-        0.4201
+        0.456,
+        0.441,
+        0.4406,
+        0.4399
       ],
       "confidence": 0.4761,
-      "reasoning": "From a Hedge Fund PM standpoint, open-source model proliferation is evolving gradually. regulatory framework development suggests P(YES) = 0.43. Key risk: regulatory intervention timing could accelerate or brake the timeline significantly.",
+      "reasoning": "From a Behavioral Economist standpoint, cost reduction from automation is evolving gradually. workforce retraining capacity suggests P(YES) = 0.46. Key risk: AI reliability and hallucination rates could accelerate or brake the timeline significantly.",
       "key_factors": [
-        "open-source model proliferation",
-        "regulatory framework development",
-        "regulatory intervention timing"
+        "cost reduction from automation",
+        "workforce retraining capacity",
+        "AI reliability and hallucination rates"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.43. From a Hedge Fund PM standpoint, open-source model proliferation is evolving gradually. regulatory framework development suggests P(YES) = 0.43. Key risk: regulatory intervention timing could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.41. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
-        "Round 2: Updated to P(YES) = 0.40. Round 2 deliberation: peers averaged 0.37. My risk-seeking and opportunistic tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
-        "Round 3: Updated to P(YES) = 0.42. Peer views ranged from 0.28 to 0.64. I adjusted upward to 0.42. The open-source model ecosystem is accelerating adoption faster than expected."
+        "Initial assessment: P(YES) = 0.46. From a Behavioral Economist standpoint, cost reduction from automation is evolving gradually. workforce retraining capacity suggests P(YES) = 0.46. Key risk: AI reliability and hallucination rates could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.44. After seeing 5 peer opinions (avg 0.46), I held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
+        "Round 2: Updated to P(YES) = 0.44. Round 2 deliberation: peers averaged 0.38. My risk-seeking and opportunistic tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
+        "Round 3: Updated to P(YES) = 0.44. Peer views ranged from 0.19 to 0.89. I adjusted minimally to 0.44. The open-source model ecosystem is accelerating adoption faster than expected."
       ]
     },
     {
       "id": 10,
       "name": "Richard Young",
-      "background_category": "Constitutional Lawyer",
-      "background_detail": "Analyzes legal frameworks, precedent, regulatory authority, and separation-of-powers dynamics.",
+      "background_category": "Labor Economist",
+      "background_detail": "Focuses on employment data, wage dynamics, union activity, and labor market tightness indicators.",
       "personality": "cautious and evidence-driven",
-      "initial_score": 0.2034,
-      "final_score": 0.3011,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.507,
+      "final_score": 0.5207,
       "score_history": [
-        0.2034,
-        0.242,
-        0.2717,
-        0.3011
+        0.507,
+        0.5181,
+        0.5177,
+        0.5207
       ],
-      "confidence": 0.6693,
-      "reasoning": "From a Constitutional Lawyer standpoint, venture funding into AI agents is evolving slowly. enterprise adoption velocity suggests P(YES) = 0.20. Key risk: AI reliability and hallucination rates could accelerate or brake the timeline significantly.",
+      "confidence": 0.8417,
+      "reasoning": "From a Labor Economist standpoint, venture funding into AI agents is evolving gradually. enterprise adoption velocity suggests P(YES) = 0.51. Key risk: AI reliability and hallucination rates could accelerate or brake the timeline significantly.",
       "key_factors": [
         "venture funding into AI agents",
         "enterprise adoption velocity",
         "AI reliability and hallucination rates"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.20. From a Constitutional Lawyer standpoint, venture funding into AI agents is evolving slowly. enterprise adoption velocity suggests P(YES) = 0.20. Key risk: AI reliability and hallucination rates could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.24. Peer views ranged from 0.27 to 0.61. I adjusted upward to 0.24. The 10% threshold is much higher than current displacement rates.",
-        "Round 2: Updated to P(YES) = 0.27. After seeing 5 peer opinions (avg 0.36), I shifted upward by 0.03. The 10% threshold is much higher than current displacement rates.",
-        "Round 3: Updated to P(YES) = 0.30. Round 3 deliberation: peers averaged 0.46. My cautious and evidence-driven tendency led me to shifted upward by 0.03. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
+        "Initial assessment: P(YES) = 0.51. From a Labor Economist standpoint, venture funding into AI agents is evolving gradually. enterprise adoption velocity suggests P(YES) = 0.51. Key risk: AI reliability and hallucination rates could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.52. Peer views ranged from 0.34 to 0.98. I adjusted minimally to 0.52. The 10% threshold is much higher than current displacement rates.",
+        "Round 2: Updated to P(YES) = 0.52. After seeing 5 peer opinions (avg 0.36), I held my position largely steady. The 10% threshold is much higher than current displacement rates.",
+        "Round 3: Updated to P(YES) = 0.52. Round 3 deliberation: peers averaged 0.54. My cautious and evidence-driven tendency led me to held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
       ]
     },
     {
       "id": 11,
       "name": "Jessica Green",
-      "background_category": "Supply Chain Analyst",
-      "background_detail": "Tracks real-economy signals \u2014 shipping data, commodity flows, inventory cycles, and manufacturing PMIs.",
+      "background_category": "Pollster",
+      "background_detail": "Expert in survey methodology, sampling bias, and public opinion trends. Understands how sentiment translates to action.",
       "personality": "bold and contrarian",
-      "initial_score": 0.3779,
-      "final_score": 0.347,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.4018,
+      "final_score": 0.4632,
       "score_history": [
-        0.3779,
-        0.3698,
-        0.3639,
-        0.347
+        0.4018,
+        0.4336,
+        0.4554,
+        0.4632
       ],
       "confidence": 0.3526,
-      "reasoning": "Analyzing open-source model proliferation alongside cost reduction from automation, I arrive at P(YES) = 0.38. My Supply Chain Analyst lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
+      "reasoning": "Analyzing open-source model proliferation alongside cost reduction from automation, I arrive at P(YES) = 0.40. My Pollster lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
       "key_factors": [
         "open-source model proliferation",
         "cost reduction from automation",
         "AI reliability and hallucination rates"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.38. Analyzing open-source model proliferation alongside cost reduction from automation, I arrive at P(YES) = 0.38. My Supply Chain Analyst lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
-        "Round 1: Updated to P(YES) = 0.37. Round 1 deliberation: peers averaged 0.53. My bold and contrarian tendency led me to held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 2: Updated to P(YES) = 0.36. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. Organizational change management is the real bottleneck, not technology.",
-        "Round 3: Updated to P(YES) = 0.35. Round 3 deliberation: peers averaged 0.41. My bold and contrarian tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability."
+        "Initial assessment: P(YES) = 0.40. Analyzing open-source model proliferation alongside cost reduction from automation, I arrive at P(YES) = 0.40. My Pollster lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
+        "Round 1: Updated to P(YES) = 0.43. Round 1 deliberation: peers averaged 0.31. My bold and contrarian tendency led me to shifted upward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 2: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.34), I shifted upward by 0.02. Organizational change management is the real bottleneck, not technology.",
+        "Round 3: Updated to P(YES) = 0.46. Round 3 deliberation: peers averaged 0.36. My bold and contrarian tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability."
       ]
     },
     {
       "id": 12,
       "name": "Thomas Perez",
-      "background_category": "Climate Scientist",
-      "background_detail": "Understands long-term systemic risks, physical economy impacts, and energy transition dynamics.",
+      "background_category": "Demographer",
+      "background_detail": "Studies population trends, aging, migration, and their economic consequences. Long-term structural thinker.",
       "personality": "analytical and methodical",
-      "initial_score": 0.4821,
-      "final_score": 0.4545,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.4008,
+      "final_score": 0.3904,
       "score_history": [
-        0.4821,
-        0.4868,
-        0.4689,
-        0.4545
+        0.4008,
+        0.4216,
+        0.3868,
+        0.3904
       ],
       "confidence": 0.6689,
-      "reasoning": "From a Climate Scientist standpoint, enterprise adoption velocity is evolving gradually. regulatory framework development suggests P(YES) = 0.48. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
+      "reasoning": "From a Demographer standpoint, enterprise adoption velocity is evolving gradually. regulatory framework development suggests P(YES) = 0.40. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
       "key_factors": [
         "enterprise adoption velocity",
         "regulatory framework development",
         "unexpected technical breakthroughs or limitations"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.48. From a Climate Scientist standpoint, enterprise adoption velocity is evolving gradually. regulatory framework development suggests P(YES) = 0.48. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.49. Round 1 deliberation: peers averaged 0.38. My analytical and methodical tendency led me to held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 2: Updated to P(YES) = 0.47. After seeing 5 peer opinions (avg 0.52), I held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.45. Round 3 deliberation: peers averaged 0.40. My analytical and methodical tendency led me to held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected."
+        "Initial assessment: P(YES) = 0.40. From a Demographer standpoint, enterprise adoption velocity is evolving gradually. regulatory framework development suggests P(YES) = 0.40. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.42. Round 1 deliberation: peers averaged 0.36. My analytical and methodical tendency led me to shifted upward by 0.02. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 2: Updated to P(YES) = 0.39. After seeing 5 peer opinions (avg 0.32), I shifted downward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.39. Round 3 deliberation: peers averaged 0.42. My analytical and methodical tendency led me to held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected."
       ]
     },
     {
       "id": 13,
       "name": "Amanda Edwards",
-      "background_category": "Tech Executive",
-      "background_detail": "Silicon Valley perspective, innovation-driven worldview. Believes in exponential curves and platform effects.",
+      "background_category": "Agricultural Economist",
+      "background_detail": "Tracks food prices, crop yields, weather patterns, and trade policy impacts on farming.",
       "personality": "intuitive and pattern-matching",
-      "initial_score": 0.6639,
-      "final_score": 0.5359,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.3079,
+      "final_score": 0.4033,
       "score_history": [
-        0.6639,
-        0.6296,
-        0.5539,
-        0.5359
+        0.3079,
+        0.373,
+        0.3699,
+        0.4033
       ],
       "confidence": 0.6709,
-      "reasoning": "From a Tech Executive standpoint, workforce retraining capacity is evolving rapidly. regulatory framework development suggests P(YES) = 0.66. Key risk: regulatory intervention timing could accelerate or brake the timeline significantly.",
+      "reasoning": "From a Agricultural Economist standpoint, workforce retraining capacity is evolving slowly. regulatory framework development suggests P(YES) = 0.31. Key risk: regulatory intervention timing could accelerate or brake the timeline significantly.",
       "key_factors": [
         "workforce retraining capacity",
         "regulatory framework development",
         "regulatory intervention timing"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.66. From a Tech Executive standpoint, workforce retraining capacity is evolving rapidly. regulatory framework development suggests P(YES) = 0.66. Key risk: regulatory intervention timing could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.63. Peer views ranged from 0.23 to 0.62. I adjusted downward to 0.63. Organizational change management is the real bottleneck, not technology.",
-        "Round 2: Updated to P(YES) = 0.55. Round 2 deliberation: peers averaged 0.37. My intuitive and pattern-matching tendency led me to shifted downward by 0.08. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.54. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected."
+        "Initial assessment: P(YES) = 0.31. From a Agricultural Economist standpoint, workforce retraining capacity is evolving slowly. regulatory framework development suggests P(YES) = 0.31. Key risk: regulatory intervention timing could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.37. Peer views ranged from 0.31 to 0.98. I adjusted upward to 0.37. Organizational change management is the real bottleneck, not technology.",
+        "Round 2: Updated to P(YES) = 0.37. Round 2 deliberation: peers averaged 0.44. My intuitive and pattern-matching tendency led me to held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.40. After seeing 5 peer opinions (avg 0.55), I shifted upward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected."
       ]
     },
     {
       "id": 14,
       "name": "Charles Patel",
-      "background_category": "Labor Economist",
-      "background_detail": "Focuses on employment data, wage dynamics, union activity, and labor market tightness indicators.",
+      "background_category": "Energy Sector Analyst",
+      "background_detail": "Tracks oil prices, OPEC dynamics, renewables deployment, and energy policy. Understands energy's macro impact.",
       "personality": "skeptical and devil's advocate",
-      "initial_score": 0.5664,
-      "final_score": 0.5139,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.5537,
+      "final_score": 0.5501,
       "score_history": [
-        0.5664,
-        0.5328,
-        0.5031,
-        0.5139
+        0.5537,
+        0.5317,
+        0.5271,
+        0.5501
       ],
       "confidence": 0.5098,
-      "reasoning": "Analyzing workforce retraining capacity alongside regulatory framework development, I arrive at P(YES) = 0.57. My Labor Economist lens emphasizes that unexpected technical breakthroughs or limitations is often underestimated in technology adoption forecasts. The YES case is moderately probable.",
+      "reasoning": "Analyzing workforce retraining capacity alongside regulatory framework development, I arrive at P(YES) = 0.55. My Energy Sector Analyst lens emphasizes that unexpected technical breakthroughs or limitations is often underestimated in technology adoption forecasts. The YES case is moderately probable.",
       "key_factors": [
         "workforce retraining capacity",
         "regulatory framework development",
         "unexpected technical breakthroughs or limitations"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.57. Analyzing workforce retraining capacity alongside regulatory framework development, I arrive at P(YES) = 0.57. My Labor Economist lens emphasizes that unexpected technical breakthroughs or limitations is often underestimated in technology adoption forecasts. The YES case is moderately probable.",
-        "Round 1: Updated to P(YES) = 0.53. After seeing 5 peer opinions (avg 0.32), I shifted downward by 0.03. Regulatory friction will slow deployment more than technological capability.",
-        "Round 2: Updated to P(YES) = 0.50. Round 2 deliberation: peers averaged 0.37. My skeptical and devil's advocate tendency led me to shifted downward by 0.03. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 3: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.45), I held my position largely steady. Regulatory friction will slow deployment more than technological capability."
+        "Initial assessment: P(YES) = 0.55. Analyzing workforce retraining capacity alongside regulatory framework development, I arrive at P(YES) = 0.55. My Energy Sector Analyst lens emphasizes that unexpected technical breakthroughs or limitations is often underestimated in technology adoption forecasts. The YES case is moderately probable.",
+        "Round 1: Updated to P(YES) = 0.53. After seeing 5 peer opinions (avg 0.36), I shifted downward by 0.02. Regulatory friction will slow deployment more than technological capability.",
+        "Round 2: Updated to P(YES) = 0.53. Round 2 deliberation: peers averaged 0.46. My skeptical and devil's advocate tendency led me to held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 3: Updated to P(YES) = 0.55. After seeing 5 peer opinions (avg 0.42), I shifted upward by 0.02. Regulatory friction will slow deployment more than technological capability."
       ]
     },
     {
@@ -565,883 +595,917 @@
       "background_category": "Emerging Markets Specialist",
       "background_detail": "Tracks capital flows, currency dynamics, contagion risks, and dollar-denominated debt stress.",
       "personality": "consensus-seeking and diplomatic",
-      "initial_score": 0.4278,
-      "final_score": 0.4546,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.4407,
+      "final_score": 0.4188,
       "score_history": [
-        0.4278,
-        0.4556,
-        0.4495,
-        0.4546
+        0.4407,
+        0.4505,
+        0.4644,
+        0.4188
       ],
       "confidence": 0.7692,
-      "reasoning": "Analyzing workforce retraining capacity alongside open-source model proliferation, I arrive at P(YES) = 0.43. My Emerging Markets Specialist lens emphasizes that public backlash against automation is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
+      "reasoning": "Analyzing workforce retraining capacity alongside open-source model proliferation, I arrive at P(YES) = 0.44. My Emerging Markets Specialist lens emphasizes that public backlash against automation is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
       "key_factors": [
         "workforce retraining capacity",
         "open-source model proliferation",
         "public backlash against automation"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.43. Analyzing workforce retraining capacity alongside open-source model proliferation, I arrive at P(YES) = 0.43. My Emerging Markets Specialist lens emphasizes that public backlash against automation is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
-        "Round 1: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.47), I shifted upward by 0.03. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 2: Updated to P(YES) = 0.45. Peer views ranged from 0.18 to 0.60. I adjusted minimally to 0.45. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.45. After seeing 5 peer opinions (avg 0.53), I held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected."
+        "Initial assessment: P(YES) = 0.44. Analyzing workforce retraining capacity alongside open-source model proliferation, I arrive at P(YES) = 0.44. My Emerging Markets Specialist lens emphasizes that public backlash against automation is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
+        "Round 1: Updated to P(YES) = 0.45. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 2: Updated to P(YES) = 0.46. Peer views ranged from 0.15 to 0.95. I adjusted minimally to 0.46. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.42. After seeing 5 peer opinions (avg 0.33), I shifted downward by 0.05. The open-source model ecosystem is accelerating adoption faster than expected."
       ]
     },
     {
       "id": 16,
       "name": "Daniel Martin",
-      "background_category": "Military Intel Analyst",
-      "background_detail": "Trained in structured analytic techniques, red-team thinking, and Analysis of Competing Hypotheses.",
+      "background_category": "Pharmaceutical Exec",
+      "background_detail": "Understands FDA approval cycles, clinical trial outcomes, biotech funding environment, and healthcare policy.",
       "personality": "data-obsessed and quantitative",
-      "initial_score": 0.2091,
-      "final_score": 0.2836,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.3806,
+      "final_score": 0.3766,
       "score_history": [
-        0.2091,
-        0.2191,
-        0.2538,
-        0.2836
+        0.3806,
+        0.3749,
+        0.3745,
+        0.3766
       ],
       "confidence": 0.7537,
-      "reasoning": "My Military Intel Analyst experience tells me organizational change management is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.21. The NO scenario is likely, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
+      "reasoning": "My Pharmaceutical Exec experience tells me organizational change management is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.38. The NO scenario is moderately probable, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
       "key_factors": [
         "organizational change management",
         "regulatory framework development",
         "macroeconomic downturn slowing investment"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.21. My Military Intel Analyst experience tells me organizational change management is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.21. The NO scenario is likely, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.22. Peer views ranged from 0.13 to 0.62. I adjusted minimally to 0.22. The 10% threshold is much higher than current displacement rates.",
-        "Round 2: Updated to P(YES) = 0.25. Round 2 deliberation: peers averaged 0.50. My data-obsessed and quantitative tendency led me to shifted upward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.28. Peer views ranged from 0.34 to 0.64. I adjusted upward to 0.28. The open-source model ecosystem is accelerating adoption faster than expected."
+        "Initial assessment: P(YES) = 0.38. My Pharmaceutical Exec experience tells me organizational change management is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.38. The NO scenario is moderately probable, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.37. Peer views ranged from 0.10 to 0.98. I adjusted minimally to 0.37. The 10% threshold is much higher than current displacement rates.",
+        "Round 2: Updated to P(YES) = 0.37. Round 2 deliberation: peers averaged 0.54. My data-obsessed and quantitative tendency led me to held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.38. Peer views ranged from 0.31 to 0.82. I adjusted minimally to 0.38. The open-source model ecosystem is accelerating adoption faster than expected."
       ]
     },
     {
       "id": 17,
       "name": "Stephanie Allen",
-      "background_category": "Academic Historian",
-      "background_detail": "Draws parallels from historical episodes \u2014 1970s stagflation, 2008 crisis, dot-com bust. Skeptical of 'this time is different.'",
+      "background_category": "Investigative Journalist",
+      "background_detail": "Skeptical by nature, hunts for hidden information and contrarian angles. Distrusts consensus narratives.",
       "personality": "narrative-driven and qualitative",
-      "initial_score": 0.4254,
-      "final_score": 0.4068,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.4298,
+      "final_score": 0.4118,
       "score_history": [
-        0.4254,
-        0.4001,
-        0.4076,
-        0.4068
+        0.4298,
+        0.4147,
+        0.4209,
+        0.4118
       ],
       "confidence": 0.7344,
-      "reasoning": "From a Academic Historian standpoint, AI capability acceleration is evolving gradually. regulatory framework development suggests P(YES) = 0.43. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+      "reasoning": "From a Investigative Journalist standpoint, AI capability acceleration is evolving gradually. regulatory framework development suggests P(YES) = 0.43. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
       "key_factors": [
         "AI capability acceleration",
         "regulatory framework development",
         "public backlash against automation"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.43. From a Academic Historian standpoint, AI capability acceleration is evolving gradually. regulatory framework development suggests P(YES) = 0.43. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.40. Peer views ranged from 0.37 to 0.53. I adjusted downward to 0.40. Organizational change management is the real bottleneck, not technology.",
-        "Round 2: Updated to P(YES) = 0.41. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. Organizational change management is the real bottleneck, not technology.",
-        "Round 3: Updated to P(YES) = 0.41. Peer views ranged from 0.34 to 0.55. I adjusted minimally to 0.41. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
+        "Initial assessment: P(YES) = 0.43. From a Investigative Journalist standpoint, AI capability acceleration is evolving gradually. regulatory framework development suggests P(YES) = 0.43. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.41. Peer views ranged from 0.35 to 0.73. I adjusted minimally to 0.41. Organizational change management is the real bottleneck, not technology.",
+        "Round 2: Updated to P(YES) = 0.42. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. Organizational change management is the real bottleneck, not technology.",
+        "Round 3: Updated to P(YES) = 0.41. Peer views ranged from 0.33 to 0.44. I adjusted minimally to 0.41. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
       ]
     },
     {
       "id": 18,
       "name": "Matthew Scott",
-      "background_category": "Insurance Actuary",
-      "background_detail": "Probabilistic thinker focused on tail risks, base rates, and mortality/morbidity tables. Conservative estimator.",
+      "background_category": "Hedge Fund PM",
+      "background_detail": "Risk-adjusted thinker, contrarian when consensus is strong. Looks for asymmetric bets and mispriced risk.",
       "personality": "risk-averse and conservative",
-      "initial_score": 0.6242,
-      "final_score": 0.5377,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.98,
+      "final_score": 0.8483,
       "score_history": [
-        0.6242,
-        0.6022,
-        0.5671,
-        0.5377
+        0.98,
+        0.9527,
+        0.8879,
+        0.8483
       ],
       "confidence": 0.8804,
-      "reasoning": "From a Insurance Actuary standpoint, workforce retraining capacity is evolving rapidly. cost reduction from automation suggests P(YES) = 0.62. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
+      "reasoning": "From a Hedge Fund PM standpoint, workforce retraining capacity is evolving rapidly. cost reduction from automation suggests P(YES) = 0.98. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
       "key_factors": [
         "workforce retraining capacity",
         "cost reduction from automation",
         "macroeconomic downturn slowing investment"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.62. From a Insurance Actuary standpoint, workforce retraining capacity is evolving rapidly. cost reduction from automation suggests P(YES) = 0.62. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.60. After seeing 5 peer opinions (avg 0.35), I shifted downward by 0.02. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 2: Updated to P(YES) = 0.57. Peer views ranged from 0.24 to 0.77. I adjusted downward to 0.57. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
-        "Round 3: Updated to P(YES) = 0.54. After seeing 5 peer opinions (avg 0.42), I shifted downward by 0.03. The 10% threshold is much higher than current displacement rates."
+        "Initial assessment: P(YES) = 0.98. From a Hedge Fund PM standpoint, workforce retraining capacity is evolving rapidly. cost reduction from automation suggests P(YES) = 0.98. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.95. After seeing 5 peer opinions (avg 0.34), I shifted downward by 0.03. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 2: Updated to P(YES) = 0.89. Peer views ranged from 0.15 to 0.44. I adjusted downward to 0.89. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
+        "Round 3: Updated to P(YES) = 0.85. After seeing 5 peer opinions (avg 0.43), I shifted downward by 0.04. The 10% threshold is much higher than current displacement rates."
       ]
     },
     {
       "id": 19,
       "name": "Nicole Mitchell",
-      "background_category": "Retail Investor",
-      "background_detail": "Follows social media sentiment, Reddit, FinTwit. Reads popular narrative but lacks institutional depth.",
+      "background_category": "Academic Historian",
+      "background_detail": "Draws parallels from historical episodes \u2014 1970s stagflation, 2008 crisis, dot-com bust. Skeptical of 'this time is different.'",
       "personality": "risk-seeking and opportunistic",
-      "initial_score": 0.5893,
-      "final_score": 0.5279,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.1704,
+      "final_score": 0.2824,
       "score_history": [
-        0.5893,
-        0.5668,
-        0.5567,
-        0.5279
+        0.1704,
+        0.2253,
+        0.2637,
+        0.2824
       ],
       "confidence": 0.8029,
-      "reasoning": "My Retail Investor experience tells me AI capability acceleration is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.59. The YES scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
+      "reasoning": "My Academic Historian experience tells me enterprise adoption velocity is the critical variable. Combined with organizational change management, I estimate P(YES) = 0.17. The NO scenario is likely, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
       "key_factors": [
-        "AI capability acceleration",
-        "regulatory framework development",
-        "AI reliability and hallucination rates"
+        "enterprise adoption velocity",
+        "organizational change management",
+        "macroeconomic downturn slowing investment"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.59. My Retail Investor experience tells me AI capability acceleration is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.59. The YES scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.57. Round 1 deliberation: peers averaged 0.41. My risk-seeking and opportunistic tendency led me to shifted downward by 0.02. Regulatory friction will slow deployment more than technological capability.",
-        "Round 2: Updated to P(YES) = 0.56. Round 2 deliberation: peers averaged 0.52. My risk-seeking and opportunistic tendency led me to held my position largely steady. Organizational change management is the real bottleneck, not technology.",
-        "Round 3: Updated to P(YES) = 0.53. Peer views ranged from 0.42 to 0.58. I adjusted downward to 0.53. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
+        "Initial assessment: P(YES) = 0.17. My Academic Historian experience tells me enterprise adoption velocity is the critical variable. Combined with organizational change management, I estimate P(YES) = 0.17. The NO scenario is likely, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.23. Round 1 deliberation: peers averaged 0.36. My risk-seeking and opportunistic tendency led me to shifted upward by 0.05. Regulatory friction will slow deployment more than technological capability.",
+        "Round 2: Updated to P(YES) = 0.26. Round 2 deliberation: peers averaged 0.47. My risk-seeking and opportunistic tendency led me to shifted upward by 0.04. Organizational change management is the real bottleneck, not technology.",
+        "Round 3: Updated to P(YES) = 0.28. Peer views ranged from 0.31 to 0.60. I adjusted minimally to 0.28. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
       ]
     },
     {
       "id": 20,
       "name": "Andrew Evans",
-      "background_category": "Commodity Trader",
-      "background_detail": "Tracks oil, metals, agricultural futures. Understands physical markets and supply/demand fundamentals.",
+      "background_category": "Military Intel Analyst",
+      "background_detail": "Trained in structured analytic techniques, red-team thinking, and Analysis of Competing Hypotheses.",
       "personality": "cautious and evidence-driven",
-      "initial_score": 0.2828,
-      "final_score": 0.4032,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.2903,
+      "final_score": 0.398,
       "score_history": [
-        0.2828,
-        0.343,
-        0.3715,
-        0.4032
+        0.2903,
+        0.3464,
+        0.3717,
+        0.398
       ],
-      "confidence": 0.3359,
-      "reasoning": "My Commodity Trader experience tells me open-source model proliferation is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.28. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
+      "confidence": 0.4597,
+      "reasoning": "Analyzing enterprise adoption velocity alongside regulatory framework development, I arrive at P(YES) = 0.29. My Military Intel Analyst lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is likely.",
       "key_factors": [
-        "open-source model proliferation",
-        "workforce retraining capacity",
-        "unexpected technical breakthroughs or limitations"
+        "enterprise adoption velocity",
+        "regulatory framework development",
+        "AI reliability and hallucination rates"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.28. My Commodity Trader experience tells me open-source model proliferation is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.28. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.39), I shifted upward by 0.06. Organizational change management is the real bottleneck, not technology.",
-        "Round 2: Updated to P(YES) = 0.37. Peer views ranged from 0.42 to 0.55. I adjusted upward to 0.37. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.40. After seeing 5 peer opinions (avg 0.43), I shifted upward by 0.03. Organizational change management is the real bottleneck, not technology."
+        "Initial assessment: P(YES) = 0.29. Analyzing enterprise adoption velocity alongside regulatory framework development, I arrive at P(YES) = 0.29. My Military Intel Analyst lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is likely.",
+        "Round 1: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.44), I shifted upward by 0.06. Organizational change management is the real bottleneck, not technology.",
+        "Round 2: Updated to P(YES) = 0.37. Peer views ranged from 0.37 to 0.87. I adjusted upward to 0.37. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.40. After seeing 5 peer opinions (avg 0.42), I shifted upward by 0.03. Organizational change management is the real bottleneck, not technology."
       ]
     },
     {
       "id": 21,
       "name": "Rachel Chen",
-      "background_category": "Bayesian Statistician",
-      "background_detail": "Updates beliefs incrementally using prior distributions. Resists large jumps without strong evidence.",
+      "background_category": "Constitutional Lawyer",
+      "background_detail": "Analyzes legal frameworks, precedent, regulatory authority, and separation-of-powers dynamics.",
       "personality": "bold and contrarian",
-      "initial_score": 0.4298,
-      "final_score": 0.4704,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.3089,
+      "final_score": 0.2679,
       "score_history": [
-        0.4298,
-        0.4569,
-        0.4509,
-        0.4704
+        0.3089,
+        0.3137,
+        0.2799,
+        0.2679
       ],
-      "confidence": 0.5999,
-      "reasoning": "My Bayesian Statistician experience tells me open-source model proliferation is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.43. The NO scenario is moderately probable, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
+      "confidence": 0.5676,
+      "reasoning": "From a Constitutional Lawyer standpoint, AI capability acceleration is evolving slowly. regulatory framework development suggests P(YES) = 0.31. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
       "key_factors": [
-        "open-source model proliferation",
+        "AI capability acceleration",
         "regulatory framework development",
-        "unexpected technical breakthroughs or limitations"
+        "public backlash against automation"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.43. My Bayesian Statistician experience tells me open-source model proliferation is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.43. The NO scenario is moderately probable, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.46. Round 1 deliberation: peers averaged 0.39. My bold and contrarian tendency led me to shifted upward by 0.03. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
-        "Round 2: Updated to P(YES) = 0.45. Round 2 deliberation: peers averaged 0.42. My bold and contrarian tendency led me to held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.47. Peer views ranged from 0.28 to 0.51. I adjusted minimally to 0.47. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
+        "Initial assessment: P(YES) = 0.31. From a Constitutional Lawyer standpoint, AI capability acceleration is evolving slowly. regulatory framework development suggests P(YES) = 0.31. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.31. Round 1 deliberation: peers averaged 0.39. My bold and contrarian tendency led me to held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
+        "Round 2: Updated to P(YES) = 0.28. Round 2 deliberation: peers averaged 0.42. My bold and contrarian tendency led me to shifted downward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.27. Peer views ranged from 0.33 to 0.55. I adjusted minimally to 0.27. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
       ]
     },
     {
       "id": 22,
       "name": "Joseph Mueller",
-      "background_category": "Pollster",
-      "background_detail": "Expert in survey methodology, sampling bias, and public opinion trends. Understands how sentiment translates to action.",
+      "background_category": "Commodity Trader",
+      "background_detail": "Tracks oil, metals, agricultural futures. Understands physical markets and supply/demand fundamentals.",
       "personality": "analytical and methodical",
-      "initial_score": 0.5328,
-      "final_score": 0.487,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.4166,
+      "final_score": 0.4379,
       "score_history": [
-        0.5328,
-        0.5266,
-        0.4906,
-        0.487
+        0.4166,
+        0.4309,
+        0.4213,
+        0.4379
       ],
-      "confidence": 0.6076,
-      "reasoning": "My Pollster experience tells me open-source model proliferation is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.53. The YES scenario is a toss-up, but public backlash against automation makes this a wide-confidence forecast.",
+      "confidence": 0.7331,
+      "reasoning": "Analyzing venture funding into AI agents alongside workforce retraining capacity, I arrive at P(YES) = 0.42. My Commodity Trader lens emphasizes that unexpected technical breakthroughs or limitations is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
       "key_factors": [
-        "open-source model proliferation",
-        "AI capability acceleration",
-        "public backlash against automation"
+        "venture funding into AI agents",
+        "workforce retraining capacity",
+        "unexpected technical breakthroughs or limitations"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.53. My Pollster experience tells me open-source model proliferation is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.53. The YES scenario is a toss-up, but public backlash against automation makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.53. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
-        "Round 2: Updated to P(YES) = 0.49. Peer views ranged from 0.24 to 0.62. I adjusted downward to 0.49. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.49. Peer views ranged from 0.33 to 0.47. I adjusted minimally to 0.49. Regulatory friction will slow deployment more than technological capability."
+        "Initial assessment: P(YES) = 0.42. Analyzing venture funding into AI agents alongside workforce retraining capacity, I arrive at P(YES) = 0.42. My Commodity Trader lens emphasizes that unexpected technical breakthroughs or limitations is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
+        "Round 1: Updated to P(YES) = 0.43. After seeing 5 peer opinions (avg 0.39), I held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
+        "Round 2: Updated to P(YES) = 0.42. Peer views ranged from 0.36 to 0.89. I adjusted minimally to 0.42. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.44. Peer views ranged from 0.27 to 0.69. I adjusted minimally to 0.44. Regulatory friction will slow deployment more than technological capability."
       ]
     },
     {
       "id": 23,
       "name": "Laura Harris",
-      "background_category": "Pharmaceutical Exec",
-      "background_detail": "Understands FDA approval cycles, clinical trial outcomes, biotech funding environment, and healthcare policy.",
+      "background_category": "Conspiracy Skeptic",
+      "background_detail": "Systematically debunks popular narratives. Tests claims against evidence rigorously. Finds hidden assumptions in consensus views.",
       "personality": "intuitive and pattern-matching",
-      "initial_score": 0.4338,
-      "final_score": 0.4677,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.225,
+      "final_score": 0.3392,
       "score_history": [
-        0.4338,
-        0.5149,
-        0.4909,
-        0.4677
+        0.225,
+        0.3089,
+        0.3303,
+        0.3392
       ],
-      "confidence": 0.4938,
-      "reasoning": "My Pharmaceutical Exec experience tells me workforce retraining capacity is the critical variable. Combined with organizational change management, I estimate P(YES) = 0.43. The NO scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
+      "confidence": 0.4779,
+      "reasoning": "From a Conspiracy Skeptic standpoint, AI capability acceleration is evolving slowly. enterprise adoption velocity suggests P(YES) = 0.23. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
       "key_factors": [
-        "workforce retraining capacity",
-        "organizational change management",
-        "AI reliability and hallucination rates"
+        "AI capability acceleration",
+        "enterprise adoption velocity",
+        "unexpected technical breakthroughs or limitations"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.43. My Pharmaceutical Exec experience tells me workforce retraining capacity is the critical variable. Combined with organizational change management, I estimate P(YES) = 0.43. The NO scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.51. Peer views ranged from 0.39 to 0.64. I adjusted upward to 0.51. Organizational change management is the real bottleneck, not technology.",
-        "Round 2: Updated to P(YES) = 0.49. After seeing 5 peer opinions (avg 0.39), I shifted downward by 0.02. Regulatory friction will slow deployment more than technological capability.",
-        "Round 3: Updated to P(YES) = 0.47. Peer views ranged from 0.31 to 0.55. I adjusted downward to 0.47. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
+        "Initial assessment: P(YES) = 0.23. From a Conspiracy Skeptic standpoint, AI capability acceleration is evolving slowly. enterprise adoption velocity suggests P(YES) = 0.23. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.31. Peer views ranged from 0.02 to 0.66. I adjusted upward to 0.31. Organizational change management is the real bottleneck, not technology.",
+        "Round 2: Updated to P(YES) = 0.33. After seeing 5 peer opinions (avg 0.43), I shifted upward by 0.02. Regulatory friction will slow deployment more than technological capability.",
+        "Round 3: Updated to P(YES) = 0.34. Peer views ranged from 0.33 to 0.63. I adjusted minimally to 0.34. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
       ]
     },
     {
       "id": 24,
       "name": "Christopher Hall",
-      "background_category": "Energy Sector Analyst",
-      "background_detail": "Tracks oil prices, OPEC dynamics, renewables deployment, and energy policy. Understands energy's macro impact.",
+      "background_category": "Short Seller",
+      "background_detail": "Professional skeptic. Hunts for overvalued assets, fraud, and overhyped narratives. Makes money when consensus is wrong.",
       "personality": "skeptical and devil's advocate",
-      "initial_score": 0.642,
-      "final_score": 0.6164,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.02,
+      "final_score": 0.0938,
       "score_history": [
-        0.642,
-        0.6371,
-        0.639,
-        0.6164
+        0.02,
+        0.0478,
+        0.0874,
+        0.0938
       ],
-      "confidence": 0.5488,
-      "reasoning": "From a Energy Sector Analyst standpoint, workforce retraining capacity is evolving rapidly. open-source model proliferation suggests P(YES) = 0.64. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
+      "confidence": 0.4825,
+      "reasoning": "Analyzing organizational change management alongside AI capability acceleration, I arrive at P(YES) = 0.02. My Short Seller lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is likely.",
       "key_factors": [
-        "workforce retraining capacity",
-        "open-source model proliferation",
-        "macroeconomic downturn slowing investment"
+        "organizational change management",
+        "AI capability acceleration",
+        "AI reliability and hallucination rates"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.64. From a Energy Sector Analyst standpoint, workforce retraining capacity is evolving rapidly. open-source model proliferation suggests P(YES) = 0.64. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.64. Round 1 deliberation: peers averaged 0.46. My skeptical and devil's advocate tendency led me to held my position largely steady. Organizational change management is the real bottleneck, not technology.",
-        "Round 2: Updated to P(YES) = 0.64. After seeing 5 peer opinions (avg 0.40), I held my position largely steady. Organizational change management is the real bottleneck, not technology.",
-        "Round 3: Updated to P(YES) = 0.62. After seeing 5 peer opinions (avg 0.46), I shifted downward by 0.02. The 10% threshold is much higher than current displacement rates."
+        "Initial assessment: P(YES) = 0.02. Analyzing organizational change management alongside AI capability acceleration, I arrive at P(YES) = 0.02. My Short Seller lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is likely.",
+        "Round 1: Updated to P(YES) = 0.05. Round 1 deliberation: peers averaged 0.48. My skeptical and devil's advocate tendency led me to shifted upward by 0.03. Organizational change management is the real bottleneck, not technology.",
+        "Round 2: Updated to P(YES) = 0.09. After seeing 5 peer opinions (avg 0.53), I shifted upward by 0.04. Organizational change management is the real bottleneck, not technology.",
+        "Round 3: Updated to P(YES) = 0.09. After seeing 5 peer opinions (avg 0.46), I held my position largely steady. The 10% threshold is much higher than current displacement rates."
       ]
     },
     {
       "id": 25,
       "name": "Megan Hill",
-      "background_category": "Real Estate Developer",
-      "background_detail": "Sensitive to interest rates, housing supply, zoning, and demographic shifts. Thinks in 5-10 year cycles.",
+      "background_category": "Venture Capitalist",
+      "background_detail": "Pattern-matches across industries, optimistic bias toward innovation and disruption. Sees technology as deflationary.",
       "personality": "consensus-seeking and diplomatic",
-      "initial_score": 0.3459,
-      "final_score": 0.4423,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.5235,
+      "final_score": 0.4857,
       "score_history": [
-        0.3459,
-        0.3197,
-        0.4191,
-        0.4423
+        0.5235,
+        0.4705,
+        0.4796,
+        0.4857
       ],
-      "confidence": 0.5773,
-      "reasoning": "My Real Estate Developer experience tells me regulatory framework development is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.35. The NO scenario is likely, but public backlash against automation makes this a wide-confidence forecast.",
+      "confidence": 0.5469,
+      "reasoning": "Analyzing open-source model proliferation alongside cost reduction from automation, I arrive at P(YES) = 0.52. My Venture Capitalist lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The YES case is a toss-up.",
       "key_factors": [
-        "regulatory framework development",
-        "workforce retraining capacity",
-        "public backlash against automation"
+        "open-source model proliferation",
+        "cost reduction from automation",
+        "AI reliability and hallucination rates"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.35. My Real Estate Developer experience tells me regulatory framework development is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.35. The NO scenario is likely, but public backlash against automation makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.32. Peer views ranged from 0.20 to 0.49. I adjusted downward to 0.32. The 10% threshold is much higher than current displacement rates.",
-        "Round 2: Updated to P(YES) = 0.42. Peer views ranged from 0.36 to 0.77. I adjusted upward to 0.42. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.44. Round 3 deliberation: peers averaged 0.46. My consensus-seeking and diplomatic tendency led me to shifted upward by 0.02. Organizational change management is the real bottleneck, not technology."
+        "Initial assessment: P(YES) = 0.52. Analyzing open-source model proliferation alongside cost reduction from automation, I arrive at P(YES) = 0.52. My Venture Capitalist lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The YES case is a toss-up.",
+        "Round 1: Updated to P(YES) = 0.47. Peer views ranged from 0.08 to 0.52. I adjusted downward to 0.47. The 10% threshold is much higher than current displacement rates.",
+        "Round 2: Updated to P(YES) = 0.48. Peer views ranged from 0.15 to 0.89. I adjusted minimally to 0.48. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.49. Round 3 deliberation: peers averaged 0.47. My consensus-seeking and diplomatic tendency led me to held my position largely steady. Organizational change management is the real bottleneck, not technology."
       ]
     },
     {
       "id": 26,
       "name": "Anthony Carter",
-      "background_category": "Crypto Analyst",
-      "background_detail": "Tracks on-chain data, DeFi flows, regulatory developments. Libertarian-leaning, skeptical of central authority.",
+      "background_category": "Tech Executive",
+      "background_detail": "Silicon Valley perspective, innovation-driven worldview. Believes in exponential curves and platform effects.",
       "personality": "data-obsessed and quantitative",
-      "initial_score": 0.6094,
-      "final_score": 0.4847,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.98,
+      "final_score": 0.767,
       "score_history": [
-        0.6094,
-        0.5354,
-        0.4883,
-        0.4847
+        0.98,
+        0.8722,
+        0.7969,
+        0.767
       ],
-      "confidence": 0.5608,
-      "reasoning": "From a Crypto Analyst standpoint, cost reduction from automation is evolving rapidly. AI capability acceleration suggests P(YES) = 0.61. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+      "confidence": 0.6795,
+      "reasoning": "From a Tech Executive standpoint, cost reduction from automation is evolving rapidly. AI capability acceleration suggests P(YES) = 0.98. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
       "key_factors": [
         "cost reduction from automation",
         "AI capability acceleration",
         "public backlash against automation"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.61. From a Crypto Analyst standpoint, cost reduction from automation is evolving rapidly. AI capability acceleration suggests P(YES) = 0.61. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.54. After seeing 5 peer opinions (avg 0.49), I shifted downward by 0.07. Organizational change management is the real bottleneck, not technology.",
-        "Round 2: Updated to P(YES) = 0.49. Peer views ranged from 0.30 to 0.62. I adjusted downward to 0.49. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
-        "Round 3: Updated to P(YES) = 0.48. Peer views ranged from 0.35 to 0.64. I adjusted minimally to 0.48. The open-source model ecosystem is accelerating adoption faster than expected."
+        "Initial assessment: P(YES) = 0.98. From a Tech Executive standpoint, cost reduction from automation is evolving rapidly. AI capability acceleration suggests P(YES) = 0.98. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.87. After seeing 5 peer opinions (avg 0.38), I shifted downward by 0.11. Organizational change management is the real bottleneck, not technology.",
+        "Round 2: Updated to P(YES) = 0.80. Peer views ranged from 0.16 to 0.57. I adjusted downward to 0.80. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
+        "Round 3: Updated to P(YES) = 0.77. Peer views ranged from 0.21 to 0.85. I adjusted downward to 0.77. The open-source model ecosystem is accelerating adoption faster than expected."
       ]
     },
     {
       "id": 27,
       "name": "Elizabeth Parker",
-      "background_category": "Union Organizer",
-      "background_detail": "Understands labor dynamics from the ground up. Tracks wage negotiations, strike activity, and worker sentiment.",
+      "background_category": "Crypto Analyst",
+      "background_detail": "Tracks on-chain data, DeFi flows, regulatory developments. Libertarian-leaning, skeptical of central authority.",
       "personality": "narrative-driven and qualitative",
-      "initial_score": 0.42,
-      "final_score": 0.4292,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.5199,
+      "final_score": 0.5348,
       "score_history": [
-        0.42,
-        0.4625,
-        0.4381,
-        0.4292
+        0.5199,
+        0.5733,
+        0.5421,
+        0.5348
       ],
       "confidence": 0.3774,
-      "reasoning": "My Union Organizer experience tells me organizational change management is the critical variable. Combined with enterprise adoption velocity, I estimate P(YES) = 0.42. The NO scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
+      "reasoning": "My Crypto Analyst experience tells me organizational change management is the critical variable. Combined with enterprise adoption velocity, I estimate P(YES) = 0.52. The YES scenario is a toss-up, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
       "key_factors": [
         "organizational change management",
         "enterprise adoption velocity",
         "AI reliability and hallucination rates"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.42. My Union Organizer experience tells me organizational change management is the critical variable. Combined with enterprise adoption velocity, I estimate P(YES) = 0.42. The NO scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.46. Peer views ranged from 0.18 to 0.46. I adjusted upward to 0.46. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 2: Updated to P(YES) = 0.44. Round 2 deliberation: peers averaged 0.40. My narrative-driven and qualitative tendency led me to shifted downward by 0.02. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 3: Updated to P(YES) = 0.43. Peer views ranged from 0.30 to 0.57. I adjusted minimally to 0.43. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
+        "Initial assessment: P(YES) = 0.52. My Crypto Analyst experience tells me organizational change management is the critical variable. Combined with enterprise adoption velocity, I estimate P(YES) = 0.52. The YES scenario is a toss-up, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.57. Peer views ranged from 0.18 to 0.73. I adjusted upward to 0.57. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 2: Updated to P(YES) = 0.54. Round 2 deliberation: peers averaged 0.38. My narrative-driven and qualitative tendency led me to shifted downward by 0.03. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 3: Updated to P(YES) = 0.53. Peer views ranged from 0.42 to 0.82. I adjusted minimally to 0.53. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
       ]
     },
     {
       "id": 28,
       "name": "Kevin Reed",
-      "background_category": "Demographer",
-      "background_detail": "Studies population trends, aging, migration, and their economic consequences. Long-term structural thinker.",
+      "background_category": "Fintech Founder",
+      "background_detail": "Understands payments, lending, and financial infrastructure disruption. Optimistic about technology solving finance.",
       "personality": "risk-averse and conservative",
-      "initial_score": 0.3946,
-      "final_score": 0.386,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.5792,
+      "final_score": 0.5259,
       "score_history": [
-        0.3946,
-        0.388,
-        0.3808,
-        0.386
+        0.5792,
+        0.5714,
+        0.5387,
+        0.5259
       ],
       "confidence": 0.6934,
-      "reasoning": "From a Demographer standpoint, open-source model proliferation is evolving slowly. workforce retraining capacity suggests P(YES) = 0.39. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
+      "reasoning": "From a Fintech Founder standpoint, open-source model proliferation is evolving gradually. workforce retraining capacity suggests P(YES) = 0.58. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
       "key_factors": [
         "open-source model proliferation",
         "workforce retraining capacity",
         "unexpected technical breakthroughs or limitations"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.39. From a Demographer standpoint, open-source model proliferation is evolving slowly. workforce retraining capacity suggests P(YES) = 0.39. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.39. Round 1 deliberation: peers averaged 0.42. My risk-averse and conservative tendency led me to held my position largely steady. The 10% threshold is much higher than current displacement rates.",
-        "Round 2: Updated to P(YES) = 0.38. Round 2 deliberation: peers averaged 0.47. My risk-averse and conservative tendency led me to held my position largely steady. Organizational change management is the real bottleneck, not technology.",
-        "Round 3: Updated to P(YES) = 0.39. After seeing 5 peer opinions (avg 0.48), I held my position largely steady. Organizational change management is the real bottleneck, not technology."
+        "Initial assessment: P(YES) = 0.58. From a Fintech Founder standpoint, open-source model proliferation is evolving gradually. workforce retraining capacity suggests P(YES) = 0.58. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.57. Round 1 deliberation: peers averaged 0.61. My risk-averse and conservative tendency led me to held my position largely steady. The 10% threshold is much higher than current displacement rates.",
+        "Round 2: Updated to P(YES) = 0.54. Round 2 deliberation: peers averaged 0.32. My risk-averse and conservative tendency led me to shifted downward by 0.03. Organizational change management is the real bottleneck, not technology.",
+        "Round 3: Updated to P(YES) = 0.53. After seeing 5 peer opinions (avg 0.44), I held my position largely steady. Organizational change management is the real bottleneck, not technology."
       ]
     },
     {
       "id": 29,
       "name": "Rebecca Santos",
-      "background_category": "Defense Contractor Exec",
-      "background_detail": "Tracks government spending, defense budgets, geopolitical tensions, and procurement cycles.",
+      "background_category": "Retail Investor",
+      "background_detail": "Follows social media sentiment, Reddit, FinTwit. Reads popular narrative but lacks institutional depth.",
       "personality": "risk-seeking and opportunistic",
-      "initial_score": 0.3901,
-      "final_score": 0.4029,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.6602,
+      "final_score": 0.6084,
       "score_history": [
-        0.3901,
-        0.395,
-        0.4109,
-        0.4029
+        0.6602,
+        0.6168,
+        0.6341,
+        0.6084
       ],
       "confidence": 0.4662,
-      "reasoning": "Analyzing open-source model proliferation alongside venture funding into AI agents, I arrive at P(YES) = 0.39. My Defense Contractor Exec lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
+      "reasoning": "Analyzing workforce retraining capacity alongside cost reduction from automation, I arrive at P(YES) = 0.66. My Retail Investor lens emphasizes that macroeconomic downturn slowing investment is often underestimated in technology adoption forecasts. The YES case is likely.",
       "key_factors": [
-        "open-source model proliferation",
-        "venture funding into AI agents",
-        "regulatory intervention timing"
+        "workforce retraining capacity",
+        "cost reduction from automation",
+        "macroeconomic downturn slowing investment"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.39. Analyzing open-source model proliferation alongside venture funding into AI agents, I arrive at P(YES) = 0.39. My Defense Contractor Exec lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
-        "Round 1: Updated to P(YES) = 0.40. Peer views ranged from 0.34 to 0.63. I adjusted minimally to 0.40. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
-        "Round 2: Updated to P(YES) = 0.41. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
-        "Round 3: Updated to P(YES) = 0.40. Round 3 deliberation: peers averaged 0.34. My risk-seeking and opportunistic tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability."
+        "Initial assessment: P(YES) = 0.66. Analyzing workforce retraining capacity alongside cost reduction from automation, I arrive at P(YES) = 0.66. My Retail Investor lens emphasizes that macroeconomic downturn slowing investment is often underestimated in technology adoption forecasts. The YES case is likely.",
+        "Round 1: Updated to P(YES) = 0.62. Peer views ranged from 0.35 to 0.81. I adjusted downward to 0.62. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
+        "Round 2: Updated to P(YES) = 0.63. After seeing 5 peer opinions (avg 0.50), I held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
+        "Round 3: Updated to P(YES) = 0.61. Round 3 deliberation: peers averaged 0.36. My risk-seeking and opportunistic tendency led me to shifted downward by 0.03. Regulatory friction will slow deployment more than technological capability."
       ]
     },
     {
       "id": 30,
       "name": "Brian White",
-      "background_category": "Fintech Founder",
-      "background_detail": "Understands payments, lending, and financial infrastructure disruption. Optimistic about technology solving finance.",
+      "background_category": "Biotech Researcher",
+      "background_detail": "Works on drug discovery and understands R&D timelines, regulatory hurdles, and scientific uncertainty.",
       "personality": "cautious and evidence-driven",
-      "initial_score": 0.5857,
-      "final_score": 0.4828,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.5795,
+      "final_score": 0.5179,
       "score_history": [
-        0.5857,
-        0.5669,
-        0.5151,
-        0.4828
+        0.5795,
+        0.5664,
+        0.5298,
+        0.5179
       ],
-      "confidence": 0.7732,
-      "reasoning": "From a Fintech Founder standpoint, workforce retraining capacity is evolving gradually. AI capability acceleration suggests P(YES) = 0.59. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
+      "confidence": 0.304,
+      "reasoning": "From a Biotech Researcher standpoint, workforce retraining capacity is evolving gradually. AI capability acceleration suggests P(YES) = 0.58. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
       "key_factors": [
         "workforce retraining capacity",
         "AI capability acceleration",
         "unexpected technical breakthroughs or limitations"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.59. From a Fintech Founder standpoint, workforce retraining capacity is evolving gradually. AI capability acceleration suggests P(YES) = 0.59. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.57. Round 1 deliberation: peers averaged 0.48. My cautious and evidence-driven tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
-        "Round 2: Updated to P(YES) = 0.52. Round 2 deliberation: peers averaged 0.33. My cautious and evidence-driven tendency led me to shifted downward by 0.05. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.48. Peer views ranged from 0.23 to 0.43. I adjusted downward to 0.48. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
+        "Initial assessment: P(YES) = 0.58. From a Biotech Researcher standpoint, workforce retraining capacity is evolving gradually. AI capability acceleration suggests P(YES) = 0.58. Key risk: unexpected technical breakthroughs or limitations could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.57. Round 1 deliberation: peers averaged 0.46. My cautious and evidence-driven tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
+        "Round 2: Updated to P(YES) = 0.53. Round 2 deliberation: peers averaged 0.31. My cautious and evidence-driven tendency led me to shifted downward by 0.04. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.52. Peer views ranged from 0.33 to 0.53. I adjusted minimally to 0.52. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
       ]
     },
     {
       "id": 31,
       "name": "Katherine Walker",
-      "background_category": "Agricultural Economist",
-      "background_detail": "Tracks food prices, crop yields, weather patterns, and trade policy impacts on farming.",
+      "background_category": "Climate Scientist",
+      "background_detail": "Understands long-term systemic risks, physical economy impacts, and energy transition dynamics.",
       "personality": "bold and contrarian",
-      "initial_score": 0.409,
-      "final_score": 0.3559,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.7281,
+      "final_score": 0.6796,
       "score_history": [
-        0.409,
-        0.3784,
-        0.3523,
-        0.3559
+        0.7281,
+        0.7098,
+        0.6868,
+        0.6796
       ],
       "confidence": 0.572,
-      "reasoning": "My Agricultural Economist experience tells me enterprise adoption velocity is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.41. The NO scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
+      "reasoning": "My Climate Scientist experience tells me enterprise adoption velocity is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.73. The YES scenario is likely, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
       "key_factors": [
         "enterprise adoption velocity",
         "workforce retraining capacity",
         "AI reliability and hallucination rates"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.41. My Agricultural Economist experience tells me enterprise adoption velocity is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.41. The NO scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.38. After seeing 5 peer opinions (avg 0.54), I shifted downward by 0.03. Regulatory friction will slow deployment more than technological capability.",
-        "Round 2: Updated to P(YES) = 0.35. Round 2 deliberation: peers averaged 0.46. My bold and contrarian tendency led me to shifted downward by 0.03. Regulatory friction will slow deployment more than technological capability.",
-        "Round 3: Updated to P(YES) = 0.36. After seeing 5 peer opinions (avg 0.35), I held my position largely steady. The 10% threshold is much higher than current displacement rates."
+        "Initial assessment: P(YES) = 0.73. My Climate Scientist experience tells me enterprise adoption velocity is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.73. The YES scenario is likely, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.71. After seeing 5 peer opinions (avg 0.49), I held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
+        "Round 2: Updated to P(YES) = 0.69. Round 2 deliberation: peers averaged 0.42. My bold and contrarian tendency led me to shifted downward by 0.02. Regulatory friction will slow deployment more than technological capability.",
+        "Round 3: Updated to P(YES) = 0.68. After seeing 5 peer opinions (avg 0.36), I held my position largely steady. The 10% threshold is much higher than current displacement rates."
       ]
     },
     {
       "id": 32,
       "name": "Steven Lopez",
-      "background_category": "Central Bank Watcher",
-      "background_detail": "Parses every Fed speech, dot plot, and minutes release. Expert at reading between the lines of central bank communication.",
+      "background_category": "Political Analyst",
+      "background_detail": "Tracks legislative dynamics, lobbying, regulatory shifts, and election cycles. Deep knowledge of Congressional mechanics.",
       "personality": "analytical and methodical",
-      "initial_score": 0.339,
-      "final_score": 0.4228,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.3222,
+      "final_score": 0.4057,
       "score_history": [
-        0.339,
-        0.3669,
-        0.3983,
-        0.4228
+        0.3222,
+        0.3509,
+        0.3761,
+        0.4057
       ],
       "confidence": 0.6089,
-      "reasoning": "Analyzing regulatory framework development alongside cost reduction from automation, I arrive at P(YES) = 0.34. My Central Bank Watcher lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is likely.",
+      "reasoning": "Analyzing regulatory framework development alongside cost reduction from automation, I arrive at P(YES) = 0.32. My Political Analyst lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is likely.",
       "key_factors": [
         "regulatory framework development",
         "cost reduction from automation",
         "regulatory intervention timing"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.34. Analyzing regulatory framework development alongside cost reduction from automation, I arrive at P(YES) = 0.34. My Central Bank Watcher lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is likely.",
-        "Round 1: Updated to P(YES) = 0.37. After seeing 5 peer opinions (avg 0.42), I shifted upward by 0.03. Organizational change management is the real bottleneck, not technology.",
-        "Round 2: Updated to P(YES) = 0.40. Peer views ranged from 0.18 to 0.62. I adjusted upward to 0.40. The 10% threshold is much higher than current displacement rates.",
-        "Round 3: Updated to P(YES) = 0.42. Peer views ranged from 0.33 to 0.50. I adjusted upward to 0.42. The open-source model ecosystem is accelerating adoption faster than expected."
+        "Initial assessment: P(YES) = 0.32. Analyzing regulatory framework development alongside cost reduction from automation, I arrive at P(YES) = 0.32. My Political Analyst lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is likely.",
+        "Round 1: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.49), I shifted upward by 0.03. Organizational change management is the real bottleneck, not technology.",
+        "Round 2: Updated to P(YES) = 0.38. Peer views ranged from 0.15 to 0.63. I adjusted upward to 0.38. The 10% threshold is much higher than current displacement rates.",
+        "Round 3: Updated to P(YES) = 0.41. Peer views ranged from 0.32 to 0.56. I adjusted upward to 0.41. The open-source model ecosystem is accelerating adoption faster than expected."
       ]
     },
     {
       "id": 33,
       "name": "Patricia Nelson",
-      "background_category": "Biotech Researcher",
-      "background_detail": "Works on drug discovery and understands R&D timelines, regulatory hurdles, and scientific uncertainty.",
+      "background_category": "Geopolitical Strategist",
+      "background_detail": "Analyzes international relations, trade wars, sanctions, and their second-order effects on domestic policy.",
       "personality": "intuitive and pattern-matching",
-      "initial_score": 0.632,
-      "final_score": 0.5365,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.3874,
+      "final_score": 0.4333,
       "score_history": [
-        0.632,
-        0.6189,
-        0.5503,
-        0.5365
+        0.3874,
+        0.4387,
+        0.4371,
+        0.4333
       ],
       "confidence": 0.7121,
-      "reasoning": "My Biotech Researcher experience tells me enterprise adoption velocity is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.63. The YES scenario is moderately probable, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
+      "reasoning": "My Geopolitical Strategist experience tells me enterprise adoption velocity is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.39. The NO scenario is moderately probable, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
       "key_factors": [
         "enterprise adoption velocity",
         "AI capability acceleration",
         "macroeconomic downturn slowing investment"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.63. My Biotech Researcher experience tells me enterprise adoption velocity is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.63. The YES scenario is moderately probable, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.62. Peer views ranged from 0.13 to 0.64. I adjusted minimally to 0.62. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
-        "Round 2: Updated to P(YES) = 0.55. Round 2 deliberation: peers averaged 0.40. My intuitive and pattern-matching tendency led me to shifted downward by 0.07. Regulatory friction will slow deployment more than technological capability.",
-        "Round 3: Updated to P(YES) = 0.54. Peer views ranged from 0.39 to 0.64. I adjusted minimally to 0.54. The 10% threshold is much higher than current displacement rates."
+        "Initial assessment: P(YES) = 0.39. My Geopolitical Strategist experience tells me enterprise adoption velocity is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.39. The NO scenario is moderately probable, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.44. Peer views ranged from 0.10 to 0.81. I adjusted upward to 0.44. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
+        "Round 2: Updated to P(YES) = 0.44. Round 2 deliberation: peers averaged 0.55. My intuitive and pattern-matching tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
+        "Round 3: Updated to P(YES) = 0.43. Peer views ranged from 0.29 to 0.53. I adjusted minimally to 0.43. The 10% threshold is much higher than current displacement rates."
       ]
     },
     {
       "id": 34,
       "name": "Edward Campbell",
-      "background_category": "Sovereign Wealth Fund Analyst",
-      "background_detail": "Manages long-term national reserves. Thinks in decades, tracks global macro imbalances and structural shifts.",
+      "background_category": "Union Organizer",
+      "background_detail": "Understands labor dynamics from the ground up. Tracks wage negotiations, strike activity, and worker sentiment.",
       "personality": "skeptical and devil's advocate",
-      "initial_score": 0.5215,
-      "final_score": 0.5905,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.8082,
+      "final_score": 0.8095,
       "score_history": [
-        0.5215,
-        0.552,
-        0.5718,
-        0.5905
+        0.8082,
+        0.8182,
+        0.8176,
+        0.8095
       ],
       "confidence": 0.3943,
-      "reasoning": "From a Sovereign Wealth Fund Analyst standpoint, workforce retraining capacity is evolving gradually. regulatory framework development suggests P(YES) = 0.52. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
+      "reasoning": "From a Union Organizer standpoint, workforce retraining capacity is evolving rapidly. regulatory framework development suggests P(YES) = 0.81. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
       "key_factors": [
         "workforce retraining capacity",
         "regulatory framework development",
         "macroeconomic downturn slowing investment"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.52. From a Sovereign Wealth Fund Analyst standpoint, workforce retraining capacity is evolving gradually. regulatory framework development suggests P(YES) = 0.52. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.55. Peer views ranged from 0.20 to 0.64. I adjusted upward to 0.55. Organizational change management is the real bottleneck, not technology.",
-        "Round 2: Updated to P(YES) = 0.57. After seeing 5 peer opinions (avg 0.50), I held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.59. Round 3 deliberation: peers averaged 0.49. My skeptical and devil's advocate tendency led me to held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
+        "Initial assessment: P(YES) = 0.81. From a Union Organizer standpoint, workforce retraining capacity is evolving rapidly. regulatory framework development suggests P(YES) = 0.81. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.82. Peer views ranged from 0.08 to 0.95. I adjusted minimally to 0.82. Organizational change management is the real bottleneck, not technology.",
+        "Round 2: Updated to P(YES) = 0.82. After seeing 5 peer opinions (avg 0.48), I held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.81. Round 3 deliberation: peers averaged 0.40. My skeptical and devil's advocate tendency led me to held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
       ]
     },
     {
       "id": 35,
       "name": "Christina Morris",
-      "background_category": "Macro Economist",
-      "background_detail": "PhD economist focused on monetary policy, inflation dynamics, and central bank behavior. Tracks PCE, CPI, employment data, and Fed minutes closely.",
+      "background_category": "Real Estate Developer",
+      "background_detail": "Sensitive to interest rates, housing supply, zoning, and demographic shifts. Thinks in 5-10 year cycles.",
       "personality": "consensus-seeking and diplomatic",
-      "initial_score": 0.4135,
-      "final_score": 0.4352,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.3541,
+      "final_score": 0.3671,
       "score_history": [
-        0.4135,
-        0.3796,
-        0.4281,
-        0.4352
+        0.3541,
+        0.3465,
+        0.3631,
+        0.3671
       ],
       "confidence": 0.6839,
-      "reasoning": "My Macro Economist experience tells me open-source model proliferation is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.41. The NO scenario is moderately probable, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
+      "reasoning": "My Real Estate Developer experience tells me open-source model proliferation is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.35. The NO scenario is moderately probable, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
       "key_factors": [
         "open-source model proliferation",
         "regulatory framework development",
         "unexpected technical breakthroughs or limitations"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.41. My Macro Economist experience tells me open-source model proliferation is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.41. The NO scenario is moderately probable, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.38. Peer views ranged from 0.20 to 0.62. I adjusted downward to 0.38. Organizational change management is the real bottleneck, not technology.",
-        "Round 2: Updated to P(YES) = 0.43. After seeing 5 peer opinions (avg 0.54), I shifted upward by 0.05. Organizational change management is the real bottleneck, not technology.",
-        "Round 3: Updated to P(YES) = 0.44. Peer views ranged from 0.31 to 0.60. I adjusted minimally to 0.44. Regulatory friction will slow deployment more than technological capability."
+        "Initial assessment: P(YES) = 0.35. My Real Estate Developer experience tells me open-source model proliferation is the critical variable. Combined with regulatory framework development, I estimate P(YES) = 0.35. The NO scenario is moderately probable, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.35. Peer views ranged from 0.08 to 0.82. I adjusted minimally to 0.35. Organizational change management is the real bottleneck, not technology.",
+        "Round 2: Updated to P(YES) = 0.36. After seeing 5 peer opinions (avg 0.47), I held my position largely steady. Organizational change management is the real bottleneck, not technology.",
+        "Round 3: Updated to P(YES) = 0.37. Peer views ranged from 0.28 to 0.61. I adjusted minimally to 0.37. Regulatory friction will slow deployment more than technological capability."
       ]
     },
     {
       "id": 36,
       "name": "George Nakamura",
-      "background_category": "Quantitative Trader",
-      "background_detail": "Builds systematic models, thinks in probabilities and base rates. Uses options-implied probabilities and historical analogs.",
+      "background_category": "Defense Contractor Exec",
+      "background_detail": "Tracks government spending, defense budgets, geopolitical tensions, and procurement cycles.",
       "personality": "data-obsessed and quantitative",
+      "temp_tier": "analyst",
+      "temperature": 0.3,
       "initial_score": 0.4326,
-      "final_score": 0.4727,
+      "final_score": 0.4327,
       "score_history": [
         0.4326,
-        0.4659,
-        0.4956,
-        0.4727
+        0.4405,
+        0.4576,
+        0.4327
       ],
       "confidence": 0.534,
-      "reasoning": "My Quantitative Trader experience tells me venture funding into AI agents is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.43. The NO scenario is moderately probable, but public backlash against automation makes this a wide-confidence forecast.",
+      "reasoning": "My Defense Contractor Exec experience tells me venture funding into AI agents is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.43. The NO scenario is moderately probable, but public backlash against automation makes this a wide-confidence forecast.",
       "key_factors": [
         "venture funding into AI agents",
         "workforce retraining capacity",
         "public backlash against automation"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.43. My Quantitative Trader experience tells me venture funding into AI agents is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.43. The NO scenario is moderately probable, but public backlash against automation makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.47. After seeing 5 peer opinions (avg 0.54), I shifted upward by 0.03. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 2: Updated to P(YES) = 0.50. After seeing 5 peer opinions (avg 0.46), I shifted upward by 0.03. Regulatory friction will slow deployment more than technological capability.",
-        "Round 3: Updated to P(YES) = 0.47. Peer views ranged from 0.33 to 0.64. I adjusted downward to 0.47. The open-source model ecosystem is accelerating adoption faster than expected."
+        "Initial assessment: P(YES) = 0.43. My Defense Contractor Exec experience tells me venture funding into AI agents is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.43. The NO scenario is moderately probable, but public backlash against automation makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.44. After seeing 5 peer opinions (avg 0.36), I held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 2: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.30), I held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
+        "Round 3: Updated to P(YES) = 0.43. Peer views ranged from 0.29 to 0.81. I adjusted downward to 0.43. The open-source model ecosystem is accelerating adoption faster than expected."
       ]
     },
     {
       "id": 37,
       "name": "Michelle Jackson",
-      "background_category": "Political Analyst",
-      "background_detail": "Tracks legislative dynamics, lobbying, regulatory shifts, and election cycles. Deep knowledge of Congressional mechanics.",
+      "background_category": "Historical Analogist",
+      "background_detail": "Maps current events onto historical templates \u2014 Weimar, 1930s, 1970s, Japanese lost decade. Strong pattern-matching.",
       "personality": "narrative-driven and qualitative",
-      "initial_score": 0.2047,
-      "final_score": 0.3605,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.0752,
+      "final_score": 0.2152,
       "score_history": [
-        0.2047,
-        0.3354,
-        0.3309,
-        0.3605
+        0.0752,
+        0.1598,
+        0.1818,
+        0.2152
       ],
       "confidence": 0.3271,
-      "reasoning": "My Political Analyst experience tells me enterprise adoption velocity is the critical variable. Combined with organizational change management, I estimate P(YES) = 0.20. The NO scenario is likely, but public backlash against automation makes this a wide-confidence forecast.",
+      "reasoning": "My Historical Analogist experience tells me enterprise adoption velocity is the critical variable. Combined with organizational change management, I estimate P(YES) = 0.08. The NO scenario is likely, but public backlash against automation makes this a wide-confidence forecast.",
       "key_factors": [
         "enterprise adoption velocity",
         "organizational change management",
         "public backlash against automation"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.20. My Political Analyst experience tells me enterprise adoption velocity is the critical variable. Combined with organizational change management, I estimate P(YES) = 0.20. The NO scenario is likely, but public backlash against automation makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.54), I shifted upward by 0.13. Regulatory friction will slow deployment more than technological capability.",
-        "Round 2: Updated to P(YES) = 0.33. After seeing 5 peer opinions (avg 0.34), I held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
-        "Round 3: Updated to P(YES) = 0.36. Round 3 deliberation: peers averaged 0.42. My narrative-driven and qualitative tendency led me to shifted upward by 0.03. Organizational change management is the real bottleneck, not technology."
+        "Initial assessment: P(YES) = 0.08. My Historical Analogist experience tells me enterprise adoption velocity is the critical variable. Combined with organizational change management, I estimate P(YES) = 0.08. The NO scenario is likely, but public backlash against automation makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.16. After seeing 5 peer opinions (avg 0.33), I shifted upward by 0.08. Regulatory friction will slow deployment more than technological capability.",
+        "Round 2: Updated to P(YES) = 0.18. After seeing 5 peer opinions (avg 0.42), I shifted upward by 0.02. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
+        "Round 3: Updated to P(YES) = 0.22. Round 3 deliberation: peers averaged 0.39. My narrative-driven and qualitative tendency led me to shifted upward by 0.03. Organizational change management is the real bottleneck, not technology."
       ]
     },
     {
       "id": 38,
       "name": "Kenneth Lee",
-      "background_category": "Investigative Journalist",
-      "background_detail": "Skeptical by nature, hunts for hidden information and contrarian angles. Distrusts consensus narratives.",
+      "background_category": "AI Safety Researcher",
+      "background_detail": "Studies alignment, capability elicitation, and societal impact of AI systems. Calibrated about AI limitations.",
       "personality": "risk-averse and conservative",
-      "initial_score": 0.4444,
-      "final_score": 0.4365,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.6444,
+      "final_score": 0.5976,
       "score_history": [
-        0.4444,
-        0.4151,
-        0.4288,
-        0.4365
+        0.6444,
+        0.6037,
+        0.599,
+        0.5976
       ],
       "confidence": 0.5521,
-      "reasoning": "From a Investigative Journalist standpoint, open-source model proliferation is evolving gradually. workforce retraining capacity suggests P(YES) = 0.44. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
+      "reasoning": "From a AI Safety Researcher standpoint, open-source model proliferation is evolving rapidly. workforce retraining capacity suggests P(YES) = 0.64. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
       "key_factors": [
         "open-source model proliferation",
         "workforce retraining capacity",
         "macroeconomic downturn slowing investment"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.44. From a Investigative Journalist standpoint, open-source model proliferation is evolving gradually. workforce retraining capacity suggests P(YES) = 0.44. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.42. Round 1 deliberation: peers averaged 0.41. My risk-averse and conservative tendency led me to shifted downward by 0.03. The 10% threshold is much higher than current displacement rates.",
-        "Round 2: Updated to P(YES) = 0.43. Round 2 deliberation: peers averaged 0.49. My risk-averse and conservative tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
-        "Round 3: Updated to P(YES) = 0.44. Peer views ranged from 0.39 to 0.59. I adjusted minimally to 0.44. Regulatory friction will slow deployment more than technological capability."
+        "Initial assessment: P(YES) = 0.64. From a AI Safety Researcher standpoint, open-source model proliferation is evolving rapidly. workforce retraining capacity suggests P(YES) = 0.64. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.60. Round 1 deliberation: peers averaged 0.38. My risk-averse and conservative tendency led me to shifted downward by 0.04. The 10% threshold is much higher than current displacement rates.",
+        "Round 2: Updated to P(YES) = 0.60. Round 2 deliberation: peers averaged 0.45. My risk-averse and conservative tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability.",
+        "Round 3: Updated to P(YES) = 0.60. Peer views ranged from 0.39 to 0.85. I adjusted minimally to 0.60. Regulatory friction will slow deployment more than technological capability."
       ]
     },
     {
       "id": 39,
       "name": "Diana Wright",
-      "background_category": "Venture Capitalist",
-      "background_detail": "Pattern-matches across industries, optimistic bias toward innovation and disruption. Sees technology as deflationary.",
+      "background_category": "Management Consultant",
+      "background_detail": "Works with Fortune 500 on transformation. Sees enterprise adoption friction firsthand \u2014 budgets, change mgmt, politics.",
       "personality": "risk-seeking and opportunistic",
-      "initial_score": 0.7098,
-      "final_score": 0.5857,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.4597,
+      "final_score": 0.5187,
       "score_history": [
-        0.7098,
-        0.6888,
-        0.6417,
-        0.5857
+        0.4597,
+        0.4843,
+        0.5059,
+        0.5187
       ],
       "confidence": 0.5996,
-      "reasoning": "From a Venture Capitalist standpoint, workforce retraining capacity is evolving rapidly. venture funding into AI agents suggests P(YES) = 0.71. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
+      "reasoning": "From a Management Consultant standpoint, regulatory framework development is evolving gradually. workforce retraining capacity suggests P(YES) = 0.46. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+      "key_factors": [
+        "regulatory framework development",
+        "workforce retraining capacity",
+        "public backlash against automation"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.46. From a Management Consultant standpoint, regulatory framework development is evolving gradually. workforce retraining capacity suggests P(YES) = 0.46. Key risk: public backlash against automation could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.48. Round 1 deliberation: peers averaged 0.35. My risk-seeking and opportunistic tendency led me to shifted upward by 0.02. Regulatory friction will slow deployment more than technological capability.",
+        "Round 2: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.42), I shifted upward by 0.02. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.52. Peer views ranged from 0.31 to 0.52. I adjusted minimally to 0.52. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Raj Gonzalez",
+      "background_category": "Macro Economist",
+      "background_detail": "PhD economist focused on monetary policy, inflation dynamics, and central bank behavior. Tracks PCE, CPI, employment data, and Fed minutes closely.",
+      "personality": "cautious and evidence-driven",
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.382,
+      "final_score": 0.3844,
+      "score_history": [
+        0.382,
+        0.3603,
+        0.3807,
+        0.3844
+      ],
+      "confidence": 0.6288,
+      "reasoning": "My Macro Economist experience tells me enterprise adoption velocity is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.38. The NO scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
+      "key_factors": [
+        "enterprise adoption velocity",
+        "workforce retraining capacity",
+        "AI reliability and hallucination rates"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.38. My Macro Economist experience tells me enterprise adoption velocity is the critical variable. Combined with workforce retraining capacity, I estimate P(YES) = 0.38. The NO scenario is moderately probable, but AI reliability and hallucination rates makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.36. Peer views ranged from 0.31 to 0.57. I adjusted downward to 0.36. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
+        "Round 2: Updated to P(YES) = 0.38. Peer views ranged from 0.37 to 0.80. I adjusted upward to 0.38. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
+        "Round 3: Updated to P(YES) = 0.38. Round 3 deliberation: peers averaged 0.37. My cautious and evidence-driven tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability."
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Yuki Phillips",
+      "background_category": "Quantitative Trader",
+      "background_detail": "Builds systematic models, thinks in probabilities and base rates. Uses options-implied probabilities and historical analogs.",
+      "personality": "bold and contrarian",
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.3342,
+      "final_score": 0.3042,
+      "score_history": [
+        0.3342,
+        0.3035,
+        0.3051,
+        0.3042
+      ],
+      "confidence": 0.5587,
+      "reasoning": "Analyzing cost reduction from automation alongside workforce retraining capacity, I arrive at P(YES) = 0.33. My Quantitative Trader lens emphasizes that public backlash against automation is often underestimated in technology adoption forecasts. The NO case is likely.",
+      "key_factors": [
+        "cost reduction from automation",
+        "workforce retraining capacity",
+        "public backlash against automation"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.33. Analyzing cost reduction from automation alongside workforce retraining capacity, I arrive at P(YES) = 0.33. My Quantitative Trader lens emphasizes that public backlash against automation is often underestimated in technology adoption forecasts. The NO case is likely.",
+        "Round 1: Updated to P(YES) = 0.30. After seeing 5 peer opinions (avg 0.36), I shifted downward by 0.03. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
+        "Round 2: Updated to P(YES) = 0.31. Peer views ranged from 0.15 to 0.49. I adjusted minimally to 0.31. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 3: Updated to P(YES) = 0.30. Peer views ranged from 0.27 to 0.68. I adjusted minimally to 0.30. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Wei Sanchez",
+      "background_category": "Data Scientist",
+      "background_detail": "Relies on statistical models, historical base rates, and ensemble methods. Skeptical of narratives without data.",
+      "personality": "analytical and methodical",
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.5651,
+      "final_score": 0.5437,
+      "score_history": [
+        0.5651,
+        0.5437,
+        0.555,
+        0.5437
+      ],
+      "confidence": 0.672,
+      "reasoning": "Analyzing workforce retraining capacity alongside venture funding into AI agents, I arrive at P(YES) = 0.57. My Data Scientist lens emphasizes that macroeconomic downturn slowing investment is often underestimated in technology adoption forecasts. The YES case is moderately probable.",
       "key_factors": [
         "workforce retraining capacity",
         "venture funding into AI agents",
         "macroeconomic downturn slowing investment"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.71. From a Venture Capitalist standpoint, workforce retraining capacity is evolving rapidly. venture funding into AI agents suggests P(YES) = 0.71. Key risk: macroeconomic downturn slowing investment could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.69. Round 1 deliberation: peers averaged 0.58. My risk-seeking and opportunistic tendency led me to shifted downward by 0.02. Regulatory friction will slow deployment more than technological capability.",
-        "Round 2: Updated to P(YES) = 0.64. After seeing 5 peer opinions (avg 0.46), I shifted downward by 0.05. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.59. Peer views ranged from 0.34 to 0.54. I adjusted downward to 0.59. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
-      ]
-    },
-    {
-      "id": 40,
-      "name": "Raj Gonzalez",
-      "background_category": "Retired Central Banker",
-      "background_detail": "Deep institutional knowledge of Fed/ECB decision-making processes. Understands the politics inside the FOMC.",
-      "personality": "cautious and evidence-driven",
-      "initial_score": 0.4011,
-      "final_score": 0.4034,
-      "score_history": [
-        0.4011,
-        0.3706,
-        0.3911,
-        0.4034
-      ],
-      "confidence": 0.5217,
-      "reasoning": "Analyzing AI capability acceleration alongside venture funding into AI agents, I arrive at P(YES) = 0.40. My Retired Central Banker lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
-      "key_factors": [
-        "AI capability acceleration",
-        "venture funding into AI agents",
-        "AI reliability and hallucination rates"
-      ],
-      "memory_stream": [
-        "Initial assessment: P(YES) = 0.40. Analyzing AI capability acceleration alongside venture funding into AI agents, I arrive at P(YES) = 0.40. My Retired Central Banker lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
-        "Round 1: Updated to P(YES) = 0.37. Peer views ranged from 0.23 to 0.51. I adjusted downward to 0.37. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
-        "Round 2: Updated to P(YES) = 0.39. Peer views ranged from 0.27 to 0.55. I adjusted upward to 0.39. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
-        "Round 3: Updated to P(YES) = 0.40. Round 3 deliberation: peers averaged 0.44. My cautious and evidence-driven tendency led me to held my position largely steady. Regulatory friction will slow deployment more than technological capability."
-      ]
-    },
-    {
-      "id": 41,
-      "name": "Yuki Phillips",
-      "background_category": "Behavioral Economist",
-      "background_detail": "Studies cognitive biases, market sentiment, and herd behavior. Believes markets systematically misprice tail events.",
-      "personality": "bold and contrarian",
-      "initial_score": 0.4941,
-      "final_score": 0.509,
-      "score_history": [
-        0.4941,
-        0.4908,
-        0.5052,
-        0.509
-      ],
-      "confidence": 0.7284,
-      "reasoning": "Analyzing enterprise adoption velocity alongside AI capability acceleration, I arrive at P(YES) = 0.49. My Behavioral Economist lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is a toss-up.",
-      "key_factors": [
-        "enterprise adoption velocity",
-        "AI capability acceleration",
-        "AI reliability and hallucination rates"
-      ],
-      "memory_stream": [
-        "Initial assessment: P(YES) = 0.49. Analyzing enterprise adoption velocity alongside AI capability acceleration, I arrive at P(YES) = 0.49. My Behavioral Economist lens emphasizes that AI reliability and hallucination rates is often underestimated in technology adoption forecasts. The NO case is a toss-up.",
-        "Round 1: Updated to P(YES) = 0.49. After seeing 5 peer opinions (avg 0.35), I held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration.",
-        "Round 2: Updated to P(YES) = 0.51. Peer views ranged from 0.18 to 0.57. I adjusted minimally to 0.51. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 3: Updated to P(YES) = 0.51. Peer views ranged from 0.36 to 0.54. I adjusted minimally to 0.51. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
-      ]
-    },
-    {
-      "id": 42,
-      "name": "Wei Sanchez",
-      "background_category": "Geopolitical Strategist",
-      "background_detail": "Analyzes international relations, trade wars, sanctions, and their second-order effects on domestic policy.",
-      "personality": "analytical and methodical",
-      "initial_score": 0.2295,
-      "final_score": 0.3513,
-      "score_history": [
-        0.2295,
-        0.2782,
-        0.334,
-        0.3513
-      ],
-      "confidence": 0.6213,
-      "reasoning": "My Geopolitical Strategist experience tells me cost reduction from automation is the critical variable. Combined with open-source model proliferation, I estimate P(YES) = 0.23. The NO scenario is likely, but public backlash against automation makes this a wide-confidence forecast.",
-      "key_factors": [
-        "cost reduction from automation",
-        "open-source model proliferation",
-        "public backlash against automation"
-      ],
-      "memory_stream": [
-        "Initial assessment: P(YES) = 0.23. My Geopolitical Strategist experience tells me cost reduction from automation is the critical variable. Combined with open-source model proliferation, I estimate P(YES) = 0.23. The NO scenario is likely, but public backlash against automation makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.28. Peer views ranged from 0.22 to 0.69. I adjusted upward to 0.28. Organizational change management is the real bottleneck, not technology.",
-        "Round 2: Updated to P(YES) = 0.33. Peer views ranged from 0.35 to 0.64. I adjusted upward to 0.33. Organizational change management is the real bottleneck, not technology.",
-        "Round 3: Updated to P(YES) = 0.35. Round 3 deliberation: peers averaged 0.48. My analytical and methodical tendency led me to held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
+        "Initial assessment: P(YES) = 0.57. Analyzing workforce retraining capacity alongside venture funding into AI agents, I arrive at P(YES) = 0.57. My Data Scientist lens emphasizes that macroeconomic downturn slowing investment is often underestimated in technology adoption forecasts. The YES case is moderately probable.",
+        "Round 1: Updated to P(YES) = 0.54. Peer views ranged from 0.05 to 0.48. I adjusted downward to 0.54. Organizational change management is the real bottleneck, not technology.",
+        "Round 2: Updated to P(YES) = 0.56. Peer views ranged from 0.09 to 0.69. I adjusted minimally to 0.56. Organizational change management is the real bottleneck, not technology.",
+        "Round 3: Updated to P(YES) = 0.54. Round 3 deliberation: peers averaged 0.57. My analytical and methodical tendency led me to held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
       ]
     },
     {
       "id": 43,
       "name": "Fatima O'Brien",
-      "background_category": "Data Scientist",
-      "background_detail": "Relies on statistical models, historical base rates, and ensemble methods. Skeptical of narratives without data.",
+      "background_category": "Insurance Actuary",
+      "background_detail": "Probabilistic thinker focused on tail risks, base rates, and mortality/morbidity tables. Conservative estimator.",
       "personality": "intuitive and pattern-matching",
-      "initial_score": 0.4111,
-      "final_score": 0.4173,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.3999,
+      "final_score": 0.3991,
       "score_history": [
-        0.4111,
-        0.4204,
-        0.3912,
-        0.4173
+        0.3999,
+        0.4069,
+        0.3915,
+        0.3991
       ],
-      "confidence": 0.609,
-      "reasoning": "Analyzing AI capability acceleration alongside regulatory framework development, I arrive at P(YES) = 0.41. My Data Scientist lens emphasizes that public backlash against automation is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
+      "confidence": 0.594,
+      "reasoning": "My Insurance Actuary experience tells me venture funding into AI agents is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.40. The NO scenario is moderately probable, but regulatory intervention timing makes this a wide-confidence forecast.",
       "key_factors": [
+        "venture funding into AI agents",
         "AI capability acceleration",
-        "regulatory framework development",
-        "public backlash against automation"
+        "regulatory intervention timing"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.41. Analyzing AI capability acceleration alongside regulatory framework development, I arrive at P(YES) = 0.41. My Data Scientist lens emphasizes that public backlash against automation is often underestimated in technology adoption forecasts. The NO case is moderately probable.",
-        "Round 1: Updated to P(YES) = 0.42. After seeing 5 peer opinions (avg 0.39), I held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 2: Updated to P(YES) = 0.39. Peer views ranged from 0.18 to 0.49. I adjusted downward to 0.39. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.42. After seeing 5 peer opinions (avg 0.47), I shifted upward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected."
+        "Initial assessment: P(YES) = 0.40. My Insurance Actuary experience tells me venture funding into AI agents is the critical variable. Combined with AI capability acceleration, I estimate P(YES) = 0.40. The NO scenario is moderately probable, but regulatory intervention timing makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.41. After seeing 5 peer opinions (avg 0.33), I held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 2: Updated to P(YES) = 0.39. Peer views ranged from 0.15 to 0.63. I adjusted minimally to 0.39. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.40. After seeing 5 peer opinions (avg 0.39), I held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected."
       ]
     },
     {
       "id": 44,
       "name": "Carlos Anderson",
-      "background_category": "Hedge Fund PM",
-      "background_detail": "Risk-adjusted thinker, contrarian when consensus is strong. Looks for asymmetric bets and mispriced risk.",
+      "background_category": "Bayesian Statistician",
+      "background_detail": "Updates beliefs incrementally using prior distributions. Resists large jumps without strong evidence.",
       "personality": "skeptical and devil's advocate",
-      "initial_score": 0.6191,
-      "final_score": 0.5563,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.416,
+      "final_score": 0.3892,
       "score_history": [
-        0.6191,
-        0.5914,
-        0.5751,
-        0.5563
+        0.416,
+        0.4006,
+        0.3982,
+        0.3892
       ],
-      "confidence": 0.7115,
-      "reasoning": "Analyzing AI capability acceleration alongside enterprise adoption velocity, I arrive at P(YES) = 0.62. My Hedge Fund PM lens emphasizes that macroeconomic downturn slowing investment is often underestimated in technology adoption forecasts. The YES case is moderately probable.",
-      "key_factors": [
-        "AI capability acceleration",
-        "enterprise adoption velocity",
-        "macroeconomic downturn slowing investment"
-      ],
-      "memory_stream": [
-        "Initial assessment: P(YES) = 0.62. Analyzing AI capability acceleration alongside enterprise adoption velocity, I arrive at P(YES) = 0.62. My Hedge Fund PM lens emphasizes that macroeconomic downturn slowing investment is often underestimated in technology adoption forecasts. The YES case is moderately probable.",
-        "Round 1: Updated to P(YES) = 0.59. After seeing 5 peer opinions (avg 0.38), I shifted downward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 2: Updated to P(YES) = 0.58. Round 2 deliberation: peers averaged 0.37. My skeptical and devil's advocate tendency led me to held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 3: Updated to P(YES) = 0.56. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
-      ]
-    },
-    {
-      "id": 45,
-      "name": "Olga Lewis",
-      "background_category": "Constitutional Lawyer",
-      "background_detail": "Analyzes legal frameworks, precedent, regulatory authority, and separation-of-powers dynamics.",
-      "personality": "consensus-seeking and diplomatic",
-      "initial_score": 0.2604,
-      "final_score": 0.3715,
-      "score_history": [
-        0.2604,
-        0.2899,
-        0.3495,
-        0.3715
-      ],
-      "confidence": 0.251,
-      "reasoning": "My Constitutional Lawyer experience tells me AI capability acceleration is the critical variable. Combined with open-source model proliferation, I estimate P(YES) = 0.26. The NO scenario is likely, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
+      "confidence": 0.3405,
+      "reasoning": "My Bayesian Statistician experience tells me AI capability acceleration is the critical variable. Combined with open-source model proliferation, I estimate P(YES) = 0.42. The NO scenario is moderately probable, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
       "key_factors": [
         "AI capability acceleration",
         "open-source model proliferation",
         "macroeconomic downturn slowing investment"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.26. My Constitutional Lawyer experience tells me AI capability acceleration is the critical variable. Combined with open-source model proliferation, I estimate P(YES) = 0.26. The NO scenario is likely, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.29. After seeing 5 peer opinions (avg 0.43), I shifted upward by 0.03. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 2: Updated to P(YES) = 0.35. Round 2 deliberation: peers averaged 0.47. My consensus-seeking and diplomatic tendency led me to shifted upward by 0.06. The 10% threshold is much higher than current displacement rates.",
-        "Round 3: Updated to P(YES) = 0.37. Peer views ranged from 0.23 to 0.54. I adjusted upward to 0.37. Regulatory friction will slow deployment more than technological capability."
+        "Initial assessment: P(YES) = 0.42. My Bayesian Statistician experience tells me AI capability acceleration is the critical variable. Combined with open-source model proliferation, I estimate P(YES) = 0.42. The NO scenario is moderately probable, but macroeconomic downturn slowing investment makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.40. After seeing 5 peer opinions (avg 0.46), I held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 2: Updated to P(YES) = 0.40. Round 2 deliberation: peers averaged 0.42. My skeptical and devil's advocate tendency led me to held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 3: Updated to P(YES) = 0.39. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
       ]
     },
     {
-      "id": 46,
-      "name": "Ahmed King",
+      "id": 45,
+      "name": "Olga Lewis",
       "background_category": "Supply Chain Analyst",
       "background_detail": "Tracks real-economy signals \u2014 shipping data, commodity flows, inventory cycles, and manufacturing PMIs.",
-      "personality": "data-obsessed and quantitative",
+      "personality": "consensus-seeking and diplomatic",
+      "temp_tier": "analyst",
+      "temperature": 0.3,
       "initial_score": 0.1828,
-      "final_score": 0.27,
+      "final_score": 0.2539,
       "score_history": [
         0.1828,
-        0.2437,
-        0.2264,
-        0.27
+        0.1736,
+        0.208,
+        0.2539
       ],
-      "confidence": 0.4979,
+      "confidence": 0.4768,
       "reasoning": "Analyzing cost reduction from automation alongside regulatory framework development, I arrive at P(YES) = 0.18. My Supply Chain Analyst lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is likely.",
       "key_factors": [
         "cost reduction from automation",
@@ -1450,93 +1514,129 @@
       ],
       "memory_stream": [
         "Initial assessment: P(YES) = 0.18. Analyzing cost reduction from automation alongside regulatory framework development, I arrive at P(YES) = 0.18. My Supply Chain Analyst lens emphasizes that regulatory intervention timing is often underestimated in technology adoption forecasts. The NO case is likely.",
-        "Round 1: Updated to P(YES) = 0.24. Round 1 deliberation: peers averaged 0.52. My data-obsessed and quantitative tendency led me to shifted upward by 0.06. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 2: Updated to P(YES) = 0.23. Round 2 deliberation: peers averaged 0.35. My data-obsessed and quantitative tendency led me to held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.27. Peer views ranged from 0.34 to 0.62. I adjusted upward to 0.27. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
+        "Round 1: Updated to P(YES) = 0.17. After seeing 5 peer opinions (avg 0.29), I held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 2: Updated to P(YES) = 0.21. Round 2 deliberation: peers averaged 0.39. My consensus-seeking and diplomatic tendency led me to shifted upward by 0.03. The 10% threshold is much higher than current displacement rates.",
+        "Round 3: Updated to P(YES) = 0.25. Peer views ranged from 0.32 to 0.53. I adjusted upward to 0.25. Regulatory friction will slow deployment more than technological capability."
       ]
     },
     {
-      "id": 47,
-      "name": "Priya Baker",
-      "background_category": "Climate Scientist",
-      "background_detail": "Understands long-term systemic risks, physical economy impacts, and energy transition dynamics.",
-      "personality": "narrative-driven and qualitative",
-      "initial_score": 0.5709,
-      "final_score": 0.5588,
+      "id": 46,
+      "name": "Ahmed King",
+      "background_category": "Central Bank Watcher",
+      "background_detail": "Parses every Fed speech, dot plot, and minutes release. Expert at reading between the lines of central bank communication.",
+      "personality": "data-obsessed and quantitative",
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.3409,
+      "final_score": 0.3328,
       "score_history": [
-        0.5709,
-        0.5716,
-        0.5795,
-        0.5588
+        0.3409,
+        0.3586,
+        0.3263,
+        0.3328
       ],
-      "confidence": 0.5092,
-      "reasoning": "From a Climate Scientist standpoint, regulatory framework development is evolving gradually. open-source model proliferation suggests P(YES) = 0.57. Key risk: regulatory intervention timing could accelerate or brake the timeline significantly.",
+      "confidence": 0.4648,
+      "reasoning": "From a Central Bank Watcher standpoint, regulatory framework development is evolving slowly. open-source model proliferation suggests P(YES) = 0.34. Key risk: regulatory intervention timing could accelerate or brake the timeline significantly.",
       "key_factors": [
         "regulatory framework development",
         "open-source model proliferation",
         "regulatory intervention timing"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.57. From a Climate Scientist standpoint, regulatory framework development is evolving gradually. open-source model proliferation suggests P(YES) = 0.57. Key risk: regulatory intervention timing could accelerate or brake the timeline significantly.",
-        "Round 1: Updated to P(YES) = 0.57. Round 1 deliberation: peers averaged 0.43. My narrative-driven and qualitative tendency led me to held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 2: Updated to P(YES) = 0.58. Peer views ranged from 0.33 to 0.49. I adjusted minimally to 0.58. Regulatory friction will slow deployment more than technological capability.",
-        "Round 3: Updated to P(YES) = 0.56. After seeing 5 peer opinions (avg 0.47), I shifted downward by 0.02. Regulatory friction will slow deployment more than technological capability."
+        "Initial assessment: P(YES) = 0.34. From a Central Bank Watcher standpoint, regulatory framework development is evolving slowly. open-source model proliferation suggests P(YES) = 0.34. Key risk: regulatory intervention timing could accelerate or brake the timeline significantly.",
+        "Round 1: Updated to P(YES) = 0.36. Round 1 deliberation: peers averaged 0.54. My data-obsessed and quantitative tendency led me to held my position largely steady. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 2: Updated to P(YES) = 0.33. Round 2 deliberation: peers averaged 0.41. My data-obsessed and quantitative tendency led me to shifted downward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.33. Peer views ranged from 0.09 to 0.53. I adjusted minimally to 0.33. Enterprise adoption curves are S-shaped \u2014 slow start, then rapid acceleration."
       ]
     },
     {
-      "id": 48,
-      "name": "Hans Turner",
-      "background_category": "Tech Executive",
-      "background_detail": "Silicon Valley perspective, innovation-driven worldview. Believes in exponential curves and platform effects.",
-      "personality": "risk-averse and conservative",
-      "initial_score": 0.7946,
-      "final_score": 0.7101,
+      "id": 47,
+      "name": "Priya Baker",
+      "background_category": "Sovereign Wealth Fund Analyst",
+      "background_detail": "Manages long-term national reserves. Thinks in decades, tracks global macro imbalances and structural shifts.",
+      "personality": "narrative-driven and qualitative",
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.4746,
+      "final_score": 0.5374,
       "score_history": [
-        0.7946,
-        0.7704,
-        0.7373,
-        0.7101
+        0.4746,
+        0.4916,
+        0.536,
+        0.5374
       ],
-      "confidence": 0.8901,
-      "reasoning": "My Tech Executive experience tells me organizational change management is the critical variable. Combined with enterprise adoption velocity, I estimate P(YES) = 0.79. The YES scenario is likely, but public backlash against automation makes this a wide-confidence forecast.",
+      "confidence": 0.9407,
+      "reasoning": "My Sovereign Wealth Fund Analyst experience tells me organizational change management is the critical variable. Combined with enterprise adoption velocity, I estimate P(YES) = 0.47. The NO scenario is a toss-up, but public backlash against automation makes this a wide-confidence forecast.",
       "key_factors": [
         "organizational change management",
         "enterprise adoption velocity",
         "public backlash against automation"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.79. My Tech Executive experience tells me organizational change management is the critical variable. Combined with enterprise adoption velocity, I estimate P(YES) = 0.79. The YES scenario is likely, but public backlash against automation makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.77. Round 1 deliberation: peers averaged 0.44. My risk-averse and conservative tendency led me to shifted downward by 0.02. Organizational change management is the real bottleneck, not technology.",
-        "Round 2: Updated to P(YES) = 0.74. After seeing 5 peer opinions (avg 0.46), I shifted downward by 0.03. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 3: Updated to P(YES) = 0.71. Round 3 deliberation: peers averaged 0.43. My risk-averse and conservative tendency led me to shifted downward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected."
+        "Initial assessment: P(YES) = 0.47. My Sovereign Wealth Fund Analyst experience tells me organizational change management is the critical variable. Combined with enterprise adoption velocity, I estimate P(YES) = 0.47. The NO scenario is a toss-up, but public backlash against automation makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.49. Round 1 deliberation: peers averaged 0.34. My narrative-driven and qualitative tendency led me to held my position largely steady. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 2: Updated to P(YES) = 0.54. Peer views ranged from 0.42 to 0.56. I adjusted upward to 0.54. Regulatory friction will slow deployment more than technological capability.",
+        "Round 3: Updated to P(YES) = 0.54. After seeing 5 peer opinions (avg 0.52), I held my position largely steady. Regulatory friction will slow deployment more than technological capability."
       ]
     },
     {
-      "id": 49,
-      "name": "Aisha Stewart",
-      "background_category": "Labor Economist",
-      "background_detail": "Focuses on employment data, wage dynamics, union activity, and labor market tightness indicators.",
-      "personality": "risk-seeking and opportunistic",
-      "initial_score": 0.3427,
-      "final_score": 0.3996,
+      "id": 48,
+      "name": "Hans Turner",
+      "background_category": "Retired Central Banker",
+      "background_detail": "Deep institutional knowledge of Fed/ECB decision-making processes. Understands the politics inside the FOMC.",
+      "personality": "risk-averse and conservative",
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.1165,
+      "final_score": 0.1987,
       "score_history": [
-        0.3427,
-        0.3698,
-        0.3875,
-        0.3996
+        0.1165,
+        0.1511,
+        0.1726,
+        0.1987
       ],
-      "confidence": 0.7579,
-      "reasoning": "My Labor Economist experience tells me AI capability acceleration is the critical variable. Combined with cost reduction from automation, I estimate P(YES) = 0.34. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
+      "confidence": 0.7601,
+      "reasoning": "My Retired Central Banker experience tells me AI capability acceleration is the critical variable. Combined with cost reduction from automation, I estimate P(YES) = 0.12. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
       "key_factors": [
         "AI capability acceleration",
         "cost reduction from automation",
         "unexpected technical breakthroughs or limitations"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.34. My Labor Economist experience tells me AI capability acceleration is the critical variable. Combined with cost reduction from automation, I estimate P(YES) = 0.34. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
-        "Round 1: Updated to P(YES) = 0.37. Peer views ranged from 0.27 to 0.60. I adjusted upward to 0.37. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
-        "Round 2: Updated to P(YES) = 0.39. Peer views ranged from 0.35 to 0.49. I adjusted minimally to 0.39. The open-source model ecosystem is accelerating adoption faster than expected.",
-        "Round 3: Updated to P(YES) = 0.40. Peer views ranged from 0.35 to 0.62. I adjusted minimally to 0.40. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
+        "Initial assessment: P(YES) = 0.12. My Retired Central Banker experience tells me AI capability acceleration is the critical variable. Combined with cost reduction from automation, I estimate P(YES) = 0.12. The NO scenario is likely, but unexpected technical breakthroughs or limitations makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.15. Round 1 deliberation: peers averaged 0.39. My risk-averse and conservative tendency led me to shifted upward by 0.03. Organizational change management is the real bottleneck, not technology.",
+        "Round 2: Updated to P(YES) = 0.17. After seeing 5 peer opinions (avg 0.44), I shifted upward by 0.02. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 3: Updated to P(YES) = 0.20. Round 3 deliberation: peers averaged 0.45. My risk-averse and conservative tendency led me to shifted upward by 0.03. The open-source model ecosystem is accelerating adoption faster than expected."
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Aisha Stewart",
+      "background_category": "Behavioral Economist",
+      "background_detail": "Studies cognitive biases, market sentiment, and herd behavior. Believes markets systematically misprice tail events.",
+      "personality": "risk-seeking and opportunistic",
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.4944,
+      "final_score": 0.5237,
+      "score_history": [
+        0.4944,
+        0.5074,
+        0.5186,
+        0.5237
+      ],
+      "confidence": 0.3306,
+      "reasoning": "My Behavioral Economist experience tells me workforce retraining capacity is the critical variable. Combined with cost reduction from automation, I estimate P(YES) = 0.49. The NO scenario is a toss-up, but regulatory intervention timing makes this a wide-confidence forecast.",
+      "key_factors": [
+        "workforce retraining capacity",
+        "cost reduction from automation",
+        "regulatory intervention timing"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.49. My Behavioral Economist experience tells me workforce retraining capacity is the critical variable. Combined with cost reduction from automation, I estimate P(YES) = 0.49. The NO scenario is a toss-up, but regulatory intervention timing makes this a wide-confidence forecast.",
+        "Round 1: Updated to P(YES) = 0.51. Peer views ranged from 0.26 to 0.95. I adjusted minimally to 0.51. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast.",
+        "Round 2: Updated to P(YES) = 0.52. Peer views ranged from 0.21 to 0.60. I adjusted minimally to 0.52. The open-source model ecosystem is accelerating adoption faster than expected.",
+        "Round 3: Updated to P(YES) = 0.52. Peer views ranged from 0.09 to 0.68. I adjusted minimally to 0.52. AI augmentation \u2260 AI replacement \u2014 the distinction matters for this forecast."
       ]
     }
   ],

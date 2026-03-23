@@ -1,137 +1,137 @@
 {
-  "swarm_probability_yes": 0.3866,
-  "mean_score": 0.3845,
-  "median_score": 0.396,
-  "stdev": 0.0946,
+  "swarm_probability_yes": 0.4008,
+  "mean_score": 0.3966,
+  "median_score": 0.386,
+  "stdev": 0.1553,
   "confidence_interval": [
-    0.3582,
-    0.4107
+    0.3536,
+    0.4397
   ],
   "n_agents": 50,
   "clusters": {
-    "yes_leaning": 0,
+    "yes_leaning": 7,
     "no_leaning": 26,
-    "uncertain": 24
+    "uncertain": 17
   },
   "top_yes_voices": [
     {
-      "name": "Michelle Jackson",
-      "background": "Political Analyst",
-      "final_score": 0.5242,
-      "initial_score": 0.533,
-      "confidence": 0.9241,
-      "reasoning": "Congressional dynamics around electoral incentive structure suggest YES probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.53. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.52. Round 3 deliberation: peers averaged 0.45. My narrative-driven and qualitative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
-    },
-    {
       "name": "Aisha Stewart",
-      "background": "Labor Economist",
-      "final_score": 0.4788,
-      "initial_score": 0.6227,
+      "background": "Behavioral Economist",
+      "final_score": 0.6101,
+      "initial_score": 0.6815,
       "confidence": 0.95,
-      "reasoning": "Congressional dynamics around caucus cohesion levels suggest YES probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.62. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.48. Round 3 deliberation: peers averaged 0.29. My risk-seeking and opportunistic tendency led me to shifted downward by 0.08. Historical shutdown probability given current polarization levels is higher than base rate."
+      "reasoning": "Congressional dynamics around caucus cohesion levels suggest YES probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.68. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.61. Round 3 deliberation: peers averaged 0.31. My risk-seeking and opportunistic tendency led me to shifted downward by 0.06. Historical shutdown probability given current polarization levels is higher than base rate."
     },
     {
-      "name": "Katherine Walker",
-      "background": "Agricultural Economist",
-      "final_score": 0.4936,
-      "initial_score": 0.5212,
-      "confidence": 0.8115,
-      "reasoning": "As a Agricultural Economist, I focus on legislative calendar pressure and leadership negotiation leverage. These suggest P(YES) = 0.52. The YES case depends heavily on individual legislator defections resolving favorably.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.49. Round 3 deliberation: peers averaged 0.34. My bold and contrarian tendency led me to shifted downward by 0.03. The narrow majority makes individual holdouts disproportionately powerful."
+      "name": "Jessica Green",
+      "background": "Pollster",
+      "final_score": 0.6322,
+      "initial_score": 0.6516,
+      "confidence": 0.7668,
+      "reasoning": "Congressional dynamics around appropriations committee dynamics suggest YES probability. My analysis of media narrative framing reinforces this at P(YES) = 0.65. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.63. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
+    },
+    {
+      "name": "Michelle Jackson",
+      "background": "Historical Analogist",
+      "final_score": 0.5095,
+      "initial_score": 0.4688,
+      "confidence": 0.9241,
+      "reasoning": "Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.47. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.51. Round 3 deliberation: peers averaged 0.50. My narrative-driven and qualitative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
     }
   ],
   "top_no_voices": [
     {
       "name": "Ahmed King",
-      "background": "Supply Chain Analyst",
-      "final_score": 0.1643,
-      "initial_score": 0.0278,
+      "background": "Central Bank Watcher",
+      "final_score": 0.1233,
+      "initial_score": 0.0778,
       "confidence": 0.7643,
-      "reasoning": "As a Supply Chain Analyst, I focus on public opinion polls and legislative calendar pressure. These suggest P(YES) = 0.03. The NO case depends heavily on individual legislator defections resolving favorably.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.16. Peer views ranged from 0.18 to 0.42. I adjusted upward to 0.16. The narrow majority makes individual holdouts disproportionately powerful."
-    },
-    {
-      "name": "Hans Turner",
-      "background": "Tech Executive",
-      "final_score": 0.2134,
-      "initial_score": 0.1484,
-      "confidence": 0.7133,
-      "reasoning": "Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.15. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.21. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. The timing relative to recess creates underappreciated pressure."
+      "reasoning": "As a Central Bank Watcher, I focus on public opinion polls and legislative calendar pressure. These suggest P(YES) = 0.08. The NO case depends heavily on individual legislator defections resolving favorably.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.12. Peer views ranged from 0.10 to 0.50. I adjusted upward to 0.12. The narrow majority makes individual holdouts disproportionately powerful."
     },
     {
       "name": "Robert Collins",
-      "background": "Behavioral Economist",
-      "final_score": 0.3033,
-      "initial_score": 0.2185,
+      "background": "Central Bank Watcher",
+      "final_score": 0.2177,
+      "initial_score": 0.1685,
       "confidence": 0.7713,
-      "reasoning": "From my Behavioral Economist perspective, I assess P(YES) = 0.22. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-      "last_reflection": "Round 3: Updated to P(YES) = 0.30. After seeing 5 peer opinions (avg 0.46), I shifted upward by 0.06. Electoral incentives often override ideological positions near deadlines."
+      "reasoning": "From my Central Bank Watcher perspective, I assess P(YES) = 0.17. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.22. After seeing 5 peer opinions (avg 0.41), I shifted upward by 0.04. Electoral incentives often override ideological positions near deadlines."
+    },
+    {
+      "name": "Richard Young",
+      "background": "Labor Economist",
+      "final_score": 0.3638,
+      "initial_score": 0.2962,
+      "confidence": 0.9144,
+      "reasoning": "From my Labor Economist perspective, I assess P(YES) = 0.30. leadership negotiation leverage is the primary driver. media narrative framing adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.36. Peer views ranged from 0.18 to 0.51. I adjusted minimally to 0.36. The timing relative to recess creates underappreciated pressure."
     }
   ],
   "convergence": [
     {
       "round": 0,
-      "mean_score": 0.396154,
-      "stdev": 0.15304389154348993,
-      "min": 0.0278,
-      "max": 0.6597
+      "mean_score": 0.398808,
+      "stdev": 0.20612950143845327,
+      "min": 0.02,
+      "max": 0.8622
     },
     {
       "round": 1,
-      "mean_score": 0.395782,
-      "stdev": 0.12704355623010494,
-      "min": 0.0694,
-      "max": 0.5877
+      "mean_score": 0.401322,
+      "stdev": 0.18393827967721196,
+      "min": 0.0627,
+      "max": 0.8252
     },
     {
       "round": 2,
-      "mean_score": 0.388578,
-      "stdev": 0.11120973252446598,
-      "min": 0.1156,
-      "max": 0.5624
+      "mean_score": 0.396506,
+      "stdev": 0.17165696501084568,
+      "min": 0.0944,
+      "max": 0.7722
     },
     {
       "round": 3,
-      "mean_score": 0.38445,
-      "stdev": 0.09455135145107388,
-      "min": 0.1643,
-      "max": 0.5242
+      "mean_score": 0.396646,
+      "stdev": 0.15532562138019232,
+      "min": 0.1021,
+      "max": 0.7198
     }
   ],
   "opinion_shifts": [
     {
       "round": 1,
-      "mean_shift": 0.033792,
-      "max_shift": 0.12139999999999998
+      "mean_shift": 0.028438000000000005,
+      "max_shift": 0.12449999999999999
     },
     {
       "round": 2,
-      "mean_shift": 0.02094000000000001,
-      "max_shift": 0.07539999999999998
+      "mean_shift": 0.017284,
+      "max_shift": 0.0625
     },
     {
       "round": 3,
-      "mean_shift": 0.022163999999999993,
-      "max_shift": 0.08360000000000001
+      "mean_shift": 0.017420000000000005,
+      "max_shift": 0.06330000000000002
     }
   ],
   "histogram": {
     "0.0-0.1": 0,
-    "0.1-0.2": 3,
-    "0.2-0.3": 5,
-    "0.3-0.4": 18,
-    "0.4-0.5": 20,
-    "0.5-0.6": 4,
-    "0.6-0.7": 0,
-    "0.7-0.8": 0,
+    "0.1-0.2": 5,
+    "0.2-0.3": 11,
+    "0.3-0.4": 10,
+    "0.4-0.5": 10,
+    "0.5-0.6": 7,
+    "0.6-0.7": 5,
+    "0.7-0.8": 2,
     "0.8-0.9": 0,
     "0.9-1.0": 0
   },
   "market_price": 0.35,
-  "swarm_vs_market_delta": 0.0366,
+  "swarm_vs_market_delta": 0.0508,
   "timing": {
     "world_build_ms": 0,
     "agent_gen_ms": 0,
@@ -145,13 +145,15 @@
       "background_category": "Macro Economist",
       "background_detail": "PhD economist focused on monetary policy, inflation dynamics, and central bank behavior. Tracks PCE, CPI, employment data, and Fed minutes closely.",
       "personality": "cautious and evidence-driven",
+      "temp_tier": "analyst",
+      "temperature": 0.3,
       "initial_score": 0.544,
-      "final_score": 0.4843,
+      "final_score": 0.5112,
       "score_history": [
         0.544,
-        0.4945,
-        0.4856,
-        0.4843
+        0.5126,
+        0.5104,
+        0.5112
       ],
       "confidence": 0.691,
       "reasoning": "As a Macro Economist, I focus on partisan polarization depth and media narrative framing. These suggest P(YES) = 0.54. The YES case depends heavily on judicial rulings affecting legislative authority resolving favorably.",
@@ -162,9 +164,9 @@
       ],
       "memory_stream": [
         "Initial assessment: P(YES) = 0.54. As a Macro Economist, I focus on partisan polarization depth and media narrative framing. These suggest P(YES) = 0.54. The YES case depends heavily on judicial rulings affecting legislative authority resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.49. Round 1 deliberation: peers averaged 0.38. My cautious and evidence-driven tendency led me to shifted downward by 0.05. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.49. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.48. Peer views ranged from 0.29 to 0.56. I adjusted minimally to 0.48. Media pressure typically forces last-minute compromise."
+        "Round 1: Updated to P(YES) = 0.51. Round 1 deliberation: peers averaged 0.47. My cautious and evidence-driven tendency led me to shifted downward by 0.03. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
+        "Round 3: Updated to P(YES) = 0.51. Peer views ranged from 0.26 to 0.67. I adjusted minimally to 0.51. Media pressure typically forces last-minute compromise."
       ]
     },
     {
@@ -173,390 +175,418 @@
       "background_category": "Quantitative Trader",
       "background_detail": "Builds systematic models, thinks in probabilities and base rates. Uses options-implied probabilities and historical analogs.",
       "personality": "bold and contrarian",
-      "initial_score": 0.1807,
-      "final_score": 0.239,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.1457,
+      "final_score": 0.2018,
       "score_history": [
-        0.1807,
-        0.224,
-        0.2221,
-        0.239
+        0.1457,
+        0.1864,
+        0.182,
+        0.2018
       ],
       "confidence": 0.6746,
-      "reasoning": "From my Quantitative Trader perspective, I assess P(YES) = 0.18. appropriations committee dynamics is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+      "reasoning": "From my Quantitative Trader perspective, I assess P(YES) = 0.15. appropriations committee dynamics is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "appropriations committee dynamics",
         "caucus cohesion levels",
         "public protest or activism waves"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.18. From my Quantitative Trader perspective, I assess P(YES) = 0.18. appropriations committee dynamics is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.22. After seeing 5 peer opinions (avg 0.41), I shifted upward by 0.04. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.22. After seeing 5 peer opinions (avg 0.44), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.24. Peer views ranged from 0.12 to 0.53. I adjusted minimally to 0.24. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Initial assessment: P(YES) = 0.15. From my Quantitative Trader perspective, I assess P(YES) = 0.15. appropriations committee dynamics is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.19. After seeing 5 peer opinions (avg 0.44), I shifted upward by 0.04. The timing relative to recess creates underappreciated pressure.",
+        "Round 2: Updated to P(YES) = 0.18. After seeing 5 peer opinions (avg 0.46), I held my position largely steady. Media pressure typically forces last-minute compromise.",
+        "Round 3: Updated to P(YES) = 0.20. Peer views ranged from 0.09 to 0.77. I adjusted minimally to 0.20. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
       "id": 2,
       "name": "David Clark",
-      "background_category": "Political Analyst",
-      "background_detail": "Tracks legislative dynamics, lobbying, regulatory shifts, and election cycles. Deep knowledge of Congressional mechanics.",
+      "background_category": "Data Scientist",
+      "background_detail": "Relies on statistical models, historical base rates, and ensemble methods. Skeptical of narratives without data.",
       "personality": "analytical and methodical",
-      "initial_score": 0.6597,
-      "final_score": 0.4885,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.5297,
+      "final_score": 0.4616,
       "score_history": [
-        0.6597,
-        0.5867,
-        0.5307,
-        0.4885
+        0.5297,
+        0.51,
+        0.4768,
+        0.4616
       ],
       "confidence": 0.5054,
-      "reasoning": "As a Political Analyst, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.66. The YES case depends heavily on individual legislator defections resolving favorably.",
+      "reasoning": "As a Data Scientist, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.53. The YES case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "media narrative framing",
         "legislative calendar pressure",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.66. As a Political Analyst, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.66. The YES case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.59. After seeing 5 peer opinions (avg 0.28), I shifted downward by 0.07. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.53. Peer views ranged from 0.34 to 0.59. I adjusted downward to 0.53. Electoral incentives often override ideological positions near deadlines.",
-        "Round 3: Updated to P(YES) = 0.49. Peer views ranged from 0.18 to 0.39. I adjusted downward to 0.49. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Initial assessment: P(YES) = 0.53. As a Data Scientist, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.53. The YES case depends heavily on individual legislator defections resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.30), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
+        "Round 2: Updated to P(YES) = 0.48. Peer views ranged from 0.26 to 0.78. I adjusted downward to 0.48. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3: Updated to P(YES) = 0.46. Peer views ranged from 0.14 to 0.51. I adjusted minimally to 0.46. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
       "id": 3,
       "name": "Sarah Hernandez",
-      "background_category": "Investigative Journalist",
-      "background_detail": "Skeptical by nature, hunts for hidden information and contrarian angles. Distrusts consensus narratives.",
+      "background_category": "Insurance Actuary",
+      "background_detail": "Probabilistic thinker focused on tail risks, base rates, and mortality/morbidity tables. Conservative estimator.",
       "personality": "intuitive and pattern-matching",
-      "initial_score": 0.4662,
-      "final_score": 0.432,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.3962,
+      "final_score": 0.4079,
       "score_history": [
-        0.4662,
-        0.4344,
-        0.4471,
-        0.432
+        0.3962,
+        0.3774,
+        0.3972,
+        0.4079
       ],
       "confidence": 0.4142,
-      "reasoning": "From my Investigative Journalist perspective, I assess P(YES) = 0.47. media narrative framing is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
+      "reasoning": "From my Insurance Actuary perspective, I assess P(YES) = 0.40. media narrative framing is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
       "key_factors": [
         "media narrative framing",
         "caucus cohesion levels",
         "judicial rulings affecting legislative authority"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.47. From my Investigative Journalist perspective, I assess P(YES) = 0.47. media narrative framing is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.43. Peer views ranged from 0.33 to 0.62. I adjusted downward to 0.43. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.45. Peer views ranged from 0.26 to 0.55. I adjusted minimally to 0.45. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.43. Peer views ranged from 0.20 to 0.53. I adjusted minimally to 0.43. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Initial assessment: P(YES) = 0.40. From my Insurance Actuary perspective, I assess P(YES) = 0.40. media narrative framing is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.38. Peer views ranged from 0.24 to 0.82. I adjusted minimally to 0.38. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.40. Peer views ranged from 0.23 to 0.78. I adjusted minimally to 0.40. Media pressure typically forces last-minute compromise.",
+        "Round 3: Updated to P(YES) = 0.41. Peer views ranged from 0.11 to 0.77. I adjusted minimally to 0.41. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
       "id": 4,
       "name": "Michael Adams",
-      "background_category": "Venture Capitalist",
-      "background_detail": "Pattern-matches across industries, optimistic bias toward innovation and disruption. Sees technology as deflationary.",
+      "background_category": "Bayesian Statistician",
+      "background_detail": "Updates beliefs incrementally using prior distributions. Resists large jumps without strong evidence.",
       "personality": "skeptical and devil's advocate",
-      "initial_score": 0.3968,
-      "final_score": 0.3672,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.5093,
+      "final_score": 0.5223,
       "score_history": [
-        0.3968,
-        0.3845,
-        0.3817,
-        0.3672
+        0.5093,
+        0.5116,
+        0.5127,
+        0.5223
       ],
       "confidence": 0.6917,
-      "reasoning": "Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of appropriations committee dynamics reinforces this at P(YES) = 0.40. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around electoral incentive structure suggest YES probability. My analysis of appropriations committee dynamics reinforces this at P(YES) = 0.51. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
       "key_factors": [
         "electoral incentive structure",
         "appropriations committee dynamics",
         "public protest or activism waves"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.40. Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of appropriations committee dynamics reinforces this at P(YES) = 0.40. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.38. Peer views ranged from 0.31 to 0.58. I adjusted minimally to 0.38. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.38. After seeing 5 peer opinions (avg 0.50), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.37. Round 3 deliberation: peers averaged 0.41. My skeptical and devil's advocate tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Initial assessment: P(YES) = 0.51. Congressional dynamics around electoral incentive structure suggest YES probability. My analysis of appropriations committee dynamics reinforces this at P(YES) = 0.51. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.51. Peer views ranged from 0.29 to 0.61. I adjusted minimally to 0.51. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 2: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.57), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
+        "Round 3: Updated to P(YES) = 0.52. Round 3 deliberation: peers averaged 0.39. My skeptical and devil's advocate tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
       "id": 5,
       "name": "Jennifer Roberts",
-      "background_category": "Retired Central Banker",
-      "background_detail": "Deep institutional knowledge of Fed/ECB decision-making processes. Understands the politics inside the FOMC.",
+      "background_category": "Supply Chain Analyst",
+      "background_detail": "Tracks real-economy signals \u2014 shipping data, commodity flows, inventory cycles, and manufacturing PMIs.",
       "personality": "consensus-seeking and diplomatic",
-      "initial_score": 0.3281,
-      "final_score": 0.3517,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.2581,
+      "final_score": 0.3251,
       "score_history": [
-        0.3281,
-        0.3335,
-        0.3123,
-        0.3517
+        0.2581,
+        0.2852,
+        0.2872,
+        0.3251
       ],
       "confidence": 0.374,
-      "reasoning": "From my Retired Central Banker perspective, I assess P(YES) = 0.33. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+      "reasoning": "From my Supply Chain Analyst perspective, I assess P(YES) = 0.26. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "electoral incentive structure",
         "media narrative framing",
         "public protest or activism waves"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.33. From my Retired Central Banker perspective, I assess P(YES) = 0.33. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.33. After seeing 5 peer opinions (avg 0.27), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.31. Peer views ranged from 0.07 to 0.59. I adjusted downward to 0.31. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.35. Peer views ranged from 0.31 to 0.56. I adjusted upward to 0.35. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Initial assessment: P(YES) = 0.26. From my Supply Chain Analyst perspective, I assess P(YES) = 0.26. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.29. After seeing 5 peer opinions (avg 0.26), I shifted upward by 0.03. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 2: Updated to P(YES) = 0.29. Peer views ranged from 0.07 to 0.83. I adjusted minimally to 0.29. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3: Updated to P(YES) = 0.33. Peer views ranged from 0.37 to 0.67. I adjusted upward to 0.33. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
       "id": 6,
       "name": "Robert Collins",
-      "background_category": "Behavioral Economist",
-      "background_detail": "Studies cognitive biases, market sentiment, and herd behavior. Believes markets systematically misprice tail events.",
+      "background_category": "Central Bank Watcher",
+      "background_detail": "Parses every Fed speech, dot plot, and minutes release. Expert at reading between the lines of central bank communication.",
       "personality": "data-obsessed and quantitative",
-      "initial_score": 0.2185,
-      "final_score": 0.3033,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.1685,
+      "final_score": 0.2177,
       "score_history": [
-        0.2185,
-        0.2655,
-        0.2393,
-        0.3033
+        0.1685,
+        0.2058,
+        0.1729,
+        0.2177
       ],
       "confidence": 0.7713,
-      "reasoning": "From my Behavioral Economist perspective, I assess P(YES) = 0.22. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "reasoning": "From my Central Bank Watcher perspective, I assess P(YES) = 0.17. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "appropriations committee dynamics",
         "public opinion polls",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.22. From my Behavioral Economist perspective, I assess P(YES) = 0.22. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.27. Peer views ranged from 0.22 to 0.62. I adjusted upward to 0.27. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.24. After seeing 5 peer opinions (avg 0.31), I shifted downward by 0.03. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 3: Updated to P(YES) = 0.30. After seeing 5 peer opinions (avg 0.46), I shifted upward by 0.06. Electoral incentives often override ideological positions near deadlines."
+        "Initial assessment: P(YES) = 0.17. From my Central Bank Watcher perspective, I assess P(YES) = 0.17. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.21. Peer views ranged from 0.19 to 0.86. I adjusted upward to 0.21. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.17. After seeing 5 peer opinions (avg 0.23), I shifted downward by 0.03. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 3: Updated to P(YES) = 0.22. After seeing 5 peer opinions (avg 0.41), I shifted upward by 0.04. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
       "id": 7,
       "name": "Lisa Rodriguez",
-      "background_category": "Geopolitical Strategist",
-      "background_detail": "Analyzes international relations, trade wars, sanctions, and their second-order effects on domestic policy.",
+      "background_category": "Sovereign Wealth Fund Analyst",
+      "background_detail": "Manages long-term national reserves. Thinks in decades, tracks global macro imbalances and structural shifts.",
       "personality": "narrative-driven and qualitative",
-      "initial_score": 0.5429,
-      "final_score": 0.4612,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.4829,
+      "final_score": 0.4439,
       "score_history": [
-        0.5429,
-        0.5101,
-        0.4706,
-        0.4612
+        0.4829,
+        0.4599,
+        0.4413,
+        0.4439
       ],
       "confidence": 0.3892,
-      "reasoning": "From my Geopolitical Strategist perspective, I assess P(YES) = 0.54. leadership negotiation leverage is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+      "reasoning": "From my Sovereign Wealth Fund Analyst perspective, I assess P(YES) = 0.48. leadership negotiation leverage is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "leadership negotiation leverage",
         "caucus cohesion levels",
         "public protest or activism waves"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.54. From my Geopolitical Strategist perspective, I assess P(YES) = 0.54. leadership negotiation leverage is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.44), I shifted downward by 0.03. Electoral incentives often override ideological positions near deadlines.",
-        "Round 2: Updated to P(YES) = 0.47. Round 2 deliberation: peers averaged 0.33. My narrative-driven and qualitative tendency led me to shifted downward by 0.04. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.38), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
+        "Initial assessment: P(YES) = 0.48. From my Sovereign Wealth Fund Analyst perspective, I assess P(YES) = 0.48. leadership negotiation leverage is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.36), I shifted downward by 0.02. Electoral incentives often override ideological positions near deadlines.",
+        "Round 2: Updated to P(YES) = 0.44. Round 2 deliberation: peers averaged 0.28. My narrative-driven and qualitative tendency led me to held my position largely steady. The timing relative to recess creates underappreciated pressure.",
+        "Round 3: Updated to P(YES) = 0.44. After seeing 5 peer opinions (avg 0.37), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
       "id": 8,
       "name": "William Thompson",
-      "background_category": "Data Scientist",
-      "background_detail": "Relies on statistical models, historical base rates, and ensemble methods. Skeptical of narratives without data.",
+      "background_category": "Retired Central Banker",
+      "background_detail": "Deep institutional knowledge of Fed/ECB decision-making processes. Understands the politics inside the FOMC.",
       "personality": "risk-averse and conservative",
-      "initial_score": 0.311,
-      "final_score": 0.3154,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.2928,
+      "final_score": 0.2936,
       "score_history": [
-        0.311,
-        0.3335,
-        0.328,
-        0.3154
+        0.2928,
+        0.3061,
+        0.3049,
+        0.2936
       ],
       "confidence": 0.6845,
-      "reasoning": "From my Data Scientist perspective, I assess P(YES) = 0.31. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "reasoning": "From my Retired Central Banker perspective, I assess P(YES) = 0.29. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "caucus cohesion levels",
         "electoral incentive structure",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.31. From my Data Scientist perspective, I assess P(YES) = 0.31. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.33. Round 1 deliberation: peers averaged 0.39. My risk-averse and conservative tendency led me to shifted upward by 0.02. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.33. Peer views ranged from 0.18 to 0.54. I adjusted minimally to 0.33. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.32. Round 3 deliberation: peers averaged 0.32. My risk-averse and conservative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Initial assessment: P(YES) = 0.29. From my Retired Central Banker perspective, I assess P(YES) = 0.29. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.31. Round 1 deliberation: peers averaged 0.30. My risk-averse and conservative tendency led me to held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 2: Updated to P(YES) = 0.30. Peer views ranged from 0.07 to 0.69. I adjusted minimally to 0.30. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3: Updated to P(YES) = 0.29. Round 3 deliberation: peers averaged 0.30. My risk-averse and conservative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
       "id": 9,
       "name": "Emily Robinson",
-      "background_category": "Hedge Fund PM",
-      "background_detail": "Risk-adjusted thinker, contrarian when consensus is strong. Looks for asymmetric bets and mispriced risk.",
+      "background_category": "Behavioral Economist",
+      "background_detail": "Studies cognitive biases, market sentiment, and herd behavior. Believes markets systematically misprice tail events.",
       "personality": "risk-seeking and opportunistic",
-      "initial_score": 0.4237,
-      "final_score": 0.4154,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.5076,
+      "final_score": 0.5006,
       "score_history": [
-        0.4237,
-        0.4139,
-        0.3968,
-        0.4154
+        0.5076,
+        0.4986,
+        0.496,
+        0.5006
       ],
       "confidence": 0.6169,
-      "reasoning": "As a Hedge Fund PM, I focus on media narrative framing and public opinion polls. These suggest P(YES) = 0.42. The NO case depends heavily on public protest or activism waves resolving favorably.",
+      "reasoning": "Congressional dynamics around media narrative framing suggest YES probability. My analysis of caucus cohesion levels reinforces this at P(YES) = 0.51. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
       "key_factors": [
         "media narrative framing",
-        "public opinion polls",
-        "public protest or activism waves"
+        "caucus cohesion levels",
+        "judicial rulings affecting legislative authority"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.42. As a Hedge Fund PM, I focus on media narrative framing and public opinion polls. These suggest P(YES) = 0.42. The NO case depends heavily on public protest or activism waves resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.41. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.40. After seeing 5 peer opinions (avg 0.38), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.42. Peer views ranged from 0.40 to 0.52. I adjusted minimally to 0.42. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Initial assessment: P(YES) = 0.51. Congressional dynamics around media narrative framing suggest YES probability. My analysis of caucus cohesion levels reinforces this at P(YES) = 0.51. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.50. After seeing 5 peer opinions (avg 0.48), I held my position largely steady. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.50. After seeing 5 peer opinions (avg 0.45), I held my position largely steady. Media pressure typically forces last-minute compromise.",
+        "Round 3: Updated to P(YES) = 0.50. Peer views ranged from 0.36 to 0.74. I adjusted minimally to 0.50. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
       "id": 10,
       "name": "Richard Young",
-      "background_category": "Constitutional Lawyer",
-      "background_detail": "Analyzes legal frameworks, precedent, regulatory authority, and separation-of-powers dynamics.",
+      "background_category": "Labor Economist",
+      "background_detail": "Focuses on employment data, wage dynamics, union activity, and labor market tightness indicators.",
       "personality": "cautious and evidence-driven",
-      "initial_score": 0.4786,
-      "final_score": 0.4824,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.2962,
+      "final_score": 0.3638,
       "score_history": [
-        0.4786,
-        0.5057,
-        0.4869,
-        0.4824
+        0.2962,
+        0.351,
+        0.3533,
+        0.3638
       ],
-      "confidence": 0.5193,
-      "reasoning": "From my Constitutional Lawyer perspective, I assess P(YES) = 0.48. leadership negotiation leverage is the primary driver. media narrative framing adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "confidence": 0.9144,
+      "reasoning": "From my Labor Economist perspective, I assess P(YES) = 0.30. leadership negotiation leverage is the primary driver. media narrative framing adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "leadership negotiation leverage",
         "media narrative framing",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.48. From my Constitutional Lawyer perspective, I assess P(YES) = 0.48. leadership negotiation leverage is the primary driver. media narrative framing adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.51. Round 1 deliberation: peers averaged 0.37. My cautious and evidence-driven tendency led me to shifted upward by 0.03. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 2: Updated to P(YES) = 0.49. After seeing 5 peer opinions (avg 0.35), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.48. Peer views ranged from 0.32 to 0.48. I adjusted minimally to 0.48. The timing relative to recess creates underappreciated pressure."
+        "Initial assessment: P(YES) = 0.30. From my Labor Economist perspective, I assess P(YES) = 0.30. leadership negotiation leverage is the primary driver. media narrative framing adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.35. Round 1 deliberation: peers averaged 0.43. My cautious and evidence-driven tendency led me to shifted upward by 0.05. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 2: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.31), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3: Updated to P(YES) = 0.36. Peer views ranged from 0.18 to 0.51. I adjusted minimally to 0.36. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
       "id": 11,
       "name": "Jessica Green",
-      "background_category": "Supply Chain Analyst",
-      "background_detail": "Tracks real-economy signals \u2014 shipping data, commodity flows, inventory cycles, and manufacturing PMIs.",
+      "background_category": "Pollster",
+      "background_detail": "Expert in survey methodology, sampling bias, and public opinion trends. Understands how sentiment translates to action.",
       "personality": "bold and contrarian",
-      "initial_score": 0.4135,
-      "final_score": 0.4346,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.6516,
+      "final_score": 0.6322,
       "score_history": [
-        0.4135,
-        0.4193,
-        0.4144,
-        0.4346
+        0.6516,
+        0.639,
+        0.6238,
+        0.6322
       ],
       "confidence": 0.7668,
-      "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of media narrative framing reinforces this at P(YES) = 0.41. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around appropriations committee dynamics suggest YES probability. My analysis of media narrative framing reinforces this at P(YES) = 0.65. Historical precedent and individual legislator defections create non-trivial forecast risk.",
       "key_factors": [
         "appropriations committee dynamics",
         "media narrative framing",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.41. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of media narrative framing reinforces this at P(YES) = 0.41. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.42. Round 1 deliberation: peers averaged 0.36. My bold and contrarian tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.41. Peer views ranged from 0.26 to 0.55. I adjusted minimally to 0.41. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.43. After seeing 5 peer opinions (avg 0.38), I shifted upward by 0.02. The narrow majority makes individual holdouts disproportionately powerful."
+        "Initial assessment: P(YES) = 0.65. Congressional dynamics around appropriations committee dynamics suggest YES probability. My analysis of media narrative framing reinforces this at P(YES) = 0.65. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.64. Round 1 deliberation: peers averaged 0.30. My bold and contrarian tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 2: Updated to P(YES) = 0.62. Peer views ranged from 0.17 to 0.78. I adjusted minimally to 0.62. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3: Updated to P(YES) = 0.63. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
       "id": 12,
       "name": "Thomas Perez",
-      "background_category": "Climate Scientist",
-      "background_detail": "Understands long-term systemic risks, physical economy impacts, and energy transition dynamics.",
+      "background_category": "Demographer",
+      "background_detail": "Studies population trends, aging, migration, and their economic consequences. Long-term structural thinker.",
       "personality": "analytical and methodical",
-      "initial_score": 0.3499,
-      "final_score": 0.4128,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.4149,
+      "final_score": 0.4474,
       "score_history": [
-        0.3499,
-        0.4186,
-        0.3959,
-        0.4128
+        0.4149,
+        0.461,
+        0.4322,
+        0.4474
       ],
       "confidence": 0.5556,
-      "reasoning": "From my Climate Scientist perspective, I assess P(YES) = 0.35. partisan polarization depth is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+      "reasoning": "From my Demographer perspective, I assess P(YES) = 0.41. partisan polarization depth is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "partisan polarization depth",
         "leadership negotiation leverage",
         "public protest or activism waves"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.35. From my Climate Scientist perspective, I assess P(YES) = 0.35. partisan polarization depth is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.42. After seeing 5 peer opinions (avg 0.51), I shifted upward by 0.07. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.40. Peer views ranged from 0.24 to 0.58. I adjusted downward to 0.40. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.41. Round 3 deliberation: peers averaged 0.40. My analytical and methodical tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Initial assessment: P(YES) = 0.41. From my Demographer perspective, I assess P(YES) = 0.41. partisan polarization depth is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.52), I shifted upward by 0.05. The timing relative to recess creates underappreciated pressure.",
+        "Round 2: Updated to P(YES) = 0.43. Peer views ranged from 0.17 to 0.69. I adjusted downward to 0.43. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3: Updated to P(YES) = 0.45. Round 3 deliberation: peers averaged 0.42. My analytical and methodical tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
       "id": 13,
       "name": "Amanda Edwards",
-      "background_category": "Tech Executive",
-      "background_detail": "Silicon Valley perspective, innovation-driven worldview. Believes in exponential curves and platform effects.",
+      "background_category": "Agricultural Economist",
+      "background_detail": "Tracks food prices, crop yields, weather patterns, and trade policy impacts on farming.",
       "personality": "intuitive and pattern-matching",
-      "initial_score": 0.35,
-      "final_score": 0.3175,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.4783,
+      "final_score": 0.3942,
       "score_history": [
-        0.35,
-        0.3115,
-        0.3076,
-        0.3175
+        0.4783,
+        0.4267,
+        0.3995,
+        0.3942
       ],
       "confidence": 0.4427,
-      "reasoning": "From my Tech Executive perspective, I assess P(YES) = 0.35. public opinion polls is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+      "reasoning": "From my Agricultural Economist perspective, I assess P(YES) = 0.48. public opinion polls is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "public opinion polls",
         "caucus cohesion levels",
         "public protest or activism waves"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.35. From my Tech Executive perspective, I assess P(YES) = 0.35. public opinion polls is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.31. Round 1 deliberation: peers averaged 0.36. My intuitive and pattern-matching tendency led me to shifted downward by 0.04. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.31. Peer views ranged from 0.18 to 0.49. I adjusted minimally to 0.31. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.32. Round 3 deliberation: peers averaged 0.34. My intuitive and pattern-matching tendency led me to held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Initial assessment: P(YES) = 0.48. From my Agricultural Economist perspective, I assess P(YES) = 0.48. public opinion polls is the primary driver. caucus cohesion levels adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.43. Round 1 deliberation: peers averaged 0.40. My intuitive and pattern-matching tendency led me to shifted downward by 0.05. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 2: Updated to P(YES) = 0.40. Peer views ranged from 0.07 to 0.54. I adjusted downward to 0.40. The timing relative to recess creates underappreciated pressure.",
+        "Round 3: Updated to P(YES) = 0.39. Round 3 deliberation: peers averaged 0.34. My intuitive and pattern-matching tendency led me to held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
       "id": 14,
       "name": "Charles Patel",
-      "background_category": "Labor Economist",
-      "background_detail": "Focuses on employment data, wage dynamics, union activity, and labor market tightness indicators.",
+      "background_category": "Energy Sector Analyst",
+      "background_detail": "Tracks oil prices, OPEC dynamics, renewables deployment, and energy policy. Understands energy's macro impact.",
       "personality": "skeptical and devil's advocate",
-      "initial_score": 0.373,
-      "final_score": 0.3224,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.3164,
+      "final_score": 0.2598,
       "score_history": [
-        0.373,
-        0.3395,
-        0.3438,
-        0.3224
+        0.3164,
+        0.2694,
+        0.255,
+        0.2598
       ],
       "confidence": 0.4898,
-      "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.37. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.32. Historical precedent and individual legislator defections create non-trivial forecast risk.",
       "key_factors": [
         "appropriations committee dynamics",
         "partisan polarization depth",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.37. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.37. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.34. Peer views ranged from 0.40 to 0.56. I adjusted downward to 0.34. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.37), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.32. Round 3 deliberation: peers averaged 0.47. My skeptical and devil's advocate tendency led me to shifted downward by 0.02. Media pressure typically forces last-minute compromise."
+        "Initial assessment: P(YES) = 0.32. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.32. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.27. Peer views ranged from 0.32 to 0.77. I adjusted downward to 0.27. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.40), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3: Updated to P(YES) = 0.26. Round 3 deliberation: peers averaged 0.51. My skeptical and devil's advocate tendency led me to held my position largely steady. Media pressure typically forces last-minute compromise."
       ]
     },
     {
@@ -565,978 +595,1048 @@
       "background_category": "Emerging Markets Specialist",
       "background_detail": "Tracks capital flows, currency dynamics, contagion risks, and dollar-denominated debt stress.",
       "personality": "consensus-seeking and diplomatic",
-      "initial_score": 0.5837,
-      "final_score": 0.4653,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.6143,
+      "final_score": 0.5337,
       "score_history": [
-        0.5837,
-        0.4875,
-        0.4964,
-        0.4653
+        0.6143,
+        0.543,
+        0.5542,
+        0.5337
       ],
       "confidence": 0.5154,
-      "reasoning": "As a Emerging Markets Specialist, I focus on media narrative framing and partisan polarization depth. These suggest P(YES) = 0.58. The YES case depends heavily on judicial rulings affecting legislative authority resolving favorably.",
+      "reasoning": "As a Emerging Markets Specialist, I focus on media narrative framing and partisan polarization depth. These suggest P(YES) = 0.61. The YES case depends heavily on judicial rulings affecting legislative authority resolving favorably.",
       "key_factors": [
         "media narrative framing",
         "partisan polarization depth",
         "judicial rulings affecting legislative authority"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.58. As a Emerging Markets Specialist, I focus on media narrative framing and partisan polarization depth. These suggest P(YES) = 0.58. The YES case depends heavily on judicial rulings affecting legislative authority resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.49. Round 1 deliberation: peers averaged 0.36. My consensus-seeking and diplomatic tendency led me to shifted downward by 0.10. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.50. Round 2 deliberation: peers averaged 0.45. My consensus-seeking and diplomatic tendency led me to held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.47. Round 3 deliberation: peers averaged 0.41. My consensus-seeking and diplomatic tendency led me to shifted downward by 0.03. The narrow majority makes individual holdouts disproportionately powerful."
+        "Initial assessment: P(YES) = 0.61. As a Emerging Markets Specialist, I focus on media narrative framing and partisan polarization depth. These suggest P(YES) = 0.61. The YES case depends heavily on judicial rulings affecting legislative authority resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.54. Round 1 deliberation: peers averaged 0.32. My consensus-seeking and diplomatic tendency led me to shifted downward by 0.07. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 2: Updated to P(YES) = 0.55. Round 2 deliberation: peers averaged 0.48. My consensus-seeking and diplomatic tendency led me to held my position largely steady. Media pressure typically forces last-minute compromise.",
+        "Round 3: Updated to P(YES) = 0.53. Round 3 deliberation: peers averaged 0.45. My consensus-seeking and diplomatic tendency led me to shifted downward by 0.02. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
       "id": 16,
       "name": "Daniel Martin",
-      "background_category": "Military Intel Analyst",
-      "background_detail": "Trained in structured analytic techniques, red-team thinking, and Analysis of Competing Hypotheses.",
+      "background_category": "Pharmaceutical Exec",
+      "background_detail": "Understands FDA approval cycles, clinical trial outcomes, biotech funding environment, and healthcare policy.",
       "personality": "data-obsessed and quantitative",
-      "initial_score": 0.3378,
-      "final_score": 0.3425,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.2341,
+      "final_score": 0.2698,
       "score_history": [
-        0.3378,
-        0.3618,
-        0.3571,
-        0.3425
+        0.2341,
+        0.2646,
+        0.2715,
+        0.2698
       ],
       "confidence": 0.3477,
-      "reasoning": "As a Military Intel Analyst, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.34. The NO case depends heavily on individual legislator defections resolving favorably.",
+      "reasoning": "As a Pharmaceutical Exec, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.23. The NO case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "appropriations committee dynamics",
         "caucus cohesion levels",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.34. As a Military Intel Analyst, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.34. The NO case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.36. After seeing 5 peer opinions (avg 0.47), I shifted upward by 0.02. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 2: Updated to P(YES) = 0.36. Peer views ranged from 0.24 to 0.54. I adjusted minimally to 0.36. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.34. Peer views ranged from 0.18 to 0.44. I adjusted minimally to 0.34. Media pressure typically forces last-minute compromise."
+        "Initial assessment: P(YES) = 0.23. As a Pharmaceutical Exec, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.23. The NO case depends heavily on individual legislator defections resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.57), I shifted upward by 0.03. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 2: Updated to P(YES) = 0.27. Peer views ranged from 0.17 to 0.62. I adjusted minimally to 0.27. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3: Updated to P(YES) = 0.27. Peer views ranged from 0.10 to 0.67. I adjusted minimally to 0.27. Media pressure typically forces last-minute compromise."
       ]
     },
     {
       "id": 17,
       "name": "Stephanie Allen",
-      "background_category": "Academic Historian",
-      "background_detail": "Draws parallels from historical episodes \u2014 1970s stagflation, 2008 crisis, dot-com bust. Skeptical of 'this time is different.'",
+      "background_category": "Investigative Journalist",
+      "background_detail": "Skeptical by nature, hunts for hidden information and contrarian angles. Distrusts consensus narratives.",
       "personality": "narrative-driven and qualitative",
-      "initial_score": 0.397,
-      "final_score": 0.3664,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.3612,
+      "final_score": 0.3587,
       "score_history": [
-        0.397,
-        0.3536,
-        0.3499,
-        0.3664
+        0.3612,
+        0.3506,
+        0.3494,
+        0.3587
       ],
       "confidence": 0.3497,
-      "reasoning": "From my Academic Historian perspective, I assess P(YES) = 0.40. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+      "reasoning": "From my Investigative Journalist perspective, I assess P(YES) = 0.36. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
       "key_factors": [
         "appropriations committee dynamics",
         "public opinion polls",
         "public protest or activism waves"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.40. From my Academic Historian perspective, I assess P(YES) = 0.40. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.23), I shifted downward by 0.04. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.37), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.37. Peer views ranged from 0.24 to 0.52. I adjusted minimally to 0.37. Electoral incentives often override ideological positions near deadlines."
+        "Initial assessment: P(YES) = 0.36. From my Investigative Journalist perspective, I assess P(YES) = 0.36. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is public protest or activism waves, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.33), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
+        "Round 2: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3: Updated to P(YES) = 0.36. Peer views ranged from 0.20 to 0.74. I adjusted minimally to 0.36. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
       "id": 18,
       "name": "Matthew Scott",
-      "background_category": "Insurance Actuary",
-      "background_detail": "Probabilistic thinker focused on tail risks, base rates, and mortality/morbidity tables. Conservative estimator.",
+      "background_category": "Hedge Fund PM",
+      "background_detail": "Risk-adjusted thinker, contrarian when consensus is strong. Looks for asymmetric bets and mispriced risk.",
       "personality": "risk-averse and conservative",
-      "initial_score": 0.2605,
-      "final_score": 0.2978,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.2242,
+      "final_score": 0.2496,
       "score_history": [
-        0.2605,
-        0.2612,
-        0.2696,
-        0.2978
+        0.2242,
+        0.2285,
+        0.2308,
+        0.2496
       ],
       "confidence": 0.2932,
-      "reasoning": "As a Insurance Actuary, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.26. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
+      "reasoning": "As a Hedge Fund PM, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.22. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
       "key_factors": [
         "media narrative framing",
         "legislative calendar pressure",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.26. As a Insurance Actuary, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.26. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.26. Round 1 deliberation: peers averaged 0.21. My risk-averse and conservative tendency led me to held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.27. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.30. Peer views ranged from 0.21 to 0.46. I adjusted upward to 0.30. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Initial assessment: P(YES) = 0.22. As a Hedge Fund PM, I focus on media narrative framing and legislative calendar pressure. These suggest P(YES) = 0.22. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.23. Round 1 deliberation: peers averaged 0.18. My risk-averse and conservative tendency led me to held my position largely steady. The timing relative to recess creates underappreciated pressure.",
+        "Round 2: Updated to P(YES) = 0.23. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. Media pressure typically forces last-minute compromise.",
+        "Round 3: Updated to P(YES) = 0.25. Peer views ranged from 0.10 to 0.44. I adjusted minimally to 0.25. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
       "id": 19,
       "name": "Nicole Mitchell",
-      "background_category": "Retail Investor",
-      "background_detail": "Follows social media sentiment, Reddit, FinTwit. Reads popular narrative but lacks institutional depth.",
+      "background_category": "Academic Historian",
+      "background_detail": "Draws parallels from historical episodes \u2014 1970s stagflation, 2008 crisis, dot-com bust. Skeptical of 'this time is different.'",
       "personality": "risk-seeking and opportunistic",
-      "initial_score": 0.5293,
-      "final_score": 0.4799,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.6653,
+      "final_score": 0.6207,
       "score_history": [
-        0.5293,
-        0.5359,
-        0.5366,
-        0.4799
+        0.6653,
+        0.6866,
+        0.6742,
+        0.6207
       ],
       "confidence": 0.3756,
-      "reasoning": "From my Retail Investor perspective, I assess P(YES) = 0.53. leadership negotiation leverage is the primary driver. legislative calendar pressure adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
+      "reasoning": "As a Academic Historian, I focus on leadership negotiation leverage and legislative calendar pressure. These suggest P(YES) = 0.67. The YES case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "leadership negotiation leverage",
         "legislative calendar pressure",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.53. From my Retail Investor perspective, I assess P(YES) = 0.53. leadership negotiation leverage is the primary driver. legislative calendar pressure adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.54. Round 1 deliberation: peers averaged 0.50. My risk-seeking and opportunistic tendency led me to held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.54. Peer views ranged from 0.34 to 0.59. I adjusted minimally to 0.54. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.48. After seeing 5 peer opinions (avg 0.35), I shifted downward by 0.06. The timing relative to recess creates underappreciated pressure."
+        "Initial assessment: P(YES) = 0.67. As a Academic Historian, I focus on leadership negotiation leverage and legislative calendar pressure. These suggest P(YES) = 0.67. The YES case depends heavily on individual legislator defections resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.69. Round 1 deliberation: peers averaged 0.59. My risk-seeking and opportunistic tendency led me to shifted upward by 0.02. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.67. Peer views ranged from 0.26 to 0.83. I adjusted minimally to 0.67. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3: Updated to P(YES) = 0.62. After seeing 5 peer opinions (avg 0.32), I shifted downward by 0.05. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
       "id": 20,
       "name": "Andrew Evans",
-      "background_category": "Commodity Trader",
-      "background_detail": "Tracks oil, metals, agricultural futures. Understands physical markets and supply/demand fundamentals.",
+      "background_category": "Military Intel Analyst",
+      "background_detail": "Trained in structured analytic techniques, red-team thinking, and Analysis of Competing Hypotheses.",
       "personality": "cautious and evidence-driven",
-      "initial_score": 0.4838,
-      "final_score": 0.4118,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.7654,
+      "final_score": 0.6314,
       "score_history": [
-        0.4838,
-        0.441,
-        0.4352,
-        0.4118
+        0.7654,
+        0.6982,
+        0.6733,
+        0.6314
       ],
       "confidence": 0.2812,
-      "reasoning": "From my Commodity Trader perspective, I assess P(YES) = 0.48. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
+      "reasoning": "From my Military Intel Analyst perspective, I assess P(YES) = 0.77. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
       "key_factors": [
         "caucus cohesion levels",
         "electoral incentive structure",
         "judicial rulings affecting legislative authority"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.48. From my Commodity Trader perspective, I assess P(YES) = 0.48. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.44. Round 1 deliberation: peers averaged 0.39. My cautious and evidence-driven tendency led me to shifted downward by 0.04. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.44. Peer views ranged from 0.22 to 0.54. I adjusted minimally to 0.44. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.41. Peer views ranged from 0.20 to 0.54. I adjusted downward to 0.41. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Initial assessment: P(YES) = 0.77. From my Military Intel Analyst perspective, I assess P(YES) = 0.77. caucus cohesion levels is the primary driver. electoral incentive structure adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.70. Round 1 deliberation: peers averaged 0.28. My cautious and evidence-driven tendency led me to shifted downward by 0.07. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 2: Updated to P(YES) = 0.67. Peer views ranged from 0.18 to 0.58. I adjusted downward to 0.67. Media pressure typically forces last-minute compromise.",
+        "Round 3: Updated to P(YES) = 0.63. Peer views ranged from 0.10 to 0.51. I adjusted downward to 0.63. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
       "id": 21,
       "name": "Rachel Chen",
-      "background_category": "Bayesian Statistician",
-      "background_detail": "Updates beliefs incrementally using prior distributions. Resists large jumps without strong evidence.",
+      "background_category": "Constitutional Lawyer",
+      "background_detail": "Analyzes legal frameworks, precedent, regulatory authority, and separation-of-powers dynamics.",
       "personality": "bold and contrarian",
-      "initial_score": 0.197,
-      "final_score": 0.1921,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.1753,
+      "final_score": 0.1485,
       "score_history": [
-        0.197,
-        0.2001,
-        0.1837,
-        0.1921
+        0.1753,
+        0.1708,
+        0.1436,
+        0.1485
       ],
       "confidence": 0.3921,
-      "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of public opinion polls reinforces this at P(YES) = 0.20. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of public opinion polls reinforces this at P(YES) = 0.18. Historical precedent and individual legislator defections create non-trivial forecast risk.",
       "key_factors": [
         "appropriations committee dynamics",
         "public opinion polls",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.20. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of public opinion polls reinforces this at P(YES) = 0.20. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.20. Peer views ranged from 0.04 to 0.40. I adjusted minimally to 0.20. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 2: Updated to P(YES) = 0.18. Round 2 deliberation: peers averaged 0.33. My bold and contrarian tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.19. Peer views ranged from 0.35 to 0.48. I adjusted minimally to 0.19. The narrow majority makes individual holdouts disproportionately powerful."
+        "Initial assessment: P(YES) = 0.18. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of public opinion polls reinforces this at P(YES) = 0.18. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.17. Peer views ranged from 0.02 to 0.52. I adjusted minimally to 0.17. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 2: Updated to P(YES) = 0.14. Round 2 deliberation: peers averaged 0.32. My bold and contrarian tendency led me to shifted downward by 0.03. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3: Updated to P(YES) = 0.15. Peer views ranged from 0.33 to 0.62. I adjusted minimally to 0.15. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
       "id": 22,
       "name": "Joseph Mueller",
-      "background_category": "Pollster",
-      "background_detail": "Expert in survey methodology, sampling bias, and public opinion trends. Understands how sentiment translates to action.",
+      "background_category": "Commodity Trader",
+      "background_detail": "Tracks oil, metals, agricultural futures. Understands physical markets and supply/demand fundamentals.",
       "personality": "analytical and methodical",
-      "initial_score": 0.5437,
-      "final_score": 0.4635,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.3435,
+      "final_score": 0.3488,
       "score_history": [
-        0.5437,
-        0.5162,
-        0.4725,
-        0.4635
+        0.3435,
+        0.3434,
+        0.3308,
+        0.3488
       ],
       "confidence": 0.3865,
-      "reasoning": "As a Pollster, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.54. The YES case depends heavily on public protest or activism waves resolving favorably.",
+      "reasoning": "As a Commodity Trader, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.34. The NO case depends heavily on public protest or activism waves resolving favorably.",
       "key_factors": [
         "partisan polarization depth",
         "leadership negotiation leverage",
         "public protest or activism waves"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.54. As a Pollster, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.54. The YES case depends heavily on public protest or activism waves resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.52. After seeing 5 peer opinions (avg 0.42), I shifted downward by 0.03. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.47. Peer views ranged from 0.18 to 0.49. I adjusted downward to 0.47. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.36), I held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Initial assessment: P(YES) = 0.34. As a Commodity Trader, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.34. The NO case depends heavily on public protest or activism waves resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.37), I held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 2: Updated to P(YES) = 0.33. Peer views ranged from 0.14 to 0.51. I adjusted minimally to 0.33. The timing relative to recess creates underappreciated pressure.",
+        "Round 3: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.38), I held my position largely steady. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
       "id": 23,
       "name": "Laura Harris",
-      "background_category": "Pharmaceutical Exec",
-      "background_detail": "Understands FDA approval cycles, clinical trial outcomes, biotech funding environment, and healthcare policy.",
+      "background_category": "Conspiracy Skeptic",
+      "background_detail": "Systematically debunks popular narratives. Tests claims against evidence rigorously. Finds hidden assumptions in consensus views.",
       "personality": "intuitive and pattern-matching",
-      "initial_score": 0.0398,
-      "final_score": 0.238,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.02,
+      "final_score": 0.1402,
       "score_history": [
-        0.0398,
-        0.1223,
-        0.1977,
-        0.238
+        0.02,
+        0.0627,
+        0.1067,
+        0.1402
       ],
       "confidence": 0.5126,
-      "reasoning": "From my Pharmaceutical Exec perspective, I assess P(YES) = 0.04. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
+      "reasoning": "From my Conspiracy Skeptic perspective, I assess P(YES) = 0.02. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
       "key_factors": [
         "partisan polarization depth",
         "public opinion polls",
         "judicial rulings affecting legislative authority"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.04. From my Pharmaceutical Exec perspective, I assess P(YES) = 0.04. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.12. Peer views ranged from 0.26 to 0.52. I adjusted upward to 0.12. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.20. Round 2 deliberation: peers averaged 0.39. My intuitive and pattern-matching tendency led me to shifted upward by 0.08. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 3: Updated to P(YES) = 0.24. Round 3 deliberation: peers averaged 0.41. My intuitive and pattern-matching tendency led me to shifted upward by 0.04. Electoral incentives often override ideological positions near deadlines."
+        "Initial assessment: P(YES) = 0.02. From my Conspiracy Skeptic perspective, I assess P(YES) = 0.02. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is judicial rulings affecting legislative authority, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.06. Peer views ranged from 0.30 to 0.43. I adjusted upward to 0.06. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.11. Round 2 deliberation: peers averaged 0.36. My intuitive and pattern-matching tendency led me to shifted upward by 0.04. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 3: Updated to P(YES) = 0.14. Round 3 deliberation: peers averaged 0.48. My intuitive and pattern-matching tendency led me to shifted upward by 0.03. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
       "id": 24,
       "name": "Christopher Hall",
-      "background_category": "Energy Sector Analyst",
-      "background_detail": "Tracks oil prices, OPEC dynamics, renewables deployment, and energy policy. Understands energy's macro impact.",
+      "background_category": "Short Seller",
+      "background_detail": "Professional skeptic. Hunts for overvalued assets, fraud, and overhyped narratives. Makes money when consensus is wrong.",
       "personality": "skeptical and devil's advocate",
-      "initial_score": 0.2823,
-      "final_score": 0.2332,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.3221,
+      "final_score": 0.284,
       "score_history": [
-        0.2823,
-        0.2571,
-        0.2466,
-        0.2332
+        0.3221,
+        0.3113,
+        0.2986,
+        0.284
       ],
       "confidence": 0.5332,
-      "reasoning": "From my Energy Sector Analyst perspective, I assess P(YES) = 0.28. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
+      "reasoning": "From my Short Seller perspective, I assess P(YES) = 0.32. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
       "key_factors": [
         "electoral incentive structure",
         "media narrative framing",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.28. From my Energy Sector Analyst perspective, I assess P(YES) = 0.28. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.33), I shifted downward by 0.03. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.25. After seeing 5 peer opinions (avg 0.38), I held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 3: Updated to P(YES) = 0.23. After seeing 5 peer opinions (avg 0.40), I held my position largely steady. The timing relative to recess creates underappreciated pressure."
+        "Initial assessment: P(YES) = 0.32. From my Short Seller perspective, I assess P(YES) = 0.32. electoral incentive structure is the primary driver. media narrative framing adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.31. After seeing 5 peer opinions (avg 0.28), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 2: Updated to P(YES) = 0.30. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 3: Updated to P(YES) = 0.28. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
       "id": 25,
       "name": "Megan Hill",
-      "background_category": "Real Estate Developer",
-      "background_detail": "Sensitive to interest rates, housing supply, zoning, and demographic shifts. Thinks in 5-10 year cycles.",
+      "background_category": "Venture Capitalist",
+      "background_detail": "Pattern-matches across industries, optimistic bias toward innovation and disruption. Sees technology as deflationary.",
       "personality": "consensus-seeking and diplomatic",
-      "initial_score": 0.4309,
-      "final_score": 0.4072,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.3218,
+      "final_score": 0.3777,
       "score_history": [
-        0.4309,
-        0.4014,
-        0.4117,
-        0.4072
+        0.3218,
+        0.3246,
+        0.3592,
+        0.3777
       ],
       "confidence": 0.4354,
-      "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.43. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.32. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
       "key_factors": [
         "appropriations committee dynamics",
         "leadership negotiation leverage",
         "judicial rulings affecting legislative authority"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.43. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.43. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.40. Peer views ranged from 0.15 to 0.54. I adjusted downward to 0.40. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.41. Round 2 deliberation: peers averaged 0.38. My consensus-seeking and diplomatic tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.41. Round 3 deliberation: peers averaged 0.34. My consensus-seeking and diplomatic tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
+        "Initial assessment: P(YES) = 0.32. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.32. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.32. Peer views ranged from 0.24 to 0.69. I adjusted minimally to 0.32. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 2: Updated to P(YES) = 0.36. Round 2 deliberation: peers averaged 0.42. My consensus-seeking and diplomatic tendency led me to shifted upward by 0.03. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3: Updated to P(YES) = 0.38. Round 3 deliberation: peers averaged 0.34. My consensus-seeking and diplomatic tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
       "id": 26,
       "name": "Anthony Carter",
-      "background_category": "Crypto Analyst",
-      "background_detail": "Tracks on-chain data, DeFi flows, regulatory developments. Libertarian-leaning, skeptical of central authority.",
+      "background_category": "Tech Executive",
+      "background_detail": "Silicon Valley perspective, innovation-driven worldview. Believes in exponential curves and platform effects.",
       "personality": "data-obsessed and quantitative",
-      "initial_score": 0.3436,
-      "final_score": 0.3802,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.2372,
+      "final_score": 0.2869,
       "score_history": [
-        0.3436,
-        0.3592,
-        0.3729,
-        0.3802
+        0.2372,
+        0.259,
+        0.2751,
+        0.2869
       ],
       "confidence": 0.6254,
-      "reasoning": "Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.34. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.24. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
       "key_factors": [
         "caucus cohesion levels",
         "leadership negotiation leverage",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.34. Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.34. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.36. After seeing 5 peer opinions (avg 0.44), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 2: Updated to P(YES) = 0.37. After seeing 5 peer opinions (avg 0.39), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.38. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Initial assessment: P(YES) = 0.24. Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.24. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.49), I shifted upward by 0.02. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 2: Updated to P(YES) = 0.28. After seeing 5 peer opinions (avg 0.35), I held my position largely steady. The timing relative to recess creates underappreciated pressure.",
+        "Round 3: Updated to P(YES) = 0.29. After seeing 5 peer opinions (avg 0.40), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
       "id": 27,
       "name": "Elizabeth Parker",
-      "background_category": "Union Organizer",
-      "background_detail": "Understands labor dynamics from the ground up. Tracks wage negotiations, strike activity, and worker sentiment.",
+      "background_category": "Crypto Analyst",
+      "background_detail": "Tracks on-chain data, DeFi flows, regulatory developments. Libertarian-leaning, skeptical of central authority.",
       "personality": "narrative-driven and qualitative",
-      "initial_score": 0.4744,
-      "final_score": 0.392,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.1287,
+      "final_score": 0.1809,
       "score_history": [
-        0.4744,
-        0.4625,
-        0.427,
-        0.392
+        0.1287,
+        0.1652,
+        0.176,
+        0.1809
       ],
       "confidence": 0.477,
-      "reasoning": "From my Union Organizer perspective, I assess P(YES) = 0.47. caucus cohesion levels is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "reasoning": "From my Crypto Analyst perspective, I assess P(YES) = 0.13. caucus cohesion levels is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "caucus cohesion levels",
         "public opinion polls",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.47. From my Union Organizer perspective, I assess P(YES) = 0.47. caucus cohesion levels is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.46. Round 1 deliberation: peers averaged 0.38. My narrative-driven and qualitative tendency led me to held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.43. Round 2 deliberation: peers averaged 0.27. My narrative-driven and qualitative tendency led me to shifted downward by 0.04. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.39. Round 3 deliberation: peers averaged 0.31. My narrative-driven and qualitative tendency led me to shifted downward by 0.03. The timing relative to recess creates underappreciated pressure."
+        "Initial assessment: P(YES) = 0.13. From my Crypto Analyst perspective, I assess P(YES) = 0.13. caucus cohesion levels is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.17. Round 1 deliberation: peers averaged 0.38. My narrative-driven and qualitative tendency led me to shifted upward by 0.04. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.18. Round 2 deliberation: peers averaged 0.21. My narrative-driven and qualitative tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3: Updated to P(YES) = 0.18. Round 3 deliberation: peers averaged 0.31. My narrative-driven and qualitative tendency led me to held my position largely steady. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
       "id": 28,
       "name": "Kevin Reed",
-      "background_category": "Demographer",
-      "background_detail": "Studies population trends, aging, migration, and their economic consequences. Long-term structural thinker.",
+      "background_category": "Fintech Founder",
+      "background_detail": "Understands payments, lending, and financial infrastructure disruption. Optimistic about technology solving finance.",
       "personality": "risk-averse and conservative",
-      "initial_score": 0.541,
-      "final_score": 0.4791,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.4619,
+      "final_score": 0.4405,
       "score_history": [
-        0.541,
-        0.5221,
-        0.4935,
-        0.4791
+        0.4619,
+        0.4557,
+        0.4423,
+        0.4405
       ],
       "confidence": 0.5551,
-      "reasoning": "Congressional dynamics around public opinion polls suggest YES probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.54. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around public opinion polls suggest NO probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.46. Historical precedent and individual legislator defections create non-trivial forecast risk.",
       "key_factors": [
         "public opinion polls",
         "legislative calendar pressure",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.54. Congressional dynamics around public opinion polls suggest YES probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.54. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.52. Peer views ranged from 0.36 to 0.57. I adjusted minimally to 0.52. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.49. Round 2 deliberation: peers averaged 0.40. My risk-averse and conservative tendency led me to shifted downward by 0.03. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.48. Peer views ranged from 0.12 to 0.43. I adjusted minimally to 0.48. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Initial assessment: P(YES) = 0.46. Congressional dynamics around public opinion polls suggest NO probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.46. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.46. Peer views ranged from 0.26 to 0.82. I adjusted minimally to 0.46. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.44. Round 2 deliberation: peers averaged 0.47. My risk-averse and conservative tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3: Updated to P(YES) = 0.44. Peer views ranged from 0.09 to 0.63. I adjusted minimally to 0.44. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
       "id": 29,
       "name": "Rebecca Santos",
-      "background_category": "Defense Contractor Exec",
-      "background_detail": "Tracks government spending, defense budgets, geopolitical tensions, and procurement cycles.",
+      "background_category": "Retail Investor",
+      "background_detail": "Follows social media sentiment, Reddit, FinTwit. Reads popular narrative but lacks institutional depth.",
       "personality": "risk-seeking and opportunistic",
-      "initial_score": 0.6202,
-      "final_score": 0.5016,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.7504,
+      "final_score": 0.644,
       "score_history": [
-        0.6202,
-        0.5877,
-        0.5234,
-        0.5016
+        0.7504,
+        0.717,
+        0.6711,
+        0.644
       ],
       "confidence": 0.4311,
-      "reasoning": "From my Defense Contractor Exec perspective, I assess P(YES) = 0.62. partisan polarization depth is the primary driver. electoral incentive structure adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
+      "reasoning": "As a Retail Investor, I focus on partisan polarization depth and electoral incentive structure. These suggest P(YES) = 0.75. The YES case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "partisan polarization depth",
         "electoral incentive structure",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.62. From my Defense Contractor Exec perspective, I assess P(YES) = 0.62. partisan polarization depth is the primary driver. electoral incentive structure adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.59. Peer views ranged from 0.21 to 0.59. I adjusted downward to 0.59. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.52. After seeing 5 peer opinions (avg 0.40), I shifted downward by 0.06. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.50. Peer views ranged from 0.21 to 0.48. I adjusted downward to 0.50. The narrow majority makes individual holdouts disproportionately powerful."
+        "Initial assessment: P(YES) = 0.75. As a Retail Investor, I focus on partisan polarization depth and electoral incentive structure. These suggest P(YES) = 0.75. The YES case depends heavily on individual legislator defections resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.72. Peer views ranged from 0.02 to 0.69. I adjusted downward to 0.72. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.67. After seeing 5 peer opinions (avg 0.46), I shifted downward by 0.05. Media pressure typically forces last-minute compromise.",
+        "Round 3: Updated to P(YES) = 0.64. Peer views ranged from 0.10 to 0.62. I adjusted downward to 0.64. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
       "id": 30,
       "name": "Brian White",
-      "background_category": "Fintech Founder",
-      "background_detail": "Understands payments, lending, and financial infrastructure disruption. Optimistic about technology solving finance.",
+      "background_category": "Biotech Researcher",
+      "background_detail": "Works on drug discovery and understands R&D timelines, regulatory hurdles, and scientific uncertainty.",
       "personality": "cautious and evidence-driven",
-      "initial_score": 0.403,
-      "final_score": 0.4031,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.516,
+      "final_score": 0.4842,
       "score_history": [
-        0.403,
-        0.3616,
-        0.3708,
-        0.4031
+        0.516,
+        0.4678,
+        0.4697,
+        0.4842
       ],
       "confidence": 0.3723,
-      "reasoning": "Congressional dynamics around legislative calendar pressure suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.40. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around legislative calendar pressure suggest YES probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.52. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
       "key_factors": [
         "legislative calendar pressure",
         "partisan polarization depth",
         "public protest or activism waves"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.40. Congressional dynamics around legislative calendar pressure suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.40. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.36. Peer views ranged from 0.26 to 0.49. I adjusted downward to 0.36. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.37. Round 2 deliberation: peers averaged 0.38. My cautious and evidence-driven tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.40. Round 3 deliberation: peers averaged 0.48. My cautious and evidence-driven tendency led me to shifted upward by 0.03. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Initial assessment: P(YES) = 0.52. Congressional dynamics around legislative calendar pressure suggest YES probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.52. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.47. Peer views ranged from 0.26 to 0.51. I adjusted downward to 0.47. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.47. Round 2 deliberation: peers averaged 0.41. My cautious and evidence-driven tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3: Updated to P(YES) = 0.48. Round 3 deliberation: peers averaged 0.45. My cautious and evidence-driven tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
       "id": 31,
       "name": "Katherine Walker",
-      "background_category": "Agricultural Economist",
-      "background_detail": "Tracks food prices, crop yields, weather patterns, and trade policy impacts on farming.",
+      "background_category": "Climate Scientist",
+      "background_detail": "Understands long-term systemic risks, physical economy impacts, and energy transition dynamics.",
       "personality": "bold and contrarian",
-      "initial_score": 0.5212,
-      "final_score": 0.4936,
+      "temp_tier": "creative",
+      "temperature": 1.2,
+      "initial_score": 0.5924,
+      "final_score": 0.5498,
       "score_history": [
-        0.5212,
-        0.5016,
-        0.5208,
-        0.4936
+        0.5924,
+        0.5763,
+        0.5749,
+        0.5498
       ],
       "confidence": 0.8115,
-      "reasoning": "As a Agricultural Economist, I focus on legislative calendar pressure and leadership negotiation leverage. These suggest P(YES) = 0.52. The YES case depends heavily on individual legislator defections resolving favorably.",
+      "reasoning": "As a Climate Scientist, I focus on legislative calendar pressure and leadership negotiation leverage. These suggest P(YES) = 0.59. The YES case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "legislative calendar pressure",
         "leadership negotiation leverage",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.52. As a Agricultural Economist, I focus on legislative calendar pressure and leadership negotiation leverage. These suggest P(YES) = 0.52. The YES case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.50. Peer views ranged from 0.22 to 0.62. I adjusted minimally to 0.50. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.52. Round 2 deliberation: peers averaged 0.41. My bold and contrarian tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.49. Round 3 deliberation: peers averaged 0.34. My bold and contrarian tendency led me to shifted downward by 0.03. The narrow majority makes individual holdouts disproportionately powerful."
+        "Initial assessment: P(YES) = 0.59. As a Climate Scientist, I focus on legislative calendar pressure and leadership negotiation leverage. These suggest P(YES) = 0.59. The YES case depends heavily on individual legislator defections resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.58. Peer views ranged from 0.19 to 0.86. I adjusted minimally to 0.58. The timing relative to recess creates underappreciated pressure.",
+        "Round 2: Updated to P(YES) = 0.57. Round 2 deliberation: peers averaged 0.34. My bold and contrarian tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3: Updated to P(YES) = 0.55. Round 3 deliberation: peers averaged 0.34. My bold and contrarian tendency led me to shifted downward by 0.03. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
       "id": 32,
       "name": "Steven Lopez",
-      "background_category": "Central Bank Watcher",
-      "background_detail": "Parses every Fed speech, dot plot, and minutes release. Expert at reading between the lines of central bank communication.",
+      "background_category": "Political Analyst",
+      "background_detail": "Tracks legislative dynamics, lobbying, regulatory shifts, and election cycles. Deep knowledge of Congressional mechanics.",
       "personality": "analytical and methodical",
-      "initial_score": 0.5711,
-      "final_score": 0.507,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.8196,
+      "final_score": 0.7198,
       "score_history": [
-        0.5711,
-        0.5504,
-        0.5189,
-        0.507
+        0.8196,
+        0.7822,
+        0.7366,
+        0.7198
       ],
       "confidence": 0.5155,
-      "reasoning": "Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.57. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.82. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
       "key_factors": [
         "partisan polarization depth",
         "electoral incentive structure",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.57. Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.57. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.55. After seeing 5 peer opinions (avg 0.44), I shifted downward by 0.02. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.52. Peer views ranged from 0.34 to 0.53. I adjusted downward to 0.52. Electoral incentives often override ideological positions near deadlines.",
-        "Round 3: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. Media pressure typically forces last-minute compromise."
+        "Initial assessment: P(YES) = 0.82. Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.82. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.78. After seeing 5 peer opinions (avg 0.39), I shifted downward by 0.04. The timing relative to recess creates underappreciated pressure.",
+        "Round 2: Updated to P(YES) = 0.74. Peer views ranged from 0.26 to 0.48. I adjusted downward to 0.74. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3: Updated to P(YES) = 0.72. After seeing 5 peer opinions (avg 0.52), I held my position largely steady. Media pressure typically forces last-minute compromise."
       ]
     },
     {
       "id": 33,
       "name": "Patricia Nelson",
-      "background_category": "Biotech Researcher",
-      "background_detail": "Works on drug discovery and understands R&D timelines, regulatory hurdles, and scientific uncertainty.",
+      "background_category": "Geopolitical Strategist",
+      "background_detail": "Analyzes international relations, trade wars, sanctions, and their second-order effects on domestic policy.",
       "personality": "intuitive and pattern-matching",
-      "initial_score": 0.6176,
-      "final_score": 0.4804,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.8622,
+      "final_score": 0.7089,
       "score_history": [
-        0.6176,
-        0.5872,
-        0.5287,
-        0.4804
+        0.8622,
+        0.8252,
+        0.7722,
+        0.7089
       ],
       "confidence": 0.3555,
-      "reasoning": "Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.62. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.86. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
       "key_factors": [
         "partisan polarization depth",
         "electoral incentive structure",
         "public protest or activism waves"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.62. Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.62. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.59. Round 1 deliberation: peers averaged 0.42. My intuitive and pattern-matching tendency led me to shifted downward by 0.03. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.53. After seeing 5 peer opinions (avg 0.32), I shifted downward by 0.06. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.48. After seeing 5 peer opinions (avg 0.37), I shifted downward by 0.05. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Initial assessment: P(YES) = 0.86. Congressional dynamics around partisan polarization depth suggest YES probability. My analysis of electoral incentive structure reinforces this at P(YES) = 0.86. Historical precedent and public protest or activism waves create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.83. Round 1 deliberation: peers averaged 0.39. My intuitive and pattern-matching tendency led me to shifted downward by 0.04. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 2: Updated to P(YES) = 0.77. After seeing 5 peer opinions (avg 0.31), I shifted downward by 0.05. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3: Updated to P(YES) = 0.71. After seeing 5 peer opinions (avg 0.31), I shifted downward by 0.06. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
       "id": 34,
       "name": "Edward Campbell",
-      "background_category": "Sovereign Wealth Fund Analyst",
-      "background_detail": "Manages long-term national reserves. Thinks in decades, tracks global macro imbalances and structural shifts.",
+      "background_category": "Union Organizer",
+      "background_detail": "Understands labor dynamics from the ground up. Tracks wage negotiations, strike activity, and worker sentiment.",
       "personality": "skeptical and devil's advocate",
-      "initial_score": 0.4129,
-      "final_score": 0.3774,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.5315,
+      "final_score": 0.5299,
       "score_history": [
-        0.4129,
-        0.4035,
-        0.3883,
-        0.3774
+        0.5315,
+        0.547,
+        0.5272,
+        0.5299
       ],
       "confidence": 0.6726,
-      "reasoning": "From my Sovereign Wealth Fund Analyst perspective, I assess P(YES) = 0.41. media narrative framing is the primary driver. public opinion polls adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
+      "reasoning": "From my Union Organizer perspective, I assess P(YES) = 0.53. media narrative framing is the primary driver. public opinion polls adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
       "key_factors": [
         "media narrative framing",
         "public opinion polls",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.41. From my Sovereign Wealth Fund Analyst perspective, I assess P(YES) = 0.41. media narrative framing is the primary driver. public opinion polls adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.40. Round 1 deliberation: peers averaged 0.45. My skeptical and devil's advocate tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines.",
-        "Round 2: Updated to P(YES) = 0.39. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.38. Round 3 deliberation: peers averaged 0.45. My skeptical and devil's advocate tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
+        "Initial assessment: P(YES) = 0.53. From my Union Organizer perspective, I assess P(YES) = 0.53. media narrative framing is the primary driver. public opinion polls adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.55. Round 1 deliberation: peers averaged 0.42. My skeptical and devil's advocate tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines.",
+        "Round 2: Updated to P(YES) = 0.53. After seeing 5 peer opinions (avg 0.59), I held my position largely steady. Media pressure typically forces last-minute compromise.",
+        "Round 3: Updated to P(YES) = 0.53. Round 3 deliberation: peers averaged 0.49. My skeptical and devil's advocate tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
       "id": 35,
       "name": "Christina Morris",
-      "background_category": "Macro Economist",
-      "background_detail": "PhD economist focused on monetary policy, inflation dynamics, and central bank behavior. Tracks PCE, CPI, employment data, and Fed minutes closely.",
+      "background_category": "Real Estate Developer",
+      "background_detail": "Sensitive to interest rates, housing supply, zoning, and demographic shifts. Thinks in 5-10 year cycles.",
       "personality": "consensus-seeking and diplomatic",
-      "initial_score": 0.3396,
-      "final_score": 0.3561,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.3495,
+      "final_score": 0.3459,
       "score_history": [
-        0.3396,
-        0.3763,
-        0.3448,
-        0.3561
+        0.3495,
+        0.3741,
+        0.3398,
+        0.3459
       ],
       "confidence": 0.5028,
-      "reasoning": "As a Macro Economist, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.34. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
+      "reasoning": "As a Real Estate Developer, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.35. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
       "key_factors": [
         "partisan polarization depth",
         "leadership negotiation leverage",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.34. As a Macro Economist, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.34. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.38. Peer views ranged from 0.12 to 0.59. I adjusted upward to 0.38. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.33), I shifted downward by 0.03. Electoral incentives often override ideological positions near deadlines.",
-        "Round 3: Updated to P(YES) = 0.36. After seeing 5 peer opinions (avg 0.38), I held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Initial assessment: P(YES) = 0.35. As a Real Estate Developer, I focus on partisan polarization depth and leadership negotiation leverage. These suggest P(YES) = 0.35. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.37. Peer views ranged from 0.06 to 0.72. I adjusted upward to 0.37. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 2: Updated to P(YES) = 0.34. After seeing 5 peer opinions (avg 0.26), I shifted downward by 0.03. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.39), I held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
       "id": 36,
       "name": "George Nakamura",
-      "background_category": "Quantitative Trader",
-      "background_detail": "Builds systematic models, thinks in probabilities and base rates. Uses options-implied probabilities and historical analogs.",
+      "background_category": "Defense Contractor Exec",
+      "background_detail": "Tracks government spending, defense budgets, geopolitical tensions, and procurement cycles.",
       "personality": "data-obsessed and quantitative",
-      "initial_score": 0.4331,
-      "final_score": 0.3708,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.5731,
+      "final_score": 0.49,
       "score_history": [
-        0.4331,
-        0.3881,
-        0.3852,
-        0.3708
+        0.5731,
+        0.5225,
+        0.5103,
+        0.49
       ],
       "confidence": 0.5813,
-      "reasoning": "From my Quantitative Trader perspective, I assess P(YES) = 0.43. caucus cohesion levels is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "reasoning": "From my Defense Contractor Exec perspective, I assess P(YES) = 0.57. caucus cohesion levels is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "caucus cohesion levels",
         "leadership negotiation leverage",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.43. From my Quantitative Trader perspective, I assess P(YES) = 0.43. caucus cohesion levels is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.39. Round 1 deliberation: peers averaged 0.38. My data-obsessed and quantitative tendency led me to shifted downward by 0.04. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.39. Peer views ranged from 0.30 to 0.54. I adjusted minimally to 0.39. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.37. Peer views ranged from 0.19 to 0.48. I adjusted minimally to 0.37. The timing relative to recess creates underappreciated pressure."
+        "Initial assessment: P(YES) = 0.57. From my Defense Contractor Exec perspective, I assess P(YES) = 0.57. caucus cohesion levels is the primary driver. leadership negotiation leverage adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.52. Round 1 deliberation: peers averaged 0.40. My data-obsessed and quantitative tendency led me to shifted downward by 0.05. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 2: Updated to P(YES) = 0.51. Peer views ranged from 0.26 to 0.67. I adjusted minimally to 0.51. Media pressure typically forces last-minute compromise.",
+        "Round 3: Updated to P(YES) = 0.49. Peer views ranged from 0.15 to 0.53. I adjusted downward to 0.49. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
       "id": 37,
       "name": "Michelle Jackson",
-      "background_category": "Political Analyst",
-      "background_detail": "Tracks legislative dynamics, lobbying, regulatory shifts, and election cycles. Deep knowledge of Congressional mechanics.",
+      "background_category": "Historical Analogist",
+      "background_detail": "Maps current events onto historical templates \u2014 Weimar, 1930s, 1970s, Japanese lost decade. Strong pattern-matching.",
       "personality": "narrative-driven and qualitative",
-      "initial_score": 0.533,
-      "final_score": 0.5242,
+      "temp_tier": "contrarian",
+      "temperature": 0.9,
+      "initial_score": 0.4688,
+      "final_score": 0.5095,
       "score_history": [
-        0.533,
-        0.5679,
-        0.5435,
-        0.5242
+        0.4688,
+        0.518,
+        0.5089,
+        0.5095
       ],
       "confidence": 0.9241,
-      "reasoning": "Congressional dynamics around electoral incentive structure suggest YES probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.53. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.47. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
       "key_factors": [
         "electoral incentive structure",
         "legislative calendar pressure",
         "judicial rulings affecting legislative authority"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.53. Congressional dynamics around electoral incentive structure suggest YES probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.53. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.57. After seeing 5 peer opinions (avg 0.43), I shifted upward by 0.03. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 2: Updated to P(YES) = 0.54. Peer views ranged from 0.34 to 0.54. I adjusted downward to 0.54. Electoral incentives often override ideological positions near deadlines.",
-        "Round 3: Updated to P(YES) = 0.52. Round 3 deliberation: peers averaged 0.45. My narrative-driven and qualitative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Initial assessment: P(YES) = 0.47. Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.47. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.52. After seeing 5 peer opinions (avg 0.38), I shifted upward by 0.05. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 2: Updated to P(YES) = 0.51. Peer views ranged from 0.33 to 0.67. I adjusted minimally to 0.51. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3: Updated to P(YES) = 0.51. Round 3 deliberation: peers averaged 0.50. My narrative-driven and qualitative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
       "id": 38,
       "name": "Kenneth Lee",
-      "background_category": "Investigative Journalist",
-      "background_detail": "Skeptical by nature, hunts for hidden information and contrarian angles. Distrusts consensus narratives.",
+      "background_category": "AI Safety Researcher",
+      "background_detail": "Studies alignment, capability elicitation, and societal impact of AI systems. Calibrated about AI limitations.",
       "personality": "risk-averse and conservative",
-      "initial_score": 0.5635,
-      "final_score": 0.5018,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.4635,
+      "final_score": 0.449,
       "score_history": [
-        0.5635,
-        0.5362,
-        0.5002,
-        0.5018
+        0.4635,
+        0.4511,
+        0.4357,
+        0.449
       ],
       "confidence": 0.6127,
-      "reasoning": "As a Investigative Journalist, I focus on partisan polarization depth and legislative calendar pressure. These suggest P(YES) = 0.56. The YES case depends heavily on unexpected crisis diverting attention resolving favorably.",
+      "reasoning": "As a AI Safety Researcher, I focus on partisan polarization depth and legislative calendar pressure. These suggest P(YES) = 0.46. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
       "key_factors": [
         "partisan polarization depth",
         "legislative calendar pressure",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.56. As a Investigative Journalist, I focus on partisan polarization depth and legislative calendar pressure. These suggest P(YES) = 0.56. The YES case depends heavily on unexpected crisis diverting attention resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.54. Round 1 deliberation: peers averaged 0.38. My risk-averse and conservative tendency led me to shifted downward by 0.03. Electoral incentives often override ideological positions near deadlines.",
-        "Round 2: Updated to P(YES) = 0.50. Peer views ranged from 0.19 to 0.50. I adjusted downward to 0.50. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.50. Round 3 deliberation: peers averaged 0.41. My risk-averse and conservative tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Initial assessment: P(YES) = 0.46. As a AI Safety Researcher, I focus on partisan polarization depth and legislative calendar pressure. These suggest P(YES) = 0.46. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.45. Round 1 deliberation: peers averaged 0.34. My risk-averse and conservative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines.",
+        "Round 2: Updated to P(YES) = 0.44. Peer views ranged from 0.27 to 0.55. I adjusted minimally to 0.44. The timing relative to recess creates underappreciated pressure.",
+        "Round 3: Updated to P(YES) = 0.45. Round 3 deliberation: peers averaged 0.46. My risk-averse and conservative tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
       "id": 39,
       "name": "Diana Wright",
-      "background_category": "Venture Capitalist",
-      "background_detail": "Pattern-matches across industries, optimistic bias toward innovation and disruption. Sees technology as deflationary.",
+      "background_category": "Management Consultant",
+      "background_detail": "Works with Fortune 500 on transformation. Sees enterprise adoption friction firsthand \u2014 budgets, change mgmt, politics.",
       "personality": "risk-seeking and opportunistic",
-      "initial_score": 0.2656,
-      "final_score": 0.3703,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.2715,
+      "final_score": 0.342,
       "score_history": [
-        0.2656,
-        0.3448,
-        0.3624,
-        0.3703
+        0.2715,
+        0.3356,
+        0.3513,
+        0.342
       ],
       "confidence": 0.5511,
-      "reasoning": "From my Venture Capitalist perspective, I assess P(YES) = 0.27. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "reasoning": "Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of media narrative framing reinforces this at P(YES) = 0.27. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
       "key_factors": [
         "appropriations committee dynamics",
-        "public opinion polls",
+        "media narrative framing",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.27. From my Venture Capitalist perspective, I assess P(YES) = 0.27. appropriations committee dynamics is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.34. Peer views ranged from 0.36 to 0.49. I adjusted upward to 0.34. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.36. After seeing 5 peer opinions (avg 0.35), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.37. Round 3 deliberation: peers averaged 0.40. My risk-seeking and opportunistic tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Initial assessment: P(YES) = 0.27. Congressional dynamics around appropriations committee dynamics suggest NO probability. My analysis of media narrative framing reinforces this at P(YES) = 0.27. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.34. Peer views ranged from 0.38 to 0.70. I adjusted upward to 0.34. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 2: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.32), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3: Updated to P(YES) = 0.34. Round 3 deliberation: peers averaged 0.43. My risk-seeking and opportunistic tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
       "id": 40,
       "name": "Raj Gonzalez",
-      "background_category": "Retired Central Banker",
-      "background_detail": "Deep institutional knowledge of Fed/ECB decision-making processes. Understands the politics inside the FOMC.",
+      "background_category": "Macro Economist",
+      "background_detail": "PhD economist focused on monetary policy, inflation dynamics, and central bank behavior. Tracks PCE, CPI, employment data, and Fed minutes closely.",
       "personality": "cautious and evidence-driven",
-      "initial_score": 0.46,
-      "final_score": 0.4511,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.44,
+      "final_score": 0.4542,
       "score_history": [
-        0.46,
-        0.4885,
-        0.4865,
-        0.4511
+        0.44,
+        0.4696,
+        0.4785,
+        0.4542
       ],
       "confidence": 0.8094,
-      "reasoning": "From my Retired Central Banker perspective, I assess P(YES) = 0.46. media narrative framing is the primary driver. partisan polarization depth adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
+      "reasoning": "From my Macro Economist perspective, I assess P(YES) = 0.44. media narrative framing is the primary driver. partisan polarization depth adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
       "key_factors": [
         "media narrative framing",
         "partisan polarization depth",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.46. From my Retired Central Banker perspective, I assess P(YES) = 0.46. media narrative framing is the primary driver. partisan polarization depth adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.49. Round 1 deliberation: peers averaged 0.41. My cautious and evidence-driven tendency led me to shifted upward by 0.03. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.49. Peer views ranged from 0.37 to 0.52. I adjusted minimally to 0.49. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 3: Updated to P(YES) = 0.45. Peer views ranged from 0.24 to 0.50. I adjusted downward to 0.45. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Initial assessment: P(YES) = 0.44. From my Macro Economist perspective, I assess P(YES) = 0.44. media narrative framing is the primary driver. partisan polarization depth adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.47. Round 1 deliberation: peers averaged 0.37. My cautious and evidence-driven tendency led me to shifted upward by 0.03. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.48. Peer views ranged from 0.36 to 0.67. I adjusted minimally to 0.48. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 3: Updated to P(YES) = 0.45. Peer views ranged from 0.20 to 0.64. I adjusted downward to 0.45. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
       "id": 41,
       "name": "Yuki Phillips",
-      "background_category": "Behavioral Economist",
-      "background_detail": "Studies cognitive biases, market sentiment, and herd behavior. Believes markets systematically misprice tail events.",
+      "background_category": "Quantitative Trader",
+      "background_detail": "Builds systematic models, thinks in probabilities and base rates. Uses options-implied probabilities and historical analogs.",
       "personality": "bold and contrarian",
-      "initial_score": 0.1282,
-      "final_score": 0.1833,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.0232,
+      "final_score": 0.1021,
       "score_history": [
-        0.1282,
-        0.1801,
-        0.206,
-        0.1833
+        0.0232,
+        0.0735,
+        0.0988,
+        0.1021
       ],
       "confidence": 0.4398,
-      "reasoning": "As a Behavioral Economist, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.13. The NO case depends heavily on individual legislator defections resolving favorably.",
+      "reasoning": "As a Quantitative Trader, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.02. The NO case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "appropriations committee dynamics",
         "caucus cohesion levels",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.13. As a Behavioral Economist, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.13. The NO case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.18. Peer views ranged from 0.38 to 0.62. I adjusted upward to 0.18. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.21. Round 2 deliberation: peers averaged 0.40. My bold and contrarian tendency led me to shifted upward by 0.03. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.18. After seeing 5 peer opinions (avg 0.33), I shifted downward by 0.02. Public opinion data suggests backlash risk is asymmetric across parties."
+        "Initial assessment: P(YES) = 0.02. As a Quantitative Trader, I focus on appropriations committee dynamics and caucus cohesion levels. These suggest P(YES) = 0.02. The NO case depends heavily on individual legislator defections resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.07. Peer views ranged from 0.32 to 0.70. I adjusted upward to 0.07. The timing relative to recess creates underappreciated pressure.",
+        "Round 2: Updated to P(YES) = 0.10. Round 2 deliberation: peers averaged 0.43. My bold and contrarian tendency led me to shifted upward by 0.03. Media pressure typically forces last-minute compromise.",
+        "Round 3: Updated to P(YES) = 0.10. After seeing 5 peer opinions (avg 0.32), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties."
       ]
     },
     {
       "id": 42,
       "name": "Wei Sanchez",
-      "background_category": "Geopolitical Strategist",
-      "background_detail": "Analyzes international relations, trade wars, sanctions, and their second-order effects on domestic policy.",
+      "background_category": "Data Scientist",
+      "background_detail": "Relies on statistical models, historical base rates, and ensemble methods. Skeptical of narratives without data.",
       "personality": "analytical and methodical",
-      "initial_score": 0.4948,
-      "final_score": 0.4449,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.4148,
+      "final_score": 0.4072,
       "score_history": [
-        0.4948,
-        0.4823,
-        0.4569,
-        0.4449
+        0.4148,
+        0.4154,
+        0.4138,
+        0.4072
       ],
       "confidence": 0.605,
-      "reasoning": "Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.49. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.41. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
       "key_factors": [
         "caucus cohesion levels",
         "partisan polarization depth",
         "judicial rulings affecting legislative authority"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.49. Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.49. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.48. After seeing 5 peer opinions (avg 0.40), I held my position largely steady. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.34), I shifted downward by 0.03. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.44. Round 3 deliberation: peers averaged 0.42. My analytical and methodical tendency led me to held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Initial assessment: P(YES) = 0.41. Congressional dynamics around caucus cohesion levels suggest NO probability. My analysis of partisan polarization depth reinforces this at P(YES) = 0.41. Historical precedent and judicial rulings affecting legislative authority create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.42. After seeing 5 peer opinions (avg 0.36), I held my position largely steady. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.41. After seeing 5 peer opinions (avg 0.36), I held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3: Updated to P(YES) = 0.41. Round 3 deliberation: peers averaged 0.40. My analytical and methodical tendency led me to held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
       "id": 43,
       "name": "Fatima O'Brien",
-      "background_category": "Data Scientist",
-      "background_detail": "Relies on statistical models, historical base rates, and ensemble methods. Skeptical of narratives without data.",
+      "background_category": "Insurance Actuary",
+      "background_detail": "Probabilistic thinker focused on tail risks, base rates, and mortality/morbidity tables. Conservative estimator.",
       "personality": "intuitive and pattern-matching",
-      "initial_score": 0.3992,
-      "final_score": 0.3932,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.3592,
+      "final_score": 0.3583,
       "score_history": [
-        0.3992,
-        0.4051,
-        0.4199,
-        0.3932
+        0.3592,
+        0.3625,
+        0.3739,
+        0.3583
       ],
       "confidence": 0.7463,
-      "reasoning": "As a Data Scientist, I focus on leadership negotiation leverage and partisan polarization depth. These suggest P(YES) = 0.40. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
+      "reasoning": "As a Insurance Actuary, I focus on leadership negotiation leverage and partisan polarization depth. These suggest P(YES) = 0.36. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
       "key_factors": [
         "leadership negotiation leverage",
         "partisan polarization depth",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.40. As a Data Scientist, I focus on leadership negotiation leverage and partisan polarization depth. These suggest P(YES) = 0.40. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.41. Peer views ranged from 0.22 to 0.54. I adjusted minimally to 0.41. Electoral incentives often override ideological positions near deadlines.",
-        "Round 2: Updated to P(YES) = 0.42. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. Electoral incentives often override ideological positions near deadlines.",
-        "Round 3: Updated to P(YES) = 0.39. After seeing 5 peer opinions (avg 0.38), I shifted downward by 0.03. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Initial assessment: P(YES) = 0.36. As a Insurance Actuary, I focus on leadership negotiation leverage and partisan polarization depth. These suggest P(YES) = 0.36. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.36. Peer views ranged from 0.17 to 0.69. I adjusted minimally to 0.36. Electoral incentives often override ideological positions near deadlines.",
+        "Round 2: Updated to P(YES) = 0.37. After seeing 5 peer opinions (avg 0.38), I held my position largely steady. Electoral incentives often override ideological positions near deadlines.",
+        "Round 3: Updated to P(YES) = 0.36. After seeing 5 peer opinions (avg 0.38), I held my position largely steady. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
       "id": 44,
       "name": "Carlos Anderson",
-      "background_category": "Hedge Fund PM",
-      "background_detail": "Risk-adjusted thinker, contrarian when consensus is strong. Looks for asymmetric bets and mispriced risk.",
+      "background_category": "Bayesian Statistician",
+      "background_detail": "Updates beliefs incrementally using prior distributions. Resists large jumps without strong evidence.",
       "personality": "skeptical and devil's advocate",
-      "initial_score": 0.3014,
-      "final_score": 0.3039,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.2989,
+      "final_score": 0.2913,
       "score_history": [
-        0.3014,
-        0.3006,
-        0.2894,
-        0.3039
+        0.2989,
+        0.2804,
+        0.2662,
+        0.2913
       ],
       "confidence": 0.4984,
-      "reasoning": "As a Hedge Fund PM, I focus on appropriations committee dynamics and legislative calendar pressure. These suggest P(YES) = 0.30. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
+      "reasoning": "As a Bayesian Statistician, I focus on appropriations committee dynamics and legislative calendar pressure. These suggest P(YES) = 0.30. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
       "key_factors": [
         "appropriations committee dynamics",
         "legislative calendar pressure",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.30. As a Hedge Fund PM, I focus on appropriations committee dynamics and legislative calendar pressure. These suggest P(YES) = 0.30. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.30. Round 1 deliberation: peers averaged 0.33. My skeptical and devil's advocate tendency led me to held my position largely steady. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.29. After seeing 5 peer opinions (avg 0.44), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.30. Peer views ranged from 0.12 to 0.41. I adjusted minimally to 0.30. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Initial assessment: P(YES) = 0.30. As a Bayesian Statistician, I focus on appropriations committee dynamics and legislative calendar pressure. These suggest P(YES) = 0.30. The NO case depends heavily on unexpected crisis diverting attention resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.28. Round 1 deliberation: peers averaged 0.42. My skeptical and devil's advocate tendency led me to held my position largely steady. The timing relative to recess creates underappreciated pressure.",
+        "Round 2: Updated to P(YES) = 0.27. After seeing 5 peer opinions (avg 0.40), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3: Updated to P(YES) = 0.29. Peer views ranged from 0.09 to 0.63. I adjusted upward to 0.29. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     },
     {
       "id": 45,
       "name": "Olga Lewis",
-      "background_category": "Constitutional Lawyer",
-      "background_detail": "Analyzes legal frameworks, precedent, regulatory authority, and separation-of-powers dynamics.",
+      "background_category": "Supply Chain Analyst",
+      "background_detail": "Tracks real-economy signals \u2014 shipping data, commodity flows, inventory cycles, and manufacturing PMIs.",
       "personality": "consensus-seeking and diplomatic",
-      "initial_score": 0.2068,
-      "final_score": 0.3988,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.02,
+      "final_score": 0.2587,
       "score_history": [
-        0.2068,
-        0.3282,
-        0.3775,
-        0.3988
+        0.02,
+        0.1445,
+        0.207,
+        0.2587
       ],
       "confidence": 0.3638,
-      "reasoning": "From my Constitutional Lawyer perspective, I assess P(YES) = 0.21. appropriations committee dynamics is the primary driver. electoral incentive structure adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
+      "reasoning": "From my Supply Chain Analyst perspective, I assess P(YES) = 0.02. appropriations committee dynamics is the primary driver. electoral incentive structure adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
       "key_factors": [
         "appropriations committee dynamics",
         "electoral incentive structure",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.21. From my Constitutional Lawyer perspective, I assess P(YES) = 0.21. appropriations committee dynamics is the primary driver. electoral incentive structure adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.33. After seeing 5 peer opinions (avg 0.40), I shifted upward by 0.12. Historical shutdown probability given current polarization levels is higher than base rate.",
-        "Round 2: Updated to P(YES) = 0.38. After seeing 5 peer opinions (avg 0.40), I shifted upward by 0.05. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.40. After seeing 5 peer opinions (avg 0.42), I shifted upward by 0.02. Electoral incentives often override ideological positions near deadlines."
+        "Initial assessment: P(YES) = 0.02. From my Supply Chain Analyst perspective, I assess P(YES) = 0.02. appropriations committee dynamics is the primary driver. electoral incentive structure adds additional weight. The key wildcard is individual legislator defections, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.14. After seeing 5 peer opinions (avg 0.42), I shifted upward by 0.12. Historical shutdown probability given current polarization levels is higher than base rate.",
+        "Round 2: Updated to P(YES) = 0.21. After seeing 5 peer opinions (avg 0.36), I shifted upward by 0.06. The timing relative to recess creates underappreciated pressure.",
+        "Round 3: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.46), I shifted upward by 0.05. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
       "id": 46,
       "name": "Ahmed King",
-      "background_category": "Supply Chain Analyst",
-      "background_detail": "Tracks real-economy signals \u2014 shipping data, commodity flows, inventory cycles, and manufacturing PMIs.",
+      "background_category": "Central Bank Watcher",
+      "background_detail": "Parses every Fed speech, dot plot, and minutes release. Expert at reading between the lines of central bank communication.",
       "personality": "data-obsessed and quantitative",
-      "initial_score": 0.0278,
-      "final_score": 0.1643,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.0778,
+      "final_score": 0.1233,
       "score_history": [
-        0.0278,
-        0.0694,
-        0.1156,
-        0.1643
+        0.0778,
+        0.075,
+        0.0944,
+        0.1233
       ],
       "confidence": 0.7643,
-      "reasoning": "As a Supply Chain Analyst, I focus on public opinion polls and legislative calendar pressure. These suggest P(YES) = 0.03. The NO case depends heavily on individual legislator defections resolving favorably.",
+      "reasoning": "As a Central Bank Watcher, I focus on public opinion polls and legislative calendar pressure. These suggest P(YES) = 0.08. The NO case depends heavily on individual legislator defections resolving favorably.",
       "key_factors": [
         "public opinion polls",
         "legislative calendar pressure",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.03. As a Supply Chain Analyst, I focus on public opinion polls and legislative calendar pressure. These suggest P(YES) = 0.03. The NO case depends heavily on individual legislator defections resolving favorably.",
-        "Round 1: Updated to P(YES) = 0.07. Peer views ranged from 0.22 to 0.52. I adjusted upward to 0.07. Media pressure typically forces last-minute compromise.",
-        "Round 2: Updated to P(YES) = 0.12. Round 2 deliberation: peers averaged 0.36. My data-obsessed and quantitative tendency led me to shifted upward by 0.05. The narrow majority makes individual holdouts disproportionately powerful.",
-        "Round 3: Updated to P(YES) = 0.16. Peer views ranged from 0.18 to 0.42. I adjusted upward to 0.16. The narrow majority makes individual holdouts disproportionately powerful."
+        "Initial assessment: P(YES) = 0.08. As a Central Bank Watcher, I focus on public opinion polls and legislative calendar pressure. These suggest P(YES) = 0.08. The NO case depends heavily on individual legislator defections resolving favorably.",
+        "Round 1: Updated to P(YES) = 0.07. Peer views ranged from 0.19 to 0.46. I adjusted minimally to 0.07. Media pressure typically forces last-minute compromise.",
+        "Round 2: Updated to P(YES) = 0.09. Round 2 deliberation: peers averaged 0.36. My data-obsessed and quantitative tendency led me to held my position largely steady. The narrow majority makes individual holdouts disproportionately powerful.",
+        "Round 3: Updated to P(YES) = 0.12. Peer views ranged from 0.10 to 0.50. I adjusted upward to 0.12. The narrow majority makes individual holdouts disproportionately powerful."
       ]
     },
     {
       "id": 47,
       "name": "Priya Baker",
-      "background_category": "Climate Scientist",
-      "background_detail": "Understands long-term systemic risks, physical economy impacts, and energy transition dynamics.",
+      "background_category": "Sovereign Wealth Fund Analyst",
+      "background_detail": "Manages long-term national reserves. Thinks in decades, tracks global macro imbalances and structural shifts.",
       "personality": "narrative-driven and qualitative",
-      "initial_score": 0.2562,
-      "final_score": 0.3278,
+      "temp_tier": "analyst",
+      "temperature": 0.3,
+      "initial_score": 0.3162,
+      "final_score": 0.3403,
       "score_history": [
-        0.2562,
-        0.2955,
-        0.3166,
-        0.3278
+        0.3162,
+        0.3215,
+        0.337,
+        0.3403
       ],
       "confidence": 0.4835,
-      "reasoning": "From my Climate Scientist perspective, I assess P(YES) = 0.26. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+      "reasoning": "From my Sovereign Wealth Fund Analyst perspective, I assess P(YES) = 0.32. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
       "key_factors": [
         "partisan polarization depth",
         "public opinion polls",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.26. From my Climate Scientist perspective, I assess P(YES) = 0.26. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
-        "Round 1: Updated to P(YES) = 0.30. Peer views ranged from 0.38 to 0.59. I adjusted upward to 0.30. Electoral incentives often override ideological positions near deadlines.",
-        "Round 2: Updated to P(YES) = 0.32. Peer views ranged from 0.31 to 0.50. I adjusted upward to 0.32. The timing relative to recess creates underappreciated pressure.",
-        "Round 3: Updated to P(YES) = 0.33. Round 3 deliberation: peers averaged 0.40. My narrative-driven and qualitative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
+        "Initial assessment: P(YES) = 0.32. From my Sovereign Wealth Fund Analyst perspective, I assess P(YES) = 0.32. partisan polarization depth is the primary driver. public opinion polls adds additional weight. The key wildcard is unexpected crisis diverting attention, which makes this harder to forecast with precision.",
+        "Round 1: Updated to P(YES) = 0.32. Peer views ranged from 0.32 to 0.51. I adjusted minimally to 0.32. Electoral incentives often override ideological positions near deadlines.",
+        "Round 2: Updated to P(YES) = 0.34. Peer views ranged from 0.40 to 0.67. I adjusted minimally to 0.34. The timing relative to recess creates underappreciated pressure.",
+        "Round 3: Updated to P(YES) = 0.34. Round 3 deliberation: peers averaged 0.43. My narrative-driven and qualitative tendency led me to held my position largely steady. Electoral incentives often override ideological positions near deadlines."
       ]
     },
     {
       "id": 48,
       "name": "Hans Turner",
-      "background_category": "Tech Executive",
-      "background_detail": "Silicon Valley perspective, innovation-driven worldview. Believes in exponential curves and platform effects.",
+      "background_category": "Retired Central Banker",
+      "background_detail": "Deep institutional knowledge of Fed/ECB decision-making processes. Understands the politics inside the FOMC.",
       "personality": "risk-averse and conservative",
-      "initial_score": 0.1484,
-      "final_score": 0.2134,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.2431,
+      "final_score": 0.2593,
       "score_history": [
-        0.1484,
-        0.1922,
-        0.1979,
-        0.2134
+        0.2431,
+        0.2684,
+        0.2592,
+        0.2593
       ],
       "confidence": 0.7133,
-      "reasoning": "Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.15. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.24. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
       "key_factors": [
         "electoral incentive structure",
         "leadership negotiation leverage",
         "unexpected crisis diverting attention"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.15. Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.15. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.19. Peer views ranged from 0.07 to 0.51. I adjusted upward to 0.19. The timing relative to recess creates underappreciated pressure.",
-        "Round 2: Updated to P(YES) = 0.20. Round 2 deliberation: peers averaged 0.32. My risk-averse and conservative tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 3: Updated to P(YES) = 0.21. After seeing 5 peer opinions (avg 0.41), I held my position largely steady. The timing relative to recess creates underappreciated pressure."
+        "Initial assessment: P(YES) = 0.24. Congressional dynamics around electoral incentive structure suggest NO probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.24. Historical precedent and unexpected crisis diverting attention create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.27. Peer views ranged from 0.07 to 0.55. I adjusted upward to 0.27. The timing relative to recess creates underappreciated pressure.",
+        "Round 2: Updated to P(YES) = 0.26. Round 2 deliberation: peers averaged 0.27. My risk-averse and conservative tendency led me to held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 3: Updated to P(YES) = 0.26. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. The timing relative to recess creates underappreciated pressure."
       ]
     },
     {
       "id": 49,
       "name": "Aisha Stewart",
-      "background_category": "Labor Economist",
-      "background_detail": "Focuses on employment data, wage dynamics, union activity, and labor market tightness indicators.",
+      "background_category": "Behavioral Economist",
+      "background_detail": "Studies cognitive biases, market sentiment, and herd behavior. Believes markets systematically misprice tail events.",
       "personality": "risk-seeking and opportunistic",
-      "initial_score": 0.6227,
-      "final_score": 0.4788,
+      "temp_tier": "calibrator",
+      "temperature": 0.5,
+      "initial_score": 0.6815,
+      "final_score": 0.6101,
       "score_history": [
-        0.6227,
-        0.5848,
-        0.5624,
-        0.4788
+        0.6815,
+        0.6736,
+        0.6679,
+        0.6101
       ],
       "confidence": 0.95,
-      "reasoning": "Congressional dynamics around caucus cohesion levels suggest YES probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.62. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+      "reasoning": "Congressional dynamics around caucus cohesion levels suggest YES probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.68. Historical precedent and individual legislator defections create non-trivial forecast risk.",
       "key_factors": [
         "caucus cohesion levels",
-        "leadership negotiation leverage",
+        "legislative calendar pressure",
         "individual legislator defections"
       ],
       "memory_stream": [
-        "Initial assessment: P(YES) = 0.62. Congressional dynamics around caucus cohesion levels suggest YES probability. My analysis of leadership negotiation leverage reinforces this at P(YES) = 0.62. Historical precedent and individual legislator defections create non-trivial forecast risk.",
-        "Round 1: Updated to P(YES) = 0.58. After seeing 5 peer opinions (avg 0.39), I shifted downward by 0.04. Public opinion data suggests backlash risk is asymmetric across parties.",
-        "Round 2: Updated to P(YES) = 0.56. Peer views ranged from 0.33 to 0.46. I adjusted downward to 0.56. Media pressure typically forces last-minute compromise.",
-        "Round 3: Updated to P(YES) = 0.48. Round 3 deliberation: peers averaged 0.29. My risk-seeking and opportunistic tendency led me to shifted downward by 0.08. Historical shutdown probability given current polarization levels is higher than base rate."
+        "Initial assessment: P(YES) = 0.68. Congressional dynamics around caucus cohesion levels suggest YES probability. My analysis of legislative calendar pressure reinforces this at P(YES) = 0.68. Historical precedent and individual legislator defections create non-trivial forecast risk.",
+        "Round 1: Updated to P(YES) = 0.67. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. Public opinion data suggests backlash risk is asymmetric across parties.",
+        "Round 2: Updated to P(YES) = 0.67. Peer views ranged from 0.26 to 0.53. I adjusted minimally to 0.67. Media pressure typically forces last-minute compromise.",
+        "Round 3: Updated to P(YES) = 0.61. Round 3 deliberation: peers averaged 0.31. My risk-seeking and opportunistic tendency led me to shifted downward by 0.06. Historical shutdown probability given current polarization levels is higher than base rate."
       ]
     }
   ],
