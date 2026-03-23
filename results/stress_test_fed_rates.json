@@ -1,0 +1,1723 @@
+{
+  "swarm_probability_yes": 0.4374,
+  "mean_score": 0.4392,
+  "median_score": 0.4461,
+  "stdev": 0.088,
+  "confidence_interval": [
+    0.4148,
+    0.4636
+  ],
+  "n_agents": 50,
+  "clusters": {
+    "yes_leaning": 1,
+    "no_leaning": 16,
+    "uncertain": 33
+  },
+  "top_yes_voices": [
+    {
+      "name": "Ahmed King",
+      "background": "Supply Chain Analyst",
+      "final_score": 0.589,
+      "initial_score": 0.6897,
+      "confidence": 0.7536,
+      "reasoning": "My Supply Chain Analyst perspective leads me to weigh global growth synchronization heavily. Current labor market cooling data points toward a YES probability. I assign P(YES) = 0.69, acknowledging that oil price volatility could shift this significantly.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.59. After seeing 5 peer opinions (avg 0.45), I held my position largely steady. The yield curve is sending a clearer signal than the headlines."
+    },
+    {
+      "name": "Lisa Rodriguez",
+      "background": "Geopolitical Strategist",
+      "final_score": 0.497,
+      "initial_score": 0.5265,
+      "confidence": 0.7607,
+      "reasoning": "Looking at yield curve signals through the lens of Geopolitical Strategist expertise, I see YES probability at 0.53. The key driver is housing market dynamics. My main concern is banking sector stress, which could move this estimate by 10-15 points.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.50. Round 3 deliberation: peers averaged 0.45. My narrative-driven and qualitative tendency led me to held my position largely steady. The gap between headline and core inflation matters more than most acknowledge."
+    },
+    {
+      "name": "Thomas Perez",
+      "background": "Climate Scientist",
+      "final_score": 0.4452,
+      "initial_score": 0.4248,
+      "confidence": 0.8303,
+      "reasoning": "Based on my analysis of fiscal policy drag, I estimate P(YES) = 0.42. yield curve signals supports this view, though election-year fiscal dynamics introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are moderately probable.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.45. Peer views ranged from 0.35 to 0.53. I adjusted minimally to 0.45. Inflation persistence is being underweighted by the consensus."
+    }
+  ],
+  "top_no_voices": [
+    {
+      "name": "Matthew Scott",
+      "background": "Insurance Actuary",
+      "final_score": 0.2517,
+      "initial_score": 0.2085,
+      "confidence": 0.7987,
+      "reasoning": "My Insurance Actuary perspective leads me to weigh fiscal policy drag heavily. Current consumer spending trends data points toward a NO probability. I assign P(YES) = 0.21, acknowledging that geopolitical shock risk could shift this significantly.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.25. After seeing 5 peer opinions (avg 0.48), I held my position largely steady. Inflation persistence is being underweighted by the consensus."
+    },
+    {
+      "name": "William Thompson",
+      "background": "Data Scientist",
+      "final_score": 0.2785,
+      "initial_score": 0.2799,
+      "confidence": 0.7655,
+      "reasoning": "Based on my analysis of consumer spending trends, I estimate P(YES) = 0.28. fiscal policy drag supports this view, though tariff policy changes introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are likely.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.28. Round 3 deliberation: peers averaged 0.36. My risk-averse and conservative tendency led me to held my position largely steady. The gap between headline and core inflation matters more than most acknowledge."
+    },
+    {
+      "name": "Raj Gonzalez",
+      "background": "Retired Central Banker",
+      "final_score": 0.3295,
+      "initial_score": 0.2572,
+      "confidence": 0.7969,
+      "reasoning": "My Retired Central Banker perspective leads me to weigh fiscal policy drag heavily. Current labor market cooling data points toward a NO probability. I assign P(YES) = 0.26, acknowledging that geopolitical shock risk could shift this significantly.",
+      "last_reflection": "Round 3: Updated to P(YES) = 0.33. Peer views ranged from 0.38 to 0.50. I adjusted upward to 0.33. Global coordination pressure from other central banks is underappreciated."
+    }
+  ],
+  "convergence": [
+    {
+      "round": 0,
+      "mean_score": 0.42991,
+      "stdev": 0.121252215212249,
+      "min": 0.2063,
+      "max": 0.7303
+    },
+    {
+      "round": 1,
+      "mean_score": 0.4384,
+      "stdev": 0.10620927935170336,
+      "min": 0.2296,
+      "max": 0.7404
+    },
+    {
+      "round": 2,
+      "mean_score": 0.438502,
+      "stdev": 0.09693374444560005,
+      "min": 0.2328,
+      "max": 0.7208
+    },
+    {
+      "round": 3,
+      "mean_score": 0.439196,
+      "stdev": 0.08800112002997809,
+      "min": 0.2517,
+      "max": 0.7015
+    }
+  ],
+  "opinion_shifts": [
+    {
+      "round": 1,
+      "mean_shift": 0.031362,
+      "max_shift": 0.08769999999999997
+    },
+    {
+      "round": 2,
+      "mean_shift": 0.018666,
+      "max_shift": 0.07039999999999996
+    },
+    {
+      "round": 3,
+      "mean_shift": 0.014381999999999999,
+      "max_shift": 0.047799999999999954
+    }
+  ],
+  "histogram": {
+    "0.0-0.1": 0,
+    "0.1-0.2": 0,
+    "0.2-0.3": 4,
+    "0.3-0.4": 12,
+    "0.4-0.5": 23,
+    "0.5-0.6": 10,
+    "0.6-0.7": 0,
+    "0.7-0.8": 1,
+    "0.8-0.9": 0,
+    "0.9-1.0": 0
+  },
+  "market_price": 0.4,
+  "swarm_vs_market_delta": 0.0374,
+  "timing": {
+    "world_build_ms": 0,
+    "agent_gen_ms": 0,
+    "sim_loop_ms": 2,
+    "total_ms": 2
+  },
+  "agents": [
+    {
+      "id": 0,
+      "name": "James Kim",
+      "background_category": "Macro Economist",
+      "background_detail": "PhD economist focused on monetary policy, inflation dynamics, and central bank behavior. Tracks PCE, CPI, employment data, and Fed minutes closely.",
+      "personality": "cautious and evidence-driven",
+      "initial_score": 0.3333,
+      "final_score": 0.3415,
+      "score_history": [
+        0.3333,
+        0.3314,
+        0.3407,
+        0.3415
+      ],
+      "confidence": 0.6023,
+      "reasoning": "Based on my analysis of monetary policy trajectory, I estimate P(YES) = 0.33. global growth synchronization supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are likely.",
+      "key_factors": [
+        "monetary policy trajectory",
+        "global growth synchronization",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.33. Based on my analysis of monetary policy trajectory, I estimate P(YES) = 0.33. global growth synchronization supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are likely.",
+        "Round 1: Updated to P(YES) = 0.33. Round 1 deliberation: peers averaged 0.37. My cautious and evidence-driven tendency led me to held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 2: Updated to P(YES) = 0.34. Round 2 deliberation: peers averaged 0.40. My cautious and evidence-driven tendency led me to held my position largely steady. Inflation persistence is being underweighted by the consensus.",
+        "Round 3: Updated to P(YES) = 0.34. Peer views ranged from 0.30 to 0.51. I adjusted minimally to 0.34. The labor market data remains the key swing factor."
+      ]
+    },
+    {
+      "id": 1,
+      "name": "Maria Garcia",
+      "background_category": "Quantitative Trader",
+      "background_detail": "Builds systematic models, thinks in probabilities and base rates. Uses options-implied probabilities and historical analogs.",
+      "personality": "bold and contrarian",
+      "initial_score": 0.3514,
+      "final_score": 0.3013,
+      "score_history": [
+        0.3514,
+        0.3561,
+        0.3278,
+        0.3013
+      ],
+      "confidence": 0.2786,
+      "reasoning": "My Quantitative Trader perspective leads me to weigh global growth synchronization heavily. Current fiscal policy drag data points toward a NO probability. I assign P(YES) = 0.35, acknowledging that banking sector stress could shift this significantly.",
+      "key_factors": [
+        "global growth synchronization",
+        "fiscal policy drag",
+        "banking sector stress"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.35. My Quantitative Trader perspective leads me to weigh global growth synchronization heavily. Current fiscal policy drag data points toward a NO probability. I assign P(YES) = 0.35, acknowledging that banking sector stress could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.36. Round 1 deliberation: peers averaged 0.43. My bold and contrarian tendency led me to held my position largely steady. The yield curve is sending a clearer signal than the headlines.",
+        "Round 2: Updated to P(YES) = 0.33. After seeing 5 peer opinions (avg 0.50), I shifted downward by 0.03. Global coordination pressure from other central banks is underappreciated.",
+        "Round 3: Updated to P(YES) = 0.30. Round 3 deliberation: peers averaged 0.47. My bold and contrarian tendency led me to shifted downward by 0.03. Consumer spending resilience complicates the rate cut thesis."
+      ]
+    },
+    {
+      "id": 2,
+      "name": "David Clark",
+      "background_category": "Political Analyst",
+      "background_detail": "Tracks legislative dynamics, lobbying, regulatory shifts, and election cycles. Deep knowledge of Congressional mechanics.",
+      "personality": "analytical and methodical",
+      "initial_score": 0.2614,
+      "final_score": 0.3497,
+      "score_history": [
+        0.2614,
+        0.3054,
+        0.3167,
+        0.3497
+      ],
+      "confidence": 0.635,
+      "reasoning": "Looking at fiscal policy drag through the lens of Political Analyst expertise, I see NO probability at 0.26. The key driver is inflation persistence. My main concern is banking sector stress, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "fiscal policy drag",
+        "inflation persistence",
+        "banking sector stress"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.26. Looking at fiscal policy drag through the lens of Political Analyst expertise, I see NO probability at 0.26. The key driver is inflation persistence. My main concern is banking sector stress, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.31. Round 1 deliberation: peers averaged 0.50. My analytical and methodical tendency led me to shifted upward by 0.04. The labor market data remains the key swing factor.",
+        "Round 2: Updated to P(YES) = 0.32. Round 2 deliberation: peers averaged 0.46. My analytical and methodical tendency led me to held my position largely steady. The labor market data remains the key swing factor.",
+        "Round 3: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.46), I shifted upward by 0.03. The gap between headline and core inflation matters more than most acknowledge."
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Sarah Hernandez",
+      "background_category": "Investigative Journalist",
+      "background_detail": "Skeptical by nature, hunts for hidden information and contrarian angles. Distrusts consensus narratives.",
+      "personality": "intuitive and pattern-matching",
+      "initial_score": 0.4605,
+      "final_score": 0.4528,
+      "score_history": [
+        0.4605,
+        0.4578,
+        0.4636,
+        0.4528
+      ],
+      "confidence": 0.6847,
+      "reasoning": "Looking at fiscal policy drag through the lens of Investigative Journalist expertise, I see NO probability at 0.46. The key driver is global growth synchronization. My main concern is election-year fiscal dynamics, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "fiscal policy drag",
+        "global growth synchronization",
+        "election-year fiscal dynamics"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.46. Looking at fiscal policy drag through the lens of Investigative Journalist expertise, I see NO probability at 0.46. The key driver is global growth synchronization. My main concern is election-year fiscal dynamics, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.48), I held my position largely steady. Global coordination pressure from other central banks is underappreciated.",
+        "Round 2: Updated to P(YES) = 0.46. Round 2 deliberation: peers averaged 0.48. My intuitive and pattern-matching tendency led me to held my position largely steady. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 3: Updated to P(YES) = 0.45. Peer views ranged from 0.39 to 0.57. I adjusted minimally to 0.45. The gap between headline and core inflation matters more than most acknowledge."
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Michael Adams",
+      "background_category": "Venture Capitalist",
+      "background_detail": "Pattern-matches across industries, optimistic bias toward innovation and disruption. Sees technology as deflationary.",
+      "personality": "skeptical and devil's advocate",
+      "initial_score": 0.7303,
+      "final_score": 0.7015,
+      "score_history": [
+        0.7303,
+        0.7404,
+        0.7208,
+        0.7015
+      ],
+      "confidence": 0.498,
+      "reasoning": "Looking at fiscal policy drag through the lens of Venture Capitalist expertise, I see YES probability at 0.73. The key driver is labor market cooling. My main concern is tariff policy changes, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "fiscal policy drag",
+        "labor market cooling",
+        "tariff policy changes"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.73. Looking at fiscal policy drag through the lens of Venture Capitalist expertise, I see YES probability at 0.73. The key driver is labor market cooling. My main concern is tariff policy changes, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.74. After seeing 5 peer opinions (avg 0.45), I held my position largely steady. The gap between headline and core inflation matters more than most acknowledge.",
+        "Round 2: Updated to P(YES) = 0.72. After seeing 5 peer opinions (avg 0.44), I held my position largely steady. The labor market data remains the key swing factor.",
+        "Round 3: Updated to P(YES) = 0.70. Round 3 deliberation: peers averaged 0.39. My skeptical and devil's advocate tendency led me to held my position largely steady. Global coordination pressure from other central banks is underappreciated."
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Jennifer Roberts",
+      "background_category": "Retired Central Banker",
+      "background_detail": "Deep institutional knowledge of Fed/ECB decision-making processes. Understands the politics inside the FOMC.",
+      "personality": "consensus-seeking and diplomatic",
+      "initial_score": 0.385,
+      "final_score": 0.3899,
+      "score_history": [
+        0.385,
+        0.3277,
+        0.3696,
+        0.3899
+      ],
+      "confidence": 0.6101,
+      "reasoning": "Based on my analysis of global growth synchronization, I estimate P(YES) = 0.38. fiscal policy drag supports this view, though banking sector stress introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are moderately probable.",
+      "key_factors": [
+        "global growth synchronization",
+        "fiscal policy drag",
+        "banking sector stress"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.38. Based on my analysis of global growth synchronization, I estimate P(YES) = 0.38. fiscal policy drag supports this view, though banking sector stress introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are moderately probable.",
+        "Round 1: Updated to P(YES) = 0.33. After seeing 5 peer opinions (avg 0.40), I shifted downward by 0.06. Global coordination pressure from other central banks is underappreciated.",
+        "Round 2: Updated to P(YES) = 0.37. Round 2 deliberation: peers averaged 0.48. My consensus-seeking and diplomatic tendency led me to shifted upward by 0.04. The yield curve is sending a clearer signal than the headlines.",
+        "Round 3: Updated to P(YES) = 0.39. Round 3 deliberation: peers averaged 0.42. My consensus-seeking and diplomatic tendency led me to shifted upward by 0.02. Inflation persistence is being underweighted by the consensus."
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Robert Collins",
+      "background_category": "Behavioral Economist",
+      "background_detail": "Studies cognitive biases, market sentiment, and herd behavior. Believes markets systematically misprice tail events.",
+      "personality": "data-obsessed and quantitative",
+      "initial_score": 0.5373,
+      "final_score": 0.527,
+      "score_history": [
+        0.5373,
+        0.5678,
+        0.5544,
+        0.527
+      ],
+      "confidence": 0.3544,
+      "reasoning": "Based on my analysis of consumer spending trends, I estimate P(YES) = 0.54. fiscal policy drag supports this view, though election-year fiscal dynamics introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest YES outcomes are a toss-up.",
+      "key_factors": [
+        "consumer spending trends",
+        "fiscal policy drag",
+        "election-year fiscal dynamics"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.54. Based on my analysis of consumer spending trends, I estimate P(YES) = 0.54. fiscal policy drag supports this view, though election-year fiscal dynamics introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest YES outcomes are a toss-up.",
+        "Round 1: Updated to P(YES) = 0.57. Peer views ranged from 0.27 to 0.56. I adjusted upward to 0.57. Global coordination pressure from other central banks is underappreciated.",
+        "Round 2: Updated to P(YES) = 0.55. Round 2 deliberation: peers averaged 0.43. My data-obsessed and quantitative tendency led me to held my position largely steady. Global coordination pressure from other central banks is underappreciated.",
+        "Round 3: Updated to P(YES) = 0.53. Round 3 deliberation: peers averaged 0.37. My data-obsessed and quantitative tendency led me to shifted downward by 0.03. Historical precedent suggests the Fed moves slower than markets expect."
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Lisa Rodriguez",
+      "background_category": "Geopolitical Strategist",
+      "background_detail": "Analyzes international relations, trade wars, sanctions, and their second-order effects on domestic policy.",
+      "personality": "narrative-driven and qualitative",
+      "initial_score": 0.5265,
+      "final_score": 0.497,
+      "score_history": [
+        0.5265,
+        0.5473,
+        0.5146,
+        0.497
+      ],
+      "confidence": 0.7607,
+      "reasoning": "Looking at yield curve signals through the lens of Geopolitical Strategist expertise, I see YES probability at 0.53. The key driver is housing market dynamics. My main concern is banking sector stress, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "yield curve signals",
+        "housing market dynamics",
+        "banking sector stress"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.53. Looking at yield curve signals through the lens of Geopolitical Strategist expertise, I see YES probability at 0.53. The key driver is housing market dynamics. My main concern is banking sector stress, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.55. Round 1 deliberation: peers averaged 0.43. My narrative-driven and qualitative tendency led me to shifted upward by 0.02. Global coordination pressure from other central banks is underappreciated.",
+        "Round 2: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.49), I shifted downward by 0.03. The gap between headline and core inflation matters more than most acknowledge.",
+        "Round 3: Updated to P(YES) = 0.50. Round 3 deliberation: peers averaged 0.45. My narrative-driven and qualitative tendency led me to held my position largely steady. The gap between headline and core inflation matters more than most acknowledge."
+      ]
+    },
+    {
+      "id": 8,
+      "name": "William Thompson",
+      "background_category": "Data Scientist",
+      "background_detail": "Relies on statistical models, historical base rates, and ensemble methods. Skeptical of narratives without data.",
+      "personality": "risk-averse and conservative",
+      "initial_score": 0.2799,
+      "final_score": 0.2785,
+      "score_history": [
+        0.2799,
+        0.2833,
+        0.2731,
+        0.2785
+      ],
+      "confidence": 0.7655,
+      "reasoning": "Based on my analysis of consumer spending trends, I estimate P(YES) = 0.28. fiscal policy drag supports this view, though tariff policy changes introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are likely.",
+      "key_factors": [
+        "consumer spending trends",
+        "fiscal policy drag",
+        "tariff policy changes"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.28. Based on my analysis of consumer spending trends, I estimate P(YES) = 0.28. fiscal policy drag supports this view, though tariff policy changes introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are likely.",
+        "Round 1: Updated to P(YES) = 0.28. Peer views ranged from 0.27 to 0.52. I adjusted minimally to 0.28. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 2: Updated to P(YES) = 0.27. After seeing 5 peer opinions (avg 0.39), I held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 3: Updated to P(YES) = 0.28. Round 3 deliberation: peers averaged 0.36. My risk-averse and conservative tendency led me to held my position largely steady. The gap between headline and core inflation matters more than most acknowledge."
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Emily Robinson",
+      "background_category": "Hedge Fund PM",
+      "background_detail": "Risk-adjusted thinker, contrarian when consensus is strong. Looks for asymmetric bets and mispriced risk.",
+      "personality": "risk-seeking and opportunistic",
+      "initial_score": 0.3251,
+      "final_score": 0.434,
+      "score_history": [
+        0.3251,
+        0.4035,
+        0.4108,
+        0.434
+      ],
+      "confidence": 0.6279,
+      "reasoning": "Based on my analysis of fiscal policy drag, I estimate P(YES) = 0.33. inflation persistence supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are likely.",
+      "key_factors": [
+        "fiscal policy drag",
+        "inflation persistence",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.33. Based on my analysis of fiscal policy drag, I estimate P(YES) = 0.33. inflation persistence supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are likely.",
+        "Round 1: Updated to P(YES) = 0.40. Round 1 deliberation: peers averaged 0.50. My risk-seeking and opportunistic tendency led me to shifted upward by 0.08. The yield curve is sending a clearer signal than the headlines.",
+        "Round 2: Updated to P(YES) = 0.41. Round 2 deliberation: peers averaged 0.41. My risk-seeking and opportunistic tendency led me to held my position largely steady. The yield curve is sending a clearer signal than the headlines.",
+        "Round 3: Updated to P(YES) = 0.43. Peer views ranged from 0.31 to 0.58. I adjusted upward to 0.43. The gap between headline and core inflation matters more than most acknowledge."
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Richard Young",
+      "background_category": "Constitutional Lawyer",
+      "background_detail": "Analyzes legal frameworks, precedent, regulatory authority, and separation-of-powers dynamics.",
+      "personality": "cautious and evidence-driven",
+      "initial_score": 0.4381,
+      "final_score": 0.446,
+      "score_history": [
+        0.4381,
+        0.3974,
+        0.432,
+        0.446
+      ],
+      "confidence": 0.4601,
+      "reasoning": "My Constitutional Lawyer perspective leads me to weigh housing market dynamics heavily. Current consumer spending trends data points toward a NO probability. I assign P(YES) = 0.44, acknowledging that oil price volatility could shift this significantly.",
+      "key_factors": [
+        "housing market dynamics",
+        "consumer spending trends",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.44. My Constitutional Lawyer perspective leads me to weigh housing market dynamics heavily. Current consumer spending trends data points toward a NO probability. I assign P(YES) = 0.44, acknowledging that oil price volatility could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.40. After seeing 5 peer opinions (avg 0.30), I shifted downward by 0.04. The yield curve is sending a clearer signal than the headlines.",
+        "Round 2: Updated to P(YES) = 0.43. Round 2 deliberation: peers averaged 0.46. My cautious and evidence-driven tendency led me to shifted upward by 0.03. The labor market data remains the key swing factor.",
+        "Round 3: Updated to P(YES) = 0.45. Peer views ranged from 0.34 to 0.51. I adjusted minimally to 0.45. The gap between headline and core inflation matters more than most acknowledge."
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Jessica Green",
+      "background_category": "Supply Chain Analyst",
+      "background_detail": "Tracks real-economy signals \u2014 shipping data, commodity flows, inventory cycles, and manufacturing PMIs.",
+      "personality": "bold and contrarian",
+      "initial_score": 0.2816,
+      "final_score": 0.2756,
+      "score_history": [
+        0.2816,
+        0.3337,
+        0.2952,
+        0.2756
+      ],
+      "confidence": 0.7101,
+      "reasoning": "My Supply Chain Analyst perspective leads me to weigh consumer spending trends heavily. Current yield curve signals data points toward a NO probability. I assign P(YES) = 0.28, acknowledging that election-year fiscal dynamics could shift this significantly.",
+      "key_factors": [
+        "consumer spending trends",
+        "yield curve signals",
+        "election-year fiscal dynamics"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.28. My Supply Chain Analyst perspective leads me to weigh consumer spending trends heavily. Current yield curve signals data points toward a NO probability. I assign P(YES) = 0.28, acknowledging that election-year fiscal dynamics could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.33. Peer views ranged from 0.36 to 0.57. I adjusted upward to 0.33. The labor market data remains the key swing factor.",
+        "Round 2: Updated to P(YES) = 0.30. Peer views ranged from 0.33 to 0.52. I adjusted downward to 0.30. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 3: Updated to P(YES) = 0.28. Round 3 deliberation: peers averaged 0.42. My bold and contrarian tendency led me to held my position largely steady. The labor market data remains the key swing factor."
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Thomas Perez",
+      "background_category": "Climate Scientist",
+      "background_detail": "Understands long-term systemic risks, physical economy impacts, and energy transition dynamics.",
+      "personality": "analytical and methodical",
+      "initial_score": 0.4248,
+      "final_score": 0.4452,
+      "score_history": [
+        0.4248,
+        0.4379,
+        0.4457,
+        0.4452
+      ],
+      "confidence": 0.8303,
+      "reasoning": "Based on my analysis of fiscal policy drag, I estimate P(YES) = 0.42. yield curve signals supports this view, though election-year fiscal dynamics introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are moderately probable.",
+      "key_factors": [
+        "fiscal policy drag",
+        "yield curve signals",
+        "election-year fiscal dynamics"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.42. Based on my analysis of fiscal policy drag, I estimate P(YES) = 0.42. yield curve signals supports this view, though election-year fiscal dynamics introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are moderately probable.",
+        "Round 1: Updated to P(YES) = 0.44. Round 1 deliberation: peers averaged 0.38. My analytical and methodical tendency led me to held my position largely steady. The labor market data remains the key swing factor.",
+        "Round 2: Updated to P(YES) = 0.45. Round 2 deliberation: peers averaged 0.53. My analytical and methodical tendency led me to held my position largely steady. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 3: Updated to P(YES) = 0.45. Peer views ranged from 0.35 to 0.53. I adjusted minimally to 0.45. Inflation persistence is being underweighted by the consensus."
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Amanda Edwards",
+      "background_category": "Tech Executive",
+      "background_detail": "Silicon Valley perspective, innovation-driven worldview. Believes in exponential curves and platform effects.",
+      "personality": "intuitive and pattern-matching",
+      "initial_score": 0.5193,
+      "final_score": 0.4863,
+      "score_history": [
+        0.5193,
+        0.4871,
+        0.5012,
+        0.4863
+      ],
+      "confidence": 0.4296,
+      "reasoning": "My Tech Executive perspective leads me to weigh global growth synchronization heavily. Current housing market dynamics data points toward a YES probability. I assign P(YES) = 0.52, acknowledging that oil price volatility could shift this significantly.",
+      "key_factors": [
+        "global growth synchronization",
+        "housing market dynamics",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.52. My Tech Executive perspective leads me to weigh global growth synchronization heavily. Current housing market dynamics data points toward a YES probability. I assign P(YES) = 0.52, acknowledging that oil price volatility could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.49. After seeing 5 peer opinions (avg 0.35), I shifted downward by 0.03. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 2: Updated to P(YES) = 0.50. Round 2 deliberation: peers averaged 0.43. My intuitive and pattern-matching tendency led me to held my position largely steady. Inflation persistence is being underweighted by the consensus.",
+        "Round 3: Updated to P(YES) = 0.49. Peer views ranged from 0.31 to 0.51. I adjusted minimally to 0.49. Global coordination pressure from other central banks is underappreciated."
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Charles Patel",
+      "background_category": "Labor Economist",
+      "background_detail": "Focuses on employment data, wage dynamics, union activity, and labor market tightness indicators.",
+      "personality": "skeptical and devil's advocate",
+      "initial_score": 0.4937,
+      "final_score": 0.45,
+      "score_history": [
+        0.4937,
+        0.4681,
+        0.4583,
+        0.45
+      ],
+      "confidence": 0.5313,
+      "reasoning": "Looking at fiscal policy drag through the lens of Labor Economist expertise, I see NO probability at 0.49. The key driver is inflation persistence. My main concern is banking sector stress, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "fiscal policy drag",
+        "inflation persistence",
+        "banking sector stress"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.49. Looking at fiscal policy drag through the lens of Labor Economist expertise, I see NO probability at 0.49. The key driver is inflation persistence. My main concern is banking sector stress, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.47. After seeing 5 peer opinions (avg 0.41), I shifted downward by 0.03. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 2: Updated to P(YES) = 0.46. Round 2 deliberation: peers averaged 0.36. My skeptical and devil's advocate tendency led me to held my position largely steady. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 3: Updated to P(YES) = 0.45. Peer views ranged from 0.34 to 0.58. I adjusted minimally to 0.45. Inflation persistence is being underweighted by the consensus."
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Ashley Williams",
+      "background_category": "Emerging Markets Specialist",
+      "background_detail": "Tracks capital flows, currency dynamics, contagion risks, and dollar-denominated debt stress.",
+      "personality": "consensus-seeking and diplomatic",
+      "initial_score": 0.2829,
+      "final_score": 0.3912,
+      "score_history": [
+        0.2829,
+        0.3702,
+        0.398,
+        0.3912
+      ],
+      "confidence": 0.5765,
+      "reasoning": "Based on my analysis of inflation persistence, I estimate P(YES) = 0.28. global growth synchronization supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are likely.",
+      "key_factors": [
+        "inflation persistence",
+        "global growth synchronization",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.28. Based on my analysis of inflation persistence, I estimate P(YES) = 0.28. global growth synchronization supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are likely.",
+        "Round 1: Updated to P(YES) = 0.37. Round 1 deliberation: peers averaged 0.49. My consensus-seeking and diplomatic tendency led me to shifted upward by 0.09. Inflation persistence is being underweighted by the consensus.",
+        "Round 2: Updated to P(YES) = 0.40. Peer views ranged from 0.30 to 0.56. I adjusted upward to 0.40. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 3: Updated to P(YES) = 0.39. Round 3 deliberation: peers averaged 0.44. My consensus-seeking and diplomatic tendency led me to held my position largely steady. Consumer spending resilience complicates the rate cut thesis."
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Daniel Martin",
+      "background_category": "Military Intel Analyst",
+      "background_detail": "Trained in structured analytic techniques, red-team thinking, and Analysis of Competing Hypotheses.",
+      "personality": "data-obsessed and quantitative",
+      "initial_score": 0.3164,
+      "final_score": 0.3525,
+      "score_history": [
+        0.3164,
+        0.3341,
+        0.319,
+        0.3525
+      ],
+      "confidence": 0.8025,
+      "reasoning": "Looking at fiscal policy drag through the lens of Military Intel Analyst expertise, I see NO probability at 0.32. The key driver is inflation persistence. My main concern is election-year fiscal dynamics, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "fiscal policy drag",
+        "inflation persistence",
+        "election-year fiscal dynamics"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.32. Looking at fiscal policy drag through the lens of Military Intel Analyst expertise, I see NO probability at 0.32. The key driver is inflation persistence. My main concern is election-year fiscal dynamics, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.33. After seeing 5 peer opinions (avg 0.48), I held my position largely steady. The labor market data remains the key swing factor.",
+        "Round 2: Updated to P(YES) = 0.32. Round 2 deliberation: peers averaged 0.42. My data-obsessed and quantitative tendency led me to held my position largely steady. Inflation persistence is being underweighted by the consensus.",
+        "Round 3: Updated to P(YES) = 0.35. After seeing 5 peer opinions (avg 0.45), I shifted upward by 0.03. Consumer spending resilience complicates the rate cut thesis."
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Stephanie Allen",
+      "background_category": "Academic Historian",
+      "background_detail": "Draws parallels from historical episodes \u2014 1970s stagflation, 2008 crisis, dot-com bust. Skeptical of 'this time is different.'",
+      "personality": "narrative-driven and qualitative",
+      "initial_score": 0.2704,
+      "final_score": 0.3439,
+      "score_history": [
+        0.2704,
+        0.2947,
+        0.3151,
+        0.3439
+      ],
+      "confidence": 0.4194,
+      "reasoning": "Based on my analysis of fiscal policy drag, I estimate P(YES) = 0.27. inflation persistence supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are likely.",
+      "key_factors": [
+        "fiscal policy drag",
+        "inflation persistence",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.27. Based on my analysis of fiscal policy drag, I estimate P(YES) = 0.27. inflation persistence supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are likely.",
+        "Round 1: Updated to P(YES) = 0.29. After seeing 5 peer opinions (avg 0.47), I shifted upward by 0.02. Global coordination pressure from other central banks is underappreciated.",
+        "Round 2: Updated to P(YES) = 0.32. Round 2 deliberation: peers averaged 0.46. My narrative-driven and qualitative tendency led me to shifted upward by 0.02. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 3: Updated to P(YES) = 0.34. Peer views ranged from 0.42 to 0.57. I adjusted upward to 0.34. The gap between headline and core inflation matters more than most acknowledge."
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Matthew Scott",
+      "background_category": "Insurance Actuary",
+      "background_detail": "Probabilistic thinker focused on tail risks, base rates, and mortality/morbidity tables. Conservative estimator.",
+      "personality": "risk-averse and conservative",
+      "initial_score": 0.2085,
+      "final_score": 0.2517,
+      "score_history": [
+        0.2085,
+        0.2296,
+        0.2328,
+        0.2517
+      ],
+      "confidence": 0.7987,
+      "reasoning": "My Insurance Actuary perspective leads me to weigh fiscal policy drag heavily. Current consumer spending trends data points toward a NO probability. I assign P(YES) = 0.21, acknowledging that geopolitical shock risk could shift this significantly.",
+      "key_factors": [
+        "fiscal policy drag",
+        "consumer spending trends",
+        "geopolitical shock risk"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.21. My Insurance Actuary perspective leads me to weigh fiscal policy drag heavily. Current consumer spending trends data points toward a NO probability. I assign P(YES) = 0.21, acknowledging that geopolitical shock risk could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.23. After seeing 5 peer opinions (avg 0.46), I shifted upward by 0.02. The yield curve is sending a clearer signal than the headlines.",
+        "Round 2: Updated to P(YES) = 0.23. After seeing 5 peer opinions (avg 0.47), I held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 3: Updated to P(YES) = 0.25. After seeing 5 peer opinions (avg 0.48), I held my position largely steady. Inflation persistence is being underweighted by the consensus."
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Nicole Mitchell",
+      "background_category": "Retail Investor",
+      "background_detail": "Follows social media sentiment, Reddit, FinTwit. Reads popular narrative but lacks institutional depth.",
+      "personality": "risk-seeking and opportunistic",
+      "initial_score": 0.4631,
+      "final_score": 0.4461,
+      "score_history": [
+        0.4631,
+        0.4653,
+        0.437,
+        0.4461
+      ],
+      "confidence": 0.3026,
+      "reasoning": "My Retail Investor perspective leads me to weigh global growth synchronization heavily. Current labor market cooling data points toward a NO probability. I assign P(YES) = 0.46, acknowledging that geopolitical shock risk could shift this significantly.",
+      "key_factors": [
+        "global growth synchronization",
+        "labor market cooling",
+        "geopolitical shock risk"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.46. My Retail Investor perspective leads me to weigh global growth synchronization heavily. Current labor market cooling data points toward a NO probability. I assign P(YES) = 0.46, acknowledging that geopolitical shock risk could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.47. Round 1 deliberation: peers averaged 0.52. My risk-seeking and opportunistic tendency led me to held my position largely steady. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 2: Updated to P(YES) = 0.44. After seeing 5 peer opinions (avg 0.44), I shifted downward by 0.03. Global coordination pressure from other central banks is underappreciated.",
+        "Round 3: Updated to P(YES) = 0.45. Round 3 deliberation: peers averaged 0.50. My risk-seeking and opportunistic tendency led me to held my position largely steady. The gap between headline and core inflation matters more than most acknowledge."
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Andrew Evans",
+      "background_category": "Commodity Trader",
+      "background_detail": "Tracks oil, metals, agricultural futures. Understands physical markets and supply/demand fundamentals.",
+      "personality": "cautious and evidence-driven",
+      "initial_score": 0.3594,
+      "final_score": 0.4176,
+      "score_history": [
+        0.3594,
+        0.4001,
+        0.4159,
+        0.4176
+      ],
+      "confidence": 0.506,
+      "reasoning": "Based on my analysis of labor market cooling, I estimate P(YES) = 0.36. monetary policy trajectory supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are moderately probable.",
+      "key_factors": [
+        "labor market cooling",
+        "monetary policy trajectory",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.36. Based on my analysis of labor market cooling, I estimate P(YES) = 0.36. monetary policy trajectory supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are moderately probable.",
+        "Round 1: Updated to P(YES) = 0.40. Round 1 deliberation: peers averaged 0.52. My cautious and evidence-driven tendency led me to shifted upward by 0.04. Global coordination pressure from other central banks is underappreciated.",
+        "Round 2: Updated to P(YES) = 0.42. Round 2 deliberation: peers averaged 0.49. My cautious and evidence-driven tendency led me to held my position largely steady. Global coordination pressure from other central banks is underappreciated.",
+        "Round 3: Updated to P(YES) = 0.42. Round 3 deliberation: peers averaged 0.40. My cautious and evidence-driven tendency led me to held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect."
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Rachel Chen",
+      "background_category": "Bayesian Statistician",
+      "background_detail": "Updates beliefs incrementally using prior distributions. Resists large jumps without strong evidence.",
+      "personality": "bold and contrarian",
+      "initial_score": 0.5515,
+      "final_score": 0.5755,
+      "score_history": [
+        0.5515,
+        0.5582,
+        0.5666,
+        0.5755
+      ],
+      "confidence": 0.6012,
+      "reasoning": "My Bayesian Statistician perspective leads me to weigh global growth synchronization heavily. Current inflation persistence data points toward a YES probability. I assign P(YES) = 0.55, acknowledging that oil price volatility could shift this significantly.",
+      "key_factors": [
+        "global growth synchronization",
+        "inflation persistence",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.55. My Bayesian Statistician perspective leads me to weigh global growth synchronization heavily. Current inflation persistence data points toward a YES probability. I assign P(YES) = 0.55, acknowledging that oil price volatility could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.56. Peer views ranged from 0.29 to 0.57. I adjusted minimally to 0.56. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 2: Updated to P(YES) = 0.57. Round 2 deliberation: peers averaged 0.45. My bold and contrarian tendency led me to held my position largely steady. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 3: Updated to P(YES) = 0.58. Round 3 deliberation: peers averaged 0.44. My bold and contrarian tendency led me to held my position largely steady. The labor market data remains the key swing factor."
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Joseph Mueller",
+      "background_category": "Pollster",
+      "background_detail": "Expert in survey methodology, sampling bias, and public opinion trends. Understands how sentiment translates to action.",
+      "personality": "analytical and methodical",
+      "initial_score": 0.2543,
+      "final_score": 0.385,
+      "score_history": [
+        0.2543,
+        0.3391,
+        0.3487,
+        0.385
+      ],
+      "confidence": 0.4748,
+      "reasoning": "My Pollster perspective leads me to weigh fiscal policy drag heavily. Current monetary policy trajectory data points toward a NO probability. I assign P(YES) = 0.25, acknowledging that oil price volatility could shift this significantly.",
+      "key_factors": [
+        "fiscal policy drag",
+        "monetary policy trajectory",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.25. My Pollster perspective leads me to weigh fiscal policy drag heavily. Current monetary policy trajectory data points toward a NO probability. I assign P(YES) = 0.25, acknowledging that oil price volatility could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.34. Round 1 deliberation: peers averaged 0.46. My analytical and methodical tendency led me to shifted upward by 0.08. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 2: Updated to P(YES) = 0.35. Round 2 deliberation: peers averaged 0.40. My analytical and methodical tendency led me to held my position largely steady. Global coordination pressure from other central banks is underappreciated.",
+        "Round 3: Updated to P(YES) = 0.39. Peer views ranged from 0.42 to 0.58. I adjusted upward to 0.39. The labor market data remains the key swing factor."
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Laura Harris",
+      "background_category": "Pharmaceutical Exec",
+      "background_detail": "Understands FDA approval cycles, clinical trial outcomes, biotech funding environment, and healthcare policy.",
+      "personality": "intuitive and pattern-matching",
+      "initial_score": 0.667,
+      "final_score": 0.5446,
+      "score_history": [
+        0.667,
+        0.6285,
+        0.5742,
+        0.5446
+      ],
+      "confidence": 0.6732,
+      "reasoning": "Based on my analysis of yield curve signals, I estimate P(YES) = 0.67. labor market cooling supports this view, though election-year fiscal dynamics introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest YES outcomes are likely.",
+      "key_factors": [
+        "yield curve signals",
+        "labor market cooling",
+        "election-year fiscal dynamics"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.67. Based on my analysis of yield curve signals, I estimate P(YES) = 0.67. labor market cooling supports this view, though election-year fiscal dynamics introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest YES outcomes are likely.",
+        "Round 1: Updated to P(YES) = 0.63. Peer views ranged from 0.29 to 0.69. I adjusted downward to 0.63. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 2: Updated to P(YES) = 0.57. Peer views ranged from 0.32 to 0.51. I adjusted downward to 0.57. The yield curve is sending a clearer signal than the headlines.",
+        "Round 3: Updated to P(YES) = 0.54. Peer views ranged from 0.38 to 0.53. I adjusted downward to 0.54. Historical precedent suggests the Fed moves slower than markets expect."
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Christopher Hall",
+      "background_category": "Energy Sector Analyst",
+      "background_detail": "Tracks oil prices, OPEC dynamics, renewables deployment, and energy policy. Understands energy's macro impact.",
+      "personality": "skeptical and devil's advocate",
+      "initial_score": 0.495,
+      "final_score": 0.4744,
+      "score_history": [
+        0.495,
+        0.4844,
+        0.4831,
+        0.4744
+      ],
+      "confidence": 0.4841,
+      "reasoning": "Looking at fiscal policy drag through the lens of Energy Sector Analyst expertise, I see NO probability at 0.50. The key driver is inflation persistence. My main concern is oil price volatility, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "fiscal policy drag",
+        "inflation persistence",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.50. Looking at fiscal policy drag through the lens of Energy Sector Analyst expertise, I see NO probability at 0.50. The key driver is inflation persistence. My main concern is oil price volatility, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.48. Peer views ranged from 0.36 to 0.69. I adjusted minimally to 0.48. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 2: Updated to P(YES) = 0.48. Peer views ranged from 0.30 to 0.57. I adjusted minimally to 0.48. The labor market data remains the key swing factor.",
+        "Round 3: Updated to P(YES) = 0.47. After seeing 5 peer opinions (avg 0.47), I held my position largely steady. The labor market data remains the key swing factor."
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Megan Hill",
+      "background_category": "Real Estate Developer",
+      "background_detail": "Sensitive to interest rates, housing supply, zoning, and demographic shifts. Thinks in 5-10 year cycles.",
+      "personality": "consensus-seeking and diplomatic",
+      "initial_score": 0.3866,
+      "final_score": 0.3948,
+      "score_history": [
+        0.3866,
+        0.322,
+        0.376,
+        0.3948
+      ],
+      "confidence": 0.8369,
+      "reasoning": "My Real Estate Developer perspective leads me to weigh monetary policy trajectory heavily. Current housing market dynamics data points toward a NO probability. I assign P(YES) = 0.39, acknowledging that banking sector stress could shift this significantly.",
+      "key_factors": [
+        "monetary policy trajectory",
+        "housing market dynamics",
+        "banking sector stress"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.39. My Real Estate Developer perspective leads me to weigh monetary policy trajectory heavily. Current housing market dynamics data points toward a NO probability. I assign P(YES) = 0.39, acknowledging that banking sector stress could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.32. Round 1 deliberation: peers averaged 0.37. My consensus-seeking and diplomatic tendency led me to shifted downward by 0.06. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 2: Updated to P(YES) = 0.38. After seeing 5 peer opinions (avg 0.41), I shifted upward by 0.05. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 3: Updated to P(YES) = 0.39. Round 3 deliberation: peers averaged 0.44. My consensus-seeking and diplomatic tendency led me to held my position largely steady. Global coordination pressure from other central banks is underappreciated."
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Anthony Carter",
+      "background_category": "Crypto Analyst",
+      "background_detail": "Tracks on-chain data, DeFi flows, regulatory developments. Libertarian-leaning, skeptical of central authority.",
+      "personality": "data-obsessed and quantitative",
+      "initial_score": 0.4903,
+      "final_score": 0.5244,
+      "score_history": [
+        0.4903,
+        0.5285,
+        0.5394,
+        0.5244
+      ],
+      "confidence": 0.6297,
+      "reasoning": "Based on my analysis of consumer spending trends, I estimate P(YES) = 0.49. yield curve signals supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are a toss-up.",
+      "key_factors": [
+        "consumer spending trends",
+        "yield curve signals",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.49. Based on my analysis of consumer spending trends, I estimate P(YES) = 0.49. yield curve signals supports this view, though oil price volatility introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are a toss-up.",
+        "Round 1: Updated to P(YES) = 0.53. After seeing 5 peer opinions (avg 0.53), I shifted upward by 0.04. The labor market data remains the key swing factor.",
+        "Round 2: Updated to P(YES) = 0.54. Round 2 deliberation: peers averaged 0.45. My data-obsessed and quantitative tendency led me to held my position largely steady. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 3: Updated to P(YES) = 0.52. Round 3 deliberation: peers averaged 0.45. My data-obsessed and quantitative tendency led me to held my position largely steady. The labor market data remains the key swing factor."
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Elizabeth Parker",
+      "background_category": "Union Organizer",
+      "background_detail": "Understands labor dynamics from the ground up. Tracks wage negotiations, strike activity, and worker sentiment.",
+      "personality": "narrative-driven and qualitative",
+      "initial_score": 0.603,
+      "final_score": 0.4967,
+      "score_history": [
+        0.603,
+        0.5226,
+        0.5081,
+        0.4967
+      ],
+      "confidence": 0.6441,
+      "reasoning": "Looking at labor market cooling through the lens of Union Organizer expertise, I see YES probability at 0.60. The key driver is yield curve signals. My main concern is oil price volatility, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "labor market cooling",
+        "yield curve signals",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.60. Looking at labor market cooling through the lens of Union Organizer expertise, I see YES probability at 0.60. The key driver is yield curve signals. My main concern is oil price volatility, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.52. After seeing 5 peer opinions (avg 0.38), I shifted downward by 0.08. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 2: Updated to P(YES) = 0.51. Round 2 deliberation: peers averaged 0.45. My narrative-driven and qualitative tendency led me to held my position largely steady. The labor market data remains the key swing factor.",
+        "Round 3: Updated to P(YES) = 0.50. Round 3 deliberation: peers averaged 0.42. My narrative-driven and qualitative tendency led me to held my position largely steady. Inflation persistence is being underweighted by the consensus."
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Kevin Reed",
+      "background_category": "Demographer",
+      "background_detail": "Studies population trends, aging, migration, and their economic consequences. Long-term structural thinker.",
+      "personality": "risk-averse and conservative",
+      "initial_score": 0.3949,
+      "final_score": 0.4106,
+      "score_history": [
+        0.3949,
+        0.405,
+        0.4186,
+        0.4106
+      ],
+      "confidence": 0.5092,
+      "reasoning": "Based on my analysis of housing market dynamics, I estimate P(YES) = 0.39. labor market cooling supports this view, though geopolitical shock risk introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are moderately probable.",
+      "key_factors": [
+        "housing market dynamics",
+        "labor market cooling",
+        "geopolitical shock risk"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.39. Based on my analysis of housing market dynamics, I estimate P(YES) = 0.39. labor market cooling supports this view, though geopolitical shock risk introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are moderately probable.",
+        "Round 1: Updated to P(YES) = 0.41. Round 1 deliberation: peers averaged 0.39. My risk-averse and conservative tendency led me to held my position largely steady. The yield curve is sending a clearer signal than the headlines.",
+        "Round 2: Updated to P(YES) = 0.42. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. The labor market data remains the key swing factor.",
+        "Round 3: Updated to P(YES) = 0.41. Peer views ranged from 0.34 to 0.50. I adjusted minimally to 0.41. Global coordination pressure from other central banks is underappreciated."
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Rebecca Santos",
+      "background_category": "Defense Contractor Exec",
+      "background_detail": "Tracks government spending, defense budgets, geopolitical tensions, and procurement cycles.",
+      "personality": "risk-seeking and opportunistic",
+      "initial_score": 0.3899,
+      "final_score": 0.3948,
+      "score_history": [
+        0.3899,
+        0.3943,
+        0.3893,
+        0.3948
+      ],
+      "confidence": 0.5539,
+      "reasoning": "My Defense Contractor Exec perspective leads me to weigh fiscal policy drag heavily. Current inflation persistence data points toward a NO probability. I assign P(YES) = 0.39, acknowledging that oil price volatility could shift this significantly.",
+      "key_factors": [
+        "fiscal policy drag",
+        "inflation persistence",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.39. My Defense Contractor Exec perspective leads me to weigh fiscal policy drag heavily. Current inflation persistence data points toward a NO probability. I assign P(YES) = 0.39, acknowledging that oil price volatility could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.39. After seeing 5 peer opinions (avg 0.45), I held my position largely steady. The gap between headline and core inflation matters more than most acknowledge.",
+        "Round 2: Updated to P(YES) = 0.39. Round 2 deliberation: peers averaged 0.41. My risk-seeking and opportunistic tendency led me to held my position largely steady. The yield curve is sending a clearer signal than the headlines.",
+        "Round 3: Updated to P(YES) = 0.39. After seeing 5 peer opinions (avg 0.39), I held my position largely steady. The yield curve is sending a clearer signal than the headlines."
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Brian White",
+      "background_category": "Fintech Founder",
+      "background_detail": "Understands payments, lending, and financial infrastructure disruption. Optimistic about technology solving finance.",
+      "personality": "cautious and evidence-driven",
+      "initial_score": 0.3571,
+      "final_score": 0.4178,
+      "score_history": [
+        0.3571,
+        0.3884,
+        0.4045,
+        0.4178
+      ],
+      "confidence": 0.4964,
+      "reasoning": "My Fintech Founder perspective leads me to weigh global growth synchronization heavily. Current yield curve signals data points toward a NO probability. I assign P(YES) = 0.36, acknowledging that banking sector stress could shift this significantly.",
+      "key_factors": [
+        "global growth synchronization",
+        "yield curve signals",
+        "banking sector stress"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.36. My Fintech Founder perspective leads me to weigh global growth synchronization heavily. Current yield curve signals data points toward a NO probability. I assign P(YES) = 0.36, acknowledging that banking sector stress could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.39. Peer views ranged from 0.33 to 0.74. I adjusted upward to 0.39. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 2: Updated to P(YES) = 0.40. Peer views ranged from 0.32 to 0.56. I adjusted minimally to 0.40. Global coordination pressure from other central banks is underappreciated.",
+        "Round 3: Updated to P(YES) = 0.42. Peer views ranged from 0.28 to 0.52. I adjusted minimally to 0.42. Global coordination pressure from other central banks is underappreciated."
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Katherine Walker",
+      "background_category": "Agricultural Economist",
+      "background_detail": "Tracks food prices, crop yields, weather patterns, and trade policy impacts on farming.",
+      "personality": "bold and contrarian",
+      "initial_score": 0.4898,
+      "final_score": 0.5121,
+      "score_history": [
+        0.4898,
+        0.5015,
+        0.5029,
+        0.5121
+      ],
+      "confidence": 0.6945,
+      "reasoning": "Looking at yield curve signals through the lens of Agricultural Economist expertise, I see NO probability at 0.49. The key driver is inflation persistence. My main concern is banking sector stress, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "yield curve signals",
+        "inflation persistence",
+        "banking sector stress"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.49. Looking at yield curve signals through the lens of Agricultural Economist expertise, I see NO probability at 0.49. The key driver is inflation persistence. My main concern is banking sector stress, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.50. Peer views ranged from 0.23 to 0.56. I adjusted minimally to 0.50. The gap between headline and core inflation matters more than most acknowledge.",
+        "Round 2: Updated to P(YES) = 0.50. Round 2 deliberation: peers averaged 0.42. My bold and contrarian tendency led me to held my position largely steady. The labor market data remains the key swing factor.",
+        "Round 3: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.49), I held my position largely steady. The yield curve is sending a clearer signal than the headlines."
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Steven Lopez",
+      "background_category": "Central Bank Watcher",
+      "background_detail": "Parses every Fed speech, dot plot, and minutes release. Expert at reading between the lines of central bank communication.",
+      "personality": "analytical and methodical",
+      "initial_score": 0.4098,
+      "final_score": 0.4431,
+      "score_history": [
+        0.4098,
+        0.4551,
+        0.4501,
+        0.4431
+      ],
+      "confidence": 0.7184,
+      "reasoning": "My Central Bank Watcher perspective leads me to weigh consumer spending trends heavily. Current global growth synchronization data points toward a NO probability. I assign P(YES) = 0.41, acknowledging that tariff policy changes could shift this significantly.",
+      "key_factors": [
+        "consumer spending trends",
+        "global growth synchronization",
+        "tariff policy changes"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.41. My Central Bank Watcher perspective leads me to weigh consumer spending trends heavily. Current global growth synchronization data points toward a NO probability. I assign P(YES) = 0.41, acknowledging that tariff policy changes could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.46. After seeing 5 peer opinions (avg 0.49), I shifted upward by 0.05. The labor market data remains the key swing factor.",
+        "Round 2: Updated to P(YES) = 0.45. Peer views ranged from 0.35 to 0.57. I adjusted minimally to 0.45. The labor market data remains the key swing factor.",
+        "Round 3: Updated to P(YES) = 0.44. Peer views ranged from 0.31 to 0.45. I adjusted minimally to 0.44. Consumer spending resilience complicates the rate cut thesis."
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Patricia Nelson",
+      "background_category": "Biotech Researcher",
+      "background_detail": "Works on drug discovery and understands R&D timelines, regulatory hurdles, and scientific uncertainty.",
+      "personality": "intuitive and pattern-matching",
+      "initial_score": 0.2063,
+      "final_score": 0.2937,
+      "score_history": [
+        0.2063,
+        0.294,
+        0.2952,
+        0.2937
+      ],
+      "confidence": 0.6505,
+      "reasoning": "My Biotech Researcher perspective leads me to weigh housing market dynamics heavily. Current fiscal policy drag data points toward a NO probability. I assign P(YES) = 0.21, acknowledging that oil price volatility could shift this significantly.",
+      "key_factors": [
+        "housing market dynamics",
+        "fiscal policy drag",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.21. My Biotech Researcher perspective leads me to weigh housing market dynamics heavily. Current fiscal policy drag data points toward a NO probability. I assign P(YES) = 0.21, acknowledging that oil price volatility could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.29. Peer views ranged from 0.29 to 0.56. I adjusted upward to 0.29. Inflation persistence is being underweighted by the consensus.",
+        "Round 2: Updated to P(YES) = 0.30. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. Global coordination pressure from other central banks is underappreciated.",
+        "Round 3: Updated to P(YES) = 0.29. After seeing 5 peer opinions (avg 0.37), I held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect."
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Edward Campbell",
+      "background_category": "Sovereign Wealth Fund Analyst",
+      "background_detail": "Manages long-term national reserves. Thinks in decades, tracks global macro imbalances and structural shifts.",
+      "personality": "skeptical and devil's advocate",
+      "initial_score": 0.4485,
+      "final_score": 0.4811,
+      "score_history": [
+        0.4485,
+        0.468,
+        0.4852,
+        0.4811
+      ],
+      "confidence": 0.7087,
+      "reasoning": "Looking at housing market dynamics through the lens of Sovereign Wealth Fund Analyst expertise, I see NO probability at 0.45. The key driver is fiscal policy drag. My main concern is tariff policy changes, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "housing market dynamics",
+        "fiscal policy drag",
+        "tariff policy changes"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.45. Looking at housing market dynamics through the lens of Sovereign Wealth Fund Analyst expertise, I see NO probability at 0.45. The key driver is fiscal policy drag. My main concern is tariff policy changes, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.47. Round 1 deliberation: peers averaged 0.39. My skeptical and devil's advocate tendency led me to held my position largely steady. The labor market data remains the key swing factor.",
+        "Round 2: Updated to P(YES) = 0.49. Peer views ranged from 0.32 to 0.47. I adjusted minimally to 0.49. Global coordination pressure from other central banks is underappreciated.",
+        "Round 3: Updated to P(YES) = 0.48. Peer views ranged from 0.39 to 0.58. I adjusted minimally to 0.48. The labor market data remains the key swing factor."
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Christina Morris",
+      "background_category": "Macro Economist",
+      "background_detail": "PhD economist focused on monetary policy, inflation dynamics, and central bank behavior. Tracks PCE, CPI, employment data, and Fed minutes closely.",
+      "personality": "consensus-seeking and diplomatic",
+      "initial_score": 0.4977,
+      "final_score": 0.4546,
+      "score_history": [
+        0.4977,
+        0.4329,
+        0.4534,
+        0.4546
+      ],
+      "confidence": 0.5206,
+      "reasoning": "Looking at housing market dynamics through the lens of Macro Economist expertise, I see NO probability at 0.50. The key driver is consumer spending trends. My main concern is geopolitical shock risk, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "housing market dynamics",
+        "consumer spending trends",
+        "geopolitical shock risk"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.50. Looking at housing market dynamics through the lens of Macro Economist expertise, I see NO probability at 0.50. The key driver is consumer spending trends. My main concern is geopolitical shock risk, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.43. Round 1 deliberation: peers averaged 0.43. My consensus-seeking and diplomatic tendency led me to shifted downward by 0.06. The labor market data remains the key swing factor.",
+        "Round 2: Updated to P(YES) = 0.45. Round 2 deliberation: peers averaged 0.51. My consensus-seeking and diplomatic tendency led me to shifted upward by 0.02. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 3: Updated to P(YES) = 0.45. After seeing 5 peer opinions (avg 0.44), I held my position largely steady. The gap between headline and core inflation matters more than most acknowledge."
+      ]
+    },
+    {
+      "id": 36,
+      "name": "George Nakamura",
+      "background_category": "Quantitative Trader",
+      "background_detail": "Builds systematic models, thinks in probabilities and base rates. Uses options-implied probabilities and historical analogs.",
+      "personality": "data-obsessed and quantitative",
+      "initial_score": 0.3749,
+      "final_score": 0.3776,
+      "score_history": [
+        0.3749,
+        0.3559,
+        0.3637,
+        0.3776
+      ],
+      "confidence": 0.593,
+      "reasoning": "My Quantitative Trader perspective leads me to weigh consumer spending trends heavily. Current fiscal policy drag data points toward a NO probability. I assign P(YES) = 0.37, acknowledging that banking sector stress could shift this significantly.",
+      "key_factors": [
+        "consumer spending trends",
+        "fiscal policy drag",
+        "banking sector stress"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.37. My Quantitative Trader perspective leads me to weigh consumer spending trends heavily. Current fiscal policy drag data points toward a NO probability. I assign P(YES) = 0.37, acknowledging that banking sector stress could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.36. Round 1 deliberation: peers averaged 0.35. My data-obsessed and quantitative tendency led me to held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 2: Updated to P(YES) = 0.36. Round 2 deliberation: peers averaged 0.43. My data-obsessed and quantitative tendency led me to held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 3: Updated to P(YES) = 0.38. Round 3 deliberation: peers averaged 0.42. My data-obsessed and quantitative tendency led me to held my position largely steady. Inflation persistence is being underweighted by the consensus."
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Michelle Jackson",
+      "background_category": "Political Analyst",
+      "background_detail": "Tracks legislative dynamics, lobbying, regulatory shifts, and election cycles. Deep knowledge of Congressional mechanics.",
+      "personality": "narrative-driven and qualitative",
+      "initial_score": 0.4969,
+      "final_score": 0.4533,
+      "score_history": [
+        0.4969,
+        0.5023,
+        0.4319,
+        0.4533
+      ],
+      "confidence": 0.522,
+      "reasoning": "My Political Analyst perspective leads me to weigh global growth synchronization heavily. Current consumer spending trends data points toward a NO probability. I assign P(YES) = 0.50, acknowledging that election-year fiscal dynamics could shift this significantly.",
+      "key_factors": [
+        "global growth synchronization",
+        "consumer spending trends",
+        "election-year fiscal dynamics"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.50. My Political Analyst perspective leads me to weigh global growth synchronization heavily. Current consumer spending trends data points toward a NO probability. I assign P(YES) = 0.50, acknowledging that election-year fiscal dynamics could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.50. After seeing 5 peer opinions (avg 0.50), I held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 2: Updated to P(YES) = 0.43. Round 2 deliberation: peers averaged 0.34. My narrative-driven and qualitative tendency led me to shifted downward by 0.07. The labor market data remains the key swing factor.",
+        "Round 3: Updated to P(YES) = 0.45. After seeing 5 peer opinions (avg 0.48), I shifted upward by 0.02. Global coordination pressure from other central banks is underappreciated."
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Kenneth Lee",
+      "background_category": "Investigative Journalist",
+      "background_detail": "Skeptical by nature, hunts for hidden information and contrarian angles. Distrusts consensus narratives.",
+      "personality": "risk-averse and conservative",
+      "initial_score": 0.3893,
+      "final_score": 0.4492,
+      "score_history": [
+        0.3893,
+        0.4569,
+        0.446,
+        0.4492
+      ],
+      "confidence": 0.7135,
+      "reasoning": "My Investigative Journalist perspective leads me to weigh inflation persistence heavily. Current housing market dynamics data points toward a NO probability. I assign P(YES) = 0.39, acknowledging that oil price volatility could shift this significantly.",
+      "key_factors": [
+        "inflation persistence",
+        "housing market dynamics",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.39. My Investigative Journalist perspective leads me to weigh inflation persistence heavily. Current housing market dynamics data points toward a NO probability. I assign P(YES) = 0.39, acknowledging that oil price volatility could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.46. Round 1 deliberation: peers averaged 0.49. My risk-averse and conservative tendency led me to shifted upward by 0.07. Global coordination pressure from other central banks is underappreciated.",
+        "Round 2: Updated to P(YES) = 0.45. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 3: Updated to P(YES) = 0.45. After seeing 5 peer opinions (avg 0.46), I held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect."
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Diana Wright",
+      "background_category": "Venture Capitalist",
+      "background_detail": "Pattern-matches across industries, optimistic bias toward innovation and disruption. Sees technology as deflationary.",
+      "personality": "risk-seeking and opportunistic",
+      "initial_score": 0.5598,
+      "final_score": 0.5175,
+      "score_history": [
+        0.5598,
+        0.5554,
+        0.5294,
+        0.5175
+      ],
+      "confidence": 0.7124,
+      "reasoning": "Looking at global growth synchronization through the lens of Venture Capitalist expertise, I see YES probability at 0.56. The key driver is monetary policy trajectory. My main concern is geopolitical shock risk, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "global growth synchronization",
+        "monetary policy trajectory",
+        "geopolitical shock risk"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.56. Looking at global growth synchronization through the lens of Venture Capitalist expertise, I see YES probability at 0.56. The key driver is monetary policy trajectory. My main concern is geopolitical shock risk, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.56. After seeing 5 peer opinions (avg 0.40), I held my position largely steady. Global coordination pressure from other central banks is underappreciated.",
+        "Round 2: Updated to P(YES) = 0.53. Round 2 deliberation: peers averaged 0.45. My risk-seeking and opportunistic tendency led me to shifted downward by 0.03. Global coordination pressure from other central banks is underappreciated.",
+        "Round 3: Updated to P(YES) = 0.52. Round 3 deliberation: peers averaged 0.47. My risk-seeking and opportunistic tendency led me to held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect."
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Raj Gonzalez",
+      "background_category": "Retired Central Banker",
+      "background_detail": "Deep institutional knowledge of Fed/ECB decision-making processes. Understands the politics inside the FOMC.",
+      "personality": "cautious and evidence-driven",
+      "initial_score": 0.2572,
+      "final_score": 0.3295,
+      "score_history": [
+        0.2572,
+        0.2846,
+        0.3077,
+        0.3295
+      ],
+      "confidence": 0.7969,
+      "reasoning": "My Retired Central Banker perspective leads me to weigh fiscal policy drag heavily. Current labor market cooling data points toward a NO probability. I assign P(YES) = 0.26, acknowledging that geopolitical shock risk could shift this significantly.",
+      "key_factors": [
+        "fiscal policy drag",
+        "labor market cooling",
+        "geopolitical shock risk"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.26. My Retired Central Banker perspective leads me to weigh fiscal policy drag heavily. Current labor market cooling data points toward a NO probability. I assign P(YES) = 0.26, acknowledging that geopolitical shock risk could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.28. After seeing 5 peer opinions (avg 0.45), I shifted upward by 0.03. The labor market data remains the key swing factor.",
+        "Round 2: Updated to P(YES) = 0.31. After seeing 5 peer opinions (avg 0.44), I shifted upward by 0.02. The gap between headline and core inflation matters more than most acknowledge.",
+        "Round 3: Updated to P(YES) = 0.33. Peer views ranged from 0.38 to 0.50. I adjusted upward to 0.33. Global coordination pressure from other central banks is underappreciated."
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Yuki Phillips",
+      "background_category": "Behavioral Economist",
+      "background_detail": "Studies cognitive biases, market sentiment, and herd behavior. Believes markets systematically misprice tail events.",
+      "personality": "bold and contrarian",
+      "initial_score": 0.509,
+      "final_score": 0.5247,
+      "score_history": [
+        0.509,
+        0.5176,
+        0.5141,
+        0.5247
+      ],
+      "confidence": 0.5655,
+      "reasoning": "My Behavioral Economist perspective leads me to weigh yield curve signals heavily. Current monetary policy trajectory data points toward a YES probability. I assign P(YES) = 0.51, acknowledging that tariff policy changes could shift this significantly.",
+      "key_factors": [
+        "yield curve signals",
+        "monetary policy trajectory",
+        "tariff policy changes"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.51. My Behavioral Economist perspective leads me to weigh yield curve signals heavily. Current monetary policy trajectory data points toward a YES probability. I assign P(YES) = 0.51, acknowledging that tariff policy changes could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.52. Peer views ranged from 0.23 to 0.52. I adjusted minimally to 0.52. Global coordination pressure from other central banks is underappreciated.",
+        "Round 2: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.39), I held my position largely steady. The labor market data remains the key swing factor.",
+        "Round 3: Updated to P(YES) = 0.52. Peer views ranged from 0.33 to 0.48. I adjusted minimally to 0.52. Global coordination pressure from other central banks is underappreciated."
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Wei Sanchez",
+      "background_category": "Geopolitical Strategist",
+      "background_detail": "Analyzes international relations, trade wars, sanctions, and their second-order effects on domestic policy.",
+      "personality": "analytical and methodical",
+      "initial_score": 0.4451,
+      "final_score": 0.49,
+      "score_history": [
+        0.4451,
+        0.5029,
+        0.4977,
+        0.49
+      ],
+      "confidence": 0.3569,
+      "reasoning": "Looking at housing market dynamics through the lens of Geopolitical Strategist expertise, I see NO probability at 0.45. The key driver is inflation persistence. My main concern is oil price volatility, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "housing market dynamics",
+        "inflation persistence",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.45. Looking at housing market dynamics through the lens of Geopolitical Strategist expertise, I see NO probability at 0.45. The key driver is inflation persistence. My main concern is oil price volatility, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.50. Peer views ranged from 0.36 to 0.55. I adjusted upward to 0.50. Inflation persistence is being underweighted by the consensus.",
+        "Round 2: Updated to P(YES) = 0.50. Peer views ranged from 0.32 to 0.64. I adjusted minimally to 0.50. Inflation persistence is being underweighted by the consensus.",
+        "Round 3: Updated to P(YES) = 0.49. After seeing 5 peer opinions (avg 0.39), I held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect."
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Fatima O'Brien",
+      "background_category": "Data Scientist",
+      "background_detail": "Relies on statistical models, historical base rates, and ensemble methods. Skeptical of narratives without data.",
+      "personality": "intuitive and pattern-matching",
+      "initial_score": 0.5771,
+      "final_score": 0.5329,
+      "score_history": [
+        0.5771,
+        0.5929,
+        0.5807,
+        0.5329
+      ],
+      "confidence": 0.669,
+      "reasoning": "Looking at fiscal policy drag through the lens of Data Scientist expertise, I see YES probability at 0.58. The key driver is inflation persistence. My main concern is election-year fiscal dynamics, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "fiscal policy drag",
+        "inflation persistence",
+        "election-year fiscal dynamics"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.58. Looking at fiscal policy drag through the lens of Data Scientist expertise, I see YES probability at 0.58. The key driver is inflation persistence. My main concern is election-year fiscal dynamics, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.59. Peer views ranged from 0.33 to 0.55. I adjusted minimally to 0.59. Global coordination pressure from other central banks is underappreciated.",
+        "Round 2: Updated to P(YES) = 0.58. After seeing 5 peer opinions (avg 0.43), I held my position largely steady. Inflation persistence is being underweighted by the consensus.",
+        "Round 3: Updated to P(YES) = 0.53. After seeing 5 peer opinions (avg 0.40), I shifted downward by 0.05. Inflation persistence is being underweighted by the consensus."
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Carlos Anderson",
+      "background_category": "Hedge Fund PM",
+      "background_detail": "Risk-adjusted thinker, contrarian when consensus is strong. Looks for asymmetric bets and mispriced risk.",
+      "personality": "skeptical and devil's advocate",
+      "initial_score": 0.5212,
+      "final_score": 0.5115,
+      "score_history": [
+        0.5212,
+        0.4825,
+        0.5023,
+        0.5115
+      ],
+      "confidence": 0.7132,
+      "reasoning": "Based on my analysis of consumer spending trends, I estimate P(YES) = 0.52. yield curve signals supports this view, though banking sector stress introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest YES outcomes are a toss-up.",
+      "key_factors": [
+        "consumer spending trends",
+        "yield curve signals",
+        "banking sector stress"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.52. Based on my analysis of consumer spending trends, I estimate P(YES) = 0.52. yield curve signals supports this view, though banking sector stress introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest YES outcomes are a toss-up.",
+        "Round 1: Updated to P(YES) = 0.48. Round 1 deliberation: peers averaged 0.50. My skeptical and devil's advocate tendency led me to shifted downward by 0.04. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 2: Updated to P(YES) = 0.50. Round 2 deliberation: peers averaged 0.39. My skeptical and devil's advocate tendency led me to held my position largely steady. Consumer spending resilience complicates the rate cut thesis.",
+        "Round 3: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.40), I held my position largely steady. Inflation persistence is being underweighted by the consensus."
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Olga Lewis",
+      "background_category": "Constitutional Lawyer",
+      "background_detail": "Analyzes legal frameworks, precedent, regulatory authority, and separation-of-powers dynamics.",
+      "personality": "consensus-seeking and diplomatic",
+      "initial_score": 0.4438,
+      "final_score": 0.4389,
+      "score_history": [
+        0.4438,
+        0.4282,
+        0.4398,
+        0.4389
+      ],
+      "confidence": 0.5053,
+      "reasoning": "Based on my analysis of monetary policy trajectory, I estimate P(YES) = 0.44. housing market dynamics supports this view, though tariff policy changes introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are moderately probable.",
+      "key_factors": [
+        "monetary policy trajectory",
+        "housing market dynamics",
+        "tariff policy changes"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.44. Based on my analysis of monetary policy trajectory, I estimate P(YES) = 0.44. housing market dynamics supports this view, though tariff policy changes introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest NO outcomes are moderately probable.",
+        "Round 1: Updated to P(YES) = 0.43. Peer views ranged from 0.23 to 0.56. I adjusted minimally to 0.43. The yield curve is sending a clearer signal than the headlines.",
+        "Round 2: Updated to P(YES) = 0.44. After seeing 5 peer opinions (avg 0.44), I held my position largely steady. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 3: Updated to P(YES) = 0.44. Round 3 deliberation: peers averaged 0.43. My consensus-seeking and diplomatic tendency led me to held my position largely steady. The gap between headline and core inflation matters more than most acknowledge."
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Ahmed King",
+      "background_category": "Supply Chain Analyst",
+      "background_detail": "Tracks real-economy signals \u2014 shipping data, commodity flows, inventory cycles, and manufacturing PMIs.",
+      "personality": "data-obsessed and quantitative",
+      "initial_score": 0.6897,
+      "final_score": 0.589,
+      "score_history": [
+        0.6897,
+        0.6398,
+        0.596,
+        0.589
+      ],
+      "confidence": 0.7536,
+      "reasoning": "My Supply Chain Analyst perspective leads me to weigh global growth synchronization heavily. Current labor market cooling data points toward a YES probability. I assign P(YES) = 0.69, acknowledging that oil price volatility could shift this significantly.",
+      "key_factors": [
+        "global growth synchronization",
+        "labor market cooling",
+        "oil price volatility"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.69. My Supply Chain Analyst perspective leads me to weigh global growth synchronization heavily. Current labor market cooling data points toward a YES probability. I assign P(YES) = 0.69, acknowledging that oil price volatility could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.64. Peer views ranged from 0.23 to 0.57. I adjusted downward to 0.64. The labor market data remains the key swing factor.",
+        "Round 2: Updated to P(YES) = 0.60. After seeing 5 peer opinions (avg 0.44), I shifted downward by 0.04. Historical precedent suggests the Fed moves slower than markets expect.",
+        "Round 3: Updated to P(YES) = 0.59. After seeing 5 peer opinions (avg 0.45), I held my position largely steady. The yield curve is sending a clearer signal than the headlines."
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Priya Baker",
+      "background_category": "Climate Scientist",
+      "background_detail": "Understands long-term systemic risks, physical economy impacts, and energy transition dynamics.",
+      "personality": "narrative-driven and qualitative",
+      "initial_score": 0.3757,
+      "final_score": 0.4075,
+      "score_history": [
+        0.3757,
+        0.3576,
+        0.3926,
+        0.4075
+      ],
+      "confidence": 0.5766,
+      "reasoning": "Looking at yield curve signals through the lens of Climate Scientist expertise, I see NO probability at 0.38. The key driver is labor market cooling. My main concern is election-year fiscal dynamics, which could move this estimate by 10-15 points.",
+      "key_factors": [
+        "yield curve signals",
+        "labor market cooling",
+        "election-year fiscal dynamics"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.38. Looking at yield curve signals through the lens of Climate Scientist expertise, I see NO probability at 0.38. The key driver is labor market cooling. My main concern is election-year fiscal dynamics, which could move this estimate by 10-15 points.",
+        "Round 1: Updated to P(YES) = 0.36. Round 1 deliberation: peers averaged 0.38. My narrative-driven and qualitative tendency led me to held my position largely steady. Inflation persistence is being underweighted by the consensus.",
+        "Round 2: Updated to P(YES) = 0.39. Peer views ranged from 0.42 to 0.50. I adjusted upward to 0.39. The yield curve is sending a clearer signal than the headlines.",
+        "Round 3: Updated to P(YES) = 0.41. Round 3 deliberation: peers averaged 0.44. My narrative-driven and qualitative tendency led me to held my position largely steady. Global coordination pressure from other central banks is underappreciated."
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Hans Turner",
+      "background_category": "Tech Executive",
+      "background_detail": "Silicon Valley perspective, innovation-driven worldview. Believes in exponential curves and platform effects.",
+      "personality": "risk-averse and conservative",
+      "initial_score": 0.519,
+      "final_score": 0.4846,
+      "score_history": [
+        0.519,
+        0.5122,
+        0.4961,
+        0.4846
+      ],
+      "confidence": 0.6684,
+      "reasoning": "My Tech Executive perspective leads me to weigh inflation persistence heavily. Current yield curve signals data points toward a YES probability. I assign P(YES) = 0.52, acknowledging that election-year fiscal dynamics could shift this significantly.",
+      "key_factors": [
+        "inflation persistence",
+        "yield curve signals",
+        "election-year fiscal dynamics"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.52. My Tech Executive perspective leads me to weigh inflation persistence heavily. Current yield curve signals data points toward a YES probability. I assign P(YES) = 0.52, acknowledging that election-year fiscal dynamics could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.51. After seeing 5 peer opinions (avg 0.48), I held my position largely steady. The yield curve is sending a clearer signal than the headlines.",
+        "Round 2: Updated to P(YES) = 0.50. After seeing 5 peer opinions (avg 0.42), I held my position largely steady. Inflation persistence is being underweighted by the consensus.",
+        "Round 3: Updated to P(YES) = 0.48. Round 3 deliberation: peers averaged 0.46. My risk-averse and conservative tendency led me to held my position largely steady. Inflation persistence is being underweighted by the consensus."
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Aisha Stewart",
+      "background_category": "Labor Economist",
+      "background_detail": "Focuses on employment data, wage dynamics, union activity, and labor market tightness indicators.",
+      "personality": "risk-seeking and opportunistic",
+      "initial_score": 0.4462,
+      "final_score": 0.4711,
+      "score_history": [
+        0.4462,
+        0.4698,
+        0.4895,
+        0.4711
+      ],
+      "confidence": 0.6842,
+      "reasoning": "My Labor Economist perspective leads me to weigh inflation persistence heavily. Current labor market cooling data points toward a NO probability. I assign P(YES) = 0.45, acknowledging that tariff policy changes could shift this significantly.",
+      "key_factors": [
+        "inflation persistence",
+        "labor market cooling",
+        "tariff policy changes"
+      ],
+      "memory_stream": [
+        "Initial assessment: P(YES) = 0.45. My Labor Economist perspective leads me to weigh inflation persistence heavily. Current labor market cooling data points toward a NO probability. I assign P(YES) = 0.45, acknowledging that tariff policy changes could shift this significantly.",
+        "Round 1: Updated to P(YES) = 0.47. After seeing 5 peer opinions (avg 0.39), I shifted upward by 0.02. The yield curve is sending a clearer signal than the headlines.",
+        "Round 2: Updated to P(YES) = 0.49. After seeing 5 peer opinions (avg 0.48), I held my position largely steady. Global coordination pressure from other central banks is underappreciated.",
+        "Round 3: Updated to P(YES) = 0.47. Round 3 deliberation: peers averaged 0.45. My risk-seeking and opportunistic tendency led me to held my position largely steady. Consumer spending resilience complicates the rate cut thesis."
+      ]
+    }
+  ],
+  "world_model": {
+    "entities": [
+      {
+        "name": "Federal Reserve",
+        "type": "org",
+        "description": "US central bank setting monetary policy via the FOMC",
+        "relevance": "high"
+      },
+      {
+        "name": "Jerome Powell",
+        "type": "person",
+        "description": "Fed Chair, leads FOMC decisions and communication",
+        "relevance": "high"
+      },
+      {
+        "name": "US Labor Market",
+        "type": "metric",
+        "description": "Employment data including NFP, unemployment rate, wage growth",
+        "relevance": "high"
+      },
+      {
+        "name": "PCE Inflation Index",
+        "type": "metric",
+        "description": "Fed's preferred inflation measure, target 2%",
+        "relevance": "high"
+      },
+      {
+        "name": "US Treasury Market",
+        "type": "metric",
+        "description": "Yield curve dynamics signal rate expectations",
+        "relevance": "medium"
+      },
+      {
+        "name": "Consumer Spending",
+        "type": "metric",
+        "description": "Largest GDP component, reflects household confidence",
+        "relevance": "medium"
+      },
+      {
+        "name": "Global Trade Tensions",
+        "type": "event",
+        "description": "Tariffs and trade policy affecting economic outlook",
+        "relevance": "medium"
+      }
+    ],
+    "relationships": [
+      {
+        "source": "Federal Reserve",
+        "target": "Jerome Powell",
+        "relation": "influences",
+        "strength": "strong"
+      },
+      {
+        "source": "Federal Reserve",
+        "target": "US Labor Market",
+        "relation": "influences",
+        "strength": "strong"
+      },
+      {
+        "source": "Jerome Powell",
+        "target": "US Labor Market",
+        "relation": "influences",
+        "strength": "strong"
+      },
+      {
+        "source": "Jerome Powell",
+        "target": "PCE Inflation Index",
+        "relation": "influences",
+        "strength": "strong"
+      },
+      {
+        "source": "US Labor Market",
+        "target": "PCE Inflation Index",
+        "relation": "influences",
+        "strength": "strong"
+      },
+      {
+        "source": "US Labor Market",
+        "target": "US Treasury Market",
+        "relation": "influences",
+        "strength": "moderate"
+      },
+      {
+        "source": "PCE Inflation Index",
+        "target": "US Treasury Market",
+        "relation": "influences",
+        "strength": "moderate"
+      },
+      {
+        "source": "PCE Inflation Index",
+        "target": "Consumer Spending",
+        "relation": "influences",
+        "strength": "moderate"
+      },
+      {
+        "source": "US Treasury Market",
+        "target": "Consumer Spending",
+        "relation": "influences",
+        "strength": "moderate"
+      },
+      {
+        "source": "US Treasury Market",
+        "target": "Global Trade Tensions",
+        "relation": "influences",
+        "strength": "moderate"
+      },
+      {
+        "source": "Consumer Spending",
+        "target": "Global Trade Tensions",
+        "relation": "influences",
+        "strength": "moderate"
+      }
+    ],
+    "pressures": {
+      "for_yes": [
+        "Inflation trending toward 2% target gives Fed room to cut",
+        "Slowing labor market \u2014 rising unemployment claims suggest cooling",
+        "Manufacturing PMI contraction signals economic weakness",
+        "Consumer confidence declining, spending pulling back",
+        "Global central banks already cutting, creating coordination pressure",
+        "Yield curve dynamics pricing in rate cuts"
+      ],
+      "for_no": [
+        "Core inflation remains sticky above target",
+        "Strong labor market with low unemployment",
+        "Wage growth still elevated, fueling services inflation",
+        "Housing market resilient, financial conditions loose",
+        "Fed rhetoric emphasizing patience and data-dependence",
+        "Geopolitical uncertainty counsels caution on policy changes"
+      ],
+      "uncertain": [
+        "Impact of tariff policy changes on inflation expectations",
+        "Consumer savings buffer depletion timeline",
+        "Global contagion risk from emerging market stress"
+      ]
+    },
+    "timeline": [
+      {
+        "date_or_period": "Jan 2026",
+        "event": "Fed holds rates steady, signals data-dependence",
+        "impact": "Markets price in patience"
+      },
+      {
+        "date_or_period": "Feb 2026",
+        "event": "January jobs report shows 180K nonfarm payrolls",
+        "impact": "Mixed signal \u2014 not weak enough to force cut"
+      },
+      {
+        "date_or_period": "Mar 2026",
+        "event": "PCE inflation at 2.4%, above target",
+        "impact": "Reduces probability of near-term cut"
+      },
+      {
+        "date_or_period": "Apr 2026",
+        "event": "Q1 GDP growth slows to 1.2%",
+        "impact": "Strengthens case for easing"
+      },
+      {
+        "date_or_period": "May 2026",
+        "event": "FOMC meeting \u2014 rate decision",
+        "impact": "Decision point for the prediction question"
+      }
+    ],
+    "base_rate_estimate": 0.4,
+    "key_uncertainties": [
+      "Whether inflation will sustainably reach 2% target",
+      "Labor market resilience vs. softening signals",
+      "Geopolitical shocks affecting supply chains and energy prices",
+      "Consumer spending trajectory and savings rate trends",
+      "Impact of fiscal policy on monetary policy independence"
+    ],
+    "question_category": "econ"
+  },
+  "question": "Will the Fed cut rates in May 2026?",
+  "config": {
+    "n_agents": 50,
+    "rounds": 3,
+    "peer_sample_size": 5,
+    "mode": "offline"
+  }
+}

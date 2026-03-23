@@ -14,8 +14,6 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from src.kalshi_bridge import swarm_score_kalshi_market
-
 
 def print_histogram(histogram: dict):
     """Print a text-based histogram of opinion distribution."""
@@ -77,16 +75,25 @@ def main():
     parser.add_argument("--market-price", "-m", type=float, default=None, help="Current market price (0-1)")
     parser.add_argument("--peer-sample-size", "-p", type=int, default=5, help="Peers seen per round")
     parser.add_argument("--output", "-o", type=str, default=None, help="Output JSON file path")
+    parser.add_argument("--offline", action="store_true", help="Run without API calls (offline mode)")
     args = parser.parse_args()
 
-    print(f"MiniSim — Swarm Prediction Engine")
+    mode = "offline" if args.offline else "api"
+    print(f"MiniSim — Swarm Prediction Engine [{mode} mode]")
     print(f"Question: {args.question}")
     print(f"Agents: {args.agents}, Rounds: {args.rounds}, Peer Sample: {args.peer_sample_size}")
     if args.market_price is not None:
         print(f"Market Price: {args.market_price:.2f}")
     print("-" * 60)
 
-    result = swarm_score_kalshi_market(
+    if args.offline:
+        from src.offline_engine import swarm_score_offline
+        score_fn = swarm_score_offline
+    else:
+        from src.kalshi_bridge import swarm_score_kalshi_market
+        score_fn = swarm_score_kalshi_market
+
+    result = score_fn(
         question=args.question,
         context=args.context,
         n_agents=args.agents,
