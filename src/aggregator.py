@@ -2,6 +2,7 @@
 Aggregation: weighted mean with outlier detection, confidence interval,
 opinion cluster identification, and top voices extraction.
 """
+from __future__ import annotations
 
 import statistics
 

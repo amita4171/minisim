@@ -2,6 +2,7 @@
 Generates N diverse agents with backgrounds, expertise, and personality traits.
 Each agent is a dict with: name, background, expertise, personality, bias_tendency, initial_score, reasoning, memory_stream.
 """
+from __future__ import annotations
 
 import json
 import time

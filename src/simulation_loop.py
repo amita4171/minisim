@@ -3,6 +3,7 @@ K rounds of opinion evolution with peer influence and memory.
 Each round: agents see a sample of peer opinions, reflect, and update their score.
 Park-style memory stream: observations + reflections accumulate.
 """
+from __future__ import annotations
 
 import json
 import random

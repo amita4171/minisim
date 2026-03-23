@@ -2,6 +2,7 @@
 Bridge to Kalshi prediction markets.
 swarm_score_kalshi_market() is a drop-in replacement for a single-LLM scorer.
 """
+from __future__ import annotations
 
 from src.world_builder import build_world
 from src.agent_factory import generate_population
