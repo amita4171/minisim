@@ -929,6 +929,22 @@ def swarm_score_offline(
     from src.aggregator import aggregate
 
     world = build_world_offline(question, context)
+
+    # If no market price, try LLM anchor; fall back to keyword-based estimate
+    if market_price is None:
+        try:
+            from src.llm_engine import LLMEngine, ANCHOR_PROMPT
+            engine = LLMEngine()
+            if engine.is_available():
+                result = engine.generate_json(
+                    ANCHOR_PROMPT.format(question=question, context=context or "No additional context."),
+                    temperature=0.3, max_tokens=128,
+                )
+                if result and "probability" in result:
+                    market_price = max(0.03, min(0.97, float(result["probability"])))
+        except Exception:
+            pass
+
     agents, agent_gen_ms = generate_population_offline(question, world, n_agents, anchor=market_price)
 
     # Optional: web research for information-grounded reasoning

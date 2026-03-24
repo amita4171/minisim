@@ -347,3 +347,18 @@ DELIBERATION_NUDGES = {
     "contrarian": "If peers are converging, resist. The value you add is maintaining an independent view. Only converge if they present evidence that specifically refutes your position.",
     "creative": "What are peers missing? Is there a scenario none of them considered?",
 }
+
+# Context-to-anchor: when no market price is available, LLM estimates base rate
+ANCHOR_PROMPT = """You are a calibrated forecaster. Given the question and context below, estimate the probability of YES.
+
+Question: {question}
+
+Context: {context}
+
+Consider:
+1. Historical base rates for this type of event
+2. The specific evidence in the context
+3. Known biases (people overestimate dramatic events, underestimate inertia)
+
+Respond with ONLY a JSON object:
+{{"probability": <float 0.0-1.0>, "reasoning": "<one sentence>"}}"""

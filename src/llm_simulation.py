@@ -25,6 +25,7 @@ from src.llm_engine import (
     AGENT_SYSTEM_PROMPT,
     AGENT_INITIAL_PROMPT,
     AGENT_DELIBERATION_PROMPT,
+    ANCHOR_PROMPT,
     DIVERSITY_INSTRUCTIONS,
     PERSONA_NUDGES,
     DELIBERATION_NUDGES,
@@ -109,6 +110,21 @@ def run_llm_simulation(
     world = build_world_offline(question, context)
     category = world.get("question_category", _detect_category(question))
     pressures = world.get("pressures", {})
+
+    # Context-to-anchor: if no market price, LLM estimates base rate from context
+    if market_price is None:
+        print("  No market price — computing anchor from context via LLM...")
+        anchor_result = engine.generate_json(
+            ANCHOR_PROMPT.format(question=question, context=context or "No additional context."),
+            temperature=0.3,
+            max_tokens=128,
+        )
+        if anchor_result and "probability" in anchor_result:
+            market_price = max(0.03, min(0.97, float(anchor_result["probability"])))
+            print(f"  LLM anchor: {market_price:.2f} ({anchor_result.get('reasoning', '')[:60]})")
+        else:
+            market_price = 0.40
+            print(f"  LLM anchor failed, using default: {market_price}")
 
     context_str = context or "No additional context provided."
     pressures_yes = "; ".join(pressures.get("for_yes", [])[:4])
@@ -336,5 +352,26 @@ def run_llm_simulation(
         "concurrency": concurrency,
     }
     result["llm_stats"] = engine.get_stats()
+
+    # Auto-log to database for calibration tracking
+    try:
+        from src.database import Database
+        db = Database()
+        pred_id = db.log_prediction(
+            question=question,
+            swarm_probability=result["swarm_probability_yes"],
+            market_price=market_price,
+            category=category,
+            n_agents=n_agents,
+            n_rounds=n_rounds,
+            mode=f"llm/{engine.model}",
+            confidence_interval=result.get("confidence_interval"),
+            diversity_score=result.get("diversity_score", 0),
+            agents=result.get("agents"),
+        )
+        result["prediction_id"] = pred_id
+        db.close()
+    except Exception:
+        pass
 
     return result
