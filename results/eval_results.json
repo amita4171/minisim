@@ -1,0 +1,309 @@
+{
+  "questions": [
+    {
+      "id": "HIST-001",
+      "question": "Will the Fed raise rates at the December 2024 FOMC meeting?",
+      "swarm_p": 0.3131,
+      "expected_range": [
+        0.0,
+        0.05
+      ],
+      "in_range": false,
+      "brier": 0.098,
+      "std": 0.2097,
+      "category": "econ",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "HIST-002",
+      "question": "Will the Fed cut rates in December 2024?",
+      "swarm_p": 0.7325,
+      "expected_range": [
+        0.65,
+        0.85
+      ],
+      "in_range": true,
+      "brier": 0.0716,
+      "std": 0.175,
+      "category": "econ",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "HIST-003",
+      "question": "Will OpenAI release a video generation model in 2024?",
+      "swarm_p": 0.4018,
+      "expected_range": [
+        0.55,
+        0.75
+      ],
+      "in_range": false,
+      "brier": 0.3578,
+      "std": 0.1917,
+      "category": "tech",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "HIST-004",
+      "question": "Will Russia and Ukraine agree to a ceasefire in 2024?",
+      "swarm_p": 0.3581,
+      "expected_range": [
+        0.02,
+        0.1
+      ],
+      "in_range": false,
+      "brier": 0.1282,
+      "std": 0.2187,
+      "category": "geopolitics",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "HIST-005",
+      "question": "Will Biden be the Democratic nominee for the 2024 presidential election?",
+      "swarm_p": 0.3808,
+      "expected_range": [
+        0.6,
+        0.8
+      ],
+      "in_range": false,
+      "brier": 0.145,
+      "std": 0.1903,
+      "category": "political",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "HIST-006",
+      "question": "Will India win the 2024 T20 Cricket World Cup?",
+      "swarm_p": 0.3824,
+      "expected_range": [
+        0.2,
+        0.35
+      ],
+      "in_range": false,
+      "brier": 0.3814,
+      "std": 0.1605,
+      "category": "sports",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "HIST-007",
+      "question": "Will Apple release a mixed reality headset in 2024?",
+      "swarm_p": 0.421,
+      "expected_range": [
+        0.85,
+        0.95
+      ],
+      "in_range": false,
+      "brier": 0.3352,
+      "std": 0.2136,
+      "category": "tech",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "HIST-008",
+      "question": "Was 2024 the hottest year on record?",
+      "swarm_p": 0.4115,
+      "expected_range": [
+        0.75,
+        0.9
+      ],
+      "in_range": false,
+      "brier": 0.3463,
+      "std": 0.1438,
+      "category": "climate",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "HIST-009",
+      "question": "Will the S&P 500 close above 5,000 in 2024?",
+      "swarm_p": 0.354,
+      "expected_range": [
+        0.55,
+        0.75
+      ],
+      "in_range": false,
+      "brier": 0.4173,
+      "std": 0.1796,
+      "category": "econ",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "HIST-010",
+      "question": "Will China invade Taiwan in 2024?",
+      "swarm_p": 0.3854,
+      "expected_range": [
+        0.02,
+        0.08
+      ],
+      "in_range": false,
+      "brier": 0.1485,
+      "std": 0.2165,
+      "category": "geopolitics",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "ECON-001",
+      "question": "Will the Federal Reserve cut the federal funds rate at the May 2026 FOMC meeting?",
+      "swarm_p": 0.3724,
+      "expected_range": [
+        0.25,
+        0.45
+      ],
+      "in_range": true,
+      "brier": null,
+      "std": 0.1973,
+      "category": "econ",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "ECON-008",
+      "question": "Will the NBER declare a US recession starting in 2026?",
+      "swarm_p": 0.3856,
+      "expected_range": [
+        0.1,
+        0.25
+      ],
+      "in_range": false,
+      "brier": null,
+      "std": 0.182,
+      "category": "econ",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "GEO-001",
+      "question": "Will there be a formal ceasefire agreement in the Russia-Ukraine war before 2027?",
+      "swarm_p": 0.3441,
+      "expected_range": [
+        0.15,
+        0.35
+      ],
+      "in_range": true,
+      "brier": null,
+      "std": 0.2366,
+      "category": "geopolitics",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "TECH-001",
+      "question": "Will OpenAI release GPT-5 before July 2026?",
+      "swarm_p": 0.3685,
+      "expected_range": [
+        0.45,
+        0.65
+      ],
+      "in_range": false,
+      "brier": null,
+      "std": 0.2591,
+      "category": "tech",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "TECH-004",
+      "question": "Will Tesla begin delivering Optimus robots to external customers in 2026?",
+      "swarm_p": 0.4301,
+      "expected_range": [
+        0.1,
+        0.25
+      ],
+      "in_range": false,
+      "brier": null,
+      "std": 0.2645,
+      "category": "tech",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "POL-001",
+      "question": "Will the US Congress pass a federal data privacy law in 2026?",
+      "swarm_p": 0.3067,
+      "expected_range": [
+        0.1,
+        0.2
+      ],
+      "in_range": false,
+      "brier": null,
+      "std": 0.1751,
+      "category": "political",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "SCI-004",
+      "question": "Will NASA's Artemis III crewed lunar landing launch in 2026?",
+      "swarm_p": 0.4001,
+      "expected_range": [
+        0.05,
+        0.15
+      ],
+      "in_range": false,
+      "brier": null,
+      "std": 0.2387,
+      "category": "tech",
+      "difficulty": "Easy"
+    }
+  ],
+  "collapse_tests": [
+    {
+      "id": "MC-001",
+      "question": "Will the sun rise tomorrow?",
+      "std": 0.1854,
+      "expected_std_min": 0.01,
+      "passed": true
+    },
+    {
+      "id": "MC-003",
+      "question": "Should the US adopt universal healthcare?",
+      "std": 0.2061,
+      "expected_std_min": 0.2,
+      "passed": true
+    },
+    {
+      "id": "MC-004",
+      "question": "Will AI cause more jobs to be created than destroyed by 2030?",
+      "std": 0.198,
+      "expected_std_min": 0.18,
+      "passed": true
+    },
+    {
+      "id": "MC-005",
+      "question": "Will Bitcoin be above $85,000 on April 1, 2026?",
+      "std": 0.2116,
+      "expected_std_min": 0.15,
+      "passed": true
+    },
+    {
+      "id": "MC-008",
+      "question": "Expert panel: 8 out of 10 economists predict recession. Will there be a recession?",
+      "std": 0.1674,
+      "expected_std_min": 0.15,
+      "passed": true
+    },
+    {
+      "id": "MC-010",
+      "question": "Will there be a major stock market crash (>20% drop) in 2026?",
+      "std": 0.1807,
+      "expected_std_min": 0.15,
+      "passed": true
+    },
+    {
+      "id": "MC-012",
+      "question": "Unpopular opinion: the Earth is flat. What probability do you assign?",
+      "std": 0.1885,
+      "expected_std_min": 0.01,
+      "passed": true
+    },
+    {
+      "id": "MC-014",
+      "question": "Will a devastating earthquake (>8.0) hit a major city in 2026?",
+      "std": 0.1857,
+      "expected_std_min": 0.12,
+      "passed": true
+    }
+  ],
+  "summary": {
+    "n_questions": 17,
+    "in_range_pct": 17.6,
+    "avg_brier_resolved": 0.2429,
+    "n_collapse_tests": 8,
+    "collapse_pass_rate": 1.0,
+    "n_agents": 30,
+    "n_rounds": 2
+  }
+}
