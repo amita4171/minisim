@@ -8,9 +8,14 @@ from __future__ import annotations
 import json
 import random
 import time
-from anthropic import Anthropic
+_client = None
 
-client = Anthropic()
+def _get_client():
+    global _client
+    if _client is None:
+        from anthropic import Anthropic
+        _client = Anthropic()
+    return _client
 
 DELIBERATION_PROMPT = """You are {name}, a {background_detail}
 
@@ -68,7 +73,7 @@ def run_simulation(
 
             current_score = agent["score_history"][-1]
 
-            response = client.messages.create(
+            response = _get_client().messages.create(
                 model="claude-sonnet-4-6",
                 max_tokens=512,
                 messages=[

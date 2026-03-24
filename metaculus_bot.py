@@ -26,7 +26,9 @@ logger = logging.getLogger(__name__)
 
 import requests
 
-BOT_TOKEN = os.environ.get("METACULUS_BOT_TOKEN", "0babd6499ddf7a82e964e93e7accdbe7e555c2b8")
+BOT_TOKEN = os.environ.get("METACULUS_BOT_TOKEN", "")
+if not BOT_TOKEN:
+    logger.warning("METACULUS_BOT_TOKEN not set. Set via environment variable.")
 BASE_URL = "https://www.metaculus.com/api"
 DEFAULT_TOURNAMENT = "spring-aib-2026"
 

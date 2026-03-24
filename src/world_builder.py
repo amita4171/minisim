@@ -5,9 +5,14 @@ Extracts entities, relationships, pressures, and timeline using Claude.
 
 import json
 import time
-from anthropic import Anthropic
+_client = None
 
-client = Anthropic()
+def _get_client():
+    global _client
+    if _client is None:
+        from anthropic import Anthropic
+        _client = Anthropic()
+    return _client
 
 WORLD_BUILD_PROMPT = """You are a knowledge graph builder for prediction market analysis.
 
@@ -44,7 +49,7 @@ def build_world(question: str, context: str = "") -> dict:
     """Build a GraphRAG-style world model from a prediction question."""
     start = time.time()
 
-    response = client.messages.create(
+    response = _get_client().messages.create(
         model="claude-sonnet-4-6",
         max_tokens=4096,
         messages=[

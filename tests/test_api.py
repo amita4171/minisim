@@ -10,10 +10,13 @@ from api import app, _predictions
 def client():
     """Create a test client with clean prediction state."""
     _predictions.clear()
+    # Inject a known test key
+    from api import API_KEYS
+    API_KEYS.add("test-key-for-pytest")
     return TestClient(app)
 
 
-HEADERS = {"Authorization": "Bearer demo-key-12345"}
+HEADERS = {"Authorization": "Bearer test-key-for-pytest"}
 
 
 def test_health(client):

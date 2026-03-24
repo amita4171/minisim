@@ -15,7 +15,6 @@ from __future__ import annotations
 import json
 import logging
 import os
-import secrets
 import time
 import uuid
 
@@ -41,8 +40,10 @@ _predictions: dict[str, dict] = {}
 # API key auth (simple bearer token — replace with DB-backed keys for production)
 _raw_keys = os.environ.get("MINISIM_API_KEYS", "")
 if not _raw_keys:
-    logger.warning("MINISIM_API_KEYS not set — using demo key. Set in production!")
-    _raw_keys = "demo-key-12345"
+    import secrets as _secrets
+    _generated = _secrets.token_urlsafe(32)
+    logger.warning(f"MINISIM_API_KEYS not set — generated ephemeral key: {_generated}")
+    _raw_keys = _generated
 API_KEYS = set(_raw_keys.split(","))
 
 

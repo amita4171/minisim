@@ -14,11 +14,12 @@ Eval dimensions:
 """
 
 import json
+import os
 from openpyxl import Workbook
 from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
 from openpyxl.utils import get_column_letter
 
-OUTPUT = "/sessions/great-focused-mccarthy/mnt/outputs/MiniSim_Eval_Set.xlsx"
+OUTPUT = os.path.join(os.path.dirname(__file__), "MiniSim_Eval_Set.xlsx")
 wb = Workbook()
 
 # ── Style constants ──

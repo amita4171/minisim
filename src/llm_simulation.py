@@ -16,6 +16,7 @@ from __future__ import annotations
 import hashlib
 import json
 import logging
+import os
 import random
 import statistics
 import time
@@ -38,7 +39,7 @@ from src.world_templates import _detect_category, _generate_pressures, build_wor
 from src.aggregator import aggregate
 
 
-CONCURRENCY = 2  # 2 is optimal for Apple Silicon GPU (Metal); 5+ causes contention
+CONCURRENCY = int(os.environ.get("MINISIM_CONCURRENCY", "2"))  # 2 optimal for Apple Silicon GPU
 
 
 def _call_llm_initial(engine: LLMEngine, agent_info: dict) -> dict:

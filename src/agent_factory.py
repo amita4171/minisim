@@ -6,9 +6,14 @@ from __future__ import annotations
 
 import json
 import time
-from anthropic import Anthropic
+_client = None
 
-client = Anthropic()
+def _get_client():
+    global _client
+    if _client is None:
+        from anthropic import Anthropic
+        _client = Anthropic()
+    return _client
 
 BACKGROUNDS = [
     "Macro Economist — PhD, focuses on monetary policy, inflation dynamics, and central bank behavior",
@@ -85,7 +90,7 @@ def generate_population(question: str, world: dict, n_agents: int = 50) -> tuple
         bg = BACKGROUNDS[i % len(BACKGROUNDS)]
         personality = PERSONALITY_TRAITS[i % len(PERSONALITY_TRAITS)]
 
-        response = client.messages.create(
+        response = _get_client().messages.create(
             model="claude-sonnet-4-6",
             max_tokens=1024,
             messages=[

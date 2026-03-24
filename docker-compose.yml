@@ -9,7 +9,7 @@ services:
       - ./results:/app/results
     environment:
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
-      - MINISIM_API_KEYS=${MINISIM_API_KEYS:-demo-key-12345}
+      - MINISIM_API_KEYS=${MINISIM_API_KEYS:?Set MINISIM_API_KEYS in .env}
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "curl", "-f", "http://localhost:8000/v1/health"]
