@@ -74,6 +74,52 @@ def scan_polymarket(limit: int = 50) -> list[dict]:
         return []
 
 
+def scan_manifold(limit: int = 50) -> list[dict]:
+    """Fetch active Manifold Markets suitable for scanning."""
+    from src.manifold_client import get_active_binary_markets
+    try:
+        markets = get_active_binary_markets(limit=limit, min_volume=500)
+        interesting = []
+        for m in markets:
+            if m["price"] <= 0.05 or m["price"] >= 0.95:
+                continue
+            if len(m.get("question", "")) < 25:
+                continue
+            interesting.append({
+                "question": m["question"],
+                "market_price": m["price"],
+                "ticker": m.get("id", ""),
+                "source": "manifold",
+                "volume": m.get("volume", 0),
+            })
+        return interesting
+    except Exception as e:
+        print(f"  Manifold fetch error: {e}")
+        return []
+
+
+def scan_predictit(limit: int = 50) -> list[dict]:
+    """Fetch active PredictIt contracts suitable for scanning."""
+    from src.predictit_client import get_active_markets
+    try:
+        contracts = get_active_markets()
+        interesting = []
+        for c in contracts[:limit]:
+            if len(c.get("question", "")) < 25:
+                continue
+            interesting.append({
+                "question": c["question"],
+                "market_price": c["price"],
+                "ticker": c.get("id", ""),
+                "source": "predictit",
+                "volume": 0,
+            })
+        return interesting
+    except Exception as e:
+        print(f"  PredictIt fetch error: {e}")
+        return []
+
+
 def run_scan(
     sources: list[str] = None,
     n_agents: int = 20,
@@ -83,13 +129,17 @@ def run_scan(
 ) -> list[dict]:
     """Run a single scan across configured sources."""
     if sources is None:
-        sources = ["kalshi", "polymarket"]
+        sources = ["kalshi", "polymarket", "manifold", "predictit"]
 
     all_markets = []
     for source in sources:
         print(f"  Fetching {source}...")
         if source == "kalshi":
             all_markets.extend(scan_kalshi(limit=100))
+        elif source == "manifold":
+            all_markets.extend(scan_manifold(limit=100))
+        elif source == "predictit":
+            all_markets.extend(scan_predictit(limit=100))
         elif source == "polymarket":
             all_markets.extend(scan_polymarket(limit=100))
 
@@ -213,7 +263,7 @@ def save_scan(opps: list[dict], all_scanned: int):
 
 def main():
     parser = argparse.ArgumentParser(description="MiniSim Opportunity Scanner")
-    parser.add_argument("--source", choices=["kalshi", "polymarket", "both"], default="both")
+    parser.add_argument("--source", choices=["kalshi", "polymarket", "manifold", "predictit", "all"], default="all")
     parser.add_argument("--agents", type=int, default=20)
     parser.add_argument("--rounds", type=int, default=2)
     parser.add_argument("--edge", type=float, default=0.05, help="Minimum edge threshold (default: 0.05 = 5%)")
@@ -222,7 +272,7 @@ def main():
     parser.add_argument("--interval", type=int, default=300, help="Seconds between scans in watch mode")
     args = parser.parse_args()
 
-    sources = ["kalshi", "polymarket"] if args.source == "both" else [args.source]
+    sources = ["kalshi", "polymarket", "manifold", "predictit"] if args.source == "all" else [args.source]
 
     scan_num = 0
     while True:
