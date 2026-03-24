@@ -461,8 +461,7 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 - [x] SQLite database layer
 - [x] Real data feeds (FRED, Yahoo Finance, Google News)
 - [x] Docker deployment (API + dashboard + scanner)
-- [x] Survey simulation mode (3 demo surveys, 6 question types)
-- [x] Unified CLI (10 subcommands)
+- [x] Unified CLI (9 subcommands)
 - [x] **Metaculus tournament bot** — competing in Spring 2026 AIB ($50K prize pool)
 - [x] **FastAPI production API** with public accuracy dashboard
 

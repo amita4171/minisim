@@ -5,7 +5,6 @@ MiniSim CLI — Unified command-line interface.
 Usage:
     python cli.py predict  -q "Will X happen?" --agents 20 --rounds 3
     python cli.py scan     --source all --edge 0.03
-    python cli.py survey   --demo consumer_product --respondents 30
     python cli.py backtest --agents 30 --rounds 2
     python cli.py benchmark --model qwen2.5:14b --agents 10
     python cli.py eval     --agents 20 --rounds 2
@@ -58,19 +57,6 @@ def cmd_scan(args):
         sys.argv += ["--watch"]
         sys.argv += ["--interval", str(args.interval)]
     scan_main()
-
-
-def cmd_survey(args):
-    """Run a synthetic survey."""
-    from run_survey import main as survey_main
-    sys.argv = ["run_survey.py"]
-    sys.argv += ["--demo", args.demo]
-    sys.argv += ["--respondents", str(args.respondents)]
-    if args.model:
-        sys.argv += ["--model", args.model]
-    if args.file:
-        sys.argv += ["--file", args.file]
-    survey_main()
 
 
 def cmd_backtest(args):
@@ -179,13 +165,6 @@ def main():
     p.add_argument("--watch", action="store_true")
     p.add_argument("--interval", type=int, default=300)
 
-    # survey
-    p = subparsers.add_parser("survey", help="Run a synthetic survey")
-    p.add_argument("--demo", choices=["consumer_product", "brand_perception", "policy"], default="consumer_product")
-    p.add_argument("--file", default=None, help="Custom survey JSON file")
-    p.add_argument("--respondents", type=int, default=30)
-    p.add_argument("--model", default=None)
-
     # backtest
     p = subparsers.add_parser("backtest", help="Run backtest")
     p.add_argument("--live", action="store_true", help="Use real Kalshi markets")
@@ -231,7 +210,6 @@ def main():
     commands = {
         "predict": cmd_predict,
         "scan": cmd_scan,
-        "survey": cmd_survey,
         "backtest": cmd_backtest,
         "benchmark": cmd_benchmark,
         "eval": cmd_eval,
