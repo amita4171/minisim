@@ -217,7 +217,7 @@ Deliberation responses don't need 1024 tokens. Capping at 256 tokens for deliber
 ## Testing & Quality
 
 ### Test Coverage
-52 tests across 7 modules:
+70 tests across 9 modules (63 fast + 7 slow):
 - `test_archetypes.py`: Background data integrity, name generation
 - `test_aggregator.py`: Probability bounds, clustering, extremization, histogram
 - `test_alpha.py`: Rare event deflation, domain expertise matching
@@ -225,13 +225,16 @@ Deliberation responses don't need 1024 tokens. Capping at 256 tokens for deliber
 - `test_database.py`: CRUD, Brier computation, resolution
 - `test_offline_engine.py`: World building, anchor effect, diversity preservation
 - `test_calibration.py`: Platt fitting, ECE, save/load
+- `test_api.py`: FastAPI endpoint tests (health, auth, predict, resolve, metrics, dashboard)
+- `test_pipeline.py`: End-to-end pipeline, fee-aware arbitrage, database lifecycle
+
+Run fast tests: `pytest -m "not slow"` (0.3s)
+Run all tests: `pytest` (requires Ollama running, ~2-5min)
 
 ### What's NOT Tested
-- API endpoints (no integration tests for FastAPI)
-- LLM simulation (would need Ollama running)
-- Platform API clients (would need live network)
-- End-to-end pipeline (prediction → resolution → calibration update)
-- Router thresholds (validated on 10 questions only)
+- LLM simulation quality (would need Ollama + time)
+- Platform API clients against live endpoints
+- Router thresholds at scale (validated on 10 questions only)
 
 ### CI Pipeline
 GitHub Actions on push/PR, Python 3.9/3.11/3.12 matrix. Import checks verify all modules load without errors.
