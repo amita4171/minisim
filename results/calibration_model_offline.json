@@ -2,70 +2,70 @@
   "method": "platt",
   "is_fitted": true,
   "n_samples": 544,
-  "ece": 0.0856,
-  "platt_a": 1.4695,
-  "platt_b": 0.087,
+  "ece": 0.0594,
+  "platt_a": 1.3308,
+  "platt_b": 0.1028,
   "temperature": null,
   "calibration_curve": {
     "0.0-0.1": {
-      "count": 99,
-      "mean_predicted": 0.0768,
-      "actual_rate": 0.0101,
-      "gap": -0.0667
+      "count": 166,
+      "mean_predicted": 0.0679,
+      "actual_rate": 0.0181,
+      "gap": -0.0499
     },
     "0.1-0.2": {
-      "count": 120,
-      "mean_predicted": 0.1344,
-      "actual_rate": 0.05,
-      "gap": -0.0844
+      "count": 63,
+      "mean_predicted": 0.1376,
+      "actual_rate": 0.0794,
+      "gap": -0.0582
     },
     "0.2-0.3": {
-      "count": 37,
-      "mean_predicted": 0.2523,
-      "actual_rate": 0.1081,
-      "gap": -0.1442
+      "count": 35,
+      "mean_predicted": 0.2439,
+      "actual_rate": 0.2,
+      "gap": -0.0439
     },
     "0.3-0.4": {
-      "count": 32,
-      "mean_predicted": 0.353,
+      "count": 30,
+      "mean_predicted": 0.3529,
       "actual_rate": 0.5,
-      "gap": 0.147
+      "gap": 0.1471
     },
     "0.4-0.5": {
-      "count": 43,
-      "mean_predicted": 0.4507,
-      "actual_rate": 0.5116,
-      "gap": 0.061
+      "count": 37,
+      "mean_predicted": 0.4498,
+      "actual_rate": 0.5135,
+      "gap": 0.0637
     },
     "0.5-0.6": {
-      "count": 36,
-      "mean_predicted": 0.5545,
-      "actual_rate": 0.6111,
-      "gap": 0.0566
+      "count": 29,
+      "mean_predicted": 0.5519,
+      "actual_rate": 0.5862,
+      "gap": 0.0343
     },
     "0.6-0.7": {
-      "count": 32,
-      "mean_predicted": 0.6509,
-      "actual_rate": 0.75,
-      "gap": 0.0991
+      "count": 29,
+      "mean_predicted": 0.6452,
+      "actual_rate": 0.7586,
+      "gap": 0.1135
     },
     "0.7-0.8": {
-      "count": 33,
-      "mean_predicted": 0.751,
-      "actual_rate": 0.8788,
-      "gap": 0.1278
+      "count": 31,
+      "mean_predicted": 0.7489,
+      "actual_rate": 0.8387,
+      "gap": 0.0898
     },
     "0.8-0.9": {
-      "count": 67,
-      "mean_predicted": 0.8604,
-      "actual_rate": 0.9254,
-      "gap": 0.065
+      "count": 50,
+      "mean_predicted": 0.8595,
+      "actual_rate": 0.88,
+      "gap": 0.0205
     },
     "0.9-1.0": {
-      "count": 45,
-      "mean_predicted": 0.9248,
-      "actual_rate": 1.0,
-      "gap": 0.0752
+      "count": 74,
+      "mean_predicted": 0.9326,
+      "actual_rate": 0.9865,
+      "gap": 0.0539
     }
   }
 }
