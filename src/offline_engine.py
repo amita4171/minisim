@@ -411,6 +411,111 @@ def _generate_reasoning(background_label: str, score: float, category: str, rng:
     return reasoning, key_factors
 
 
+def _compute_question_alpha(question: str, category: str) -> float:
+    """Compute a question-specific alpha signal independent of market price.
+
+    This is where the swarm adds value OVER the market. It detects signals
+    in the question text that historically correlate with mispricings.
+
+    Returns a float in [-0.15, +0.15] that shifts the swarm away from market.
+    Positive = swarm thinks market underprices YES.
+    Negative = swarm thinks market overprices YES.
+    """
+    q = question.lower()
+    alpha = 0.0
+
+    # --- Base rate anchoring (markets tend to overprice exciting events) ---
+    # Questions about rare/dramatic events are typically overpriced by retail traders
+    rare_event_kw = ["fail", "crash", "war", "invasion", "default", "collapse",
+                     "agi", "breakthrough", "revolution", "ban", "impeach",
+                     "resign", "assassin", "pandemic", "nuclear"]
+    if any(kw in q for kw in rare_event_kw):
+        alpha -= 0.08  # push toward NO — rare events are overpriced
+
+    # Questions with "exceed" or "above" thresholds — markets underestimate inertia
+    if any(kw in q for kw in ["exceed", "above", "more than", "over", "surpass"]):
+        alpha -= 0.03  # slight NO bias — thresholds are harder to cross
+
+    # Questions about continuation of trends — markets underestimate persistence
+    if any(kw in q for kw in ["continue", "remain", "stay", "maintain", "keep"]):
+        alpha += 0.05  # trends tend to persist
+
+    # Institutional inertia — government/regulatory actions are slow
+    if any(kw in q for kw in ["pass a", "enact", "regulation", "reform", "bill",
+                               "legislation", "approve", "confirm"]):
+        alpha -= 0.06  # institutional action is slow, markets overestimate speed
+
+    # Technology adoption — markets overestimate speed of deployment
+    if category == "tech" and any(kw in q for kw in ["replace", "automat", "adopt",
+                                                       "deploy", "commercial", "mainstream"]):
+        alpha -= 0.05  # adoption is slower than hype suggests
+
+    # Fed/central bank — markets overreact to rate expectations
+    if any(kw in q for kw in ["fed cut", "rate cut", "fed raise", "rate hike"]):
+        alpha -= 0.04  # markets consistently over-anticipate Fed moves
+
+    # High-confidence YES signals (well-established trends)
+    if any(kw in q for kw in ["ai investment", "ai spending", "coding assistant",
+                               "ai adoption", "cloud spending"]):
+        alpha += 0.06  # AI growth trends are robust
+
+    # Elections — incumbents have an advantage markets underestimate
+    if any(kw in q for kw in ["re-elect", "incumbent", "win re-election"]):
+        alpha += 0.05
+
+    return max(-0.15, min(0.15, alpha))
+
+
+def _compute_domain_expertise(bg_label: str, question: str, category: str) -> float:
+    """Compute domain expertise match between an archetype and a question.
+
+    Returns a confidence bonus [0.0, 0.25] — domain experts get higher
+    confidence (and thus more weight in aggregation).
+    """
+    q = question.lower()
+    label = bg_label.lower()
+
+    # Direct domain matches
+    matches = {
+        "macro economist": ["fed", "rate", "inflation", "gdp", "recession", "monetary"],
+        "central bank watcher": ["fed", "fomc", "rate cut", "rate hike", "central bank"],
+        "retired central banker": ["fed", "rate", "fomc", "monetary"],
+        "political analyst": ["election", "congress", "senate", "vote", "shutdown", "legislation"],
+        "constitutional lawyer": ["supreme court", "ruling", "constitutional", "legal"],
+        "pollster": ["approval", "poll", "voter", "election", "public opinion"],
+        "tech executive": ["ai", "tech", "startup", "silicon valley", "software"],
+        "venture capitalist": ["startup", "funding", "investment", "unicorn", "ipo"],
+        "biotech researcher": ["drug", "fda", "clinical trial", "biotech", "pharma", "medical"],
+        "climate scientist": ["climate", "emission", "temperature", "weather", "carbon"],
+        "military intel analyst": ["war", "conflict", "military", "defense", "invasion"],
+        "geopolitical strategist": ["tariff", "sanction", "trade war", "china", "russia", "nato"],
+        "commodity trader": ["oil", "gold", "commodity", "opec", "energy price"],
+        "crypto analyst": ["bitcoin", "crypto", "blockchain", "defi", "ethereum"],
+        "labor economist": ["job", "employment", "unemployment", "wage", "labor", "worker"],
+        "insurance actuary": ["risk", "probability", "fail", "default", "mortality"],
+        "real estate developer": ["housing", "home price", "mortgage", "real estate"],
+        "energy sector analyst": ["oil", "energy", "renewable", "solar", "opec"],
+        "ai safety researcher": ["agi", "ai safety", "alignment", "ai regulation"],
+        "data scientist": ["data", "model", "statistical", "prediction", "forecast"],
+    }
+
+    for archetype_key, keywords in matches.items():
+        if archetype_key in label:
+            if any(kw in q for kw in keywords):
+                return 0.20  # strong domain match
+            break
+
+    # Partial category match
+    if category == "econ" and any(kw in label for kw in ["economist", "trader", "banker", "analyst"]):
+        return 0.08
+    if category == "political" and any(kw in label for kw in ["political", "lawyer", "historian", "pollster"]):
+        return 0.08
+    if category == "tech" and any(kw in label for kw in ["tech", "data", "researcher", "crypto", "fintech"]):
+        return 0.08
+
+    return 0.0
+
+
 def generate_population_offline(
     question: str,
     world: dict,
@@ -421,16 +526,19 @@ def generate_population_offline(
     """Generate N diverse agents with initial scores anchored to market/base rate.
 
     The anchor (market price or base rate) sets the center of the distribution.
-    Each archetype's category bias is treated as a *deviation* from the anchor:
-    - Optimistic archetypes (bias > 0.5) push above the anchor
-    - Pessimistic archetypes (bias < 0.5) push below the anchor
-    - The magnitude of deviation scales with distance from 0.5
+    Each archetype's category bias is treated as a *deviation* from the anchor.
+    Question-specific alpha shifts the swarm independently of market price.
+    Domain experts get confidence bonuses for higher weight in aggregation.
     """
     start = time.time()
     category = world.get("question_category", _detect_category(question))
 
     if anchor is None:
         anchor = world.get("base_rate_estimate", 0.40)
+
+    # Question-specific alpha — this is how the swarm adds value over market
+    alpha = _compute_question_alpha(question, category)
+    adjusted_anchor = max(0.03, min(0.97, anchor + alpha))
 
     # Deterministic seed from question if not provided
     if seed is None:
@@ -445,19 +553,20 @@ def generate_population_offline(
         # Temperature-stratified jitter (arxiv 2510.01218)
         tier = TEMP_TIERS[bg.get("temp_tier", "calibrator")]
 
-        # Archetype deviation: how much this background pushes away from anchor
-        # bg[category] is centered around ~0.42; deviation = bg[category] - 0.42
-        archetype_mean = 0.42  # mean of all background category biases
-        deviation = (bg[category] - archetype_mean) * 1.5  # amplify differences
+        # Archetype deviation from mean
+        archetype_mean = 0.42
+        deviation = (bg[category] - archetype_mean) * 1.5
 
-        center = anchor + deviation
+        center = adjusted_anchor + deviation
         jitter = rng.gauss(0, tier["jitter_std"])
         # Contrarians get pushed away from anchor
         if pers["contrarian_factor"] > 0.1:
             jitter += rng.choice([-1, 1]) * pers["contrarian_factor"] * 0.25
         initial_score = max(0.02, min(0.98, center + jitter))
 
-        confidence = max(0.2, min(0.95, 0.5 + rng.gauss(0, 0.15)))
+        # Domain expertise bonus for confidence
+        domain_bonus = _compute_domain_expertise(bg["label"], question, category)
+        confidence = max(0.2, min(0.95, 0.5 + rng.gauss(0, 0.15) + domain_bonus))
         reasoning, key_factors = _generate_reasoning(bg["label"], initial_score, category, rng)
 
         agent = {
