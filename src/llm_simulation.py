@@ -209,6 +209,7 @@ def run_llm_simulation(
                 "confidence": round(confidence, 4),
                 "reasoning": reasoning,
                 "key_factors": key_factors,
+                "from_llm": result.get("from_llm", False),  # Bug fix #4: transparency
                 "score_history": [round(score, 4)],
                 "memory_stream": [f"Initial: P(YES) = {score:.2f}. {reasoning}"],
                 "_convergence_rate": pers["convergence_rate"],
@@ -328,13 +329,20 @@ def run_llm_simulation(
             "confidence": a.get("confidence", 0.5),
             "reasoning": a.get("reasoning", ""),
             "key_factors": a.get("key_factors", []),
+            "from_llm": a.get("from_llm", False),
             "memory_stream": a["memory_stream"],
         }
         for a in agents
     ]
 
+    # Bug fix #4: Fallback transparency — how many agents used real LLM vs template
+    agents_from_llm = sum(1 for a in agents if a.get("from_llm", False))
+    agents_from_fallback = n_agents - agents_from_llm
+
     result["world_model"] = {k: v for k, v in world.items() if not k.startswith("_")}
     result["question"] = question
+    result["agents_from_llm"] = agents_from_llm
+    result["agents_from_fallback"] = agents_from_fallback
     result["config"] = {
         "n_agents": n_agents,
         "rounds": n_rounds,

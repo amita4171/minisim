@@ -14,11 +14,14 @@ Usage:
 from __future__ import annotations
 
 import json
+import logging
 import os
 import time
 from typing import Optional
 
 import requests
+
+logger = logging.getLogger(__name__)
 
 
 class LLMEngine:
@@ -29,23 +32,36 @@ class LLMEngine:
         backend: str = "auto",
         model: str | None = None,
         ollama_url: str = "http://localhost:11434",
+        max_retries: int = 3,
     ):
         """
         Args:
             backend: "ollama", "anthropic", or "auto" (tries ollama first)
             model: Model name. If None, auto-selects best available.
             ollama_url: Ollama server URL
+            max_retries: Retry count for transient failures
         """
         self.ollama_url = ollama_url
         self.backend = backend
         self.model = model
-        self.stats = {"calls": 0, "tokens_in": 0, "tokens_out": 0, "errors": 0, "total_ms": 0}
+        self.max_retries = max_retries
+        self.stats = {"calls": 0, "tokens_in": 0, "tokens_out": 0, "errors": 0,
+                      "total_ms": 0, "retries": 0}
 
         if backend == "auto":
             self.backend = self._detect_backend()
 
         if self.model is None:
             self.model = self._select_model()
+
+        # Bug fix #1: Initialize Anthropic client once (connection pooling, thread-safe)
+        self._anthropic_client = None
+        if self.backend == "anthropic":
+            try:
+                from anthropic import Anthropic
+                self._anthropic_client = Anthropic()
+            except Exception:
+                pass
 
     def _detect_backend(self) -> str:
         """Auto-detect available LLM backend."""
@@ -120,27 +136,42 @@ class LLMEngine:
         start = time.time()
         self.stats["calls"] += 1
 
-        try:
-            if self.backend == "ollama":
-                result = self._generate_ollama(prompt, system, json_mode, max_tokens, temperature)
-            elif self.backend == "anthropic":
-                result = self._generate_anthropic(prompt, system, max_tokens, temperature)
-            else:
-                return {"text": "", "error": "No LLM backend available", "backend": "offline",
-                        "model": "none", "tokens_in": 0, "tokens_out": 0, "time_ms": 0}
+        if self.backend not in ("ollama", "anthropic"):
+            return {"text": "", "error": "No LLM backend available", "backend": "offline",
+                    "model": "none", "tokens_in": 0, "tokens_out": 0, "time_ms": 0}
 
-            elapsed = int((time.time() - start) * 1000)
-            result["time_ms"] = elapsed
-            self.stats["tokens_in"] += result.get("tokens_in", 0)
-            self.stats["tokens_out"] += result.get("tokens_out", 0)
-            self.stats["total_ms"] += elapsed
-            return result
+        # Bug fix #3: Retry with exponential backoff on transient failures
+        last_error = None
+        for attempt in range(self.max_retries):
+            try:
+                if self.backend == "ollama":
+                    result = self._generate_ollama(prompt, system, json_mode, max_tokens, temperature)
+                else:
+                    result = self._generate_anthropic(prompt, system, max_tokens, temperature)
 
-        except Exception as e:
-            self.stats["errors"] += 1
-            return {"text": "", "error": str(e), "backend": self.backend,
-                    "model": self.model, "tokens_in": 0, "tokens_out": 0,
-                    "time_ms": int((time.time() - start) * 1000)}
+                elapsed = int((time.time() - start) * 1000)
+                result["time_ms"] = elapsed
+                self.stats["tokens_in"] += result.get("tokens_in", 0)
+                self.stats["tokens_out"] += result.get("tokens_out", 0)
+                self.stats["total_ms"] += elapsed
+                return result
+
+            except Exception as e:
+                last_error = e
+                is_retryable = any(kw in str(e).lower() for kw in
+                                   ["429", "rate", "timeout", "500", "502", "503", "overloaded"])
+                if is_retryable and attempt < self.max_retries - 1:
+                    wait = (2 ** attempt) + (time.time() % 1)  # exp backoff + jitter
+                    logger.warning(f"Retry {attempt+1}/{self.max_retries} after {wait:.1f}s: {e}")
+                    self.stats["retries"] += 1
+                    time.sleep(wait)
+                else:
+                    break
+
+        self.stats["errors"] += 1
+        return {"text": "", "error": str(last_error), "backend": self.backend,
+                "model": self.model, "tokens_in": 0, "tokens_out": 0,
+                "time_ms": int((time.time() - start) * 1000)}
 
     def _generate_ollama(
         self, prompt: str, system: str, json_mode: bool,
@@ -181,15 +212,22 @@ class LLMEngine:
         self, prompt: str, system: str, max_tokens: int, temperature: float,
     ) -> dict:
         """Generate via Anthropic API."""
-        from anthropic import Anthropic
-        client = Anthropic()
+        # Bug fix #1: reuse client (initialized in __init__)
+        if self._anthropic_client is None:
+            from anthropic import Anthropic
+            self._anthropic_client = Anthropic()
 
         messages = [{"role": "user", "content": prompt}]
-        kwargs = {"model": self.model, "max_tokens": max_tokens, "messages": messages}
+        kwargs = {
+            "model": self.model,
+            "max_tokens": max_tokens,
+            "messages": messages,
+            "temperature": temperature,  # Bug fix #2: actually pass temperature
+        }
         if system:
             kwargs["system"] = system
 
-        response = client.messages.create(**kwargs)
+        response = self._anthropic_client.messages.create(**kwargs)
         text = response.content[0].text
 
         return {
