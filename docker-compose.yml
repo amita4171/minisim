@@ -1,0 +1,24 @@
+version: "3.8"
+
+services:
+  dashboard:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./results:/app/results
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+      - FRED_API_KEY=${FRED_API_KEY:-}
+    restart: unless-stopped
+
+  scanner:
+    build: .
+    command: python scanner.py --watch --interval 600 --source all --agents 20 --rounds 2 --edge 0.03
+    volumes:
+      - ./results:/app/results
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
+    restart: unless-stopped
+    depends_on:
+      - dashboard

@@ -76,10 +76,17 @@ def main():
     parser.add_argument("--peer-sample-size", "-p", type=int, default=5, help="Peers seen per round")
     parser.add_argument("--output", "-o", type=str, default=None, help="Output JSON file path")
     parser.add_argument("--offline", action="store_true", help="Run without API calls (offline mode)")
+    parser.add_argument("--llm", action="store_true", help="Use local LLM via Ollama for agent reasoning")
+    parser.add_argument("--model", type=str, default=None, help="LLM model name (e.g., llama3.1:8b, mistral:7b)")
     parser.add_argument("--web-research", action="store_true", help="Enable web search for agent reasoning")
     args = parser.parse_args()
 
-    mode = "offline" if args.offline else "api"
+    if args.llm:
+        mode = "llm"
+    elif args.offline:
+        mode = "offline"
+    else:
+        mode = "api"
     if args.web_research:
         mode += "+RAG"
     print(f"MiniSim — Swarm Prediction Engine [{mode} mode]")
@@ -89,25 +96,39 @@ def main():
         print(f"Market Price: {args.market_price:.2f}")
     print("-" * 60)
 
-    if args.offline:
-        from src.offline_engine import swarm_score_offline
-        score_fn = swarm_score_offline
+    if args.llm:
+        from src.llm_simulation import run_llm_simulation
+        from src.llm_engine import LLMEngine
+        engine = LLMEngine(model=args.model)
+        result = run_llm_simulation(
+            question=args.question,
+            context=args.context,
+            n_agents=args.agents,
+            n_rounds=args.rounds,
+            market_price=args.market_price,
+            peer_sample_size=args.peer_sample_size,
+            engine=engine,
+        )
     else:
-        from src.kalshi_bridge import swarm_score_kalshi_market
-        score_fn = swarm_score_kalshi_market
+        if args.offline:
+            from src.offline_engine import swarm_score_offline
+            score_fn = swarm_score_offline
+        else:
+            from src.kalshi_bridge import swarm_score_kalshi_market
+            score_fn = swarm_score_kalshi_market
 
-    kwargs = dict(
-        question=args.question,
-        context=args.context,
-        n_agents=args.agents,
-        rounds=args.rounds,
-        market_price=args.market_price,
-        peer_sample_size=args.peer_sample_size,
-    )
-    if args.offline and args.web_research:
-        kwargs["use_web_research"] = True
+        kwargs = dict(
+            question=args.question,
+            context=args.context,
+            n_agents=args.agents,
+            rounds=args.rounds,
+            market_price=args.market_price,
+            peer_sample_size=args.peer_sample_size,
+        )
+        if args.offline and args.web_research:
+            kwargs["use_web_research"] = True
 
-    result = score_fn(**kwargs)
+        result = score_fn(**kwargs)
 
     # Print results
     print(f"\n{'=' * 60}")

@@ -405,6 +405,100 @@ python-dotenv
 
 ---
 
+## Docker Deployment
+
+```bash
+# Run dashboard + 24/7 scanner
+docker-compose up -d
+
+# Dashboard at http://localhost:8501
+# Scanner runs every 10 minutes, logs to results/
+```
+
+---
+
+## LLM Mode (Ollama)
+
+For real agent reasoning instead of algorithmic templates:
+
+```bash
+# Install Ollama (macOS)
+curl -fsSL https://ollama.com/install.sh | sh
+
+# Pull a model
+ollama pull llama3.1:8b
+
+# Run with LLM-powered agents
+python main.py --llm \
+  --question "Will the Fed cut rates in May 2026?" \
+  --agents 20 --rounds 4 --market-price 0.40
+
+# Specify model
+python main.py --llm --model mistral:7b -q "Your question?" -a 20 -r 3
+```
+
+Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detects what's installed.
+
+---
+
+## Roadmap: Competing with Simile & Aaru
+
+### Current State (Built)
+- [x] 40-archetype swarm with 4-round deliberation
+- [x] 4 live prediction market sources (Kalshi, Polymarket, Manifold, PredictIt)
+- [x] Cross-platform arbitrage detection
+- [x] Opportunity scanner (real-time, continuous)
+- [x] Track record system with auto-resolution
+- [x] Calibrated aggregation (confidence-weighted + extremized)
+- [x] Web search RAG layer
+- [x] Streamlit dashboard (7 panels)
+- [x] 100-market backtest (Brier 0.118)
+- [x] Eval framework (63 questions + 15 mode collapse tests)
+- [x] LLM engine (Ollama + Anthropic API support)
+- [x] SQLite database layer
+- [x] Real data feeds (FRED, Yahoo Finance, Google News)
+- [x] Docker deployment
+
+### Tier 1: Must-Have (In Progress)
+- [ ] LLM-powered agent reasoning via Ollama (engine built, needs model pull)
+- [ ] Context-to-anchor mapping (LLM reads context, outputs base rate)
+- [ ] Agent calibration tracking (per-archetype accuracy over time)
+- [ ] Out-of-sample backtesting (predictions before resolution)
+- [ ] Head-to-head benchmark: swarm vs single LLM vs market vs human
+
+### Tier 2: Competitive Parity with Simile/Aaru
+- [ ] Synthetic population modeling (demographic profiles, consumer behavior)
+- [ ] Survey simulation mode ("Would you buy X at price Y?")
+- [ ] Interview ingestion pipeline (feed real transcripts to create agents)
+- [ ] Enterprise REST API with auth, rate limiting, billing
+- [ ] PDF report generation with charts and methodology
+- [ ] Multi-vertical: prediction markets + consumer research + policy analysis
+- [ ] SOC 2 readiness for enterprise sales
+
+### Tier 3: Differentiation (What Makes MiniSim Win)
+- [ ] Multi-source prediction aggregation across 6+ platforms
+- [ ] Structured deliberation with argument mapping
+- [ ] Calibration excellence (Brier < 0.15 on 500+ questions)
+- [ ] Real-time alerts (Slack/Discord/Twitter bot)
+- [ ] Public calibration dashboard (builds trust over time)
+- [ ] Open-source community + PyPI package
+
+### Tier 4: Production Infrastructure
+- [ ] Cloud deployment with auto-scaling
+- [ ] CI/CD pipeline (GitHub Actions)
+- [ ] Monitoring/alerting (Sentry, uptime)
+- [ ] Unit + integration test suite
+- [ ] Type checking + linting
+
+### Tier 5: Business
+- [ ] Pricing tiers (free/pro/enterprise)
+- [ ] Stripe billing integration
+- [ ] Landing page with live demo
+- [ ] Pitch deck + investor outreach
+- [ ] First 3 pilot customers
+
+---
+
 ## License
 
 MIT
