@@ -77,11 +77,14 @@ def main():
     parser.add_argument("--output", "-o", type=str, default=None, help="Output JSON file path")
     parser.add_argument("--offline", action="store_true", help="Run without API calls (offline mode)")
     parser.add_argument("--llm", action="store_true", help="Use local LLM via Ollama for agent reasoning")
+    parser.add_argument("--smart", action="store_true", help="Smart routing: auto-selects single LLM vs swarm based on uncertainty")
     parser.add_argument("--model", type=str, default=None, help="LLM model name (e.g., llama3.1:8b, mistral:7b)")
     parser.add_argument("--web-research", action="store_true", help="Enable web search for agent reasoning")
     args = parser.parse_args()
 
-    if args.llm:
+    if args.smart:
+        mode = "smart"
+    elif args.llm:
         mode = "llm"
     elif args.offline:
         mode = "offline"
@@ -96,7 +99,20 @@ def main():
         print(f"Market Price: {args.market_price:.2f}")
     print("-" * 60)
 
-    if args.llm:
+    if args.smart:
+        from src.router import routed_predict
+        from src.llm_engine import LLMEngine
+        engine = LLMEngine(model=args.model)
+        result = routed_predict(
+            question=args.question,
+            context=args.context,
+            n_agents=args.agents,
+            market_price=args.market_price,
+            peer_sample_size=args.peer_sample_size,
+            engine=engine,
+            max_rounds=args.rounds,
+        )
+    elif args.llm:
         from src.llm_simulation import run_llm_simulation
         from src.llm_engine import LLMEngine
         engine = LLMEngine(model=args.model)
@@ -160,6 +176,14 @@ def main():
             print(f"  {dv['name']} ({dv['background']}): {dv['final_score']:.2f} (z={dv.get('z_score', 0):.1f})")
 
     print(f"\n{result.get('reasoning_shift_summary', '')}")
+
+    # Routing info (smart mode)
+    routing = result.get("routing")
+    if routing:
+        print(f"\n--- Routing ---")
+        print(f"  Route: {routing['route']}")
+        print(f"  Reason: {routing['reason']}")
+        print(f"  Rounds used: {routing['rounds_used']}")
 
     print_timing(result["timing"])
     print_histogram(result.get("histogram", {}))

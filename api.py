@@ -52,7 +52,7 @@ def verify_api_key(authorization: str = Header(None)):
 class PredictConfig(BaseModel):
     n_agents: int = Field(default=20, ge=5, le=200)
     n_rounds: int = Field(default=3, ge=1, le=10)
-    mode: str = Field(default="offline", pattern="^(offline|llm-ollama|llm-anthropic)$")
+    mode: str = Field(default="smart", pattern="^(offline|llm-ollama|llm-anthropic|smart)$")
     model: Optional[str] = None
     peer_sample_size: int = Field(default=5, ge=3, le=15)
 
@@ -121,7 +121,20 @@ class MetricsResponse(BaseModel):
 def _run_prediction(pred_id: str, request: PredictRequest):
     """Run swarm prediction in background."""
     try:
-        if request.config.mode == "offline":
+        if request.config.mode == "smart":
+            from src.router import routed_predict
+            from src.llm_engine import LLMEngine
+            engine = LLMEngine(model=request.config.model)
+            result = routed_predict(
+                question=request.question,
+                context=request.context,
+                n_agents=request.config.n_agents,
+                market_price=request.market_price,
+                peer_sample_size=request.config.peer_sample_size,
+                engine=engine,
+                max_rounds=request.config.n_rounds,
+            )
+        elif request.config.mode == "offline":
             from src.offline_engine import swarm_score_offline
             result = swarm_score_offline(
                 question=request.question,

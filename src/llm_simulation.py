@@ -223,8 +223,12 @@ def run_llm_simulation(
     print(f"  Agent generation: {agent_gen_ms}ms ({agent_gen_ms/1000:.0f}s)")
 
     # ── Phase 2: Deliberation rounds (concurrent per round) ──
-    print(f"  Running {n_rounds} deliberation rounds (parallel)...")
     sim_start = time.time()
+
+    if n_rounds > 0:
+        print(f"  Running {n_rounds} deliberation rounds (parallel)...")
+    else:
+        print(f"  Skipping deliberation (initial scores only)")
 
     for round_num in range(1, n_rounds + 1):
         round_start = time.time()
