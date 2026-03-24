@@ -1,0 +1,317 @@
+[
+  {
+    "id": 0,
+    "timestamp": "2026-03-24T00:43:04.141510Z",
+    "question": "Will the All India Anna Dravida Munnetra Kazhagam (ADMK) win the most seats in the 2026 Tamil Nadu Legislative Assembly election?",
+    "swarm_probability": 0.2343,
+    "market_price": 0.2135,
+    "edge": 0.0208,
+    "source": "polymarket",
+    "ticker": "will-the-all-india-anna-dravida-munnetra-kazhagam-admk-win-the-most-seats-in-the-2026-tamil-nadu-legislative-assembly-election",
+    "confidence_interval": [
+      0.1702,
+      0.3304
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 1,
+    "timestamp": "2026-03-24T00:43:04.145622Z",
+    "question": "Will NATO countries clash with each other before 2027?",
+    "swarm_probability": 0.1108,
+    "market_price": 0.078,
+    "edge": 0.0328,
+    "source": "polymarket",
+    "ticker": "will-nato-countries-clash-with-each-other-before-2027",
+    "confidence_interval": [
+      0.0763,
+      0.1692
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 2,
+    "timestamp": "2026-03-24T00:43:04.149553Z",
+    "question": "Will Waymo launch in New York City by June 30 2026?",
+    "swarm_probability": 0.1103,
+    "market_price": 0.085,
+    "edge": 0.0253,
+    "source": "polymarket",
+    "ticker": "will-waymo-launch-in-new-york-city-by-june-30-2026",
+    "confidence_interval": [
+      0.0687,
+      0.1812
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 3,
+    "timestamp": "2026-03-24T00:43:04.152912Z",
+    "question": "Bank of England rate hike in 2026?",
+    "swarm_probability": 0.7499,
+    "market_price": 0.845,
+    "edge": -0.0951,
+    "source": "polymarket",
+    "ticker": "bank-of-england-rate-hike-in-2026",
+    "confidence_interval": [
+      0.6792,
+      0.7898
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 4,
+    "timestamp": "2026-03-24T00:43:04.156630Z",
+    "question": "Mojtaba Khamenei seen in public by April 30?",
+    "swarm_probability": 0.1891,
+    "market_price": 0.23,
+    "edge": -0.0409,
+    "source": "polymarket",
+    "ticker": "mojtaba-khamenei-seen-in-public-by-april-30",
+    "confidence_interval": [
+      0.1516,
+      0.2668
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 5,
+    "timestamp": "2026-03-24T00:43:04.159668Z",
+    "question": "Will 80 ships transit the Strait of Hormuz on any day in March?",
+    "swarm_probability": 0.0677,
+    "market_price": 0.0565,
+    "edge": 0.0112,
+    "source": "polymarket",
+    "ticker": "will-80-ships-transit-the-strait-of-hormuz-on-any-day-in-march",
+    "confidence_interval": [
+      0.0482,
+      0.1139
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 6,
+    "timestamp": "2026-03-24T00:43:04.162574Z",
+    "question": "Will St. Pauli be relegated from the Bundesliga after the 2025\u201326 season?",
+    "swarm_probability": 0.4316,
+    "market_price": 0.4,
+    "edge": 0.0316,
+    "source": "polymarket",
+    "ticker": "will-st-pauli-be-relegated-from-the-bundesliga-after-the-202526-season-863",
+    "confidence_interval": [
+      0.3603,
+      0.498
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 7,
+    "timestamp": "2026-03-24T00:43:04.165340Z",
+    "question": "Will AC Milan finish in the top 4 in the 2025-26 Serie A season?",
+    "swarm_probability": 0.8822,
+    "market_price": 0.9385,
+    "edge": -0.0563,
+    "source": "polymarket",
+    "ticker": "will-ac-milan-finish-in-the-top-4-in-the-2025-26-serie-a-season",
+    "confidence_interval": [
+      0.8137,
+      0.9162
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 8,
+    "timestamp": "2026-03-24T00:43:04.168024Z",
+    "question": "Will Israel launch a major ground offensive in Gaza by December 31?",
+    "swarm_probability": 0.3478,
+    "market_price": 0.42,
+    "edge": -0.0722,
+    "source": "polymarket",
+    "ticker": "will-israel-launch-a-major-ground-offensive-in-gaza-by-december-31-828",
+    "confidence_interval": [
+      0.2815,
+      0.4429
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 9,
+    "timestamp": "2026-03-24T00:43:04.170599Z",
+    "question": "Will Alvin Kamara be traded?",
+    "swarm_probability": 0.2221,
+    "market_price": 0.205,
+    "edge": 0.0171,
+    "source": "polymarket",
+    "ticker": "will-alvin-kamara-be-traded",
+    "confidence_interval": [
+      0.1596,
+      0.3098
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 10,
+    "timestamp": "2026-03-24T00:43:04.173259Z",
+    "question": "OpenAI receives federal backstop for infrastructure before July?",
+    "swarm_probability": 0.0959,
+    "market_price": 0.053,
+    "edge": 0.0429,
+    "source": "polymarket",
+    "ticker": "openai-receives-federal-backstop-for-infrastructure-before-july",
+    "confidence_interval": [
+      0.0516,
+      0.1682
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 11,
+    "timestamp": "2026-03-24T00:43:04.176136Z",
+    "question": "Will Fernando Alonso finish on the podium at the 2026 F1 Bahrain Grand Prix?",
+    "swarm_probability": 0.3674,
+    "market_price": 0.47,
+    "edge": -0.1026,
+    "source": "polymarket",
+    "ticker": "f1-bahrain-grand-prix-driver-podium-alonso-2026-04-12",
+    "confidence_interval": [
+      0.2932,
+      0.4502
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 12,
+    "timestamp": "2026-03-24T00:43:04.178646Z",
+    "question": "Will the highest temperature in Wellington be 21\u00b0C on March 24?",
+    "swarm_probability": 0.2398,
+    "market_price": 0.275,
+    "edge": -0.0352,
+    "source": "polymarket",
+    "ticker": "highest-temperature-in-wellington-on-march-24-2026-21c",
+    "confidence_interval": [
+      0.2017,
+      0.3339
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 13,
+    "timestamp": "2026-03-24T00:43:04.181281Z",
+    "question": "Abstract FDV above $1B one day after launch?",
+    "swarm_probability": 0.1329,
+    "market_price": 0.155,
+    "edge": -0.0221,
+    "source": "polymarket",
+    "ticker": "abstract-fdv-above-1b-one-day-after-launch",
+    "confidence_interval": [
+      0.095,
+      0.2135
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 14,
+    "timestamp": "2026-03-24T00:43:04.183649Z",
+    "question": "Will Rihanna release an album in 2026?",
+    "swarm_probability": 0.2181,
+    "market_price": 0.21,
+    "edge": 0.0081,
+    "source": "polymarket",
+    "ticker": "will-rihanna-release-an-album-in-2026",
+    "confidence_interval": [
+      0.1687,
+      0.307
+    ],
+    "n_agents": 15,
+    "n_rounds": 2,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  }
+]

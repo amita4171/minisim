@@ -311,6 +311,47 @@ with col_clusters:
         st.plotly_chart(fig_clusters, use_container_width=True)
 
 # =====================================================================
+# Track Record
+# =====================================================================
+st.divider()
+st.subheader("Track Record")
+try:
+    from src.track_record import TrackRecord
+    tr = TrackRecord()
+    metrics = tr.compute_metrics()
+
+    tr_col1, tr_col2, tr_col3, tr_col4 = st.columns(4)
+    tr_col1.metric("Total Predictions", metrics.get("n_total", 0))
+    tr_col2.metric("Resolved", metrics.get("n_resolved", 0))
+    tr_col3.metric("Swarm Brier", f"{metrics.get('overall_swarm_brier', 'N/A')}")
+    tr_col4.metric("Win Rate", f"{metrics.get('win_rate', 0)*100:.0f}%" if metrics.get("n_resolved", 0) > 0 else "N/A")
+
+    if metrics.get("calibration_curve"):
+        cal_df = pd.DataFrame([
+            {"bucket": k, "predicted": v["mean_predicted"], "actual": v["actual_rate"], "count": v["count"]}
+            for k, v in sorted(metrics["calibration_curve"].items())
+        ])
+        fig_cal = go.Figure()
+        fig_cal.add_trace(go.Bar(x=cal_df["bucket"], y=cal_df["predicted"], name="Predicted", marker_color="#1f77b4"))
+        fig_cal.add_trace(go.Bar(x=cal_df["bucket"], y=cal_df["actual"], name="Actual", marker_color="#2ca02c"))
+        fig_cal.add_shape(type="line", x0=-0.5, y0=0, x1=len(cal_df)-0.5, y1=1, line={"dash": "dash", "color": "gray"})
+        fig_cal.update_layout(barmode="group", height=300, xaxis_title="Predicted Probability", yaxis_title="Rate")
+        st.plotly_chart(fig_cal, use_container_width=True)
+
+    # Show recent predictions
+    recent = tr.predictions[-10:]
+    if recent:
+        with st.expander(f"Recent Predictions ({len(tr.predictions)} total)"):
+            for p in reversed(recent):
+                status = "Resolved" if p["resolution"] is not None else "Pending"
+                st.markdown(
+                    f"**{p['question'][:60]}** | Swarm: `{p['swarm_probability']:.2f}` "
+                    f"Market: `{p['market_price']:.2f}` | {status} | {p['source']}"
+                )
+except Exception:
+    st.info("No track record data yet. Run the scanner to start logging predictions.")
+
+# =====================================================================
 # Raw data export
 # =====================================================================
 with st.expander("Raw JSON Output"):

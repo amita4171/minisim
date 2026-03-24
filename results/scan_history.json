@@ -1,0 +1,153 @@
+[
+  {
+    "timestamp": "2026-03-24T00:43:04.183981Z",
+    "markets_scanned": 15,
+    "opportunities_found": 9,
+    "opportunities": [
+      {
+        "question": "Will Fernando Alonso finish on the podium at the 2026 F1 Bahrain Grand Prix?",
+        "source": "polymarket",
+        "ticker": "f1-bahrain-grand-prix-driver-podium-alonso-2026-04-12",
+        "market_price": 0.47,
+        "swarm_probability": 0.3674,
+        "edge": -0.1026,
+        "abs_edge": 0.1026,
+        "direction": "BUY NO",
+        "confidence_interval": [
+          0.2932,
+          0.4502
+        ],
+        "diversity_score": 0.1551,
+        "timestamp": "2026-03-24T00:43:04.176063Z"
+      },
+      {
+        "question": "Bank of England rate hike in 2026?",
+        "source": "polymarket",
+        "ticker": "bank-of-england-rate-hike-in-2026",
+        "market_price": 0.845,
+        "swarm_probability": 0.7499,
+        "edge": -0.0951,
+        "abs_edge": 0.0951,
+        "direction": "BUY NO",
+        "confidence_interval": [
+          0.6792,
+          0.7898
+        ],
+        "diversity_score": 0.1093,
+        "timestamp": "2026-03-24T00:43:04.152831Z"
+      },
+      {
+        "question": "Will Israel launch a major ground offensive in Gaza by December 31?",
+        "source": "polymarket",
+        "ticker": "will-israel-launch-a-major-ground-offensive-in-gaza-by-december-31-828",
+        "market_price": 0.42,
+        "swarm_probability": 0.3478,
+        "edge": -0.0722,
+        "abs_edge": 0.0722,
+        "direction": "BUY NO",
+        "confidence_interval": [
+          0.2815,
+          0.4429
+        ],
+        "diversity_score": 0.1594,
+        "timestamp": "2026-03-24T00:43:04.167966Z"
+      },
+      {
+        "question": "Will AC Milan finish in the top 4 in the 2025-26 Serie A season?",
+        "source": "polymarket",
+        "ticker": "will-ac-milan-finish-in-the-top-4-in-the-2025-26-serie-a-season",
+        "market_price": 0.9385,
+        "swarm_probability": 0.8822,
+        "edge": -0.0563,
+        "abs_edge": 0.0563,
+        "direction": "BUY NO",
+        "confidence_interval": [
+          0.8137,
+          0.9162
+        ],
+        "diversity_score": 0.1012,
+        "timestamp": "2026-03-24T00:43:04.165259Z"
+      },
+      {
+        "question": "OpenAI receives federal backstop for infrastructure before July?",
+        "source": "polymarket",
+        "ticker": "openai-receives-federal-backstop-for-infrastructure-before-july",
+        "market_price": 0.053,
+        "swarm_probability": 0.0959,
+        "edge": 0.0429,
+        "abs_edge": 0.0429,
+        "direction": "BUY YES",
+        "confidence_interval": [
+          0.0516,
+          0.1682
+        ],
+        "diversity_score": 0.1152,
+        "timestamp": "2026-03-24T00:43:04.173115Z"
+      },
+      {
+        "question": "Mojtaba Khamenei seen in public by April 30?",
+        "source": "polymarket",
+        "ticker": "mojtaba-khamenei-seen-in-public-by-april-30",
+        "market_price": 0.23,
+        "swarm_probability": 0.1891,
+        "edge": -0.0409,
+        "abs_edge": 0.0409,
+        "direction": "BUY NO",
+        "confidence_interval": [
+          0.1516,
+          0.2668
+        ],
+        "diversity_score": 0.1138,
+        "timestamp": "2026-03-24T00:43:04.156492Z"
+      },
+      {
+        "question": "Will the highest temperature in Wellington be 21\u00b0C on March 24?",
+        "source": "polymarket",
+        "ticker": "highest-temperature-in-wellington-on-march-24-2026-21c",
+        "market_price": 0.275,
+        "swarm_probability": 0.2398,
+        "edge": -0.0352,
+        "abs_edge": 0.0352,
+        "direction": "BUY NO",
+        "confidence_interval": [
+          0.2017,
+          0.3339
+        ],
+        "diversity_score": 0.1306,
+        "timestamp": "2026-03-24T00:43:04.178579Z"
+      },
+      {
+        "question": "Will NATO countries clash with each other before 2027?",
+        "source": "polymarket",
+        "ticker": "will-nato-countries-clash-with-each-other-before-2027",
+        "market_price": 0.078,
+        "swarm_probability": 0.1108,
+        "edge": 0.0328,
+        "abs_edge": 0.0328,
+        "direction": "BUY YES",
+        "confidence_interval": [
+          0.0763,
+          0.1692
+        ],
+        "diversity_score": 0.0918,
+        "timestamp": "2026-03-24T00:43:04.145539Z"
+      },
+      {
+        "question": "Will St. Pauli be relegated from the Bundesliga after the 2025\u201326 season?",
+        "source": "polymarket",
+        "ticker": "will-st-pauli-be-relegated-from-the-bundesliga-after-the-202526-season-863",
+        "market_price": 0.4,
+        "swarm_probability": 0.4316,
+        "edge": 0.0316,
+        "abs_edge": 0.0316,
+        "direction": "BUY YES",
+        "confidence_interval": [
+          0.3603,
+          0.498
+        ],
+        "diversity_score": 0.1361,
+        "timestamp": "2026-03-24T00:43:04.162510Z"
+      }
+    ]
+  }
+]
