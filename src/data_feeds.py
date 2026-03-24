@@ -11,10 +11,13 @@ Sources (no API keys required):
 from __future__ import annotations
 
 import json
+import logging
 import re
 import time
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
+
+logger = logging.getLogger(__name__)
 
 import requests
 
@@ -76,8 +79,8 @@ def get_fred_data(series_id: str, limit: int = 5) -> list[dict] | None:
                     for o in data.get("observations", [])
                     if o["value"] != "."
                 ]
-    except Exception:
-        pass
+    except Exception as e:
+        logger.warning(f"FRED data fetch failed for series: {e}")
 
     return None
 
@@ -126,8 +129,8 @@ def get_stock_price(symbol: str) -> dict | None:
                 ) if meta.get("previousClose") else None,
                 "currency": meta.get("currency"),
             }
-    except Exception:
-        pass
+    except Exception as e:
+        logger.warning(f"Yahoo Finance fetch failed for symbol: {e}")
     return None
 
 

@@ -15,10 +15,13 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 import random
 import statistics
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+
+logger = logging.getLogger(__name__)
 
 from src.llm_engine import (
     LLMEngine,
@@ -376,7 +379,7 @@ def run_llm_simulation(
         )
         result["prediction_id"] = pred_id
         db.close()
-    except Exception:
-        pass
+    except Exception as e:
+        logger.warning(f"Failed to save LLM simulation to database: {e}")
 
     return result

@@ -60,8 +60,8 @@ class LLMEngine:
             try:
                 from anthropic import Anthropic
                 self._anthropic_client = Anthropic()
-            except Exception:
-                pass
+            except Exception as e:
+                logger.debug(f"Anthropic client initialization failed: {e}")
 
     def _detect_backend(self) -> str:
         """Auto-detect available LLM backend."""
@@ -74,8 +74,8 @@ class LLMEngine:
                     return "ollama"
                 # Ollama running but no models — still use it, will pull
                 return "ollama"
-        except (requests.ConnectionError, requests.Timeout):
-            pass
+        except (requests.ConnectionError, requests.Timeout) as e:
+            logger.debug(f"Ollama not available: {e}")
 
         # Try Anthropic API
         api_key = os.environ.get("ANTHROPIC_API_KEY", "")

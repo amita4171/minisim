@@ -14,9 +14,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import os
 import time
 from datetime import datetime
+
+logger = logging.getLogger(__name__)
 
 from src.offline_engine import swarm_score_offline
 
@@ -196,8 +199,8 @@ def run_scan(
                 n_rounds=n_rounds,
                 edge=edge,
             )
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(f"Failed to save scan result to database: {e}")
 
         if abs(edge) >= edge_threshold:
             opportunities.append(result)

@@ -16,10 +16,13 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 import math
 import random
 import statistics
 import time
+
+logger = logging.getLogger(__name__)
 
 # ── Re-exports from sub-modules (preserve backward compatibility) ──────────
 
@@ -95,8 +98,10 @@ def generate_population_offline(
         tier = TEMP_TIERS[bg.get("temp_tier", "calibrator")]
 
         # Archetype deviation from mean
+        # Fall back to "econ" if category not in background dict (e.g. "geopolitics", "other")
         archetype_mean = 0.42
-        deviation = (bg[category] - archetype_mean) * 1.5
+        bg_bias = bg.get(category, bg.get("econ", 0.42))
+        deviation = (bg_bias - archetype_mean) * 1.5
 
         center = adjusted_anchor + deviation
         jitter = rng.gauss(0, tier["jitter_std"])
@@ -395,8 +400,8 @@ def swarm_score_offline(
                 )
                 if result and "probability" in result:
                     market_price = max(0.03, min(0.97, float(result["probability"])))
-        except Exception:
-            pass
+        except Exception as e:
+            logger.debug(f"LLM anchor estimation failed, using default: {e}")
 
     agents, agent_gen_ms = generate_population_offline(question, world, n_agents, anchor=market_price)
 

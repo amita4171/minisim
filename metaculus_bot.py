@@ -17,9 +17,12 @@ from __future__ import annotations
 
 import argparse
 import json
+import logging
 import os
 import time
 from datetime import datetime
+
+logger = logging.getLogger(__name__)
 
 import requests
 
@@ -206,8 +209,8 @@ def run_bot(
                 mode=result.get("config", {}).get("mode", "unknown"),
             )
             db.close()
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(f"Failed to save Metaculus prediction to database: {e}")
 
         time.sleep(2)  # rate limit courtesy
 

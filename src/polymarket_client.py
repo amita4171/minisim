@@ -9,9 +9,12 @@ Reference: docs.polymarket.com
 """
 from __future__ import annotations
 
+import logging
 import time
 
 import requests
+
+logger = logging.getLogger(__name__)
 
 GAMMA_BASE = "https://gamma-api.polymarket.com"
 CLOB_BASE = "https://clob.polymarket.com"
@@ -111,8 +114,8 @@ def parse_market(m: dict) -> dict:
                 no_price = float(prices[1])
             elif isinstance(prices, list) and len(prices) == 1:
                 yes_price = float(prices[0])
-        except (ValueError, TypeError, _json.JSONDecodeError):
-            pass
+        except (ValueError, TypeError, _json.JSONDecodeError) as e:
+            logger.debug(f"Price parsing failed, falling back to bestBid/bestAsk: {e}")
 
     # Fallback to bestBid/bestAsk
     if yes_price is None:

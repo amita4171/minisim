@@ -12,9 +12,12 @@ from __future__ import annotations
 
 import hashlib
 import json
+import logging
 import re
 import time
 from typing import Optional
+
+logger = logging.getLogger(__name__)
 
 import requests
 
@@ -61,8 +64,8 @@ def search_web(query: str, max_results: int = 5) -> list[dict]:
                         "url": topic.get("FirstURL", ""),
                         "source": "duckduckgo_related",
                     })
-    except Exception:
-        pass
+    except Exception as e:
+        logger.debug(f"DuckDuckGo search failed: {e}")
 
     return results[:max_results]
 

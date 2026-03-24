@@ -12,10 +12,14 @@ Run: uvicorn api:app --host 0.0.0.0 --port 8000
 """
 from __future__ import annotations
 
+import json
+import logging
 import os
 import secrets
 import time
 import uuid
+
+logger = logging.getLogger(__name__)
 from datetime import datetime
 from enum import Enum
 from typing import Optional
@@ -35,7 +39,11 @@ app = FastAPI(
 _predictions: dict[str, dict] = {}
 
 # API key auth (simple bearer token — replace with DB-backed keys for production)
-API_KEYS = set(os.environ.get("MINISIM_API_KEYS", "demo-key-12345").split(","))
+_raw_keys = os.environ.get("MINISIM_API_KEYS", "")
+if not _raw_keys:
+    logger.warning("MINISIM_API_KEYS not set — using demo key. Set in production!")
+    _raw_keys = "demo-key-12345"
+API_KEYS = set(_raw_keys.split(","))
 
 
 def verify_api_key(authorization: str = Header(None)):
@@ -193,8 +201,8 @@ def _run_prediction(pred_id: str, request: PredictRequest):
             )
             _predictions[pred_id]["db_id"] = db_id
             db.close()
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(f"Failed to save prediction to database: {e}")
 
     except Exception as e:
         _predictions[pred_id].update({
@@ -277,8 +285,8 @@ async def resolve_prediction(
             db = Database()
             db.resolve(db_id, request.resolution)
             db.close()
-        except Exception:
-            pass
+        except Exception as e:
+            logger.warning(f"Failed to update resolution in database: {e}")
 
     return ResolveResponse(
         prediction_id=prediction_id,
@@ -343,8 +351,8 @@ async def accuracy_dashboard():
         with open("results/calibration_model_offline.json") as f:
             cal = json.load(f)
             cal_curve = cal.get("calibration_curve", {})
-    except Exception:
-        pass
+    except Exception as e:
+        logger.debug(f"Calibration file not available: {e}")
 
     total = metrics.get("total", 0)
     resolved = metrics.get("resolved", 0)
