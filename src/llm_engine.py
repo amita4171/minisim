@@ -259,52 +259,90 @@ class LLMEngine:
 
 
 # ── Agent prompt templates for LLM-powered simulation ──
+# Designed to maximize diversity and prevent mode collapse.
+# Key techniques:
+# - Explicit persona anchoring ("as a ___, you would...")
+# - Contrarian instructions for contrarian archetypes
+# - Prohibition against defaulting to 0.50
+# - Requirement to differ from peers
 
-AGENT_SYSTEM_PROMPT = """You are a forecasting agent with this profile:
-- Background: {background}
-- Personality: {personality}
-- Temperature tier: {temp_tier}
+AGENT_SYSTEM_PROMPT = """You are {name}, a {background}
 
-You make calibrated probability estimates on prediction questions.
-You must respond with ONLY a JSON object, no other text."""
+Your personality: {personality}
 
-AGENT_INITIAL_PROMPT = """Question: {question}
+CRITICAL RULES:
+- You MUST answer from your specific professional perspective, not as a generic analyst
+- Your probability estimate should reflect YOUR expertise and biases, not a balanced view
+- Do NOT default to 0.50 — take a position based on your background
+- {diversity_instruction}
+- Respond with ONLY a valid JSON object, no other text"""
+
+AGENT_INITIAL_PROMPT = """As a {background_short}, estimate the probability of this question resolving YES:
+
+Question: {question}
 
 Context:
 {context}
 
-World model pressures:
-FOR YES: {pressures_yes}
-FOR NO: {pressures_no}
-UNCERTAIN: {pressures_uncertain}
+Pressures FOR YES: {pressures_yes}
+Pressures FOR NO: {pressures_no}
+Key uncertainties: {pressures_uncertain}
 
-Provide your initial probability estimate for this question resolving YES.
+{persona_nudge}
+
+You MUST give a specific probability reflecting your professional view. Avoid 0.45-0.55 unless you have strong reasons — most questions have directional evidence.
 
 Return JSON:
 {{
   "initial_score": <float 0.0-1.0>,
   "confidence": <float 0.0-1.0>,
-  "reasoning": "<3-5 sentences from your specific expertise>",
+  "reasoning": "<3-5 sentences drawing on your SPECIFIC expertise, not generic analysis>",
   "key_factors": ["factor1", "factor2", "factor3"]
 }}"""
 
-AGENT_DELIBERATION_PROMPT = """Question: {question}
+AGENT_DELIBERATION_PROMPT = """You are {name}, a {background_short}. Your personality: {personality}.
 
+Question: {question}
 Your current estimate: P(YES) = {current_score:.2f}
-Your background: {background}
 
 Peer opinions this round:
 {peer_opinions}
 
-Your memory of prior reasoning:
+Your prior reasoning:
 {memory}
 
-Reflect on peer opinions and update your estimate.
+{deliberation_nudge}
+
+Update your estimate. You may move toward peers if their evidence is compelling, but do NOT simply average. Maintain your professional perspective.
 
 Return JSON:
 {{
   "updated_score": <float 0.0-1.0>,
   "confidence": <float 0.0-1.0>,
-  "reflection": "<2-3 sentences on how peers influenced your view>",
-  "new_insight": "<one new insight from this round>"
+  "reflection": "<2-3 sentences on what specifically changed or didn't change your mind>",
+  "new_insight": "<one concrete insight from this round>"
 }}"""
+
+# Per-archetype diversity instructions
+DIVERSITY_INSTRUCTIONS = {
+    "analyst": "You are evidence-driven. Only move your estimate if you see hard data.",
+    "calibrator": "You focus on base rates. Anchor to historical frequency of similar events.",
+    "contrarian": "You ACTIVELY challenge consensus. If peers cluster around a number, explain why they might be wrong. Your estimate should often differ from the group mean by at least 0.15.",
+    "creative": "You consider unlikely scenarios others miss. Think about tail risks, black swans, and second-order effects. Your estimate can be more extreme than others.",
+}
+
+# Persona-specific nudges for initial forecast
+PERSONA_NUDGES = {
+    "analyst": "As an analyst, focus on the quantitative evidence. What do the numbers say?",
+    "calibrator": "As a calibrator, what is the historical base rate for this type of event? Start there and adjust.",
+    "contrarian": "As a contrarian, what is the consensus view? Now argue against it. Your estimate should challenge the obvious answer.",
+    "creative": "As a creative thinker, what are the scenarios that would surprise everyone? Consider both extreme YES and extreme NO outcomes.",
+}
+
+# Deliberation nudges
+DELIBERATION_NUDGES = {
+    "analyst": "Evaluate the quality of peer evidence. Only shift if they cite data you haven't considered.",
+    "calibrator": "Check: are peers anchoring to narratives instead of base rates? Correct for that.",
+    "contrarian": "If peers are converging, resist. The value you add is maintaining an independent view. Only converge if they present evidence that specifically refutes your position.",
+    "creative": "What are peers missing? Is there a scenario none of them considered?",
+}
