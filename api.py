@@ -228,7 +228,7 @@ async def create_prediction(
         "status": "processing",
         "question": request.question,
         "market_price": request.market_price,
-        "config": request.config.dict(),
+        "config": request.config.model_dump(),
         "created_at": datetime.utcnow().isoformat() + "Z",
     }
 
@@ -239,7 +239,7 @@ async def create_prediction(
         status=PredictStatus.processing,
         question=request.question,
         market_price=request.market_price,
-        config=request.config.dict(),
+        config=request.config.model_dump(),
         created_at=_predictions[pred_id]["created_at"],
     )
 

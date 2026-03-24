@@ -26,8 +26,8 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Run tests
-        run: python -m pytest tests/ -v
+      - name: Run fast tests (no Ollama required)
+        run: python -m pytest tests/ -v -m "not slow" --tb=short
 
       - name: Check imports
         run: |
@@ -36,3 +36,6 @@ jobs:
           python -c "from src.offline_engine import swarm_score_offline; print('offline engine OK')"
           python -c "from src.cross_platform import similarity; print('cross-platform OK')"
           python -c "from src.database import Database; print('database OK')"
+          python -c "from src.calibration import CalibrationTransformer; print('calibration OK')"
+          python -c "from src.router import routed_predict; print('router OK')"
+          python -c "from api import app; print(f'API: {len(app.routes)} routes')"
