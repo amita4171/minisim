@@ -229,7 +229,7 @@ Deliberation responses don't need 1024 tokens. Capping at 256 tokens for deliber
 - `test_pipeline.py`: End-to-end pipeline, fee-aware arbitrage, database lifecycle
 
 Run fast tests: `pytest -m "not slow"` (0.3s)
-Run all tests: `pytest` (requires Ollama running, ~2-5min)
+Run all tests: `pytest` (requires Ollama running, 4min 10s — **70/70 passing**)
 
 ### What's NOT Tested
 - LLM simulation quality (would need Ollama + time)
