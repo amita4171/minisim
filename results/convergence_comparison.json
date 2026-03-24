@@ -7,74 +7,74 @@
       "round_data": [
         {
           "round": 0,
-          "mean_score": 0.4507,
-          "stdev": 0.187,
+          "mean_score": 0.4327,
+          "stdev": 0.209,
           "min": 0.02,
-          "max": 0.969
+          "max": 0.98
         },
         {
           "round": 1,
-          "mean_score": 0.4533,
-          "stdev": 0.1745,
-          "min": 0.0404,
-          "max": 0.8807
+          "mean_score": 0.4351,
+          "stdev": 0.1949,
+          "min": 0.0409,
+          "max": 0.9358
         },
         {
           "round": 2,
-          "mean_score": 0.4493,
-          "stdev": 0.1719,
-          "min": 0.0774,
-          "max": 0.8943
+          "mean_score": 0.4276,
+          "stdev": 0.1923,
+          "min": 0.0444,
+          "max": 0.9165
         },
         {
           "round": 3,
-          "mean_score": 0.4497,
-          "stdev": 0.1607,
-          "min": 0.0916,
-          "max": 0.8911
+          "mean_score": 0.4278,
+          "stdev": 0.1804,
+          "min": 0.0588,
+          "max": 0.9101
         }
       ],
       "opinion_shifts": [
         {
           "round": 1,
-          "mean_shift": 0.0289,
-          "max_shift": 0.1258
+          "mean_shift": 0.0297,
+          "max_shift": 0.1301
         },
         {
           "round": 2,
-          "mean_shift": 0.0241,
-          "max_shift": 0.0705
+          "mean_shift": 0.0244,
+          "max_shift": 0.085
         },
         {
           "round": 3,
-          "mean_shift": 0.018,
-          "max_shift": 0.0573
+          "mean_shift": 0.0186,
+          "max_shift": 0.0641
         }
       ],
-      "initial_std": 0.187,
-      "final_std": 0.1607,
+      "initial_std": 0.209,
+      "final_std": 0.1804,
       "diversity_preserved": true,
       "convergence_round": null,
       "tier_diversity": {
         "analyst": {
           "n": 18,
-          "mean": 0.4086,
-          "stdev": 0.1284
+          "mean": 0.3813,
+          "stdev": 0.1525
         },
         "calibrator": {
           "n": 15,
-          "mean": 0.4566,
-          "stdev": 0.1129
+          "mean": 0.4372,
+          "stdev": 0.118
         },
         "contrarian": {
           "n": 10,
-          "mean": 0.4097,
-          "stdev": 0.1851
+          "mean": 0.3651,
+          "stdev": 0.2079
         },
         "creative": {
           "n": 7,
-          "mean": 0.5977,
-          "stdev": 0.2229
+          "mean": 0.6169,
+          "stdev": 0.2182
         }
       }
     },
@@ -85,164 +85,164 @@
       "round_data": [
         {
           "round": 0,
-          "mean_score": 0.4507,
-          "stdev": 0.187,
+          "mean_score": 0.4327,
+          "stdev": 0.209,
           "min": 0.02,
-          "max": 0.969
+          "max": 0.98
         },
         {
           "round": 1,
-          "mean_score": 0.4533,
-          "stdev": 0.1745,
-          "min": 0.0404,
-          "max": 0.8807
+          "mean_score": 0.4351,
+          "stdev": 0.1949,
+          "min": 0.0409,
+          "max": 0.9358
         },
         {
           "round": 2,
-          "mean_score": 0.4493,
-          "stdev": 0.1719,
-          "min": 0.0774,
-          "max": 0.8943
+          "mean_score": 0.4276,
+          "stdev": 0.1923,
+          "min": 0.0444,
+          "max": 0.9165
         },
         {
           "round": 3,
-          "mean_score": 0.4497,
-          "stdev": 0.1607,
-          "min": 0.0916,
-          "max": 0.8911
+          "mean_score": 0.4278,
+          "stdev": 0.1804,
+          "min": 0.0588,
+          "max": 0.9101
         },
         {
           "round": 4,
-          "mean_score": 0.4484,
-          "stdev": 0.1525,
-          "min": 0.1254,
-          "max": 0.865
+          "mean_score": 0.4263,
+          "stdev": 0.1717,
+          "min": 0.0937,
+          "max": 0.8814
         }
       ],
       "opinion_shifts": [
         {
           "round": 1,
-          "mean_shift": 0.0289,
-          "max_shift": 0.1258
+          "mean_shift": 0.0297,
+          "max_shift": 0.1301
         },
         {
           "round": 2,
-          "mean_shift": 0.0241,
-          "max_shift": 0.0705
+          "mean_shift": 0.0244,
+          "max_shift": 0.085
         },
         {
           "round": 3,
+          "mean_shift": 0.0186,
+          "max_shift": 0.0641
+        },
+        {
+          "round": 4,
+          "mean_shift": 0.011,
+          "max_shift": 0.0349
+        }
+      ],
+      "initial_std": 0.209,
+      "final_std": 0.1717,
+      "diversity_preserved": true,
+      "convergence_round": null,
+      "tier_diversity": {
+        "analyst": {
+          "n": 18,
+          "mean": 0.3818,
+          "stdev": 0.1507
+        },
+        "calibrator": {
+          "n": 15,
+          "mean": 0.4337,
+          "stdev": 0.1075
+        },
+        "contrarian": {
+          "n": 10,
+          "mean": 0.3691,
+          "stdev": 0.1949
+        },
+        "creative": {
+          "n": 7,
+          "mean": 0.6066,
+          "stdev": 0.2078
+        }
+      }
+    },
+    {
+      "question": "Will there be a US government shutdown before July 2026?",
+      "n_rounds": 3,
+      "n_agents": 50,
+      "round_data": [
+        {
+          "round": 0,
+          "mean_score": 0.4003,
+          "stdev": 0.1769,
+          "min": 0.02,
+          "max": 0.98
+        },
+        {
+          "round": 1,
+          "mean_score": 0.4043,
+          "stdev": 0.1698,
+          "min": 0.0214,
+          "max": 0.98
+        },
+        {
+          "round": 2,
+          "mean_score": 0.3991,
+          "stdev": 0.1707,
+          "min": 0.02,
+          "max": 0.98
+        },
+        {
+          "round": 3,
+          "mean_score": 0.4042,
+          "stdev": 0.1602,
+          "min": 0.0517,
+          "max": 0.9735
+        }
+      ],
+      "opinion_shifts": [
+        {
+          "round": 1,
+          "mean_shift": 0.0254,
+          "max_shift": 0.0835
+        },
+        {
+          "round": 2,
           "mean_shift": 0.018,
-          "max_shift": 0.0573
+          "max_shift": 0.0792
         },
         {
-          "round": 4,
-          "mean_shift": 0.0105,
-          "max_shift": 0.0338
+          "round": 3,
+          "mean_shift": 0.0201,
+          "max_shift": 0.0702
         }
       ],
-      "initial_std": 0.187,
-      "final_std": 0.1525,
+      "initial_std": 0.1769,
+      "final_std": 0.1602,
       "diversity_preserved": true,
       "convergence_round": null,
       "tier_diversity": {
         "analyst": {
           "n": 18,
-          "mean": 0.4091,
-          "stdev": 0.1267
+          "mean": 0.3794,
+          "stdev": 0.1035
         },
         "calibrator": {
           "n": 15,
-          "mean": 0.4523,
-          "stdev": 0.102
+          "mean": 0.3979,
+          "stdev": 0.1214
         },
         "contrarian": {
           "n": 10,
-          "mean": 0.4142,
-          "stdev": 0.1735
+          "mean": 0.4524,
+          "stdev": 0.2604
         },
         "creative": {
           "n": 7,
-          "mean": 0.59,
-          "stdev": 0.2119
-        }
-      }
-    },
-    {
-      "question": "Will there be a US government shutdown before July 2026?",
-      "n_rounds": 3,
-      "n_agents": 50,
-      "round_data": [
-        {
-          "round": 0,
-          "mean_score": 0.4663,
-          "stdev": 0.1646,
-          "min": 0.02,
-          "max": 0.98
-        },
-        {
-          "round": 1,
-          "mean_score": 0.47,
-          "stdev": 0.1599,
-          "min": 0.0262,
-          "max": 0.98
-        },
-        {
-          "round": 2,
-          "mean_score": 0.4603,
-          "stdev": 0.1578,
-          "min": 0.02,
-          "max": 0.98
-        },
-        {
-          "round": 3,
-          "mean_score": 0.4614,
-          "stdev": 0.1509,
-          "min": 0.0619,
-          "max": 0.9466
-        }
-      ],
-      "opinion_shifts": [
-        {
-          "round": 1,
-          "mean_shift": 0.0252,
-          "max_shift": 0.083
-        },
-        {
-          "round": 2,
-          "mean_shift": 0.0195,
-          "max_shift": 0.0703
-        },
-        {
-          "round": 3,
-          "mean_shift": 0.0168,
-          "max_shift": 0.0484
-        }
-      ],
-      "initial_std": 0.1646,
-      "final_std": 0.1509,
-      "diversity_preserved": true,
-      "convergence_round": null,
-      "tier_diversity": {
-        "analyst": {
-          "n": 18,
-          "mean": 0.4523,
-          "stdev": 0.093
-        },
-        "calibrator": {
-          "n": 15,
-          "mean": 0.4449,
-          "stdev": 0.1216
-        },
-        "contrarian": {
-          "n": 10,
-          "mean": 0.4773,
-          "stdev": 0.2621
-        },
-        "creative": {
-          "n": 7,
-          "mean": 0.4971,
-          "stdev": 0.1454
+          "mean": 0.413,
+          "stdev": 0.1928
         }
       }
     },
@@ -253,86 +253,86 @@
       "round_data": [
         {
           "round": 0,
-          "mean_score": 0.4663,
-          "stdev": 0.1646,
+          "mean_score": 0.4003,
+          "stdev": 0.1769,
           "min": 0.02,
           "max": 0.98
         },
         {
           "round": 1,
-          "mean_score": 0.47,
-          "stdev": 0.1599,
-          "min": 0.0262,
+          "mean_score": 0.4043,
+          "stdev": 0.1698,
+          "min": 0.0214,
           "max": 0.98
         },
         {
           "round": 2,
-          "mean_score": 0.4603,
-          "stdev": 0.1578,
+          "mean_score": 0.3991,
+          "stdev": 0.1707,
           "min": 0.02,
           "max": 0.98
         },
         {
           "round": 3,
-          "mean_score": 0.4614,
-          "stdev": 0.1509,
-          "min": 0.0619,
-          "max": 0.9466
+          "mean_score": 0.4042,
+          "stdev": 0.1602,
+          "min": 0.0517,
+          "max": 0.9735
         },
         {
           "round": 4,
-          "mean_score": 0.4634,
-          "stdev": 0.1456,
-          "min": 0.0708,
-          "max": 0.9396
+          "mean_score": 0.4062,
+          "stdev": 0.1549,
+          "min": 0.0789,
+          "max": 0.9784
         }
       ],
       "opinion_shifts": [
         {
           "round": 1,
-          "mean_shift": 0.0252,
-          "max_shift": 0.083
+          "mean_shift": 0.0254,
+          "max_shift": 0.0835
         },
         {
           "round": 2,
-          "mean_shift": 0.0195,
-          "max_shift": 0.0703
+          "mean_shift": 0.018,
+          "max_shift": 0.0792
         },
         {
           "round": 3,
-          "mean_shift": 0.0168,
-          "max_shift": 0.0484
+          "mean_shift": 0.0201,
+          "max_shift": 0.0702
         },
         {
           "round": 4,
-          "mean_shift": 0.0104,
-          "max_shift": 0.0339
+          "mean_shift": 0.01,
+          "max_shift": 0.0279
         }
       ],
-      "initial_std": 0.1646,
-      "final_std": 0.1456,
-      "diversity_preserved": false,
+      "initial_std": 0.1769,
+      "final_std": 0.1549,
+      "diversity_preserved": true,
       "convergence_round": null,
       "tier_diversity": {
         "analyst": {
           "n": 18,
-          "mean": 0.4515,
-          "stdev": 0.0919
+          "mean": 0.3832,
+          "stdev": 0.0994
         },
         "calibrator": {
           "n": 15,
-          "mean": 0.4517,
-          "stdev": 0.1159
+          "mean": 0.3994,
+          "stdev": 0.1161
         },
         "contrarian": {
           "n": 10,
-          "mean": 0.4789,
-          "stdev": 0.2542
+          "mean": 0.453,
+          "stdev": 0.2528
         },
         "creative": {
           "n": 7,
-          "mean": 0.4971,
-          "stdev": 0.1353
+          "mean": 0.4131,
+          "stdev": 0.188
         }
       }
     },
@@ -343,74 +343,74 @@
       "round_data": [
         {
           "round": 0,
-          "mean_score": 0.4388,
-          "stdev": 0.2186,
+          "mean_score": 0.2818,
+          "stdev": 0.2602,
           "min": 0.02,
           "max": 0.98
         },
         {
           "round": 1,
-          "mean_score": 0.443,
-          "stdev": 0.2074,
-          "min": 0.0792,
+          "mean_score": 0.2869,
+          "stdev": 0.2456,
+          "min": 0.02,
           "max": 0.98
         },
         {
           "round": 2,
-          "mean_score": 0.4382,
-          "stdev": 0.2026,
-          "min": 0.0423,
-          "max": 0.9479
+          "mean_score": 0.2872,
+          "stdev": 0.2391,
+          "min": 0.02,
+          "max": 0.9551
         },
         {
           "round": 3,
-          "mean_score": 0.4387,
-          "stdev": 0.1905,
-          "min": 0.0821,
-          "max": 0.9113
+          "mean_score": 0.2888,
+          "stdev": 0.2216,
+          "min": 0.02,
+          "max": 0.911
         }
       ],
       "opinion_shifts": [
         {
           "round": 1,
-          "mean_shift": 0.0289,
-          "max_shift": 0.0885
+          "mean_shift": 0.0294,
+          "max_shift": 0.0894
         },
         {
           "round": 2,
-          "mean_shift": 0.0277,
-          "max_shift": 0.1097
+          "mean_shift": 0.0219,
+          "max_shift": 0.0729
         },
         {
           "round": 3,
-          "mean_shift": 0.0204,
-          "max_shift": 0.0715
+          "mean_shift": 0.023,
+          "max_shift": 0.0759
         }
       ],
-      "initial_std": 0.2186,
-      "final_std": 0.1905,
+      "initial_std": 0.2602,
+      "final_std": 0.2216,
       "diversity_preserved": true,
       "convergence_round": null,
       "tier_diversity": {
         "analyst": {
           "n": 18,
-          "mean": 0.3842,
-          "stdev": 0.1366
+          "mean": 0.2245,
+          "stdev": 0.1361
         },
         "calibrator": {
           "n": 15,
-          "mean": 0.4175,
-          "stdev": 0.1241
+          "mean": 0.239,
+          "stdev": 0.1401
         },
         "contrarian": {
           "n": 10,
-          "mean": 0.3775,
-          "stdev": 0.2014
+          "mean": 0.2284,
+          "stdev": 0.2291
         },
         "creative": {
           "n": 7,
-          "mean": 0.7119,
-          "stdev": 0.208
+          "mean": 0.647,
+          "stdev": 0.2231
         }
       }
     },
@@ -421,86 +421,86 @@
       "round_data": [
         {
           "round": 0,
-          "mean_score": 0.4388,
-          "stdev": 0.2186,
+          "mean_score": 0.2818,
+          "stdev": 0.2602,
           "min": 0.02,
           "max": 0.98
         },
         {
           "round": 1,
-          "mean_score": 0.443,
-          "stdev": 0.2074,
-          "min": 0.0792,
+          "mean_score": 0.2869,
+          "stdev": 0.2456,
+          "min": 0.02,
           "max": 0.98
         },
         {
           "round": 2,
-          "mean_score": 0.4382,
-          "stdev": 0.2026,
-          "min": 0.0423,
-          "max": 0.9479
+          "mean_score": 0.2872,
+          "stdev": 0.2391,
+          "min": 0.02,
+          "max": 0.9551
         },
         {
           "round": 3,
-          "mean_score": 0.4387,
-          "stdev": 0.1905,
-          "min": 0.0821,
-          "max": 0.9113
+          "mean_score": 0.2888,
+          "stdev": 0.2216,
+          "min": 0.02,
+          "max": 0.911
         },
         {
           "round": 4,
-          "mean_score": 0.4393,
-          "stdev": 0.1827,
-          "min": 0.0834,
-          "max": 0.8963
+          "mean_score": 0.2863,
+          "stdev": 0.2094,
+          "min": 0.0226,
+          "max": 0.8864
         }
       ],
       "opinion_shifts": [
         {
           "round": 1,
-          "mean_shift": 0.0289,
-          "max_shift": 0.0885
+          "mean_shift": 0.0294,
+          "max_shift": 0.0894
         },
         {
           "round": 2,
-          "mean_shift": 0.0277,
-          "max_shift": 0.1097
+          "mean_shift": 0.0219,
+          "max_shift": 0.0729
         },
         {
           "round": 3,
-          "mean_shift": 0.0204,
-          "max_shift": 0.0715
+          "mean_shift": 0.023,
+          "max_shift": 0.0759
         },
         {
           "round": 4,
-          "mean_shift": 0.0116,
-          "max_shift": 0.0446
+          "mean_shift": 0.0123,
+          "max_shift": 0.0737
         }
       ],
-      "initial_std": 0.2186,
-      "final_std": 0.1827,
+      "initial_std": 0.2602,
+      "final_std": 0.2094,
       "diversity_preserved": true,
       "convergence_round": null,
       "tier_diversity": {
         "analyst": {
           "n": 18,
-          "mean": 0.3836,
-          "stdev": 0.1318
+          "mean": 0.2272,
+          "stdev": 0.1309
         },
         "calibrator": {
           "n": 15,
-          "mean": 0.4227,
-          "stdev": 0.12
+          "mean": 0.2383,
+          "stdev": 0.1288
         },
         "contrarian": {
           "n": 10,
-          "mean": 0.3811,
-          "stdev": 0.1954
+          "mean": 0.2285,
+          "stdev": 0.2193
         },
         "creative": {
           "n": 7,
-          "mean": 0.7014,
-          "stdev": 0.1915
+          "mean": 0.6234,
+          "stdev": 0.2106
         }
       }
     }
@@ -508,14 +508,14 @@
   "n_archetypes": 40,
   "summary": {
     "3_round_final_stds": [
-      0.1607,
-      0.1509,
-      0.1905
+      0.1804,
+      0.1602,
+      0.2216
     ],
     "5_round_final_stds": [
-      0.1525,
-      0.1456,
-      0.1827
+      0.1717,
+      0.1549,
+      0.2094
     ],
     "mode_collapse_detected": false
   }

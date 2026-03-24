@@ -416,10 +416,21 @@ def generate_population_offline(
     world: dict,
     n_agents: int = 50,
     seed: int | None = None,
+    anchor: float | None = None,
 ) -> tuple[list[dict], int]:
-    """Generate N diverse agents with background-specific initial scores."""
+    """Generate N diverse agents with initial scores anchored to market/base rate.
+
+    The anchor (market price or base rate) sets the center of the distribution.
+    Each archetype's category bias is treated as a *deviation* from the anchor:
+    - Optimistic archetypes (bias > 0.5) push above the anchor
+    - Pessimistic archetypes (bias < 0.5) push below the anchor
+    - The magnitude of deviation scales with distance from 0.5
+    """
     start = time.time()
     category = world.get("question_category", _detect_category(question))
+
+    if anchor is None:
+        anchor = world.get("base_rate_estimate", 0.40)
 
     # Deterministic seed from question if not provided
     if seed is None:
@@ -433,11 +444,17 @@ def generate_population_offline(
 
         # Temperature-stratified jitter (arxiv 2510.01218)
         tier = TEMP_TIERS[bg.get("temp_tier", "calibrator")]
-        center = bg[category]
+
+        # Archetype deviation: how much this background pushes away from anchor
+        # bg[category] is centered around ~0.42; deviation = bg[category] - 0.42
+        archetype_mean = 0.42  # mean of all background category biases
+        deviation = (bg[category] - archetype_mean) * 1.5  # amplify differences
+
+        center = anchor + deviation
         jitter = rng.gauss(0, tier["jitter_std"])
-        # Contrarians get pushed away from 0.5
+        # Contrarians get pushed away from anchor
         if pers["contrarian_factor"] > 0.1:
-            jitter += rng.choice([-1, 1]) * pers["contrarian_factor"] * 0.20
+            jitter += rng.choice([-1, 1]) * pers["contrarian_factor"] * 0.25
         initial_score = max(0.02, min(0.98, center + jitter))
 
         confidence = max(0.2, min(0.95, 0.5 + rng.gauss(0, 0.15)))
@@ -802,7 +819,7 @@ def swarm_score_offline(
     from src.aggregator import aggregate
 
     world = build_world_offline(question, context)
-    agents, agent_gen_ms = generate_population_offline(question, world, n_agents)
+    agents, agent_gen_ms = generate_population_offline(question, world, n_agents, anchor=market_price)
     agents, sim_loop_ms = run_simulation_offline(question, agents, rounds, peer_sample_size)
     result = aggregate(agents, market_price)
 

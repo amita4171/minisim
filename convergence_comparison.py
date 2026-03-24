@@ -37,7 +37,7 @@ def run_comparison():
 
         for n_rounds in [3, 5]:
             # Generate fresh population each time (same seed for fair comparison)
-            agents, _ = generate_population_offline(question, world, n_agents=50, seed=42)
+            agents, _ = generate_population_offline(question, world, n_agents=50, seed=42, anchor=qdata["market_price"])
             agents, _ = run_simulation_offline(question, agents, n_rounds=n_rounds, peer_sample_size=5, seed=42)
 
             # Compute per-round metrics
