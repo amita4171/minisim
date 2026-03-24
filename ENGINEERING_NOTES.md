@@ -347,14 +347,14 @@ FastAPI `BackgroundTasks` runs after response. If the server crashes mid-predict
 ## Technical Debt Inventory
 
 1. **Router thresholds unvalidated** — 0.05/0.10 set from 10-question benchmark
-2. **Calibration not applied at inference** — CalibrationTransformer fitted but never called in production pipeline
+2. ~~**Calibration not applied at inference**~~ — FIXED: Platt correction now runs on every prediction
 3. **In-memory API state** — `_predictions` dict lost on restart
 4. **SQLite for production** — needs PostgreSQL migration
 5. **No API endpoint tests** — FastAPI endpoints untested
-6. **Survey engine may be dead weight** — 657 lines across 2 files, unclear product fit vs Simile
+6. ~~**Survey engine**~~ — REMOVED: -657 lines
 7. **11 files import from offline_engine** — backward compat re-exports add complexity
 8. **No structured logging** — using print() for progress, logger for errors, inconsistent
-9. **Hardcoded Metaculus bot token** in `metaculus_bot.py` default env var
+9. ~~**Hardcoded Metaculus bot token**~~ — FIXED: requires env var, no default
 10. **No monitoring/alerting** — no Sentry, no uptime checks, no latency tracking
 11. **Metaculus Bot Benchmarking access not granted** — need to email api-requests@metaculus.com to unlock resolution + community prediction data on 250+ questions
 
