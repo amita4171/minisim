@@ -30,15 +30,8 @@ from src.llm_engine import (
     PERSONA_NUDGES,
     DELIBERATION_NUDGES,
 )
-from src.offline_engine import (
-    BACKGROUNDS,
-    PERSONALITIES,
-    TEMP_TIERS,
-    _detect_category,
-    _generate_pressures,
-    _make_name,
-    build_world_offline,
-)
+from src.archetypes import BACKGROUNDS, PERSONALITIES, TEMP_TIERS, _make_name
+from src.world_templates import _detect_category, _generate_pressures, build_world_offline
 from src.aggregator import aggregate
 
 
