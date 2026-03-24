@@ -106,6 +106,23 @@ def cmd_dashboard(args):
     subprocess.run(["streamlit", "run", "streamlit_app.py"])
 
 
+def cmd_calibrate(args):
+    """Fit or apply calibration model."""
+    from src.calibration import CalibrationTransformer, fit_calibration_from_backtest
+
+    if args.fit:
+        ct = fit_calibration_from_backtest(args.backtest_file)
+    elif args.show:
+        ct = CalibrationTransformer.load()
+        ct.print_summary()
+    elif args.correct:
+        ct = CalibrationTransformer.load()
+        corrected = ct.transform(args.correct)
+        print(f"  Raw: {args.correct:.3f} -> Calibrated: {corrected:.3f} ({corrected - args.correct:+.3f})")
+    else:
+        ct = fit_calibration_from_backtest()
+
+
 def cmd_track_record(args):
     """Show the prediction track record."""
     from src.track_record import TrackRecord
@@ -199,6 +216,13 @@ def main():
     p = subparsers.add_parser("arbitrage", help="Find cross-platform arbitrage")
     p.add_argument("--min-spread", type=float, default=0.05)
 
+    # calibrate
+    p = subparsers.add_parser("calibrate", help="Fit or show calibration model")
+    p.add_argument("--fit", action="store_true", help="Fit from backtest data")
+    p.add_argument("--show", action="store_true", help="Show current model")
+    p.add_argument("--correct", type=float, default=None, help="Correct a probability")
+    p.add_argument("--backtest-file", default="results/backtest_results.json")
+
     args = parser.parse_args()
     if not args.command:
         parser.print_help()
@@ -214,6 +238,7 @@ def main():
         "dashboard": cmd_dashboard,
         "track-record": cmd_track_record,
         "arbitrage": cmd_arbitrage,
+        "calibrate": cmd_calibrate,
     }
     commands[args.command](args)
 

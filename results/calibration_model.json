@@ -1,0 +1,59 @@
+{
+  "method": "platt",
+  "is_fitted": true,
+  "n_samples": 100,
+  "ece": 0.2593,
+  "platt_a": 1.8252,
+  "platt_b": 0.7111,
+  "temperature": null,
+  "calibration_curve": {
+    "0.0-0.1": {
+      "count": 3,
+      "mean_predicted": 0.0975,
+      "actual_rate": 0.0,
+      "gap": -0.0975
+    },
+    "0.1-0.2": {
+      "count": 25,
+      "mean_predicted": 0.1552,
+      "actual_rate": 0.04,
+      "gap": -0.1152
+    },
+    "0.2-0.3": {
+      "count": 18,
+      "mean_predicted": 0.2561,
+      "actual_rate": 0.0,
+      "gap": -0.2561
+    },
+    "0.3-0.4": {
+      "count": 15,
+      "mean_predicted": 0.3497,
+      "actual_rate": 0.6,
+      "gap": 0.2503
+    },
+    "0.4-0.5": {
+      "count": 12,
+      "mean_predicted": 0.463,
+      "actual_rate": 0.9167,
+      "gap": 0.4536
+    },
+    "0.5-0.6": {
+      "count": 8,
+      "mean_predicted": 0.546,
+      "actual_rate": 0.875,
+      "gap": 0.329
+    },
+    "0.6-0.7": {
+      "count": 14,
+      "mean_predicted": 0.6381,
+      "actual_rate": 1.0,
+      "gap": 0.3619
+    },
+    "0.7-0.8": {
+      "count": 5,
+      "mean_predicted": 0.7497,
+      "actual_rate": 1.0,
+      "gap": 0.2503
+    }
+  }
+}
