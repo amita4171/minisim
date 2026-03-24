@@ -1,0 +1,71 @@
+{
+  "method": "platt",
+  "is_fitted": true,
+  "n_samples": 544,
+  "ece": 0.0856,
+  "platt_a": 1.4695,
+  "platt_b": 0.087,
+  "temperature": null,
+  "calibration_curve": {
+    "0.0-0.1": {
+      "count": 99,
+      "mean_predicted": 0.0768,
+      "actual_rate": 0.0101,
+      "gap": -0.0667
+    },
+    "0.1-0.2": {
+      "count": 120,
+      "mean_predicted": 0.1344,
+      "actual_rate": 0.05,
+      "gap": -0.0844
+    },
+    "0.2-0.3": {
+      "count": 37,
+      "mean_predicted": 0.2523,
+      "actual_rate": 0.1081,
+      "gap": -0.1442
+    },
+    "0.3-0.4": {
+      "count": 32,
+      "mean_predicted": 0.353,
+      "actual_rate": 0.5,
+      "gap": 0.147
+    },
+    "0.4-0.5": {
+      "count": 43,
+      "mean_predicted": 0.4507,
+      "actual_rate": 0.5116,
+      "gap": 0.061
+    },
+    "0.5-0.6": {
+      "count": 36,
+      "mean_predicted": 0.5545,
+      "actual_rate": 0.6111,
+      "gap": 0.0566
+    },
+    "0.6-0.7": {
+      "count": 32,
+      "mean_predicted": 0.6509,
+      "actual_rate": 0.75,
+      "gap": 0.0991
+    },
+    "0.7-0.8": {
+      "count": 33,
+      "mean_predicted": 0.751,
+      "actual_rate": 0.8788,
+      "gap": 0.1278
+    },
+    "0.8-0.9": {
+      "count": 67,
+      "mean_predicted": 0.8604,
+      "actual_rate": 0.9254,
+      "gap": 0.065
+    },
+    "0.9-1.0": {
+      "count": 45,
+      "mean_predicted": 0.9248,
+      "actual_rate": 1.0,
+      "gap": 0.0752
+    }
+  }
+}

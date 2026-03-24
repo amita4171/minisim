@@ -1,0 +1,1850 @@
+[
+  {
+    "question": "Will Donald Trump win the 2024 presidential election?",
+    "market_price": 0.4999,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 3750751.084688661
+  },
+  {
+    "question": "Will Trump win North Carolina in the 2024 Presidential Election?",
+    "market_price": 0.9438,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 298163.0918125409
+  },
+  {
+    "question": "Will any significant ticket (RFK/Trump/Harris+VPs) change before election day?",
+    "market_price": 0.9697,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 337798.77600367443
+  },
+  {
+    "question": "Will Trump apologize for something before Election Day?",
+    "market_price": 0.0425,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 89636.25393352259
+  },
+  {
+    "question": "If Trump is elected President in 2024, will he win the popular vote?",
+    "market_price": 0.4295,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 112026.70359503629
+  },
+  {
+    "question": "Will Javier Milei win the 2023 Argentinian presidential election?",
+    "market_price": 0.6102,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 69399.89494073698
+  },
+  {
+    "question": "Will the reforms of the new president of Argentina(Milei) be good for the country's economy by 2024",
+    "market_price": 0.055,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 43095.2081130371
+  },
+  {
+    "question": "Will the US economy have a recession [two quarters of negative GDP growth] in 2024?",
+    "market_price": 0.045,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 10060.142607499585
+  },
+  {
+    "question": "Will Americans rate the economy positively before the end of 2024?",
+    "market_price": 0.1244,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 3899.3131719279836
+  },
+  {
+    "question": "Will Republican approval of the economy skyrocket to 80%+ in 2025?",
+    "market_price": 0.0478,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 11693.132672633774
+  },
+  {
+    "question": "Will Argentina dollarize its economy before the end of 2024?",
+    "market_price": 0.045,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 7688.799266325631
+  },
+  {
+    "question": "Will Argentina's economy be broadly considered to be in better shape November 19th 2024 than it was November 19th 2023?",
+    "market_price": 0.9255,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 2906.2644133385584
+  },
+  {
+    "question": "Will there be a huge economic crisis that will impact the global economy in 2024?",
+    "market_price": 0.0916,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 2759.1337832408544
+  },
+  {
+    "question": "Will Israel's economy shrink in 2024?",
+    "market_price": 0.1925,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 2458.0866146058593
+  },
+  {
+    "question": "Will the German economy enter a recession during 2023?",
+    "market_price": 0.2181,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 1526.8268241093854
+  },
+  {
+    "question": "Will the U.S. economy have a soft landing (Dec/2025)?",
+    "market_price": 0.5335,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1279
+  },
+  {
+    "question": "Will Americans rate the economy positively before the end of 2025?",
+    "market_price": 0.0973,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4148.430308186961
+  },
+  {
+    "question": "Is immigration a net positive for a country's economy?",
+    "market_price": 0.14,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 2991.192488814736
+  },
+  {
+    "question": "In 2024, will the German parliament create an off-budget fund (Sonderverm\u00f6gen) to support the German economy?",
+    "market_price": 0.046,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 3002.2917883107884
+  },
+  {
+    "question": "Will over 90% of Manifold users [who vote] declare they would like to live in a country with a free market economy?",
+    "market_price": 0.12,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 705.6733085948885
+  },
+  {
+    "question": "Will Carl Shulman soon claim that AI forecasting systems will play an integral role in the post-AGI economy?",
+    "market_price": 0.9593,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 6507.687139471037
+  },
+  {
+    "question": "Will Argentina's Minister of Economy resign before the general elections?",
+    "market_price": 0.0379,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 5653.885616644081
+  },
+  {
+    "question": "In November, will people think Labour would be the best political party at handling the economy?",
+    "market_price": 0.9011,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 514.2525620995516
+  },
+  {
+    "question": "Is Chinas Economy Collapsing ?",
+    "market_price": 0.5062,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 1519.2001286472491
+  },
+  {
+    "question": "Will the UK economy start growing at more than 2% by 2024?",
+    "market_price": 0.4439,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 219.0497697100448
+  },
+  {
+    "question": "Will I still believe that 30% of the American Economy was firewood in 1830 after reading the original paper?",
+    "market_price": 0.364,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 180.8407239235499
+  },
+  {
+    "question": "Will The Nigerian economy grow and witness tremendous economic growth and increased GDP by second quarter of 2024?",
+    "market_price": 0.1464,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 119.18043496535128
+  },
+  {
+    "question": "Will France's economy grow in 2024?",
+    "market_price": 0.9325,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 333
+  },
+  {
+    "question": "Will Republicans rate the economy positively before the end of 2025?",
+    "market_price": 0.9618,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 429
+  },
+  {
+    "question": "will Russian economy grow by the end of the 2022 by more than 5 percent?",
+    "market_price": 0.4653,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 51
+  },
+  {
+    "question": "Will the Indian economy exceed $4 trillion by April 1st, 2025? (End of financial year)",
+    "market_price": 0.1518,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 187.03736034373654
+  },
+  {
+    "question": "Will Republicans rate the economy positively on inauguration day 2025?",
+    "market_price": 0.2955,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 120
+  },
+  {
+    "question": "Will the economy of Vietnam falls into a recession before 2024?",
+    "market_price": 0.0729,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 480.878448683599
+  },
+  {
+    "question": "Should trump nationalize the economy?",
+    "market_price": 0.3868,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 278.9999999999995
+  },
+  {
+    "question": "\ud83c\uddee\ud83c\uddf1Israel-Iran\ud83c\uddee\ud83c\uddf7 war ends before July 2025?",
+    "market_price": 0.89,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 117942.36975229399
+  },
+  {
+    "question": "Will a major war break out in 2025?",
+    "market_price": 0.9458,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 101357.6927569224
+  },
+  {
+    "question": "Will China Supply Arms to Russia in Ukraine War during 2023?",
+    "market_price": 0.0667,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 74129.17574450574
+  },
+  {
+    "question": "By 2025, will Google be in a winning position in the \"AI war\" against Microsoft?",
+    "market_price": 0.0667,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 40962.45734622707
+  },
+  {
+    "question": "Iran-Israel war before 2028?",
+    "market_price": 0.9527,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 41435.864819135684
+  },
+  {
+    "question": "Will the left/right culture war come for AI before the end of 2024?",
+    "market_price": 0.0426,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 32183.499421813423
+  },
+  {
+    "question": "Will Israel commit war crimes by cutting off food/water, electricity, and fuel to the Gaza Strip?",
+    "market_price": 0.7809,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 28356.63157541064
+  },
+  {
+    "question": "Will The US be at at war with another country by the end of 2023?",
+    "market_price": 0.049,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 11265.29363923395
+  },
+  {
+    "question": "Will there be a 48 hour ceasefire in the Israel-Hamas War by the end of 2023?",
+    "market_price": 0.968,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 38645.638890756396
+  },
+  {
+    "question": "Will Israel attack Greta Thunberg's ship?",
+    "market_price": 0.1507,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 112330.46429887686
+  },
+  {
+    "question": "Will any presidential candidate be shot at or assassinated before the end of the election? (Attempted or successful)",
+    "market_price": 0.5,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 95163.49788403724
+  },
+  {
+    "question": "Will the US successfully broker a ceasefire between Israel and Hamas by the end of 2023?",
+    "market_price": 0.0344,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 13537.571752971178
+  },
+  {
+    "question": "Will Democrats pass a substantial reconciliation bill before the midterm elections?",
+    "market_price": 0.184,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 11742.411285174829
+  },
+  {
+    "question": "Will Trump exact punishment on South Park?",
+    "market_price": 0.0382,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 9300.168247619107
+  },
+  {
+    "question": "Will someone in the world engage in stratospheric aerosol injection before the year 2030?",
+    "market_price": 0.4526,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 3123.23375507877
+  },
+  {
+    "question": "Will there be any catastrophic cascading natural disasters in 2023 or 2024?",
+    "market_price": 0.0323,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 12837.409415929069
+  },
+  {
+    "question": "Will a private Climate-tech startup be valued at $12B+ in 2023?",
+    "market_price": 0.4707,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 3145.8531193175313
+  },
+  {
+    "question": "Will there be clearly abnormally high rates of climate disasters in Summer 2023?",
+    "market_price": 0.9569,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 3510.492616998517
+  },
+  {
+    "question": "If I read the IPCC synthesis report for at least an hour will I become much more concerned about climate change?",
+    "market_price": 0.5274,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 371.20316173587935
+  },
+  {
+    "question": "Will there be a terrorist attack motivated by climate change in 2024?",
+    "market_price": 0.0639,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 2395.652657924935
+  },
+  {
+    "question": "In 2023, will dedicated crypto funds reallocate to climate?",
+    "market_price": 0.042,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1781.4296319223622
+  },
+  {
+    "question": "Will stratospheric aerosol injection be deployed in order to combat climate change before 2040?",
+    "market_price": 0.9527,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 3852.787828253748
+  },
+  {
+    "question": "Will President Biden declare National Emergency on climate before September?",
+    "market_price": 0.0826,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 295.3525797168985
+  },
+  {
+    "question": "Will any major climate anomaly (heatwave, storm, snow, etc.) hit a major city before July 15?",
+    "market_price": 0.2973,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 194.00357429012482
+  },
+  {
+    "question": "Will the World Bank or IMF establish a dedicated climate disaster relief fund of at least $50 billion by the end of 2025",
+    "market_price": 0.0925,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 215.26712778375034
+  },
+  {
+    "question": "Will a Republican candidate publicly declare climate change real by 2024?",
+    "market_price": 0.95,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 431.72833539458145
+  },
+  {
+    "question": "Will President Trump attempt to end the climate hysteria in 2025?",
+    "market_price": 0.6973,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 157.87608639242973
+  },
+  {
+    "question": "Will the US drop out of the Paris Climate Agreement by 2025?",
+    "market_price": 0.9082,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 973.8042717355249
+  },
+  {
+    "question": "Trump executive order severely limiting US charities & climate non-profits before Q3 2025?",
+    "market_price": 0.2224,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1080
+  },
+  {
+    "question": "Will climate protesters make it onto the track at the 2024 Formula 1 British Grand Prix?",
+    "market_price": 0.0728,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 274.098800775333
+  },
+  {
+    "question": "Major climate relocation policy announced by EOY2025?",
+    "market_price": 0.1749,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 120
+  },
+  {
+    "question": "German Ifo business climate index above 90 points in 2025",
+    "market_price": 0.3077,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 50
+  },
+  {
+    "question": "Will there be any concrete climate actions agreed to at the COP28 climate summit?",
+    "market_price": 0.5623,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 25
+  },
+  {
+    "question": "5. Multiple serious efforts to put AI data centers in space will take shape.",
+    "market_price": 0.9462,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 71127.63098884023
+  },
+  {
+    "question": "Will Donald Trump claim to have a solution for the existential threat of AI (but not say what it is) by the end of 2023?",
+    "market_price": 0.0339,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 17132.044442522918
+  },
+  {
+    "question": "Will we fund \"Brain-inspired AGI\"?",
+    "market_price": 0.19,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 22738.894748445215
+  },
+  {
+    "question": "Will Y. Lecun turn AI doomer by end 2025 ?",
+    "market_price": 0.0315,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 14909.527141330824
+  },
+  {
+    "question": "Will a significant AI generated meme occur before 2025?",
+    "market_price": 0.2157,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 7341.98258930713
+  },
+  {
+    "question": "Will Eliezer Yudkowsky get fully blaked before 2027?",
+    "market_price": 0.1876,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 3364.654601616106
+  },
+  {
+    "question": "Will an artificial intelligence system play a major artistic role in the 2024 Olympic opening ceremonies?",
+    "market_price": 0.05,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 6179.191603735996
+  },
+  {
+    "question": "Will AI have a sudden trillion+ dollar impact by the end of 2024?",
+    "market_price": 0.0718,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 2829.0317151710983
+  },
+  {
+    "question": "Will a movie featuring an AI-generated actor win a major film award by the end of 2024?",
+    "market_price": 0.1312,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1151.028716090199
+  },
+  {
+    "question": "China gets mentioned more times than AI in the 2024 US Presidential Debates",
+    "market_price": 0.9625,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 6799.468967638288
+  },
+  {
+    "question": "Will Trump repeatedly raise concerns about existential risk from AI before the end of 2025?",
+    "market_price": 0.0311,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 9504.415893927391
+  },
+  {
+    "question": "Will a significant AI generated meme occur before 2026?",
+    "market_price": 0.0697,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4248.760331402261
+  },
+  {
+    "question": "New York State RAISE Act becomes law?",
+    "market_price": 0.9573,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 51770.15577223602
+  },
+  {
+    "question": "Will an LLM or some form of AI system be found out to perform arbitrage on Manifolds and be profitable before Q2 2024?",
+    "market_price": 0.0653,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1934.3129863575784
+  },
+  {
+    "question": "Will a new type of AI model replace transformers as the state-of-the-art artificial intelligence technology by 2024?",
+    "market_price": 0.0968,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1810.689065866265
+  },
+  {
+    "question": "Will AI replicate the book cover of \"Artificial Intelligence: Safety and Security\" before 2026?",
+    "market_price": 0.9674,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 470.838797044957
+  },
+  {
+    "question": "Will Bitcoin return to its pre-FTX-crash value of >$20,000 within the next month?",
+    "market_price": 0.0335,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4385.948217573436
+  },
+  {
+    "question": "[Forecast] Will Bitcoin close higher March 25th than March 20th?",
+    "market_price": 0.291,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 2783.398234909139
+  },
+  {
+    "question": "Will Bitcoin will be lower than $60,000 at some point before May 1st, 2024?",
+    "market_price": 0.6268,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 1257.6193850260179
+  },
+  {
+    "question": "Will anyone say \"Bitcoin\", \"Crypto\", \"Blockchain\", \"World Liberty Financial\" or similar during the Vance vs Walz debate?",
+    "market_price": 0.0356,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 9222.310520235602
+  },
+  {
+    "question": "Will I make it to 180 days (6 months) streak with Shakepay's \"ShakingSats\" free Satoshi program?",
+    "market_price": 0.48,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 382.15215141659604
+  },
+  {
+    "question": "Will Vanguard allow users to buy iShares Bitcoin Trust (IBIT) or other spot cryptocurrency ETF's before the end of 2025?",
+    "market_price": 0.9619,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 2000.390934063853
+  },
+  {
+    "question": "Will the identity of the March 2, 2025 crypto long bet whale be revealed?",
+    "market_price": 0.96,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 6022.742108216403
+  },
+  {
+    "question": "Will President Trump explicitly say \u201cBitcoin\u201d or \u201cBTC\u201d in the State of the Union tonight?",
+    "market_price": 0.0771,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 397.9743657727662
+  },
+  {
+    "question": "\ud83e\ude99 Crypto: How Will Bitcoin Close On Tue. Mar. 19th Compared To Its Close On Mon. Mar. 18th?",
+    "market_price": 0.0564,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 875.1445194317279
+  },
+  {
+    "question": "BTC above $107K on the 31st?",
+    "market_price": 0.9079,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 259.1910904326918
+  },
+  {
+    "question": "[Forecast] Will Bitcoin close higher March 30th than March 25th?",
+    "market_price": 0.4863,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 313.41330177841655
+  },
+  {
+    "question": "Will Bitcoin total balances on exchanges fall below 1.75 million BTC this year?",
+    "market_price": 0.0383,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 683.6056514649597
+  },
+  {
+    "question": "\ud83e\ude99 Crypto: How Will Bitcoin Cash Close On Tue. Mar. 19th Compared To Its Close On Mon. Mar. 18th?",
+    "market_price": 0.2125,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 630.000099009901
+  },
+  {
+    "question": "Will the price of Bitcoin drop below $40,000 before Feb 1st?",
+    "market_price": 0.9679,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 1729.5915877898833
+  },
+  {
+    "question": "\ud83e\ude99 Crypto: How Will Bitcoin Cash Close On Wed. Mar. 20th Compared To Its Close On Tue. Mar. 19th?",
+    "market_price": 0.7264,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 117.16780137396137
+  },
+  {
+    "question": "Trump makes remote appearance at Bitcoin 2025 in Las Vegas?",
+    "market_price": 0.2261,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 85
+  },
+  {
+    "question": "Bitcoin reaches $111,000 by 10/20/2025 at 10 PM EST?",
+    "market_price": 0.0315,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4544.400000000001
+  },
+  {
+    "question": "Will Shiba Inu remain in Coinbase's top 10 through March?",
+    "market_price": 0.3673,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 75
+  },
+  {
+    "question": "Will the World Health Organization (WHO) declare the COVID-19 pandemic officially over by the end of 2023?",
+    "market_price": 0.47,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 13378.31009123465
+  },
+  {
+    "question": "Will we fund \"Reforming regulations for pandemic countermeasures\"?",
+    "market_price": 0.8528,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 3204.967070100371
+  },
+  {
+    "question": "Will we fund \"Pandemic Prevention Pledge\"?",
+    "market_price": 0.3282,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4218.814285587302
+  },
+  {
+    "question": "Will a new pandemic emerge and be declared by WHO before the end of 2024?",
+    "market_price": 0.0522,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 2780.4588649276902
+  },
+  {
+    "question": "Will by the end of 2022 the official consensus be that the  COVID 19 pandemic was most likely result of a lab leak.",
+    "market_price": 0.0493,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1384.6869853783714
+  },
+  {
+    "question": "Will the US cede sovereignty on pandemic response issues to the World Health Organization by the end of 2022?",
+    "market_price": 0.0378,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1443.7081828977157
+  },
+  {
+    "question": "H5N1 pandemic occurs before 2026, and the case fatality rate is <5%",
+    "market_price": 0.0302,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1497.73552704349
+  },
+  {
+    "question": "In a year, will Peter Wildeford believe that pandemics are a larger share of x-risk than nuclear weapons?",
+    "market_price": 0.49,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 5054.08651898464
+  },
+  {
+    "question": "In US, pandemic fades away to pre-Delta case levels or lower, with occasional flare-ups",
+    "market_price": 0.0471,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1181.7298278804346
+  },
+  {
+    "question": "2023: Will the WHO declare that the world reached the Sars-CoV-2 post-pandemic period?",
+    "market_price": 0.9359,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 2081.891156956056
+  },
+  {
+    "question": "[Metaculus] Will the Pandemic Agreement be approved at the May 2024 World Health Assembly?",
+    "market_price": 0.04,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 2481.7080441671874
+  },
+  {
+    "question": "By the end of June 2025, will closed-source LLMs increase access to pandemic agents?",
+    "market_price": 0.4661,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 292
+  },
+  {
+    "question": "\"Will the World Health Organization officially declare H5N1 a pandemic before December 31st 2025",
+    "market_price": 0.0307,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 747.9999999999995
+  },
+  {
+    "question": "Will NYC Subway ridership be 80% of pre-pandemic levels or higher at the end of Juneteenth 2025?",
+    "market_price": 0.1818,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 273.5182649768158
+  },
+  {
+    "question": "Will at least 10 countries ratify a new international treaty on pandemic prevention and preparedness before 2025?",
+    "market_price": 0.1545,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 906.3158937017885
+  },
+  {
+    "question": "Will a pandemic be declared due to H3N2 in 2023?",
+    "market_price": 0.04,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1485.4795902282121
+  },
+  {
+    "question": "Will a new pandemic-causing pathogen/virus emerge by the end of this year?",
+    "market_price": 0.0306,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 557.1496594568475
+  },
+  {
+    "question": "Will excess pandemic deaths for US 15-64yos stay below 10%?",
+    "market_price": 0.635,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 423.9730145827544
+  },
+  {
+    "question": "Will Biden say we need to prepare for future pandemics during his State of The Union on 02/07/2023?",
+    "market_price": 0.1318,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 238.83467589940673
+  },
+  {
+    "question": "Will the pandemic still be \"a big deal\" by the time of Star Spangled Gamblers' 2023 Golden Modelo awards?",
+    "market_price": 0.2153,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 100.25085344496661
+  },
+  {
+    "question": "will a new pandemic emerge and affect more than 3 countries by 2024?",
+    "market_price": 0.2802,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 251.7120538634446
+  },
+  {
+    "question": "Will NYC Subway ridership be 70% of pre-pandemic levels or higher at the end of 2024?",
+    "market_price": 0.9633,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 435
+  },
+  {
+    "question": "Supreme Court rules in favor of Trump's tariffs?",
+    "market_price": 0.25,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 78868.64560803029
+  },
+  {
+    "question": "Will the Supreme Court permit Biden's student loan forgiveness program to proceed?",
+    "market_price": 0.0479,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 26053.809092673473
+  },
+  {
+    "question": "Supreme Court upholds unconstitutionality of broad tariffs?",
+    "market_price": 0.7522,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 25458.453826814628
+  },
+  {
+    "question": "Will the Supreme Court rule unanimously to keep trump on the CO primary ballot?",
+    "market_price": 0.8993,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 5942.721920596199
+  },
+  {
+    "question": "Will the Supreme Court rule on whether or not Donald Trump engaged/aided an insurrection on January 6?",
+    "market_price": 0.0982,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 7307.667304828306
+  },
+  {
+    "question": "Will any US Supreme Court justice retire before the 2024 elections?",
+    "market_price": 0.0305,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 10330.489210613972
+  },
+  {
+    "question": "Will Clarence Thomas rule with the Majority on Jack Smith's Supreme Court petition to see if Donald Trump has immunity?",
+    "market_price": 0.5585,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 4396.5494548768875
+  },
+  {
+    "question": "Will the US Supreme Court rule by Election Day 2024 that Trump is eligible to run for President of the United States?",
+    "market_price": 0.9433,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 9331.625748754008
+  },
+  {
+    "question": "Will there be a serious attack on a Supreme Court justice or their family before the end of 2022",
+    "market_price": 0.0332,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4102.463066190812
+  },
+  {
+    "question": "Will the Supreme Court overrule Grutter v. Bollinger and hold that institutions of higher education cannot use race as a factor in admissions?",
+    "market_price": 0.8386,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 2884.7079749087343
+  },
+  {
+    "question": "Will Clarence Thomas rule in favor of Presidential immunity in the Supreme Court petition by Donald Trump?",
+    "market_price": 0.2544,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 2422.4957911766433
+  },
+  {
+    "question": "Will the Supreme Court decline to intervene in any case involving Trump before 2024 election?",
+    "market_price": 0.8672,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 11059.987733228312
+  },
+  {
+    "question": "Will the US Supreme Court disqualify Donald Trump from holding presidential office under Section 3 of the Constitution?",
+    "market_price": 0.0408,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 3688.8655152870715
+  },
+  {
+    "question": "Will the Supreme Court of the United States overturn the ruling of the Colorado Supreme Courts Trump Ballot Ban (Feb 8)",
+    "market_price": 0.9473,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 4957.0514141188305
+  },
+  {
+    "question": "Will the Supreme Court make a ruling about affirmative action on or before June 22nd, 2023?",
+    "market_price": 0.0676,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 5688.2616278498035
+  },
+  {
+    "question": "Will China be competitive in the LLM race compared to OpenAI, Anthropic, and Google by end of 2024?",
+    "market_price": 0.8668,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 286105.8391054465
+  },
+  {
+    "question": "14. Will there be more than 25 million confirmed COVID cases in China by the end of 2023?",
+    "market_price": 0.1731,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 273224.50900581526
+  },
+  {
+    "question": "Will China's Covid Zero policy end in November or December, 2022?",
+    "market_price": 0.9512,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 61245.90010850841
+  },
+  {
+    "question": "Will Apple be exempt from the U.S. tariffs on China by the end of April?",
+    "market_price": 0.4333,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 43224.22414182891
+  },
+  {
+    "question": "Can China restore economic growth to more than 5% in 2023?",
+    "market_price": 0.8418,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 30103.5485625238
+  },
+  {
+    "question": "Will China provide weapons to Russia in 2023?",
+    "market_price": 0.0716,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 29705.624805656746
+  },
+  {
+    "question": "Will China be successful in brokering a peace deal between Russia and Ukraine?",
+    "market_price": 0.034,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 11123.428563762547
+  },
+  {
+    "question": "Will Italy extend the Belt and Road initiative with China at March 2024?",
+    "market_price": 0.0338,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 8146.248309442817
+  },
+  {
+    "question": "Will China Supply Arms to Russia during 2024?",
+    "market_price": 0.3833,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 13191.088082825483
+  },
+  {
+    "question": "China housing/real estate crisis by Sep 2024? (1000M subsidy)",
+    "market_price": 0.8882,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 28448.97896332732
+  },
+  {
+    "question": "Will more than 100,000 people die of Covid-19 in China during 2022?",
+    "market_price": 0.6964,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 5959.343553140771
+  },
+  {
+    "question": "Will there be news before 2030 that the conditions of Uyghurs in China are worse than previously reported?",
+    "market_price": 0.8024,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 2921.350957905208
+  },
+  {
+    "question": "Will China use force to attack Taiwan in 2022?",
+    "market_price": 0.0311,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 5473.703944848639
+  },
+  {
+    "question": "Will North Korea send troops to Ukraine to help Russia before 2025?",
+    "market_price": 0.0325,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 266522.71078070713
+  },
+  {
+    "question": "Will Russia invade Ukraine before the end of February?",
+    "market_price": 0.7327,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 202627.2463596626
+  },
+  {
+    "question": "Will Russia invade Ukraine before the Winter Olympics conclude?",
+    "market_price": 0.0988,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 63466.9348894732
+  },
+  {
+    "question": "Will Russia accuse Ukraine of being behind the Moscow Concert terrorist attack by the end of April?",
+    "market_price": 0.9143,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 17627.28723695345
+  },
+  {
+    "question": "Will the US lift restrictions on Ukraine striking targets in Russia? Aka \"Deep Strikes\"?",
+    "market_price": 0.9658,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 67686.1962642009
+  },
+  {
+    "question": "Will Russia begin an invasion of Ukraine before the Olympics end?",
+    "market_price": 0.1959,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 17827.908670194458
+  },
+  {
+    "question": "Will a French soldier in Ukraine be killed by Russia before the end of 2024?",
+    "market_price": 0.0349,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 9708.540656743617
+  },
+  {
+    "question": "Will the US permit Ukraine to strike into Russia before 2025",
+    "market_price": 0.967,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 10469.199188004983
+  },
+  {
+    "question": "Will there be a Ceasefire between Ukraine and Russia before the end of 2024?",
+    "market_price": 0.0318,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 9429.096174592505
+  },
+  {
+    "question": "Will Tesla produce more than 1500 Cybertrucks in 2023?",
+    "market_price": 0.0676,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 43971.91096031676
+  },
+  {
+    "question": "Will Tesla have a ChatGPT moment in self-driving cars by 2024 year-end?",
+    "market_price": 0.0498,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 41262.27357933224
+  },
+  {
+    "question": "Has Tesla been grossly misrepresenting the range of it's semi truck?",
+    "market_price": 0.1137,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 15909.407436521276
+  },
+  {
+    "question": "Will Tesla TSLA reach a new all time high by end of June 2025? ($407)",
+    "market_price": 0.96,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 53018.72613360503
+  },
+  {
+    "question": "Will Tesla Cybertruck Start Delivering to Customers in 2023?",
+    "market_price": 0.13,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 20331.486069465296
+  },
+  {
+    "question": "Will Tesla reach $250 before the end of 2023?",
+    "market_price": 0.8465,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 14624.248547918498
+  },
+  {
+    "question": "Will Tesla (TSLA) Shareholders' vote result in incorporation in Texas (before the end of this year's annual meeting)",
+    "market_price": 0.9231,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 16889.01186105983
+  },
+  {
+    "question": "Will tesla ($TSLA) be above 210$/s in one year? [13.03.2025]",
+    "market_price": 0.8738,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 20851.4728814838
+  },
+  {
+    "question": "Will Tesla deliver its first Cybertruck before 11/30/2023",
+    "market_price": 0.0558,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 18063.809389990824
+  },
+  {
+    "question": "Will a Tesla Cybertruck be delivered to a retail customer in 2023?",
+    "market_price": 0.9438,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 13283.788196235628
+  },
+  {
+    "question": "Will I be interning at Tesla this summer?",
+    "market_price": 0.1114,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4853.388513051613
+  },
+  {
+    "question": "Will Chevrolet deliver the Silverado EV to the general public before the Tesla Cybertruck.",
+    "market_price": 0.0797,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 5889.82968816407
+  },
+  {
+    "question": "Will Apple announce a partnership with OpenAI regarding Siri during WWDC 2024?",
+    "market_price": 0.8544,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 1873551.6095512449
+  },
+  {
+    "question": "Will the Apple Vision Pro be successful enough to revive interest in mixed reality and the metaverse?",
+    "market_price": 0.0367,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 84521.39206541202
+  },
+  {
+    "question": "Will Apple sell 500,000 units of Vision Pro in 2024?",
+    "market_price": 0.0325,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 201302.00478743538
+  },
+  {
+    "question": "Someone dies wearing Apple Vision Pro in 2024",
+    "market_price": 0.0638,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 45241.189222277084
+  },
+  {
+    "question": "Will there be a version of Apple Vision Pro that costs more than $3499 by the time we can order one?",
+    "market_price": 0.62,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 35073.34783451813
+  },
+  {
+    "question": "Will Apple announce new hardware at WWDC 2024?",
+    "market_price": 0.1682,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 90310.43782916485
+  },
+  {
+    "question": "Apple announces AI company purchase for over $500m by end of 2025",
+    "market_price": 0.04,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 50846.63472036905
+  },
+  {
+    "question": "Will Apple\u2019s next iPhone (2024) include an on-device LLM \u201cChatBot\u201d?",
+    "market_price": 0.07,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 47946.86984210429
+  },
+  {
+    "question": "Will Apple announce a partnership with OpenAI during WWDC 2024?",
+    "market_price": 0.96,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 152271.32961487566
+  },
+  {
+    "question": "Will Apple Vision Pro be a flop?",
+    "market_price": 0.9688,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 19982.440595809814
+  },
+  {
+    "question": "Will Apple sell more than 500k Vision Pro headsets before January 20th, 2025?",
+    "market_price": 0.0844,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 30268.15948188008
+  },
+  {
+    "question": "Apple announces new iPads this week",
+    "market_price": 0.1128,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 15075.827060053187
+  },
+  {
+    "question": "Will Apple announce a major update to Siri at WWDC 2023?",
+    "market_price": 0.0604,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 12869.85493688574
+  },
+  {
+    "question": "On 20 March 2025, the Apple stock will be higher than on 15 March 2025?\n",
+    "market_price": 0.5548,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 14577.787311820088
+  },
+  {
+    "question": "Will Apple stock be higher on 23 August 2025 than on 15 June 2025?",
+    "market_price": 0.61,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 4922.448057758837
+  },
+  {
+    "question": "Will Apple announce an iPhone \u201cUltra\u201d in  September 2023?",
+    "market_price": 0.0432,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 9333.242304439456
+  },
+  {
+    "question": "Will the Federal Reserve cut interest rates in September 2025?",
+    "market_price": 0.9601,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 70210.0401457247
+  },
+  {
+    "question": "Will the US Fed announce increase in interest rates on Sep 20?",
+    "market_price": 0.0355,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 30589.870458687496
+  },
+  {
+    "question": "Will there be another interest rate hike in Canada in October?",
+    "market_price": 0.64,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 263.4689911207133
+  },
+  {
+    "question": "Will the Russian Central Bank raise interest rates to or above 20% by EOY 2023?",
+    "market_price": 0.0317,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 2368.6711213766084
+  },
+  {
+    "question": "Matthew Yglesias 2024 predictions vs Manifold Time Capsule: Fed does not cut interest rates by more than 100 basis point",
+    "market_price": 0.6686,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 691.2901139110558
+  },
+  {
+    "question": "Will the Bank of England rase the UK's interest rate at their 11th May meeting?",
+    "market_price": 0.9559,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 736.0973894809034
+  },
+  {
+    "question": "Will Nancy Pelosi visit Taiwan during summer recess?",
+    "market_price": 0.9698,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 57544.13523029242
+  },
+  {
+    "question": "Will Germany experience negative economic growth for two consecutive quarters in 2023? (Recession in Germany)",
+    "market_price": 0.8691,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 15343.858679332452
+  },
+  {
+    "question": "Will the US enter a recession by first half of 2025? (Two quarters negative GDP growth)",
+    "market_price": 0.1008,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 29675.774197782695
+  },
+  {
+    "question": "Will there be a US recession before the end of 2022?",
+    "market_price": 0.0539,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 6273.303102356627
+  },
+  {
+    "question": "Will there be a recession in the EU during the 2022-2023 winter?",
+    "market_price": 0.2002,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4017.761765711084
+  },
+  {
+    "question": "Will the US experience a recession in 2022?",
+    "market_price": 0.4102,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 2457.148066104159
+  },
+  {
+    "question": "Will Israel go into a recession in 2024",
+    "market_price": 0.0624,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 3390.671248655998
+  },
+  {
+    "question": "Will the UK enter a technical recession in 2025?",
+    "market_price": 0.0633,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4704.215343884284
+  },
+  {
+    "question": "Will India go into Recession by the end of 2024?",
+    "market_price": 0.0831,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1692.2284498852669
+  },
+  {
+    "question": "Will the UK enter into a recession in the next 6 months (by the 1st of July 2024)",
+    "market_price": 0.96,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 2049.270217384544
+  },
+  {
+    "question": "Will Australia go into recession during 2022?",
+    "market_price": 0.045,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 981.1136202060393
+  },
+  {
+    "question": "Will there be a nuclear disaster at the Zaporizhzhia nuclear power plant in 2023?",
+    "market_price": 0.0303,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 34273.36028394755
+  },
+  {
+    "question": "Will any part of the Zaporizhzhia nuclear plant be damaged by explosions by the end of 2023?",
+    "market_price": 0.0523,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 17875.461831447148
+  },
+  {
+    "question": "Will a private company demonstrate nuclear fusion net gain (>1.0 energy out vs energy in) before 12/31/2025?",
+    "market_price": 0.0631,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 24724.038874836973
+  },
+  {
+    "question": "Will Israel attack at least one of Iran's nuclear facilities by year-end 2024?",
+    "market_price": 0.858,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 50775.01778772567
+  },
+  {
+    "question": "By the end of 2023 will Iran successfully enrich enough Uranium to assemble a nuclear warhead?",
+    "market_price": 0.0988,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 22593.914303354733
+  },
+  {
+    "question": "Will nuclear energy be a relevant topic in Germany's election 2025?",
+    "market_price": 0.7634,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 7287.761687063235
+  },
+  {
+    "question": "Russia detonates nuclear weapon for any purpose before EOY 2024?",
+    "market_price": 0.0771,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 8905.7627622878
+  },
+  {
+    "question": "Will NATO deploy nuclear weapons to Poland before 2024?",
+    "market_price": 0.034,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 6989.912634533872
+  },
+  {
+    "question": "Will it be shown that NYT employees' cats kill more birds annually than SpaceX launches? (Proven before 2025)",
+    "market_price": 0.1453,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 44315.457111690586
+  },
+  {
+    "question": "Will there be a SpaceX Starship launch in the first quarter of 2024?",
+    "market_price": 0.9555,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 9166.47492976889
+  },
+  {
+    "question": "Will SpaceX Starship IFT-3 carry a payload?",
+    "market_price": 0.076,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 15297.775327093783
+  },
+  {
+    "question": "Will SpaceX Starship reach orbit at least 2 times in 2024?",
+    "market_price": 0.9083,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 13316.39699287868
+  },
+  {
+    "question": "Will the next SpaceX Falcon Heavy launch be fully successful?",
+    "market_price": 0.8817,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 3555.083289523397
+  },
+  {
+    "question": "Will Simone Biles win the gold medal in the Individual All-around event at the 2024 Paris Olympics? \ud83e\udd47",
+    "market_price": 0.7089,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 54327.022213910415
+  },
+  {
+    "question": "Will Norway have the Most Gold Metals in the 2026 Winter Olympics",
+    "market_price": 0.9696,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 22580.88261473567
+  },
+  {
+    "question": "Will Simone Biles win the gold medal in the Floor Exercise at the 2024 Paris Olympics? \ud83e\udd47",
+    "market_price": 0.83,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 7535.276058113406
+  },
+  {
+    "question": "Will the open water swimming events be able to take place in the Seine river for the Paris 2024 Olympic Games?",
+    "market_price": 0.9061,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 12905.4770349015
+  },
+  {
+    "question": "Will there be any terrorist or security issues during the 2024 Olympics?",
+    "market_price": 0.8422,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 2666.4203767878557
+  },
+  {
+    "question": "Will there be a major doping disqualification at the 2026 Winter Olympics?",
+    "market_price": 0.34,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1623.6731198791013
+  },
+  {
+    "question": "Will at least 90 nations win a medal at the 2024 Summer Olympics?",
+    "market_price": 0.3968,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 47482.16039803648
+  },
+  {
+    "question": "Will Magnus Carlsen win the 2023 FIDE World Cup?",
+    "market_price": 0.9209,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 24148.496153842898
+  },
+  {
+    "question": "Will Argentina win the Fifa World Cup 22?",
+    "market_price": 0.9295,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 60876.627260548375
+  },
+  {
+    "question": "Will France win the Fifa World Cup 22?",
+    "market_price": 0.0703,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 39916.80812807574
+  },
+  {
+    "question": "Will Messi score the game winning goal in the World Cup Final?",
+    "market_price": 0.0365,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 22849.061667206817
+  },
+  {
+    "question": "Will India win the 2023 Cricket World Cup?",
+    "market_price": 0.0619,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 75410.28262578385
+  },
+  {
+    "question": "Will Praggnanandhaa beat Magnus carlsen and win the finals of the The Chess World Cup 2023",
+    "market_price": 0.0944,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 9652.854636826614
+  },
+  {
+    "question": "Will there be a streaker at the 2022 World Cup?",
+    "market_price": 0.0359,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 27969.29276988521
+  },
+  {
+    "question": "Will any player score more than 6 goals in the 2022 FIFA World Cup?",
+    "market_price": 0.9323,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 13852.92422256963
+  },
+  {
+    "question": "Will Trump win Nobel Piss Prize 2025? [Read description]",
+    "market_price": 0.043,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 15729.65828345991
+  },
+  {
+    "question": "Trump retaliates against Norway if denied Nobel Peace Prize?",
+    "market_price": 0.0318,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4368.323945278518
+  },
+  {
+    "question": "Will the Nobel Peace Prize program Jimmy Carter personally signed for Dianne\u00a0Feinstein sell for >$250?",
+    "market_price": 0.8676,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 2675
+  },
+  {
+    "question": "Will any ai/ml researcher win a nobel prize in 2025?",
+    "market_price": 0.1199,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 6728.643526284221
+  },
+  {
+    "question": "Will the average age of 2023 Nobel prize recipients be less than 74?",
+    "market_price": 0.9684,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 1532.1425124807886
+  },
+  {
+    "question": "Will Katalin Karik\u00f3 Win a Nobel Prize in 2024?",
+    "market_price": 0.0371,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1248.8477396506162
+  },
+  {
+    "question": "Nobel Prize prophet identified in 2025?",
+    "market_price": 0.1,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 229.6410368893952
+  },
+  {
+    "question": "Will at least one of the 2023 Nobel Prize laureates be MIT alumni",
+    "market_price": 0.41,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 164.11739049550857
+  },
+  {
+    "question": "Joel Habener wins the Nobel Prize in Physiology or Medicine before 2030 for isolating and characterizing GLP-1",
+    "market_price": 0.4725,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 194.49480876079892
+  },
+  {
+    "question": "Will the 2024 Nobel Prize for Literature be awarded to an author who writes in English?",
+    "market_price": 0.445,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 62.79697834346281
+  },
+  {
+    "question": "Will Deisseroth, Hegemann and Oesterhelt win the 2022 Nobel Prize in Physiology/Medicine for discovery and development of optogenetics?",
+    "market_price": 0.0344,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 654.2730403985569
+  },
+  {
+    "question": "Did Sabine's Hossenfelder correctly name any of the 2024 Nobel Prize laureates in Physics?",
+    "market_price": 0.7191,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 60
+  },
+  {
+    "question": "2023 Medvedev's Predictions #9: Will all the largest stock markets move to Asia?",
+    "market_price": 0.0327,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4519.297769532375
+  },
+  {
+    "question": "Will the Moscow stock market mostly re-open by the end of March 2022?",
+    "market_price": 0.035,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 22948.71839012379
+  },
+  {
+    "question": "Will the Dan Stock market average 75% or above during the month of June?",
+    "market_price": 0.9501,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 13648.753312798162
+  },
+  {
+    "question": "Will the Dan Stock market be at 75% or above on June 1st?",
+    "market_price": 0.6903,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 3108.720890041076
+  },
+  {
+    "question": "Will the relevance of superconductors be greater than AI for stock markets in 2023?",
+    "market_price": 0.0715,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1771.9307202555226
+  },
+  {
+    "question": "Will there be a Wall Street Stock Market Crash before 2027?",
+    "market_price": 0.9497,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 5746.919313691485
+  },
+  {
+    "question": "Will this post regarding the DeepSeek stock market crash and a \"scam angle\" be proven correct?",
+    "market_price": 0.0483,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 4065.3322209961343
+  },
+  {
+    "question": "Will someone with a destiny.gg manifold market indefinite stock pass away in 2023?",
+    "market_price": 0.1422,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1893.7174071444397
+  },
+  {
+    "question": "Will direct arbitrage between manifold markets and the US stock market be possible by July 2024  (Subsidized 250M)",
+    "market_price": 0.719,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1545.5501732060825
+  },
+  {
+    "question": "Will Manifold have good \"stock\" markets on Apr 21?",
+    "market_price": 0.2404,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 601.6666472827144
+  },
+  {
+    "question": "If Manifold improves \"stock\"-type markets, will we have 2000 engaged users in 2023?",
+    "market_price": 0.0371,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 2298.9394646715045
+  },
+  {
+    "question": "Will the Moscow stock market mostly re-open by the end of May 2022?",
+    "market_price": 0.1776,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1838.5257625552974
+  },
+  {
+    "question": "Will the linked Lavlunee stock market resolve correctly?",
+    "market_price": 0.9591,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 12626.853489098125
+  },
+  {
+    "question": "If Adani crumbles will the Indian stock market take a >=20% hit? (see description)",
+    "market_price": 0.16,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 723.7956803080556
+  },
+  {
+    "question": "Will the Crypto Market take over the Stock Market?",
+    "market_price": 0.1039,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 374
+  },
+  {
+    "question": "Is there a chance for a major correction in the stock market within the next three months?",
+    "market_price": 0.0461,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 1072.4983451666405
+  },
+  {
+    "question": "Will I create a Manifold stock market trading bot by March 1?",
+    "market_price": 0.9467,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 1371.6025403784438
+  },
+  {
+    "question": "Will Manifold start marking \"stock\" markets as #Unranked before the end of 2023?",
+    "market_price": 0.0822,
+    "resolution": 0.0,
+    "source": "manifold",
+    "volume": 909.2467304534472
+  },
+  {
+    "question": "Will Trump blame any stock market drop (daily or cumulative) on the selection of Kamala?",
+    "market_price": 0.7454,
+    "resolution": 1.0,
+    "source": "manifold",
+    "volume": 1210
+  }
+]
