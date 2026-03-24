@@ -9,7 +9,8 @@ COPY . .
 
 RUN mkdir -p results
 
-EXPOSE 8501
+# Expose both API and dashboard ports
+EXPOSE 8000 8501
 
-# Default: run Streamlit dashboard
-CMD ["streamlit", "run", "streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0", "--server.headless=true"]
+# Default: run FastAPI production API
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -1,24 +1,38 @@
 version: "3.8"
 
 services:
-  dashboard:
+  api:
     build: .
     ports:
-      - "8501:8501"
+      - "8000:8000"
     volumes:
       - ./results:/app/results
     environment:
       - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
-      - FRED_API_KEY=${FRED_API_KEY:-}
+      - MINISIM_API_KEYS=${MINISIM_API_KEYS:-demo-key-12345}
     restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/v1/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  dashboard:
+    build: .
+    command: streamlit run streamlit_app.py --server.port=8501 --server.address=0.0.0.0 --server.headless=true
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./results:/app/results
+    restart: unless-stopped
+    depends_on:
+      - api
 
   scanner:
     build: .
     command: python scanner.py --watch --interval 600 --source all --agents 20 --rounds 2 --edge 0.03
     volumes:
       - ./results:/app/results
-    environment:
-      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY:-}
     restart: unless-stopped
     depends_on:
-      - dashboard
+      - api

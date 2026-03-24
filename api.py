@@ -306,3 +306,95 @@ async def health_check():
         "timestamp": datetime.utcnow().isoformat() + "Z",
         "predictions_in_memory": len(_predictions),
     }
+
+
+# ── Public accuracy dashboard (no auth required) ──
+
+from fastapi.responses import HTMLResponse
+
+@app.get("/accuracy", response_class=HTMLResponse)
+async def accuracy_dashboard():
+    """Public-facing accuracy dashboard — the sales asset."""
+    try:
+        db = Database()
+        metrics = db.get_metrics()
+        cat_data = db.get_category_accuracy()
+        db.close()
+    except Exception:
+        metrics = {"total": 0, "resolved": 0, "pending": 0}
+        cat_data = []
+
+    # Load calibration if available
+    cal_curve = {}
+    try:
+        with open("results/calibration_model_offline.json") as f:
+            cal = json.load(f)
+            cal_curve = cal.get("calibration_curve", {})
+    except Exception:
+        pass
+
+    total = metrics.get("total", 0)
+    resolved = metrics.get("resolved", 0)
+    brier = metrics.get("swarm_brier", "—")
+    market_brier = metrics.get("market_brier", "—")
+    win_rate = metrics.get("win_rate", 0)
+    if isinstance(win_rate, float):
+        win_rate = f"{win_rate*100:.0f}%"
+
+    # Build calibration rows
+    cal_rows = ""
+    for bucket, d in sorted(cal_curve.items()):
+        gap = d.get("gap", 0)
+        color = "#2ca02c" if abs(gap) < 0.1 else "#ff7f0e" if abs(gap) < 0.2 else "#d62728"
+        cal_rows += f'<tr><td>{bucket}</td><td>{d["count"]}</td><td>{d["mean_predicted"]:.3f}</td><td>{d["actual_rate"]:.3f}</td><td style="color:{color}">{gap:+.3f}</td></tr>'
+
+    # Build category rows
+    cat_rows = ""
+    for c in cat_data:
+        cat_rows += f'<tr><td>{c["category"]}</td><td>{c["n"]}</td><td>{c["avg_swarm_brier"]:.4f}</td><td>{c.get("avg_market_brier", "—")}</td><td>{c.get("wins", 0)}/{c["n"]}</td></tr>'
+
+    return f"""<!DOCTYPE html>
+<html><head><title>MiniSim Accuracy Dashboard</title>
+<style>
+body {{ font-family: -apple-system, sans-serif; max-width: 900px; margin: 40px auto; padding: 0 20px; color: #333; }}
+h1 {{ color: #1f3864; }} h2 {{ color: #2f5496; border-bottom: 2px solid #d6e4f0; padding-bottom: 8px; }}
+.metrics {{ display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin: 20px 0; }}
+.metric {{ background: #f8f9fa; border-radius: 8px; padding: 20px; text-align: center; }}
+.metric .value {{ font-size: 28px; font-weight: bold; color: #1f3864; }}
+.metric .label {{ font-size: 13px; color: #666; margin-top: 4px; }}
+table {{ width: 100%; border-collapse: collapse; margin: 16px 0; }}
+th {{ background: #2f5496; color: white; padding: 10px; text-align: left; }}
+td {{ padding: 8px 10px; border-bottom: 1px solid #eee; }}
+tr:hover {{ background: #f0f4ff; }}
+.method {{ background: #e8f0fe; padding: 16px; border-radius: 8px; margin: 16px 0; font-size: 14px; }}
+footer {{ margin-top: 40px; padding: 20px 0; border-top: 1px solid #ddd; color: #999; font-size: 12px; }}
+</style></head><body>
+<h1>MiniSim Accuracy Dashboard</h1>
+<p>Real-time calibration metrics for the MiniSim swarm prediction engine.</p>
+
+<div class="metrics">
+  <div class="metric"><div class="value">{total}</div><div class="label">Total Predictions</div></div>
+  <div class="metric"><div class="value">{resolved}</div><div class="label">Resolved</div></div>
+  <div class="metric"><div class="value">{brier}</div><div class="label">Swarm Brier Score</div></div>
+  <div class="metric"><div class="value">{win_rate}</div><div class="label">Win Rate vs Market</div></div>
+</div>
+
+<h2>Calibration Curve (544 questions)</h2>
+<p>Predicted probability vs actual resolution rate. Perfect calibration = gap of 0.000.</p>
+<table>
+<tr><th>Bucket</th><th>N</th><th>Predicted</th><th>Actual</th><th>Gap</th></tr>
+{cal_rows}
+</table>
+
+<h2>Accuracy by Category</h2>
+<table>
+<tr><th>Category</th><th>N</th><th>Swarm Brier</th><th>Market Brier</th><th>Wins</th></tr>
+{cat_rows}
+</table>
+
+<div class="method">
+<strong>Method:</strong> {total} questions evaluated using 20-40 diverse agent archetypes deliberating across 2-4 structured rounds (evidence exchange, critique, rebuttal). Aggregation: 60% calibrated confidence-weighted + 40% extremized (Metaculus-style). Temperature stratification: analysts (T=0.3), calibrators (T=0.5), contrarians (T=0.9), creatives (T=1.2).
+</div>
+
+<footer>MiniSim Swarm Prediction Engine &middot; Updated {datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")}</footer>
+</body></html>"""
