@@ -70,7 +70,7 @@ def _call_llm_deliberation(engine: LLMEngine, agent_info: dict) -> dict:
     prompt = AGENT_DELIBERATION_PROMPT.format(**agent_info["prompt_vars"])
     temp = agent_info["temperature"]
 
-    parsed = engine.generate_json(prompt, system=system, temperature=temp)
+    parsed = engine.generate_json(prompt, system=system, temperature=temp, max_tokens=256)
 
     if parsed and "updated_score" in parsed:
         return {

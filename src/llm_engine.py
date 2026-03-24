@@ -164,7 +164,7 @@ class LLMEngine:
         resp = requests.post(
             f"{self.ollama_url}/api/generate",
             json=payload,
-            timeout=120,
+            timeout=180,
         )
         resp.raise_for_status()
         data = resp.json()
@@ -202,9 +202,10 @@ class LLMEngine:
 
     def generate_json(
         self, prompt: str, system: str = "", temperature: float = 0.5,
+        max_tokens: int = 512,
     ) -> dict | None:
         """Generate and parse JSON response. Returns parsed dict or None."""
-        result = self.generate(prompt, system=system, json_mode=True, temperature=temperature)
+        result = self.generate(prompt, system=system, json_mode=True, temperature=temperature, max_tokens=max_tokens)
         text = result.get("text", "")
         if not text:
             return None
