@@ -1,0 +1,243 @@
+#!/usr/bin/env python3
+"""
+MiniSim Metaculus Tournament Bot — Competes in the Spring 2026 AIB.
+
+Fetches open binary questions from the tournament, runs MiniSim prediction,
+submits forecast + private comment with reasoning via API.
+
+Questions are open for ~1.5hrs, so run this every 30min to catch them.
+
+Usage:
+  python metaculus_bot.py                          # one-time run
+  python metaculus_bot.py --watch --interval 1800   # run every 30min
+  python metaculus_bot.py --tournament minibench    # target MiniBench
+  python metaculus_bot.py --dry-run                 # preview without submitting
+"""
+from __future__ import annotations
+
+import argparse
+import json
+import os
+import time
+from datetime import datetime
+
+import requests
+
+BOT_TOKEN = os.environ.get("METACULUS_BOT_TOKEN", "0babd6499ddf7a82e964e93e7accdbe7e555c2b8")
+BASE_URL = "https://www.metaculus.com/api"
+DEFAULT_TOURNAMENT = "spring-aib-2026"
+
+
+def get_open_questions(tournament: str = DEFAULT_TOURNAMENT, question_type: str = "binary") -> list[dict]:
+    """Fetch open questions from the tournament."""
+    resp = requests.get(
+        f"{BASE_URL}/posts/",
+        params={
+            "project": tournament,
+            "statuses": "open",
+            "forecast_type": question_type,
+            "limit": 50,
+            "order_by": "-published_at",
+        },
+        headers={"Authorization": f"Token {BOT_TOKEN}"},
+        timeout=15,
+    )
+    resp.raise_for_status()
+    return resp.json().get("results", [])
+
+
+def submit_forecast(question_id: int, probability: float) -> bool:
+    """Submit a binary forecast to Metaculus."""
+    probability = max(0.001, min(0.999, probability))
+
+    resp = requests.post(
+        f"{BASE_URL}/questions/forecast/",
+        json=[{"question": question_id, "probability_yes": round(probability, 4)}],
+        headers={
+            "Authorization": f"Token {BOT_TOKEN}",
+            "Content-Type": "application/json",
+        },
+        timeout=15,
+    )
+    return resp.status_code == 200
+
+
+def submit_comment(post_id: int, comment: str) -> bool:
+    """Submit a private comment (reasoning) on a question."""
+    resp = requests.post(
+        f"{BASE_URL}/comments/create/",
+        json={
+            "on_post": post_id,
+            "text": comment[:4000],
+            "is_private": True,
+        },
+        headers={
+            "Authorization": f"Token {BOT_TOKEN}",
+            "Content-Type": "application/json",
+        },
+        timeout=15,
+    )
+    return resp.status_code in (200, 201)
+
+
+def run_minisim_prediction(question: str, context: str = "") -> dict:
+    """Run MiniSim prediction using the router (smart mode)."""
+    from src.llm_engine import LLMEngine
+    engine = LLMEngine()
+
+    if engine.is_available():
+        from src.router import routed_predict
+        return routed_predict(
+            question=question,
+            context=context,
+            n_agents=10,
+            engine=engine,
+            max_rounds=2,
+        )
+    else:
+        from src.offline_engine import swarm_score_offline
+        return swarm_score_offline(question, context, n_agents=15, rounds=2)
+
+
+def format_reasoning(result: dict) -> str:
+    """Format the prediction result as a Metaculus comment."""
+    parts = [
+        f"**MiniSim Swarm Prediction: P(YES) = {result['swarm_probability_yes']:.3f}**",
+        f"95% CI: [{result['confidence_interval'][0]:.3f}, {result['confidence_interval'][1]:.3f}]",
+        f"Diversity: {result.get('diversity_score', 0):.3f}",
+    ]
+
+    routing = result.get("routing", {})
+    if routing:
+        parts.append(f"Route: {routing.get('route', 'unknown')} (initial_std={routing.get('initial_std', 0):.3f})")
+
+    if result.get("top_yes_voices"):
+        top_yes = result["top_yes_voices"][0]
+        parts.append(f"\n**Top YES voice:** {top_yes['name']} ({top_yes['background']}): {top_yes.get('reasoning', '')[:200]}")
+
+    if result.get("top_no_voices"):
+        top_no = result["top_no_voices"][0]
+        parts.append(f"\n**Top NO voice:** {top_no['name']} ({top_no['background']}): {top_no.get('reasoning', '')[:200]}")
+
+    if result.get("reasoning_shift_summary"):
+        parts.append(f"\n{result['reasoning_shift_summary']}")
+
+    return "\n".join(parts)
+
+
+def run_bot(
+    tournament: str = DEFAULT_TOURNAMENT,
+    dry_run: bool = False,
+    already_forecasted: set | None = None,
+):
+    """Run one cycle of the bot."""
+    if already_forecasted is None:
+        already_forecasted = set()
+
+    now = datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
+    print(f"\n{'=' * 60}")
+    print(f"MiniSim Bot — {now}")
+    print(f"Tournament: {tournament}")
+    print(f"{'=' * 60}")
+
+    # Fetch open binary questions
+    posts = get_open_questions(tournament, "binary")
+    print(f"Open binary questions: {len(posts)}")
+
+    new_questions = []
+    for p in posts:
+        q = p.get("question", {})
+        qid = q.get("id")
+        if qid and qid not in already_forecasted:
+            new_questions.append(p)
+
+    print(f"New (unforecasted): {len(new_questions)}")
+
+    if not new_questions:
+        print("No new questions to forecast.")
+        return already_forecasted
+
+    for p in new_questions:
+        q = p.get("question", {})
+        qid = q["id"]
+        post_id = p["id"]
+        title = p.get("title", "")
+
+        print(f"\n--- Q{qid}: {title[:65]} ---")
+
+        # Run prediction
+        try:
+            result = run_minisim_prediction(title)
+            prob = result["swarm_probability_yes"]
+            print(f"  Prediction: P(YES) = {prob:.3f}")
+        except Exception as e:
+            print(f"  Prediction failed: {e}")
+            continue
+
+        if dry_run:
+            print(f"  [DRY RUN] Would submit P(YES) = {prob:.3f}")
+            continue
+
+        # Submit forecast
+        success = submit_forecast(qid, prob)
+        if success:
+            print(f"  Forecast submitted: P(YES) = {prob:.3f}")
+            already_forecasted.add(qid)
+        else:
+            print(f"  Forecast submission FAILED")
+            continue
+
+        # Submit reasoning comment
+        reasoning = format_reasoning(result)
+        comment_ok = submit_comment(post_id, reasoning)
+        print(f"  Comment: {'submitted' if comment_ok else 'failed'}")
+
+        # Log to track record
+        try:
+            from src.database import Database
+            db = Database()
+            db.log_prediction(
+                question=title,
+                swarm_probability=prob,
+                source="metaculus",
+                ticker=str(qid),
+                category="tournament",
+                n_agents=result.get("config", {}).get("n_agents", 0),
+                mode=result.get("config", {}).get("mode", "unknown"),
+            )
+            db.close()
+        except Exception:
+            pass
+
+        time.sleep(2)  # rate limit courtesy
+
+    return already_forecasted
+
+
+def main():
+    parser = argparse.ArgumentParser(description="MiniSim Metaculus Tournament Bot")
+    parser.add_argument("--tournament", default=DEFAULT_TOURNAMENT,
+                       help="Tournament slug (default: spring-aib-2026)")
+    parser.add_argument("--watch", action="store_true", help="Continuous mode")
+    parser.add_argument("--interval", type=int, default=1800, help="Seconds between runs (default: 1800 = 30min)")
+    parser.add_argument("--dry-run", action="store_true", help="Preview without submitting")
+    args = parser.parse_args()
+
+    already_forecasted = set()
+
+    while True:
+        already_forecasted = run_bot(
+            tournament=args.tournament,
+            dry_run=args.dry_run,
+            already_forecasted=already_forecasted,
+        )
+
+        if not args.watch:
+            break
+
+        print(f"\nNext run in {args.interval}s...")
+        time.sleep(args.interval)
+
+
+if __name__ == "__main__":
+    main()
