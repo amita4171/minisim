@@ -83,10 +83,10 @@ def submit_comment(post_id: int, comment: str) -> bool:
     return resp.status_code in (200, 201)
 
 
-def run_minisim_prediction(question: str, context: str = "") -> dict:
+def run_minisim_prediction(question: str, context: str = "", model: str | None = None) -> dict:
     """Run MiniSim prediction using the router (smart mode)."""
     from src.llm_engine import LLMEngine
-    engine = LLMEngine()
+    engine = LLMEngine(model=model)
 
     if engine.is_available():
         from src.router import routed_predict
@@ -132,6 +132,7 @@ def run_bot(
     tournament: str = DEFAULT_TOURNAMENT,
     dry_run: bool = False,
     already_forecasted: set | None = None,
+    model: str | None = None,
 ):
     """Run one cycle of the bot."""
     if already_forecasted is None:
@@ -170,7 +171,7 @@ def run_bot(
 
         # Run prediction
         try:
-            result = run_minisim_prediction(title)
+            result = run_minisim_prediction(title, model=model)
             prob = result["swarm_probability_yes"]
             print(f"  Prediction: P(YES) = {prob:.3f}")
         except Exception as e:
@@ -224,6 +225,7 @@ def main():
     parser.add_argument("--watch", action="store_true", help="Continuous mode")
     parser.add_argument("--interval", type=int, default=1800, help="Seconds between runs (default: 1800 = 30min)")
     parser.add_argument("--dry-run", action="store_true", help="Preview without submitting")
+    parser.add_argument("--model", type=str, default=None, help="LLM model (e.g., qwen2.5:14b)")
     args = parser.parse_args()
 
     already_forecasted = set()
@@ -233,6 +235,7 @@ def main():
             tournament=args.tournament,
             dry_run=args.dry_run,
             already_forecasted=already_forecasted,
+            model=args.model,
         )
 
         if not args.watch:
