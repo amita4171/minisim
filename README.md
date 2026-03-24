@@ -482,8 +482,10 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 ### Phase 1.5: Validation (In Progress)
 - [ ] LLM mode eval on 500+ questions (validate router thresholds at scale)
 - [ ] Integrate CalibrationTransformer into inference pipeline
-- [ ] Metaculus Bot Benchmarking access (email sent to api-requests@metaculus.com)
+- [ ] Metaculus Bot Benchmarking access (need to email api-requests@metaculus.com)
 - [ ] PostgreSQL migration (replace SQLite for production)
+- [ ] Integration tests for API endpoints and full pipeline
+- **Currently running:** Metaculus bot dry run on Qwen 2.5 14B (50 questions, ~3.5 hrs)
 
 ### Phase 2: Data Flywheel & Fine-Tuning
 - [ ] Expand dataset to 2,000+ resolved questions (Metaculus + own API data)

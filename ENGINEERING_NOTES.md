@@ -348,8 +348,39 @@ FastAPI `BackgroundTasks` runs after response. If the server crashes mid-predict
 3. **In-memory API state** — `_predictions` dict lost on restart
 4. **SQLite for production** — needs PostgreSQL migration
 5. **No API endpoint tests** — FastAPI endpoints untested
-6. **Survey engine may be dead weight** — 407 lines, unclear product fit vs Simile
+6. **Survey engine may be dead weight** — 657 lines across 2 files, unclear product fit vs Simile
 7. **11 files import from offline_engine** — backward compat re-exports add complexity
 8. **No structured logging** — using print() for progress, logger for errors, inconsistent
-9. **Hardcoded Metaculus bot token** in `metaculus_bot.py` default
+9. **Hardcoded Metaculus bot token** in `metaculus_bot.py` default env var
 10. **No monitoring/alerting** — no Sentry, no uptime checks, no latency tracking
+11. **Metaculus Bot Benchmarking access not granted** — need to email api-requests@metaculus.com to unlock resolution + community prediction data on 250+ questions
+
+---
+
+## Process Lessons
+
+### Always Commit + Push + Update Docs
+The most consistent feedback: every code change must be immediately followed by:
+1. `git add` + `git commit` with descriptive message
+2. `git push`
+3. README update if features/metrics changed
+4. ENGINEERING_NOTES update if technical lesson learned
+5. Memory file update if new context for future sessions
+
+Uncommitted work is invisible to reviewers. Outdated README is worse than no README.
+
+### Background Process Management
+Multiple issues with long-running background tasks:
+- Python output buffering means no visible progress (fix: `python3 -u` for unbuffered)
+- `| head -N` kills the process after N lines (don't use for long-running commands)
+- Always log to a file: `> results/output.log 2>&1 &`
+- Track PIDs for clean shutdown
+- Don't confuse "process exited" with "task completed" — head/pipe can cause early exit
+
+### Validate Claims with Data
+Multiple findings were stated confidently but validated on only 10 questions:
+- Alpha=1.5 extremization "53% better" — 10 questions
+- Router thresholds 0.05/0.10 — 10 questions
+- "Single LLM beats swarm" — 10 questions
+
+10 questions is noise, not signal. The plan's hard gate (validate on 500+) exists for a reason. Don't proceed to fine-tuning until these are validated at scale.
