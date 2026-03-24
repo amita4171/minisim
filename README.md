@@ -485,9 +485,9 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 
 ### Tier 4: Production Infrastructure
 - [ ] Cloud deployment with auto-scaling
-- [ ] CI/CD pipeline (GitHub Actions)
+- [x] CI/CD pipeline (GitHub Actions — tests on Python 3.9/3.11/3.12)
 - [ ] Monitoring/alerting (Sentry, uptime)
-- [ ] Unit + integration test suite
+- [x] Unit + integration test suite (45 tests, 6 test modules)
 - [ ] Type checking + linting
 
 ### Tier 5: Business

@@ -144,14 +144,17 @@ def aggregate(agents: list[dict], market_price: float | None = None) -> dict:
                 "max_shift": round(max(shifts), 4),
             })
 
-    # Histogram buckets
+    # Histogram buckets (last bucket includes 1.0)
     histogram = {}
-    for bucket_start in [i / 10 for i in range(10)]:
-        bucket_end = bucket_start + 0.1
-        label = f"{bucket_start:.1f}-{bucket_end:.1f}"
-        count = sum(1 for s in final_scores if bucket_start <= s < bucket_end)
+    for i in range(10):
+        lo = i / 10
+        hi = (i + 1) / 10
+        label = f"{lo:.1f}-{hi:.1f}"
+        if i == 9:
+            count = sum(1 for s in final_scores if round(s, 6) >= round(lo, 6))
+        else:
+            count = sum(1 for s in final_scores if round(lo, 6) <= round(s, 6) < round(hi, 6))
         histogram[label] = count
-    histogram["0.9-1.0"] += sum(1 for s in final_scores if s == 1.0)
 
     # Diversity score
     diversity_score = round(stdev, 4)
