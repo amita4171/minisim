@@ -58,6 +58,16 @@ def aggregate(agents: list[dict], market_price: float | None = None) -> dict:
     # Benchmark: extremized swarm (0.017) >> confidence-weighted (0.041)
     swarm_prob = 0.4 * confidence_weighted + 0.6 * extremized
 
+    # --- Method 3: Apply Platt scaling calibration if model exists ---
+    swarm_prob_raw = swarm_prob
+    try:
+        from src.calibration import CalibrationTransformer
+        ct = CalibrationTransformer.load()
+        if ct.is_fitted:
+            swarm_prob = ct.transform(swarm_prob)
+    except (FileNotFoundError, Exception):
+        pass  # no calibration model available — use raw probability
+
     # Simple stats
     median_score = statistics.median(final_scores)
     stdev = statistics.stdev(final_scores) if len(final_scores) > 1 else 0.0
@@ -173,6 +183,8 @@ def aggregate(agents: list[dict], market_price: float | None = None) -> dict:
 
     result = {
         "swarm_probability_yes": round(swarm_prob, 4),
+        "swarm_probability_raw": round(swarm_prob_raw, 4),
+        "calibration_applied": swarm_prob != swarm_prob_raw,
         "confidence_interval": [round(ci_lower, 4), round(ci_upper, 4)],
         "aggregation_method": "calibrated_confidence_weighted_extremized",
         "mean_score": round(mean_score, 4),
