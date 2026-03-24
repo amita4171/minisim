@@ -41,7 +41,7 @@ from src.offline_engine import (
 from src.aggregator import aggregate
 
 
-CONCURRENCY = 5  # parallel Ollama calls (limited by local GPU/CPU)
+CONCURRENCY = 2  # 2 is optimal for Apple Silicon GPU (Metal); 5+ causes contention
 
 
 def _call_llm_initial(engine: LLMEngine, agent_info: dict) -> dict:
