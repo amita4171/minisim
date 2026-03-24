@@ -76,9 +76,12 @@ def main():
     parser.add_argument("--peer-sample-size", "-p", type=int, default=5, help="Peers seen per round")
     parser.add_argument("--output", "-o", type=str, default=None, help="Output JSON file path")
     parser.add_argument("--offline", action="store_true", help="Run without API calls (offline mode)")
+    parser.add_argument("--web-research", action="store_true", help="Enable web search for agent reasoning")
     args = parser.parse_args()
 
     mode = "offline" if args.offline else "api"
+    if args.web_research:
+        mode += "+RAG"
     print(f"MiniSim — Swarm Prediction Engine [{mode} mode]")
     print(f"Question: {args.question}")
     print(f"Agents: {args.agents}, Rounds: {args.rounds}, Peer Sample: {args.peer_sample_size}")
@@ -93,7 +96,7 @@ def main():
         from src.kalshi_bridge import swarm_score_kalshi_market
         score_fn = swarm_score_kalshi_market
 
-    result = score_fn(
+    kwargs = dict(
         question=args.question,
         context=args.context,
         n_agents=args.agents,
@@ -101,6 +104,10 @@ def main():
         market_price=args.market_price,
         peer_sample_size=args.peer_sample_size,
     )
+    if args.offline and args.web_research:
+        kwargs["use_web_research"] = True
+
+    result = score_fn(**kwargs)
 
     # Print results
     print(f"\n{'=' * 60}")

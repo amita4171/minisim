@@ -923,12 +923,27 @@ def swarm_score_offline(
     rounds: int = 3,
     market_price: float | None = None,
     peer_sample_size: int = 5,
+    use_web_research: bool = False,
 ) -> dict:
-    """Full offline pipeline: world build -> agent gen -> sim -> aggregation."""
+    """Full offline pipeline: world build -> (optional RAG) -> agent gen -> sim -> aggregation."""
     from src.aggregator import aggregate
 
     world = build_world_offline(question, context)
     agents, agent_gen_ms = generate_population_offline(question, world, n_agents, anchor=market_price)
+
+    # Optional: web research for information-grounded reasoning
+    if use_web_research:
+        try:
+            from src.web_research import research_question, assign_research_to_agents
+            research_bundles = research_question(question, n_perspectives=4)
+            agents = assign_research_to_agents(agents, research_bundles)
+            world["web_research"] = [
+                {"perspective": b["perspective"], "query": b["query"], "n_results": len(b["search_results"])}
+                for b in research_bundles
+            ]
+        except Exception:
+            pass  # graceful fallback if web research fails
+
     agents, sim_loop_ms = run_simulation_offline(question, agents, rounds, peer_sample_size)
     result = aggregate(agents, market_price)
 

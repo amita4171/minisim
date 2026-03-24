@@ -34,6 +34,7 @@ with st.sidebar:
         "Market Price (0-1)", min_value=0.0, max_value=1.0, value=0.40, step=0.05
     )
     peer_sample_size = st.slider("Peer Sample Size", 3, 15, 5)
+    use_web_research = st.checkbox("Enable Web Research (RAG)", value=False)
 
     run_button = st.button("Run Simulation", type="primary", use_container_width=True)
 
@@ -47,6 +48,7 @@ if run_button:
             rounds=n_rounds,
             market_price=market_price,
             peer_sample_size=peer_sample_size,
+            use_web_research=use_web_research,
         )
     st.session_state["result"] = result
     st.session_state["question"] = question
