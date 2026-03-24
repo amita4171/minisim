@@ -1,0 +1,223 @@
+{
+  "engine": "ollama/qwen2.5:14b",
+  "n_agents": 10,
+  "n_rounds": 2,
+  "single_llm_brier": 0.0365,
+  "swarm_brier": 0.0412,
+  "market_brier": 0.0425,
+  "swarm_vs_single_wins": 3,
+  "swarm_vs_single_pct": 0.3,
+  "improvement_pct": -12.8,
+  "results": [
+    {
+      "id": "B-001",
+      "question": "Will the Fed cut rates in December 2024?",
+      "actual": 1.0,
+      "single_llm": {
+        "p": 0.85,
+        "brier": 0.0225,
+        "time_s": 20.4
+      },
+      "swarm": {
+        "p": 0.8119,
+        "brier": 0.0354,
+        "time_s": 474.0,
+        "std": 0.0193
+      },
+      "market": {
+        "p": 0.75,
+        "brier": 0.0625
+      },
+      "best": "single"
+    },
+    {
+      "id": "B-002",
+      "question": "Will OpenAI release a video generation model in 2024?",
+      "actual": 1.0,
+      "single_llm": {
+        "p": 0.65,
+        "brier": 0.1225,
+        "time_s": 24.5
+      },
+      "swarm": {
+        "p": 0.7222,
+        "brier": 0.0772,
+        "time_s": 388.6,
+        "std": 0.0292
+      },
+      "market": {
+        "p": null,
+        "brier": null
+      },
+      "best": "swarm"
+    },
+    {
+      "id": "B-003",
+      "question": "Will Russia and Ukraine agree to a ceasefire in 2024?",
+      "actual": 0.0,
+      "single_llm": {
+        "p": 0.25,
+        "brier": 0.0625,
+        "time_s": 14.5
+      },
+      "swarm": {
+        "p": 0.1603,
+        "brier": 0.0257,
+        "time_s": 447.8,
+        "std": 0.035
+      },
+      "market": {
+        "p": null,
+        "brier": null
+      },
+      "best": "swarm"
+    },
+    {
+      "id": "B-004",
+      "question": "Will Apple release a mixed reality headset in 2024?",
+      "actual": 1.0,
+      "single_llm": {
+        "p": 0.95,
+        "brier": 0.0025,
+        "time_s": 8.2
+      },
+      "swarm": {
+        "p": 0.828,
+        "brier": 0.0296,
+        "time_s": 290.9,
+        "std": 0.0322
+      },
+      "market": {
+        "p": null,
+        "brier": null
+      },
+      "best": "single"
+    },
+    {
+      "id": "B-005",
+      "question": "Will China invade Taiwan in 2024?",
+      "actual": 0.0,
+      "single_llm": {
+        "p": 0.05,
+        "brier": 0.0025,
+        "time_s": 3.1
+      },
+      "swarm": {
+        "p": 0.0967,
+        "brier": 0.0094,
+        "time_s": 239.4,
+        "std": 0.0306
+      },
+      "market": {
+        "p": null,
+        "brier": null
+      },
+      "best": "single"
+    },
+    {
+      "id": "B-006",
+      "question": "Was 2024 the hottest year on record?",
+      "actual": 1.0,
+      "single_llm": {
+        "p": 0.95,
+        "brier": 0.0025,
+        "time_s": 3.6
+      },
+      "swarm": {
+        "p": 0.9048,
+        "brier": 0.0091,
+        "time_s": 299.2,
+        "std": 0.0155
+      },
+      "market": {
+        "p": null,
+        "brier": null
+      },
+      "best": "single"
+    },
+    {
+      "id": "B-007",
+      "question": "Will the S&P 500 close above 5,000 in 2024?",
+      "actual": 1.0,
+      "single_llm": {
+        "p": 0.65,
+        "brier": 0.1225,
+        "time_s": 14.9
+      },
+      "swarm": {
+        "p": 0.6534,
+        "brier": 0.1201,
+        "time_s": 435.9,
+        "std": 0.0469
+      },
+      "market": {
+        "p": null,
+        "brier": null
+      },
+      "best": "swarm"
+    },
+    {
+      "id": "B-008",
+      "question": "Will the Fed raise rates at the December 2024 FOMC meeting?",
+      "actual": 0.0,
+      "single_llm": {
+        "p": 0.05,
+        "brier": 0.0025,
+        "time_s": 7.4
+      },
+      "swarm": {
+        "p": 0.1312,
+        "brier": 0.0172,
+        "time_s": 456.9,
+        "std": 0.0313
+      },
+      "market": {
+        "p": null,
+        "brier": null
+      },
+      "best": "single"
+    },
+    {
+      "id": "B-009",
+      "question": "Will any company announce AGI by end of 2025?",
+      "actual": 0.0,
+      "single_llm": {
+        "p": 0.05,
+        "brier": 0.0025,
+        "time_s": 10.5
+      },
+      "swarm": {
+        "p": 0.2291,
+        "brier": 0.0525,
+        "time_s": 359.8,
+        "std": 0.1116
+      },
+      "market": {
+        "p": 0.05,
+        "brier": 0.0025
+      },
+      "best": "single"
+    },
+    {
+      "id": "B-010",
+      "question": "Will SpaceX complete a successful Starship orbital flight in 2025?",
+      "actual": 1.0,
+      "single_llm": {
+        "p": 0.85,
+        "brier": 0.0225,
+        "time_s": 6.8
+      },
+      "swarm": {
+        "p": 0.8113,
+        "brier": 0.0356,
+        "time_s": 342.4,
+        "std": 0.0314
+      },
+      "market": {
+        "p": 0.75,
+        "brier": 0.0625
+      },
+      "best": "single"
+    }
+  ]
+}
