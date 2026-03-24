@@ -448,20 +448,23 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 
 ### Current State (Built)
 - [x] 40-archetype swarm with 4-round deliberation
-- [x] 4 live prediction market sources (Kalshi, Polymarket, Manifold, PredictIt)
-- [x] Cross-platform arbitrage detection
-- [x] Opportunity scanner (real-time, continuous)
+- [x] **5 live data sources** (Kalshi, Polymarket, Manifold, PredictIt, Metaculus)
+- [x] Cross-platform arbitrage detection **with fee-aware profit calculation**
+- [x] Opportunity scanner (real-time, continuous, all 5 platforms)
 - [x] Track record system with auto-resolution
 - [x] Calibrated aggregation (confidence-weighted + extremized alpha=1.5)
+- [x] **Variance-based prediction router** (single LLM vs swarm based on uncertainty)
 - [x] Web search RAG layer
 - [x] Streamlit dashboard (7 panels)
 - [x] Eval framework (63 questions + 15 mode collapse tests)
-- [x] LLM engine (Ollama + Anthropic API support, Qwen 2.5 14B tested)
+- [x] LLM engine (Ollama + Anthropic API, Qwen 2.5 14B tested on M4 Pro)
 - [x] SQLite database layer
 - [x] Real data feeds (FRED, Yahoo Finance, Google News)
 - [x] Docker deployment (API + dashboard + scanner)
 - [x] Survey simulation mode (3 demo surveys, 6 question types)
 - [x] Unified CLI (10 subcommands)
+- [x] **Metaculus tournament bot** — competing in Spring 2026 AIB ($50K prize pool)
+- [x] **FastAPI production API** with public accuracy dashboard
 
 ### Phase 1: Production-Grade Forecasting API (Complete)
 - [x] **Week 1-2:** 4 LLM engine bug fixes (client pooling, temperature passthrough, retry logic, fallback transparency)
@@ -470,20 +473,29 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 - [x] **Week 3-4:** Calibration at scale — Brier 0.100, ECE 0.059, win rate 48% vs market
 - [x] **Week 5-6:** FastAPI production API (POST /predict, GET /predict/{id}, POST /resolve, GET /metrics)
 - [x] **Week 7-8:** Docker deployment (3 services), public accuracy dashboard at /accuracy
-- [x] **Benchmark:** Head-to-head swarm vs single LLM vs market on 10 resolved questions
-- [x] **Fix:** Extremized aggregation (alpha=1.5) — swarm Brier 0.017, 53% better than single LLM
+- [x] **Benchmark:** Extremized swarm Brier 0.017 — 53% better than single LLM on 10 questions
+- [x] **Router:** Variance-based routing — single LLM for easy questions, full swarm for hard ones
+- [x] **Tournament:** MiniSim bot competing in Metaculus Spring 2026 AIB
+- [x] **Arbitrage:** Fee-aware cross-platform profit calculation (Kalshi 1%, Polymarket 2%, PredictIt 15%)
+- [x] **Bug fixes:** 5 bugs from code review (json import crash, KeyError on unknown categories, 13 bare except passes replaced with logging)
 
-### Phase 2: Data Flywheel & Fine-Tuning (Weeks 9-20)
-- [ ] Expand dataset to 2,000+ resolved questions (Metaculus API token needed)
+### Phase 1.5: Validation (In Progress)
+- [ ] LLM mode eval on 500+ questions (validate router thresholds at scale)
+- [ ] Integrate CalibrationTransformer into inference pipeline
+- [ ] Metaculus Bot Benchmarking access (email sent to api-requests@metaculus.com)
+- [ ] PostgreSQL migration (replace SQLite for production)
+
+### Phase 2: Data Flywheel & Fine-Tuning
+- [ ] Expand dataset to 2,000+ resolved questions (Metaculus + own API data)
 - [ ] SEC EDGAR earnings call extraction (2,000+ resolvable claims)
 - [ ] Expert podcast transcript extraction (claim + reasoning chains)
 - [ ] Dataset curation (5,000+ resolved predictions with reasoning)
-- [ ] Fine-tuning experiments (4 configs: full data, curated-only, reasoning-augmented)
+- [ ] Fine-tuning: single-shot forecaster + persona-conditioned swarm agents
 - [ ] A/B testing fine-tuned vs prompted Sonnet in production
 
 ### Production Infrastructure
-- [x] CI/CD pipeline (GitHub Actions — tests on Python 3.9/3.11/3.12)
-- [x] Unit + integration test suite (52 tests, 7 test modules)
+- [x] CI/CD pipeline (GitHub Actions — Python 3.9/3.11/3.12)
+- [x] Unit + integration test suite (52 tests, 7 test modules, 0 bare except passes)
 - [x] Calibration system (Platt scaling, ECE, auto-correction)
 - [ ] Cloud deployment with auto-scaling (Railway/Fly.io)
 - [ ] Monitoring/alerting (Sentry, uptime)
