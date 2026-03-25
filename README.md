@@ -491,6 +491,8 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 - `resolve_metaculus.py` — auto-checks tournament resolutions and computes Brier scores
 - 4 MiniSim skill files in `skills/` (predict, eval, tournament, debug)
 - Installed: tavily, promptfoo, dspy, pydantic-ai, portkey-ai, firecrawl, dlt
+- `src/web_research.py` — Tavily integration (AI-native search, falls back to DuckDuckGo)
+- `src/edgar_pipeline.py` — SEC EDGAR full-text search for earnings guidance (Phase 2 data)
 
 ### Phase 2: Data Flywheel & Fine-Tuning
 - [ ] Expand dataset to 2,000+ resolved questions (Metaculus + own API data)

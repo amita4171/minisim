@@ -19,10 +19,15 @@ from typing import Optional
 
 logger = logging.getLogger(__name__)
 
+import os
+
 import requests
 
 # DuckDuckGo Instant Answer API (no auth needed)
 DDG_API = "https://api.duckduckgo.com/"
+
+# Tavily API (structured AI-native search, free tier: 1K/month)
+TAVILY_API_KEY = os.environ.get("TAVILY_API_KEY", "")
 
 # News API alternatives (no auth)
 GOOGLE_NEWS_RSS = "https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&ceid=US:en"
@@ -31,12 +36,63 @@ GOOGLE_NEWS_RSS = "https://news.google.com/rss/search?q={query}&hl=en-US&gl=US&c
 def search_web(query: str, max_results: int = 5) -> list[dict]:
     """Search the web for information relevant to a prediction question.
 
-    Uses DuckDuckGo Instant Answer API (free, no auth).
+    Uses Tavily (if API key available) for structured AI-native search,
+    falls back to DuckDuckGo Instant Answer API.
     Returns list of {title, snippet, url} dicts.
     """
+    # Try Tavily first (much better results)
+    if TAVILY_API_KEY:
+        results = _search_tavily(query, max_results)
+        if results:
+            return results
+
+    # Fallback to DuckDuckGo
+    return _search_duckduckgo(query, max_results)
+
+
+def _search_tavily(query: str, max_results: int = 5) -> list[dict]:
+    """Search using Tavily — structured data optimized for LLM consumption."""
+    try:
+        from tavily import TavilyClient
+        client = TavilyClient(api_key=TAVILY_API_KEY)
+        response = client.search(
+            query=query,
+            max_results=max_results,
+            search_depth="basic",
+            include_answer=True,
+        )
+
+        results = []
+
+        # Tavily's AI-generated answer (best feature)
+        if response.get("answer"):
+            results.append({
+                "title": "AI Summary",
+                "snippet": response["answer"][:500],
+                "url": "",
+                "source": "tavily_answer",
+            })
+
+        # Individual results
+        for r in response.get("results", [])[:max_results]:
+            results.append({
+                "title": r.get("title", ""),
+                "snippet": r.get("content", "")[:300],
+                "url": r.get("url", ""),
+                "source": "tavily",
+            })
+
+        return results[:max_results]
+
+    except Exception as e:
+        logger.debug(f"Tavily search failed, falling back to DuckDuckGo: {e}")
+        return []
+
+
+def _search_duckduckgo(query: str, max_results: int = 5) -> list[dict]:
+    """Fallback search using DuckDuckGo Instant Answer API (free, no auth)."""
     results = []
 
-    # DuckDuckGo Instant Answer
     try:
         resp = requests.get(
             DDG_API,
@@ -46,7 +102,6 @@ def search_web(query: str, max_results: int = 5) -> list[dict]:
         if resp.status_code == 200:
             data = resp.json()
 
-            # Abstract
             if data.get("Abstract"):
                 results.append({
                     "title": data.get("Heading", ""),
@@ -55,7 +110,6 @@ def search_web(query: str, max_results: int = 5) -> list[dict]:
                     "source": "duckduckgo_abstract",
                 })
 
-            # Related topics
             for topic in data.get("RelatedTopics", [])[:max_results]:
                 if isinstance(topic, dict) and topic.get("Text"):
                     results.append({

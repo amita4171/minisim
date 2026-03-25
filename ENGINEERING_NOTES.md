@@ -433,3 +433,15 @@ Packages installed but not yet integrated:
 - minisim-eval.md: evaluation methodology + known metrics
 - minisim-tournament.md: Metaculus bot management
 - minisim-debug.md: every known issue and fix
+
+### Tavily Search Integration
+web_research.py now uses Tavily (AI-native structured search) when TAVILY_API_KEY is set.
+Falls back to DuckDuckGo if no key. Tavily is dramatically better — returns clean structured
+data + AI-generated answer summaries. Free tier: 1K searches/month.
+Set: `export TAVILY_API_KEY=tvly-...`
+
+### SEC EDGAR Pipeline (Phase 2 Data)
+src/edgar_pipeline.py connects to SEC EDGAR full-text search API (free, no auth).
+Can search all public filings for forward-looking statements ("revenue guidance",
+"expects to achieve", etc.). Rate limit: 10 req/sec. Requires User-Agent header
+with contact info per SEC policy. Starting with top 10 S&P 500 companies.
