@@ -485,8 +485,10 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 - [ ] PostgreSQL migration (replace SQLite for production)
 - [x] Integration tests for API endpoints and full pipeline (11 API + 6 pipeline tests)
 - **LIVE:** 50 forecasts submitted to Spring 2026 AIB. Bot in --watch mode (every 30min, Qwen 14B)
-- **Pending:** Metaculus Bot Benchmarking API access (email sent to api-requests@metaculus.com)
+- **RUNNING:** LLM eval on 17 questions (10 resolved) — the Phase 2 gate check
+- **Pending:** Metaculus Bot Benchmarking API access (email sent)
 - **Pending:** Free LLM credits application submitted (Claude Sonnet + o3 via OpenRouter)
+- `resolve_metaculus.py` — auto-checks tournament resolutions and computes Brier scores
 
 ### Phase 2: Data Flywheel & Fine-Tuning
 - [ ] Expand dataset to 2,000+ resolved questions (Metaculus + own API data)
