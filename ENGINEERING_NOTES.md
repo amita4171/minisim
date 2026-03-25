@@ -427,6 +427,15 @@ Packages installed but not yet integrated:
 - **firecrawl-py**: Website → LLM-ready data (Phase 2 EDGAR extraction)
 - **dlt**: Data pipeline framework (Phase 2 data flywheel)
 
+### Refactoring Pass (March 25, 2026)
+Structured refactoring — behavior-preserving, 141 tests passing throughout.
+- WS1: Extracted `src/utils.py` — shared `get_anthropic_client()` + `safe_float()`
+  Eliminated 3x duplicate `_get_client()` and 2x duplicate float parsers
+- WS2: Named constants in aggregator.py — replaced 7 magic numbers with
+  descriptive constants (EXTREMIZATION_ALPHA, CONFIDENCE_WEIGHT, etc.)
+- Dead code: removed 3 unused imports (math×2, statistics)
+- See REFACTORING_PLAN.md for full analysis and out-of-scope decisions
+
 ### Full Codebase Audit (March 25, 2026)
 Systematic 5-phase audit of all source files:
 - P0 (Security): Clean
