@@ -12,9 +12,12 @@ Usage: python build_eval_dataset.py [--target 500]
 """
 from __future__ import annotations
 
+import os
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
 import argparse
 import json
-import os
 import statistics
 import time
 
@@ -134,7 +137,7 @@ def pull_kalshi_resolved(target: int = 300) -> list[dict]:
 def get_curated() -> list[dict]:
     """Get our hand-curated 100 questions from backtest.py."""
     try:
-        from backtest import RESOLVED_MARKETS
+        from scripts.backtest import RESOLVED_MARKETS
         curated = [{
             "question": m["q"],
             "market_price": m["market_price"],

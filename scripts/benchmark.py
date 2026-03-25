@@ -12,9 +12,12 @@ Usage: python benchmark.py [--model qwen2.5:14b] [--agents 15] [--rounds 2]
 """
 from __future__ import annotations
 
+import os
+import sys
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
 import argparse
 import json
-import os
 import statistics
 import time
 

@@ -62,7 +62,7 @@ def cmd_scan(args):
 def cmd_backtest(args):
     """Run backtest on curated or live markets."""
     if args.live:
-        from live_backtest import run_live_backtest
+        from scripts.live_backtest import run_live_backtest
         run_live_backtest(
             n_agents=args.agents,
             n_rounds=args.rounds,
@@ -70,19 +70,19 @@ def cmd_backtest(args):
             max_markets=args.max_markets,
         )
     else:
-        from backtest import run_backtest
+        from scripts.backtest import run_backtest
         run_backtest()
 
 
 def cmd_benchmark(args):
     """Run head-to-head benchmark: swarm vs single LLM vs market."""
-    from benchmark import run_benchmark
+    from scripts.benchmark import run_benchmark
     run_benchmark(n_agents=args.agents, n_rounds=args.rounds, model=args.model)
 
 
 def cmd_eval(args):
     """Run the eval suite."""
-    from eval_runner import run_eval
+    from scripts.eval_runner import run_eval
     run_eval(n_agents=args.agents, n_rounds=args.rounds)
 
 
