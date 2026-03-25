@@ -817,5 +817,131 @@
     "swarm_brier": null,
     "market_brier": null,
     "swarm_beat_market": null
+  },
+  {
+    "id": 39,
+    "timestamp": "2026-03-25T21:28:30.988552Z",
+    "question": "Will the Fed cut rates?",
+    "swarm_probability": 0.1906,
+    "market_price": 0.35,
+    "edge": -0.1594,
+    "source": "kalshi",
+    "ticker": "1",
+    "confidence_interval": [
+      0.2468,
+      0.3307
+    ],
+    "n_agents": 5,
+    "n_rounds": 1,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 40,
+    "timestamp": "2026-03-25T21:33:12.871058Z",
+    "question": "Will the Fed cut rates?",
+    "swarm_probability": 0.1906,
+    "market_price": 0.35,
+    "edge": -0.1594,
+    "source": "kalshi",
+    "ticker": "1",
+    "confidence_interval": [
+      0.2468,
+      0.3307
+    ],
+    "n_agents": 5,
+    "n_rounds": 1,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 41,
+    "timestamp": "2026-03-25T21:34:27.637231Z",
+    "question": "Will the Fed cut rates?",
+    "swarm_probability": 0.1906,
+    "market_price": 0.35,
+    "edge": -0.1594,
+    "source": "kalshi",
+    "ticker": "1",
+    "confidence_interval": [
+      0.2468,
+      0.3307
+    ],
+    "n_agents": 5,
+    "n_rounds": 1,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 42,
+    "timestamp": "2026-03-25T21:35:45.448492Z",
+    "question": "Will the Fed cut rates?",
+    "swarm_probability": 0.1906,
+    "market_price": 0.35,
+    "edge": -0.1594,
+    "source": "kalshi",
+    "ticker": "1",
+    "confidence_interval": [
+      0.2468,
+      0.3307
+    ],
+    "n_agents": 5,
+    "n_rounds": 1,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 43,
+    "timestamp": "2026-03-25T21:36:01.176264Z",
+    "question": "Will the Fed cut rates?",
+    "swarm_probability": 0.1906,
+    "market_price": 0.35,
+    "edge": -0.1594,
+    "source": "kalshi",
+    "ticker": "1",
+    "confidence_interval": [
+      0.2468,
+      0.3307
+    ],
+    "n_agents": 5,
+    "n_rounds": 1,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
+  },
+  {
+    "id": 44,
+    "timestamp": "2026-03-25T21:36:37.019409Z",
+    "question": "Will the Fed cut rates?",
+    "swarm_probability": 0.1906,
+    "market_price": 0.35,
+    "edge": -0.1594,
+    "source": "kalshi",
+    "ticker": "1",
+    "confidence_interval": [
+      0.2468,
+      0.3307
+    ],
+    "n_agents": 5,
+    "n_rounds": 1,
+    "resolution": null,
+    "resolved_at": null,
+    "swarm_brier": null,
+    "market_brier": null,
+    "swarm_beat_market": null
   }
 ]

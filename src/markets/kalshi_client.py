@@ -11,6 +11,8 @@ from typing import Iterator
 
 import requests
 
+from src.utils import safe_float
+
 BASE_URL = "https://api.elections.kalshi.com/trade-api/v2"
 DEFAULT_TIMEOUT = 15
 
@@ -135,9 +137,9 @@ def get_event(ticker: str) -> dict:
 def parse_market(m: dict) -> dict:
     """Normalize a raw Kalshi market dict into a clean format."""
     # Price: use last_price_dollars or midpoint of bid/ask
-    last_price = _parse_price(m.get("last_price_dollars"))
-    yes_bid = _parse_price(m.get("yes_bid_dollars"))
-    yes_ask = _parse_price(m.get("yes_ask_dollars"))
+    last_price = safe_float(m.get("last_price_dollars"))
+    yes_bid = safe_float(m.get("yes_bid_dollars"))
+    yes_ask = safe_float(m.get("yes_ask_dollars"))
 
     if last_price is not None:
         price = last_price
@@ -158,7 +160,7 @@ def parse_market(m: dict) -> dict:
         resolution = None
 
     # Settlement value
-    settlement = _parse_price(m.get("settlement_value_dollars"))
+    settlement = safe_float(m.get("settlement_value_dollars"))
 
     return {
         "ticker": m.get("ticker", ""),
@@ -200,9 +202,3 @@ def get_settled_markets(
         min_settled_ts=min_settled_ts,
     )
     return [parse_market(m) for m in raw]
-
-
-def _parse_price(val) -> float | None:
-    """Parse a price value. Delegates to shared safe_float."""
-    from src.utils import safe_float
-    return safe_float(val)

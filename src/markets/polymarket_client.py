@@ -14,6 +14,8 @@ import time
 
 import requests
 
+from src.utils import safe_float
+
 logger = logging.getLogger(__name__)
 
 GAMMA_BASE = "https://gamma-api.polymarket.com"
@@ -119,8 +121,8 @@ def parse_market(m: dict) -> dict:
 
     # Fallback to bestBid/bestAsk
     if yes_price is None:
-        bid = _safe_float(m.get("bestBid"))
-        ask = _safe_float(m.get("bestAsk"))
+        bid = safe_float(m.get("bestBid"))
+        ask = safe_float(m.get("bestAsk"))
         if bid is not None and ask is not None:
             yes_price = (bid + ask) / 2
         elif bid is not None:
@@ -147,17 +149,17 @@ def parse_market(m: dict) -> dict:
         "price": round(yes_price, 4) if yes_price is not None else 0.5,
         "yes_price": yes_price,
         "no_price": no_price,
-        "best_bid": _safe_float(m.get("bestBid")),
-        "best_ask": _safe_float(m.get("bestAsk")),
-        "last_trade_price": _safe_float(m.get("lastTradePrice")),
-        "volume": _safe_float(m.get("volume", "0")),
-        "volume_24h": _safe_float(m.get("volume24hr", "0")),
-        "liquidity": _safe_float(m.get("liquidity", "0")),
+        "best_bid": safe_float(m.get("bestBid")),
+        "best_ask": safe_float(m.get("bestAsk")),
+        "last_trade_price": safe_float(m.get("lastTradePrice")),
+        "volume": safe_float(m.get("volume", "0")),
+        "volume_24h": safe_float(m.get("volume24hr", "0")),
+        "liquidity": safe_float(m.get("liquidity", "0")),
         "open_interest": m.get("openInterest", 0),
         "active": active,
         "closed": closed,
         "resolution": resolution,
-        "one_day_change": _safe_float(m.get("oneDayPriceChange")),
+        "one_day_change": safe_float(m.get("oneDayPriceChange")),
         "start_date": m.get("startDate", ""),
         "end_date": m.get("endDate", ""),
         "source": "polymarket",
@@ -175,8 +177,8 @@ def parse_event(e: dict) -> dict:
         "category": e.get("category", ""),
         "active": e.get("active", False),
         "closed": e.get("closed", False),
-        "volume": _safe_float(e.get("volume", "0")),
-        "liquidity": _safe_float(e.get("liquidity", "0")),
+        "volume": safe_float(e.get("volume", "0")),
+        "liquidity": safe_float(e.get("liquidity", "0")),
         "markets": markets,
         "source": "polymarket",
     }
@@ -204,9 +206,3 @@ def get_resolved_markets(limit: int = 100, min_volume: float = 1000) -> list[dic
     raw = get_markets(closed=True, limit=limit, order="volume", ascending=False)
     parsed = [parse_market(m) for m in raw]
     return [m for m in parsed if m["resolution"] is not None and m["volume"] >= min_volume]
-
-
-def _safe_float(val) -> float | None:
-    """Delegates to shared safe_float utility."""
-    from src.utils import safe_float
-    return safe_float(val)

@@ -37,6 +37,14 @@ from src.core.llm_engine import (
 from src.agents.archetypes import BACKGROUNDS, PERSONALITIES, TEMP_TIERS, _make_name
 from src.agents.world_templates import _detect_category, _generate_pressures, build_world_offline
 from src.core.aggregator import aggregate
+from src.core.offline_engine import (
+    ARCHETYPE_MEAN_BIAS,
+    DEVIATION_AMPLIFIER,
+    CONFIDENCE_BASE,
+    CONFIDENCE_JITTER,
+    CONFIDENCE_MIN,
+    CONFIDENCE_MAX,
+)
 
 
 CONCURRENCY = int(os.environ.get("MINISIM_CONCURRENCY", "2"))  # 2 optimal for Apple Silicon GPU
@@ -53,7 +61,7 @@ def _call_llm_initial(engine: LLMEngine, agent_info: dict) -> dict:
     if parsed and "initial_score" in parsed:
         return {
             "score": max(0.02, min(0.98, float(parsed["initial_score"]))),
-            "confidence": max(0.2, min(0.95, float(parsed.get("confidence", 0.5)))),
+            "confidence": max(CONFIDENCE_MIN, min(CONFIDENCE_MAX, float(parsed.get("confidence", CONFIDENCE_BASE)))),
             "reasoning": parsed.get("reasoning", ""),
             "key_factors": parsed.get("key_factors", []),
             "from_llm": True,
@@ -73,7 +81,7 @@ def _call_llm_deliberation(engine: LLMEngine, agent_info: dict) -> dict:
     if parsed and "updated_score" in parsed:
         return {
             "score": max(0.02, min(0.98, float(parsed["updated_score"]))),
-            "confidence": max(0.2, min(0.95, float(parsed.get("confidence", 0.5)))),
+            "confidence": max(CONFIDENCE_MIN, min(CONFIDENCE_MAX, float(parsed.get("confidence", CONFIDENCE_BASE)))),
             "reflection": parsed.get("reflection", ""),
             "insight": parsed.get("new_insight", ""),
             "from_llm": True,
@@ -195,9 +203,9 @@ def run_llm_simulation(
             else:
                 # Fallback
                 anchor = market_price or 0.40
-                deviation = (bg[category] - 0.42) * 1.5
+                deviation = (bg[category] - ARCHETYPE_MEAN_BIAS) * DEVIATION_AMPLIFIER
                 score = max(0.02, min(0.98, anchor + deviation + rng.gauss(0, tier["jitter_std"])))
-                confidence = max(0.2, min(0.95, 0.5 + rng.gauss(0, 0.15)))
+                confidence = max(CONFIDENCE_MIN, min(CONFIDENCE_MAX, CONFIDENCE_BASE + rng.gauss(0, CONFIDENCE_JITTER)))
                 reasoning = f"[Offline fallback] {bg['label']}: P(YES) = {score:.2f}"
                 key_factors = []
 

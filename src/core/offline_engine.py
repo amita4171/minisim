@@ -54,6 +54,18 @@ from src.agents.alpha import (
     _compute_domain_expertise,
 )
 
+# Agent generation constants
+ARCHETYPE_MEAN_BIAS = 0.42      # Mean of all background category biases
+DEVIATION_AMPLIFIER = 1.5        # How much to amplify archetype deviation from mean
+CONFIDENCE_BASE = 0.5            # Base confidence before jitter
+CONFIDENCE_JITTER = 0.15         # Gaussian std for confidence jitter
+CONFIDENCE_MIN = 0.2
+CONFIDENCE_MAX = 0.95
+
+# Simulation constants
+MIND_CHANGE_THRESHOLD = 0.15     # Total shift to classify as "mind changed"
+STABLE_SHIFT_THRESHOLD = 0.05    # Shift below this = "remained stable"
+
 
 # ---------------------------------------------------------------------------
 # Agent factory (offline)
@@ -98,9 +110,8 @@ def generate_population_offline(
 
         # Archetype deviation from mean
         # Fall back to "econ" if category not in background dict (e.g. "geopolitics", "other")
-        archetype_mean = 0.42
-        bg_bias = bg.get(category, bg.get("econ", 0.42))
-        deviation = (bg_bias - archetype_mean) * 1.5
+        bg_bias = bg.get(category, bg.get("econ", ARCHETYPE_MEAN_BIAS))
+        deviation = (bg_bias - ARCHETYPE_MEAN_BIAS) * DEVIATION_AMPLIFIER
 
         center = adjusted_anchor + deviation
         jitter = rng.gauss(0, tier["jitter_std"])
@@ -111,7 +122,7 @@ def generate_population_offline(
 
         # Domain expertise bonus for confidence
         domain_bonus = _compute_domain_expertise(bg["label"], question, category)
-        confidence = max(0.2, min(0.95, 0.5 + rng.gauss(0, 0.15) + domain_bonus))
+        confidence = max(CONFIDENCE_MIN, min(CONFIDENCE_MAX, CONFIDENCE_BASE + rng.gauss(0, CONFIDENCE_JITTER) + domain_bonus))
         reasoning, key_factors = _generate_reasoning(bg["label"], initial_score, category, rng)
 
         agent = {
@@ -235,7 +246,7 @@ def run_simulation_offline(
         new_score = round(max(0.02, min(0.98, current + delta)), 4)
         agent["score_history"].append(new_score)
 
-        agent["confidence"] = round(min(0.95, agent["confidence"] + rng.uniform(0.01, 0.03)), 4)
+        agent["confidence"] = round(min(CONFIDENCE_MAX, agent["confidence"] + rng.uniform(0.01, 0.03)), 4)
         peer_evidence_summary = "; ".join(
             f"{p['name']}: P(YES)={p['score_history'][-1]:.2f}"
             for p in sampled[:3]
@@ -286,7 +297,7 @@ def run_simulation_offline(
             agent["critique_received"] = f"Challenged by {opponent['name']} ({opponent['background_category']})"
             agent["disagreement_type"] = disagreement
 
-            agent["confidence"] = round(min(0.95, agent["confidence"] + rng.uniform(0.02, 0.05)), 4)
+            agent["confidence"] = round(min(CONFIDENCE_MAX, agent["confidence"] + rng.uniform(0.02, 0.05)), 4)
             agent["memory_stream"].append(
                 f"Round 3 (Critique): Debated {opponent['name']} ({opponent['background_category']}, "
                 f"P(YES)={opp_score:.2f}). Disagreement: {disagreement}. "
@@ -329,12 +340,12 @@ def run_simulation_offline(
 
         # Track mind-changers
         total_shift = new_score - initial
-        agent["mind_changed"] = abs(total_shift) > 0.15
+        agent["mind_changed"] = abs(total_shift) > MIND_CHANGE_THRESHOLD
 
         # Final confidence update
-        agent["confidence"] = round(min(0.95, agent["confidence"] + rng.uniform(0.01, 0.04)), 4)
+        agent["confidence"] = round(min(CONFIDENCE_MAX, agent["confidence"] + rng.uniform(0.01, 0.04)), 4)
 
-        shift_desc = f"shifted {'up' if total_shift > 0 else 'down'} by {abs(total_shift):.2f}" if abs(total_shift) > 0.05 else "remained largely stable"
+        shift_desc = f"shifted {'up' if total_shift > 0 else 'down'} by {abs(total_shift):.2f}" if abs(total_shift) > STABLE_SHIFT_THRESHOLD else "remained largely stable"
         agent["memory_stream"].append(
             f"Round 4 (Final Forecast): P(YES) = {new_score:.2f} "
             f"(from initial {initial:.2f} — {shift_desc}). "
