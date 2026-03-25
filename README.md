@@ -485,10 +485,12 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 - [ ] PostgreSQL migration (replace SQLite for production)
 - [x] Integration tests for API endpoints and full pipeline (11 API + 6 pipeline tests)
 - **LIVE:** 50 forecasts submitted to Spring 2026 AIB. Bot in --watch mode (every 30min, Qwen 14B)
-- **RUNNING:** LLM eval on 17 questions (10 resolved) — the Phase 2 gate check
+- **DONE:** LLM eval — Brier 0.103 (33% better than offline 0.154). Gate PASSED. Data leakage caveat on historical questions.
 - **Pending:** Metaculus Bot Benchmarking API access (email sent)
 - **Pending:** Free LLM credits application submitted (Claude Sonnet + o3 via OpenRouter)
 - `resolve_metaculus.py` — auto-checks tournament resolutions and computes Brier scores
+- 4 MiniSim skill files in `skills/` (predict, eval, tournament, debug)
+- Installed: tavily, promptfoo, dspy, pydantic-ai, portkey-ai, firecrawl, dlt
 
 ### Phase 2: Data Flywheel & Fine-Tuning
 - [ ] Expand dataset to 2,000+ resolved questions (Metaculus + own API data)

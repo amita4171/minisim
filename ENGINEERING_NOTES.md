@@ -399,3 +399,37 @@ Multiple findings were stated confidently but validated on only 10 questions:
 - "Single LLM beats swarm" — 10 questions
 
 10 questions is noise, not signal. The plan's hard gate (validate on 500+) exists for a reason. Don't proceed to fine-tuning until these are validated at scale.
+
+### Data Leakage in Historical Eval
+LLM eval on HIST-001 to HIST-010 showed Brier 0.103 — 33% better than offline (0.154).
+Gate passed numerically. BUT: the LLM has 2024 outcomes in its training data.
+- HIST-005 (Biden nominee): LLM says P=0.99 because it knows he dropped out. Brier 0.975.
+- HIST-007 (Apple headset): LLM says P=0.98 because Vision Pro shipped in Feb 2024.
+- Without contaminated questions, Brier is ~0.006 — suspiciously good.
+Real validation requires forward-tested predictions (Metaculus tournament).
+This is the "Simulated Ignorance Fails" problem from arxiv:2601.13717.
+
+### Fine-Tuning on Apple Silicon
+Unsloth (2x faster fine-tuning, 70% less memory) requires CUDA (NVIDIA GPU).
+Does NOT work on M4 Pro. For Phase 2 fine-tuning experiments:
+- Use cloud GPU (A100 spot ~$1.50/hr, ~$30 for full training run)
+- Or use MLX (Apple's ML framework) for Metal-native fine-tuning
+- Or use Axolotl which has partial MPS support
+Unsloth is the best option IF you have access to NVIDIA hardware.
+
+### Installed Tools for Future Use
+Packages installed but not yet integrated:
+- **tavily-python**: AI-native search, replace DuckDuckGo in web_research.py
+- **promptfoo**: Automated prompt testing/security
+- **dspy-ai**: Program (not prompt) foundation models — replace hand-crafted prompts
+- **pydantic-ai**: Type-safe agent framework — fix fragile JSON parsing
+- **portkey-ai**: Route to 250+ LLMs through one interface
+- **firecrawl-py**: Website → LLM-ready data (Phase 2 EDGAR extraction)
+- **dlt**: Data pipeline framework (Phase 2 data flywheel)
+
+### Skill Files
+4 MiniSim-specific skill files in skills/ directory:
+- minisim-predict.md: prediction pipeline walkthrough
+- minisim-eval.md: evaluation methodology + known metrics
+- minisim-tournament.md: Metaculus bot management
+- minisim-debug.md: every known issue and fix
