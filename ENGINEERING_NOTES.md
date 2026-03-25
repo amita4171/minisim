@@ -228,13 +228,25 @@ Deliberation responses don't need 1024 tokens. Capping at 256 tokens for deliber
 - `test_api.py`: FastAPI endpoint tests (health, auth, predict, resolve, metrics, dashboard)
 - `test_pipeline.py`: End-to-end pipeline, fee-aware arbitrage, database lifecycle
 
-Run fast tests: `pytest -m "not slow"` (0.3s)
-Run all tests: `pytest` (requires Ollama running, 4min 10s — **70/70 passing**)
+Run fast tests: `pytest -m "not slow"` (0.3s — **74 passing**)
+Run all tests: `pytest` (requires Ollama running — **81 passing**)
+
+Modules with test coverage: archetypes, aggregator, alpha, API endpoints,
+calibration, cross-platform, database, offline engine, pipeline, router + LLM engine.
 
 ### What's NOT Tested
-- LLM simulation quality (would need Ollama + time)
+- LLM simulation quality at scale (need 500+ questions)
 - Platform API clients against live endpoints
 - Router thresholds at scale (validated on 10 questions only)
+- Metaculus bot end-to-end (submission + comment + DB logging)
+
+### Metaculus Tournament Bot
+- 50 live forecasts submitted to Spring 2026 AIB
+- Bot running in --watch mode (every 30min, Qwen 2.5 14B)
+- File-based cache (results/forecasted_questions.json) persists across restarts
+- Skips moved/restated questions
+- Improved anchor prompt differentiates 1-15% for unlikely events (was: everything snapped to 5%)
+- Applied for free LLM credits (Claude Sonnet + o3 via OpenRouter)
 
 ### CI Pipeline
 GitHub Actions on push/PR, Python 3.9/3.11/3.12 matrix. Import checks verify all modules load without errors.
