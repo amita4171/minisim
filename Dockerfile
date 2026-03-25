@@ -13,4 +13,5 @@ RUN mkdir -p results
 EXPOSE 8000 8501
 
 # Default: run FastAPI production API
-CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]
+# api.py re-exports from src.api.app — both entry points work
+CMD ["uvicorn", "src.api.app:app", "--host", "0.0.0.0", "--port", "8000"]
