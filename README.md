@@ -505,7 +505,9 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 
 ### Production Infrastructure
 - [x] CI/CD pipeline (GitHub Actions — Python 3.9/3.11/3.12)
-- [x] Unit + integration test suite (**150 total** — 141 fast + 9 slow, 19 modules)
+- [x] Unit + integration test suite (**157 total** — 148 fast + 9 slow, 20 modules)
+- [x] Manual resolution tool (`scripts/resolve_manual.py` — interactive + batch mode)
+- [x] Alpha sweep script (`scripts/alpha_sweep.py` — find optimal extremization)
 - [x] Calibration system (Platt scaling, ECE, auto-correction)
 - [ ] Cloud deployment with auto-scaling (Railway/Fly.io)
 - [ ] Monitoring/alerting (Sentry, uptime)
