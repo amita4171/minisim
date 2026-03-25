@@ -509,6 +509,8 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 - [x] Manual resolution tool (`scripts/resolve_manual.py` — interactive + batch mode)
 - [x] Alpha sweep script (`scripts/alpha_sweep.py` — find optimal extremization)
 - [x] Calibration system (Platt scaling, ECE, auto-correction)
+- [x] Fine-tuning pipeline (prep → train → eval, MLX/Unsloth, 545 training examples)
+- [x] Calibration report script with ASCII plot
 - [ ] Cloud deployment with auto-scaling (Railway/Fly.io)
 - [ ] Monitoring/alerting (Sentry, uptime)
 
