@@ -1,0 +1,15 @@
+{
+  "model": "qwen2.5:14b",
+  "model_resolved": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+  "epochs": 3,
+  "lora_rank": 8,
+  "learning_rate": 0.0002,
+  "batch_size": 2,
+  "output_dir": "/Users/amitagondi/Desktop/projects/minisim/scripts/../results/finetune_output",
+  "train_data": "/Users/amitagondi/Desktop/projects/minisim/scripts/../results/finetune_train.jsonl",
+  "val_data": "/Users/amitagondi/Desktop/projects/minisim/scripts/../results/finetune_val.jsonl",
+  "data_stats": {
+    "train_examples": 436,
+    "val_examples": 54
+  }
+}
