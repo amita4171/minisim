@@ -229,6 +229,25 @@ def run_bot(
     return already_forecasted
 
 
+FORECASTED_CACHE = "results/forecasted_questions.json"
+
+
+def _load_forecasted() -> set:
+    """Load previously forecasted question IDs from disk."""
+    try:
+        with open(FORECASTED_CACHE) as f:
+            return set(json.load(f))
+    except (FileNotFoundError, json.JSONDecodeError):
+        return set()
+
+
+def _save_forecasted(forecasted: set):
+    """Save forecasted question IDs to disk."""
+    os.makedirs(os.path.dirname(FORECASTED_CACHE) or ".", exist_ok=True)
+    with open(FORECASTED_CACHE, "w") as f:
+        json.dump(sorted(forecasted), f)
+
+
 def main():
     parser = argparse.ArgumentParser(description="MiniSim Metaculus Tournament Bot")
     parser.add_argument("--tournament", default=DEFAULT_TOURNAMENT,
@@ -239,7 +258,8 @@ def main():
     parser.add_argument("--model", type=str, default=None, help="LLM model (e.g., qwen2.5:14b)")
     args = parser.parse_args()
 
-    already_forecasted = set()
+    already_forecasted = _load_forecasted()
+    print(f"Loaded {len(already_forecasted)} previously forecasted questions")
 
     while True:
         already_forecasted = run_bot(
@@ -248,6 +268,8 @@ def main():
             already_forecasted=already_forecasted,
             model=args.model,
         )
+
+        _save_forecasted(already_forecasted)
 
         if not args.watch:
             break
