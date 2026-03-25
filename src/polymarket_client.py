@@ -207,9 +207,6 @@ def get_resolved_markets(limit: int = 100, min_volume: float = 1000) -> list[dic
 
 
 def _safe_float(val) -> float | None:
-    if val is None or val == "":
-        return None
-    try:
-        return float(val)
-    except (ValueError, TypeError):
-        return None
+    """Delegates to shared safe_float utility."""
+    from src.utils import safe_float
+    return safe_float(val)

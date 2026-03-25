@@ -5,14 +5,7 @@ Extracts entities, relationships, pressures, and timeline using Claude.
 
 import json
 import time
-_client = None
-
-def _get_client():
-    global _client
-    if _client is None:
-        from anthropic import Anthropic
-        _client = Anthropic()
-    return _client
+from src.utils import get_anthropic_client as _get_client
 
 WORLD_BUILD_PROMPT = """You are a knowledge graph builder for prediction market analysis.
 

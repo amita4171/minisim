@@ -203,10 +203,6 @@ def get_settled_markets(
 
 
 def _parse_price(val) -> float | None:
-    """Parse a price value that could be string, float, int, or None."""
-    if val is None or val == "":
-        return None
-    try:
-        return float(val)
-    except (ValueError, TypeError):
-        return None
+    """Parse a price value. Delegates to shared safe_float."""
+    from src.utils import safe_float
+    return safe_float(val)

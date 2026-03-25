@@ -6,14 +6,7 @@ from __future__ import annotations
 
 import json
 import time
-_client = None
-
-def _get_client():
-    global _client
-    if _client is None:
-        from anthropic import Anthropic
-        _client = Anthropic()
-    return _client
+from src.utils import get_anthropic_client as _get_client
 
 BACKGROUNDS = [
     "Macro Economist — PhD, focuses on monetary policy, inflation dynamics, and central bank behavior",

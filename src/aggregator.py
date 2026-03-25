@@ -12,7 +12,14 @@ Methods:
 """
 from __future__ import annotations
 
-import math
+# Named constants — validated on benchmarks, documented in ENGINEERING_NOTES.md
+EXTREMIZATION_ALPHA = 1.5        # Logit-space extremization factor (validated on 10-question benchmark)
+CONFIDENCE_WEIGHT = 0.4          # Weight for confidence-weighted average
+EXTREMIZED_WEIGHT = 0.6          # Weight for extremized average (0.4 + 0.6 = 1.0)
+MIND_CHANGE_THRESHOLD = 0.05     # Minimum shift to get mind-change bonus
+MIND_CHANGE_MAX_BONUS = 0.15     # Maximum confidence bonus for flexible thinkers
+SIGNIFICANT_SHIFT = 0.10         # Threshold for classifying agent as "mind-changer"
+DISSENT_Z_THRESHOLD = 1.5        # Z-score threshold for dissenting voices
 import statistics
 
 
@@ -28,7 +35,7 @@ def aggregate(agents: list[dict], market_price: float | None = None) -> dict:
     for a in agents:
         shift = abs(a["score_history"][-1] - a["score_history"][0])
         # Small bonus for agents who updated meaningfully but not wildly
-        bonus = min(0.15, shift * 0.5) if shift > 0.05 else 0.0
+        bonus = min(MIND_CHANGE_MAX_BONUS, shift * 0.5) if shift > MIND_CHANGE_THRESHOLD else 0.0
         mind_change_bonus.append(bonus)
 
     calibrated_weights = [
@@ -46,7 +53,7 @@ def aggregate(agents: list[dict], market_price: float | None = None) -> dict:
     # p_final = p^α / (p^α + (1-p)^α) where α > 1
     # Benchmark showed alpha=1.5 cuts Brier by 53% vs single LLM
     mean_score = statistics.mean(final_scores)
-    alpha = 1.5  # strong extremization — validated on 10-question benchmark
+    alpha = EXTREMIZATION_ALPHA
     if 0.01 < mean_score < 0.99:
         p_a = mean_score ** alpha
         q_a = (1 - mean_score) ** alpha
@@ -56,7 +63,7 @@ def aggregate(agents: list[dict], market_price: float | None = None) -> dict:
 
     # --- Combined: 40% calibrated + 60% extremized ---
     # Benchmark: extremized swarm (0.017) >> confidence-weighted (0.041)
-    swarm_prob = 0.4 * confidence_weighted + 0.6 * extremized
+    swarm_prob = CONFIDENCE_WEIGHT * confidence_weighted + EXTREMIZED_WEIGHT * extremized
 
     # --- Method 3: Apply Platt scaling calibration if model exists ---
     swarm_prob_raw = swarm_prob
@@ -85,7 +92,7 @@ def aggregate(agents: list[dict], market_price: float | None = None) -> dict:
     if stdev > 0:
         for a in agents:
             z = abs(a["score_history"][-1] - mean_score) / stdev
-            if z > 1.5:  # 1.5 std — notable outlier
+            if z > DISSENT_Z_THRESHOLD:
                 dissenting.append(_voice_summary(a, z_score=z))
     dissenting.sort(key=lambda v: v.get("z_score", 0), reverse=True)
 
@@ -108,7 +115,7 @@ def aggregate(agents: list[dict], market_price: float | None = None) -> dict:
     mind_changers = []
     for a in agents:
         total_shift = a["score_history"][-1] - a["score_history"][0]
-        if abs(total_shift) > 0.10:
+        if abs(total_shift) > SIGNIFICANT_SHIFT:
             mind_changers.append({
                 **_voice_summary(a),
                 "shift": round(total_shift, 4),
@@ -172,8 +179,8 @@ def aggregate(agents: list[dict], market_price: float | None = None) -> dict:
     diversity_score = round(stdev, 4)
 
     # Reasoning shift summary
-    n_shifted_yes = sum(1 for a in agents if a["score_history"][-1] - a["score_history"][0] > 0.05)
-    n_shifted_no = sum(1 for a in agents if a["score_history"][-1] - a["score_history"][0] < -0.05)
+    n_shifted_yes = sum(1 for a in agents if a["score_history"][-1] - a["score_history"][0] > MIND_CHANGE_THRESHOLD)
+    n_shifted_no = sum(1 for a in agents if a["score_history"][-1] - a["score_history"][0] < -MIND_CHANGE_THRESHOLD)
     n_stable = len(agents) - n_shifted_yes - n_shifted_no
     reasoning_shift = (
         f"After deliberation, {n_shifted_yes} agents shifted toward YES, "
