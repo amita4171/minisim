@@ -427,6 +427,15 @@ Packages installed but not yet integrated:
 - **firecrawl-py**: Website → LLM-ready data (Phase 2 EDGAR extraction)
 - **dlt**: Data pipeline framework (Phase 2 data flywheel)
 
+### Full Codebase Audit (March 25, 2026)
+Systematic 5-phase audit of all source files:
+- P0 (Security): Clean
+- P1 (Crashes): 2 division-by-zero bugs fixed (track_record.py, cross_platform.py)
+- P1 (Config): .env.example updated from 1 to 8 env vars
+- P1 (Timeouts): All 15 HTTP calls confirmed to have timeouts
+- P2/P3: No additional issues found
+- 74 fast tests passing post-audit
+
 ### Skill Files
 4 MiniSim-specific skill files in skills/ directory:
 - minisim-predict.md: prediction pipeline walkthrough
