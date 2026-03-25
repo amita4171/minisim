@@ -462,6 +462,7 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 - [x] Real data feeds (FRED, Yahoo Finance, Google News)
 - [x] Docker deployment (API + dashboard + scanner)
 - [x] Unified CLI (9 subcommands)
+- [x] Proper package structure (5 sub-packages: core, agents, markets, research, db)
 - [x] **Metaculus tournament bot** — competing in Spring 2026 AIB ($50K prize pool)
 - [x] **FastAPI production API** with public accuracy dashboard
 

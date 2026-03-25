@@ -427,6 +427,20 @@ Packages installed but not yet integrated:
 - **firecrawl-py**: Website → LLM-ready data (Phase 2 EDGAR extraction)
 - **dlt**: Data pipeline framework (Phase 2 data flywheel)
 
+### Major Codebase Restructure (March 25, 2026)
+4 restructuring passes, each verified by 141 tests:
+
+1. **Prompts extracted**: llm_engine.py 414→326 lines. 7 prompt files in src/prompts/
+2. **Data extracted**: world_templates.py 413→194 lines. 7 YAML files in src/data/
+3. **Scripts organized**: 14 root .py files → 6 entry points + scripts/ directory
+4. **Sub-packages**: flat src/ (26 files) → 5 logical packages:
+   - src/core/ (engine, router, aggregator, calibration, LLM)
+   - src/agents/ (archetypes, alpha, world building, simulation)
+   - src/markets/ (5 API clients, cross-platform, bridge)
+   - src/research/ (web search, data feeds, EDGAR)
+   - src/db/ (database, track record)
+   Backward compat via sys.modules aliasing in src/__init__.py
+
 ### Refactoring Pass (March 25, 2026)
 Structured refactoring — behavior-preserving, 141 tests passing throughout.
 - WS1: Extracted `src/utils.py` — shared `get_anthropic_client()` + `safe_float()`
