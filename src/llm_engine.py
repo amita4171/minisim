@@ -398,5 +398,17 @@ Consider:
 2. The specific evidence in the context
 3. Known biases (people overestimate dramatic events, underestimate inertia)
 
+IMPORTANT: Be precise with low probabilities. Do NOT round everything to 5%.
+Use the full range:
+- 1-2%: virtually impossible (violates physics, no precedent ever)
+- 3-5%: extremely unlikely (would require multiple unprecedented events)
+- 8-12%: unlikely but has some precedent or plausible pathway
+- 15-25%: possible but against base rates
+- 30-45%: could go either way, leaning NO
+- 50%: true coin flip (avoid unless genuinely uncertain)
+- 55-70%: could go either way, leaning YES
+- 75-90%: likely, strong evidence supports it
+- 95-99%: near certain, would require extraordinary circumstances to fail
+
 Respond with ONLY a JSON object:
 {{"probability": <float 0.0-1.0>, "reasoning": "<one sentence>"}}"""

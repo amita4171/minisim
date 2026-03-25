@@ -169,6 +169,13 @@ def run_bot(
         post_id = p["id"]
         title = p.get("title", "")
 
+        # Skip moved/restated questions
+        skip_kw = ["Moved to", "RESTATED", "moved to", "restated at"]
+        if any(kw in title for kw in skip_kw):
+            print(f"\n--- Q{qid}: SKIPPED (moved/restated) | {title[:55]} ---")
+            already_forecasted.add(qid)
+            continue
+
         print(f"\n--- Q{qid}: {title[:65]} ---")
 
         # Run prediction
@@ -210,6 +217,8 @@ def run_bot(
                 category="tournament",
                 n_agents=result.get("config", {}).get("n_agents", 0),
                 mode=result.get("config", {}).get("mode", "unknown"),
+                confidence_interval=result.get("confidence_interval"),
+                diversity_score=result.get("diversity_score", 0),
             )
             db.close()
         except Exception as e:
