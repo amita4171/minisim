@@ -155,7 +155,8 @@ def find_cross_listed(
             # Compute consensus and arbitrage metrics
             prices = [c["price"] for c in cluster]
             weights = [c["liquidity_weight"] for c in cluster]
-            weighted_price = sum(p * w for p, w in zip(prices, weights)) / sum(weights)
+            total_w = sum(weights)
+            weighted_price = sum(p * w for p, w in zip(prices, weights)) / total_w if total_w > 0 else statistics.mean(prices)
 
             spread = max(prices) - min(prices)
             sources = [c["source"] for c in cluster]

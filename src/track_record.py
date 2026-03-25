@@ -153,7 +153,7 @@ class TrackRecord:
             "n_unresolved": len(self.get_unresolved()),
             "overall_swarm_brier": round(statistics.mean(swarm_briers), 4),
             "overall_market_brier": round(statistics.mean(market_briers), 4),
-            "win_rate": round(wins / len(resolved), 4),
+            "win_rate": round(wins / len(resolved), 4) if len(resolved) > 0 else 0,
             "wins": wins,
             "calibration_curve": buckets,
             "best_calls": sorted(resolved, key=lambda p: p["swarm_brier"])[:5],
