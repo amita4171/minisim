@@ -1,0 +1,49 @@
+econ:
+  factors:
+    - "monetary policy trajectory"
+    - "inflation persistence"
+    - "labor market cooling"
+    - "yield curve signals"
+    - "consumer spending trends"
+    - "global growth synchronization"
+    - "fiscal policy drag"
+    - "housing market dynamics"
+  uncertainties:
+    - "tariff policy changes"
+    - "geopolitical shock risk"
+    - "banking sector stress"
+    - "oil price volatility"
+    - "election-year fiscal dynamics"
+
+political:
+  factors:
+    - "partisan polarization depth"
+    - "legislative calendar pressure"
+    - "leadership negotiation leverage"
+    - "public opinion polls"
+    - "electoral incentive structure"
+    - "caucus cohesion levels"
+    - "appropriations committee dynamics"
+    - "media narrative framing"
+  uncertainties:
+    - "unexpected crisis diverting attention"
+    - "individual legislator defections"
+    - "judicial rulings affecting legislative authority"
+    - "public protest or activism waves"
+
+tech:
+  factors:
+    - "AI capability acceleration"
+    - "enterprise adoption velocity"
+    - "cost reduction from automation"
+    - "workforce retraining capacity"
+    - "regulatory framework development"
+    - "organizational change management"
+    - "venture funding into AI agents"
+    - "open-source model proliferation"
+  uncertainties:
+    - "AI reliability and hallucination rates"
+    - "regulatory intervention timing"
+    - "macroeconomic downturn slowing investment"
+    - "public backlash against automation"
+    - "unexpected technical breakthroughs or limitations"

@@ -1,0 +1,14 @@
+econ:
+  - "Based on my analysis of {factor1}, I estimate P(YES) = {score:.2f}. {factor2} supports this view, though {uncertainty} introduces meaningful uncertainty. Historical base rates for similar Fed decisions suggest {direction} outcomes are {likelihood}."
+  - "My {background} perspective leads me to weigh {factor1} heavily. Current {factor2} data points toward a {direction} probability. I assign P(YES) = {score:.2f}, acknowledging that {uncertainty} could shift this significantly."
+  - "Looking at {factor1} through the lens of {background} expertise, I see {direction} probability at {score:.2f}. The key driver is {factor2}. My main concern is {uncertainty}, which could move this estimate by 10-15 points."
+
+political:
+  - "From my {background} perspective, I assess P(YES) = {score:.2f}. {factor1} is the primary driver. {factor2} adds additional weight. The key wildcard is {uncertainty}, which makes this harder to forecast with precision."
+  - "Congressional dynamics around {factor1} suggest {direction} probability. My analysis of {factor2} reinforces this at P(YES) = {score:.2f}. Historical precedent and {uncertainty} create non-trivial forecast risk."
+  - "As a {background}, I focus on {factor1} and {factor2}. These suggest P(YES) = {score:.2f}. The {direction} case depends heavily on {uncertainty} resolving favorably."
+
+tech:
+  - "My {background} experience tells me {factor1} is the critical variable. Combined with {factor2}, I estimate P(YES) = {score:.2f}. The {direction} scenario is {likelihood}, but {uncertainty} makes this a wide-confidence forecast."
+  - "Analyzing {factor1} alongside {factor2}, I arrive at P(YES) = {score:.2f}. My {background} lens emphasizes that {uncertainty} is often underestimated in technology adoption forecasts. The {direction} case is {likelihood}."
+  - "From a {background} standpoint, {factor1} is evolving {likelihood_adv}. {factor2} suggests P(YES) = {score:.2f}. Key risk: {uncertainty} could accelerate or brake the timeline significantly."

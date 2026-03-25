@@ -1,0 +1,59 @@
+econ:
+  for_yes:
+    - "Inflation trending toward 2% target gives Fed room to cut"
+    - "Slowing labor market \u2014 rising unemployment claims suggest cooling"
+    - "Manufacturing PMI contraction signals economic weakness"
+    - "Consumer confidence declining, spending pulling back"
+    - "Global central banks already cutting, creating coordination pressure"
+    - "Yield curve dynamics pricing in rate cuts"
+  for_no:
+    - "Core inflation remains sticky above target"
+    - "Strong labor market with low unemployment"
+    - "Wage growth still elevated, fueling services inflation"
+    - "Housing market resilient, financial conditions loose"
+    - "Fed rhetoric emphasizing patience and data-dependence"
+    - "Geopolitical uncertainty counsels caution on policy changes"
+  uncertain:
+    - "Impact of tariff policy changes on inflation expectations"
+    - "Consumer savings buffer depletion timeline"
+    - "Global contagion risk from emerging market stress"
+
+political:
+  for_yes:
+    - "Deep partisan polarization makes compromise difficult"
+    - "Historical precedent \u2014 shutdowns have occurred in 4 of last 10 years"
+    - "Budget disagreements on defense vs. domestic spending levels"
+    - "Political incentives to use shutdown as leverage"
+    - "Narrow Congressional margins amplify individual holdout power"
+    - "Debt ceiling deadline creating additional fiscal friction"
+  for_no:
+    - "Both parties face electoral backlash from shutdowns"
+    - "Continuing resolutions provide temporary extension mechanism"
+    - "Leadership has incentives to avoid disruption before midterms"
+    - "Past brinkmanship usually resolved at the last minute"
+    - "Public disapproval of shutdowns is bipartisan"
+    - "Essential services pressure creates urgency to resolve"
+  uncertain:
+    - "Impact of unexpected external crisis on legislative priorities"
+    - "Individual legislator defections and caucus dynamics"
+    - "Timing of critical votes relative to recess schedules"
+
+tech:
+  for_yes:
+    - "AI capabilities improving rapidly \u2014 GPT-5, Claude 4 showing agent-level performance"
+    - "Major enterprises announcing AI-driven headcount reductions"
+    - "Cost pressure: AI workers cost 1/10th of human equivalents for routine tasks"
+    - "Historical pattern: technology adoption accelerates once ROI is proven"
+    - "Coding, customer service, data analysis already seeing significant automation"
+    - "Venture capital flooding into AI agent startups"
+  for_no:
+    - "10% is an enormous number \u2014 millions of jobs in 2-3 years"
+    - "Historical technology adoption is slower than predicted"
+    - "Organizational inertia, change management costs, and integration complexity"
+    - "Regulatory and union resistance to rapid displacement"
+    - "AI hallucination and reliability issues limit deployment in critical roles"
+    - "New roles created by AI may offset displaced ones"
+  uncertain:
+    - "Whether AI agents can reliably handle full job functions vs. task augmentation"
+    - "Speed of regulatory response to AI displacement"
+    - "Macroeconomic conditions affecting corporate AI investment budgets"

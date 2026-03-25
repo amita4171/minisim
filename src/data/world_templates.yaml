@@ -1,0 +1,110 @@
+econ:
+  entities:
+    - name: Federal Reserve
+      type: org
+      description: "US central bank setting monetary policy via the FOMC"
+      relevance: high
+    - name: Jerome Powell
+      type: person
+      description: "Fed Chair, leads FOMC decisions and communication"
+      relevance: high
+    - name: US Labor Market
+      type: metric
+      description: "Employment data including NFP, unemployment rate, wage growth"
+      relevance: high
+    - name: PCE Inflation Index
+      type: metric
+      description: "Fed's preferred inflation measure, target 2%"
+      relevance: high
+    - name: US Treasury Market
+      type: metric
+      description: "Yield curve dynamics signal rate expectations"
+      relevance: medium
+    - name: Consumer Spending
+      type: metric
+      description: "Largest GDP component, reflects household confidence"
+      relevance: medium
+    - name: Global Trade Tensions
+      type: event
+      description: "Tariffs and trade policy affecting economic outlook"
+      relevance: medium
+  key_uncertainties:
+    - "Whether inflation will sustainably reach 2% target"
+    - "Labor market resilience vs. softening signals"
+    - "Geopolitical shocks affecting supply chains and energy prices"
+    - "Consumer spending trajectory and savings rate trends"
+    - "Impact of fiscal policy on monetary policy independence"
+
+political:
+  entities:
+    - name: US Congress
+      type: org
+      description: "Legislative body \u2014 must pass appropriations bills"
+      relevance: high
+    - name: White House
+      type: org
+      description: "Executive branch \u2014 signs or vetoes legislation"
+      relevance: high
+    - name: Federal Budget
+      type: policy
+      description: "Annual appropriations and continuing resolutions"
+      relevance: high
+    - name: Partisan Dynamics
+      type: concept
+      description: "Polarization level and willingness to compromise"
+      relevance: high
+    - name: Debt Ceiling
+      type: policy
+      description: "Statutory limit on federal borrowing"
+      relevance: medium
+    - name: Midterm Election Pressure
+      type: event
+      description: "Electoral incentives shaping legislative behavior"
+      relevance: medium
+    - name: Public Opinion Polls
+      type: metric
+      description: "Voter sentiment on key issues driving political calculus"
+      relevance: medium
+  key_uncertainties:
+    - "Whether bipartisan deal on spending levels can be reached"
+    - "Impact of external crises on legislative priorities"
+    - "Individual legislator defections from party leadership"
+    - "Public opinion backlash risk for each party"
+    - "Timing of negotiations relative to deadlines"
+
+tech:
+  entities:
+    - name: Large Language Models
+      type: concept
+      description: "GPT, Claude, Gemini \u2014 frontier AI capabilities"
+      relevance: high
+    - name: Automation Technologies
+      type: concept
+      description: "AI agents, RPA, autonomous systems replacing tasks"
+      relevance: high
+    - name: US Labor Market
+      type: metric
+      description: "White-collar employment levels and job displacement data"
+      relevance: high
+    - name: Enterprise AI Adoption
+      type: metric
+      description: "Rate of corporate AI deployment across industries"
+      relevance: high
+    - name: Regulatory Response
+      type: policy
+      description: "Government AI regulation, labor protections, retraining programs"
+      relevance: medium
+    - name: AI Safety Research
+      type: concept
+      description: "Alignment work and capability limitations"
+      relevance: medium
+    - name: Historical Technology Adoption
+      type: concept
+      description: "Past technology displacement patterns and timelines"
+      relevance: medium
+  key_uncertainties:
+    - "Speed of AI capability improvement (linear vs exponential)"
+    - "Enterprise adoption rate vs. organizational inertia"
+    - "Regulatory intervention slowing deployment"
+    - "New job creation offsetting displacement"
+    - "Whether current AI can reliably perform full job roles vs. augmenting tasks"

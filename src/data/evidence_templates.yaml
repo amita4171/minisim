@@ -1,0 +1,23 @@
+econ:
+  - "PCE inflation trending at {val:.1f}% \u2014 {direction} the 2% target"
+  - "Unemployment claims {trend} over the past 4 weeks"
+  - "Manufacturing PMI at {val:.0f} \u2014 {zone} territory"
+  - "Fed funds futures imply {val:.0f}% probability of rate action"
+  - "10Y-2Y spread at {val:+.0f}bps \u2014 {signal}"
+  - "Consumer confidence index {trend} to {val:.0f}"
+
+political:
+  - "Congressional approval at {val:.0f}% \u2014 {direction} historical average"
+  - "{val:.0f} appropriations bills passed out of 12 required"
+  - "Polling shows {val:.0f}% blame {party} for shutdown scenario"
+  - "Continuing resolution expires in {val:.0f} days"
+  - "Leadership whip count shows {val:.0f} holdouts in majority caucus"
+  - "Defense spending gap between chambers: ${val:.0f}B"
+
+tech:
+  - "Enterprise AI adoption rate: {val:.0f}% of Fortune 500 deploying agents"
+  - "AI-related job postings {trend} {val:.0f}% YoY"
+  - "White-collar unemployment in AI-exposed sectors: {val:.1f}%"
+  - "Corporate AI spending grew {val:.0f}% in latest quarter"
+  - "Regulatory AI workforce bills introduced in {val:.0f} state legislatures"
+  - "Average AI agent handles {val:.0f}x more tasks than 12 months ago"
