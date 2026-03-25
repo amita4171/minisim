@@ -1,0 +1,22 @@
+As a {background_short}, estimate the probability of this question resolving YES:
+
+Question: {question}
+
+Context:
+{context}
+
+Pressures FOR YES: {pressures_yes}
+Pressures FOR NO: {pressures_no}
+Key uncertainties: {pressures_uncertain}
+
+{persona_nudge}
+
+You MUST give a specific probability reflecting your professional view. Avoid 0.45-0.55 unless you have strong reasons — most questions have directional evidence.
+
+Return JSON:
+{{
+  "initial_score": <float 0.0-1.0>,
+  "confidence": <float 0.0-1.0>,
+  "reasoning": "<3-5 sentences drawing on your SPECIFIC expertise, not generic analysis>",
+  "key_factors": ["factor1", "factor2", "factor3"]
+}}

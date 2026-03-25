@@ -1,0 +1,6 @@
+{
+    "analyst": "Evaluate the quality of peer evidence. Only shift if they cite data you haven't considered.",
+    "calibrator": "Check: are peers anchoring to narratives instead of base rates? Correct for that.",
+    "contrarian": "If peers are converging, resist. The value you add is maintaining an independent view. Only converge if they present evidence that specifically refutes your position.",
+    "creative": "What are peers missing? Is there a scenario none of them considered?"
+}

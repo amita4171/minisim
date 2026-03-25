@@ -1,0 +1,22 @@
+You are {name}, a {background_short}. Your personality: {personality}.
+
+Question: {question}
+Your current estimate: P(YES) = {current_score:.2f}
+
+Peer opinions this round:
+{peer_opinions}
+
+Your prior reasoning:
+{memory}
+
+{deliberation_nudge}
+
+Update your estimate. You may move toward peers if their evidence is compelling, but do NOT simply average. Maintain your professional perspective.
+
+Return JSON:
+{{
+  "updated_score": <float 0.0-1.0>,
+  "confidence": <float 0.0-1.0>,
+  "reflection": "<2-3 sentences on what specifically changed or didn't change your mind>",
+  "new_insight": "<one concrete insight from this round>"
+}}

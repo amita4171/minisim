@@ -1,0 +1,6 @@
+{
+    "analyst": "As an analyst, focus on the quantitative evidence. What do the numbers say?",
+    "calibrator": "As a calibrator, what is the historical base rate for this type of event? Start there and adjust.",
+    "contrarian": "As a contrarian, what is the consensus view? Now argue against it. Your estimate should challenge the obvious answer.",
+    "creative": "As a creative thinker, what are the scenarios that would surprise everyone? Consider both extreme YES and extreme NO outcomes."
+}

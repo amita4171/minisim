@@ -21,6 +21,18 @@ from typing import Optional
 
 import requests
 
+_PROMPT_DIR = os.path.join(os.path.dirname(__file__), "prompts")
+
+
+def _load_prompt(name: str) -> str:
+    with open(os.path.join(_PROMPT_DIR, name)) as f:
+        return f.read()
+
+
+def _load_json_prompt(name: str) -> dict:
+    with open(os.path.join(_PROMPT_DIR, name)) as f:
+        return json.load(f)
+
 logger = logging.getLogger(__name__)
 
 
@@ -305,110 +317,10 @@ class LLMEngine:
 # - Prohibition against defaulting to 0.50
 # - Requirement to differ from peers
 
-AGENT_SYSTEM_PROMPT = """You are {name}, a {background}
-
-Your personality: {personality}
-
-CRITICAL RULES:
-- You MUST answer from your specific professional perspective, not as a generic analyst
-- Your probability estimate should reflect YOUR expertise and biases, not a balanced view
-- Do NOT default to 0.50 — take a position based on your background
-- {diversity_instruction}
-- Respond with ONLY a valid JSON object, no other text"""
-
-AGENT_INITIAL_PROMPT = """As a {background_short}, estimate the probability of this question resolving YES:
-
-Question: {question}
-
-Context:
-{context}
-
-Pressures FOR YES: {pressures_yes}
-Pressures FOR NO: {pressures_no}
-Key uncertainties: {pressures_uncertain}
-
-{persona_nudge}
-
-You MUST give a specific probability reflecting your professional view. Avoid 0.45-0.55 unless you have strong reasons — most questions have directional evidence.
-
-Return JSON:
-{{
-  "initial_score": <float 0.0-1.0>,
-  "confidence": <float 0.0-1.0>,
-  "reasoning": "<3-5 sentences drawing on your SPECIFIC expertise, not generic analysis>",
-  "key_factors": ["factor1", "factor2", "factor3"]
-}}"""
-
-AGENT_DELIBERATION_PROMPT = """You are {name}, a {background_short}. Your personality: {personality}.
-
-Question: {question}
-Your current estimate: P(YES) = {current_score:.2f}
-
-Peer opinions this round:
-{peer_opinions}
-
-Your prior reasoning:
-{memory}
-
-{deliberation_nudge}
-
-Update your estimate. You may move toward peers if their evidence is compelling, but do NOT simply average. Maintain your professional perspective.
-
-Return JSON:
-{{
-  "updated_score": <float 0.0-1.0>,
-  "confidence": <float 0.0-1.0>,
-  "reflection": "<2-3 sentences on what specifically changed or didn't change your mind>",
-  "new_insight": "<one concrete insight from this round>"
-}}"""
-
-# Per-archetype diversity instructions
-DIVERSITY_INSTRUCTIONS = {
-    "analyst": "You are evidence-driven. Only move your estimate if you see hard data.",
-    "calibrator": "You focus on base rates. Anchor to historical frequency of similar events.",
-    "contrarian": "You ACTIVELY challenge consensus. If peers cluster around a number, explain why they might be wrong. Your estimate should often differ from the group mean by at least 0.15.",
-    "creative": "You consider unlikely scenarios others miss. Think about tail risks, black swans, and second-order effects. Your estimate can be more extreme than others.",
-}
-
-# Persona-specific nudges for initial forecast
-PERSONA_NUDGES = {
-    "analyst": "As an analyst, focus on the quantitative evidence. What do the numbers say?",
-    "calibrator": "As a calibrator, what is the historical base rate for this type of event? Start there and adjust.",
-    "contrarian": "As a contrarian, what is the consensus view? Now argue against it. Your estimate should challenge the obvious answer.",
-    "creative": "As a creative thinker, what are the scenarios that would surprise everyone? Consider both extreme YES and extreme NO outcomes.",
-}
-
-# Deliberation nudges
-DELIBERATION_NUDGES = {
-    "analyst": "Evaluate the quality of peer evidence. Only shift if they cite data you haven't considered.",
-    "calibrator": "Check: are peers anchoring to narratives instead of base rates? Correct for that.",
-    "contrarian": "If peers are converging, resist. The value you add is maintaining an independent view. Only converge if they present evidence that specifically refutes your position.",
-    "creative": "What are peers missing? Is there a scenario none of them considered?",
-}
-
-# Context-to-anchor: when no market price is available, LLM estimates base rate
-ANCHOR_PROMPT = """You are a calibrated forecaster. Given the question and context below, estimate the probability of YES.
-
-Question: {question}
-
-Context: {context}
-
-Consider:
-1. Historical base rates for this type of event
-2. The specific evidence in the context
-3. Known biases (people overestimate dramatic events, underestimate inertia)
-
-IMPORTANT: Be precise with low probabilities. Do NOT round everything to 5%.
-Use the full range:
-- 1-2%: virtually impossible (violates physics, no precedent ever)
-- 3-5%: extremely unlikely (would require multiple unprecedented events)
-- 8-12%: unlikely but has some precedent or plausible pathway
-- 15-25%: possible but against base rates
-- 30-45%: could go either way, leaning NO
-- 50%: true coin flip (avoid unless genuinely uncertain)
-- 55-70%: could go either way, leaning YES
-- 75-90%: likely, strong evidence supports it
-- 95-99%: near certain, would require extraordinary circumstances to fail
-
-Respond with ONLY a JSON object:
-{{"probability": <float 0.0-1.0>, "reasoning": "<one sentence>"}}"""
+AGENT_SYSTEM_PROMPT = _load_prompt("agent_system.txt")
+AGENT_INITIAL_PROMPT = _load_prompt("agent_initial.txt")
+AGENT_DELIBERATION_PROMPT = _load_prompt("agent_deliberation.txt")
+ANCHOR_PROMPT = _load_prompt("anchor.txt")
+DIVERSITY_INSTRUCTIONS = _load_json_prompt("diversity_instructions.json")
+PERSONA_NUDGES = _load_json_prompt("persona_nudges.json")
+DELIBERATION_NUDGES = _load_json_prompt("deliberation_nudges.json")
