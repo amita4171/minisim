@@ -20,7 +20,8 @@ import json
 import logging
 import os
 import time
-from datetime import datetime
+import urllib.request
+from datetime import datetime, timezone
 
 logger = logging.getLogger(__name__)
 
@@ -163,6 +164,8 @@ def run_bot(
         print("No new questions to forecast.")
         return already_forecasted
 
+    submitted_summaries: list[dict] = []
+
     for p in new_questions:
         q = p.get("question", {})
         qid = q["id"]
@@ -178,10 +181,25 @@ def run_bot(
 
         print(f"\n--- Q{qid}: {title[:65]} ---")
 
-        # Run prediction
+        # Research the question for current context
+        research_context = ""
+        research_count = 0
         try:
-            result = run_minisim_prediction(title, model=model)
+            from src.research.web_research import search_web
+            results = search_web(title, max_results=3)
+            if results:
+                research_context = "\n".join(f"- {r['title']}: {r['snippet'][:150]}" for r in results)
+                research_count = len(results)
+                print(f"  Research: {research_count} results found")
+        except Exception:
+            pass
+
+        # Run prediction
+        t_start = time.time()
+        try:
+            result = run_minisim_prediction(title, context=research_context, model=model)
             prob = result["swarm_probability_yes"]
+            elapsed_ms = int((time.time() - t_start) * 1000)
             print(f"  Prediction: P(YES) = {prob:.3f}")
         except Exception as e:
             print(f"  Prediction failed: {e}")
@@ -205,6 +223,23 @@ def run_bot(
         comment_ok = submit_comment(post_id, reasoning)
         print(f"  Comment: {'submitted' if comment_ok else 'failed'}")
 
+        # Structured JSONL log
+        route_info = result.get("routing", {})
+        _log_prediction(
+            tournament=tournament,
+            question_id=qid,
+            question=title,
+            probability=prob,
+            route=route_info.get("route", "unknown"),
+            model_name=model or "default",
+            research_results=research_count,
+            elapsed_ms=elapsed_ms,
+            submitted=True,
+        )
+
+        # Collect for batch Slack notification
+        submitted_summaries.append({"title": title, "prob": prob})
+
         # Log to track record
         try:
             from src.db.database import Database
@@ -226,26 +261,110 @@ def run_bot(
 
         time.sleep(2)  # rate limit courtesy
 
+    # Slack notification for the batch
+    if submitted_summaries:
+        _notify_slack(tournament, submitted_summaries)
+
     return already_forecasted
 
 
 FORECASTED_CACHE = "results/forecasted_questions.json"
 
 
-def _load_forecasted() -> set:
+def _cache_path(tournament: str | None = None) -> str:
+    """Return the cache file path for a given tournament.
+
+    If *tournament* is None the module-level FORECASTED_CACHE is returned
+    (preserves backward-compat with tests that patch that constant).
+    """
+    if tournament is None:
+        return FORECASTED_CACHE
+    slug = tournament.replace("/", "_").replace(" ", "_")
+    return f"results/forecasted_{slug}.json"
+
+
+def _load_forecasted(tournament: str | None = None) -> set:
     """Load previously forecasted question IDs from disk."""
+    path = _cache_path(tournament)
     try:
-        with open(FORECASTED_CACHE) as f:
+        with open(path) as f:
             return set(json.load(f))
     except (FileNotFoundError, json.JSONDecodeError):
         return set()
 
 
-def _save_forecasted(forecasted: set):
+def _save_forecasted(forecasted: set, tournament: str | None = None):
     """Save forecasted question IDs to disk."""
-    os.makedirs(os.path.dirname(FORECASTED_CACHE) or ".", exist_ok=True)
-    with open(FORECASTED_CACHE, "w") as f:
+    path = _cache_path(tournament)
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    with open(path, "w") as f:
         json.dump(sorted(forecasted), f)
+
+
+BOT_LOG_PATH = "results/bot_log.jsonl"
+
+
+def _log_prediction(
+    tournament: str,
+    question_id: int,
+    question: str,
+    probability: float,
+    route: str,
+    model_name: str,
+    research_results: int,
+    elapsed_ms: int,
+    submitted: bool,
+):
+    """Append one JSON line to the structured bot log."""
+    entry = {
+        "timestamp": datetime.now(timezone.utc).isoformat(),
+        "tournament": tournament,
+        "question_id": question_id,
+        "question": question,
+        "probability": round(probability, 4),
+        "route": route,
+        "model": model_name,
+        "research_results": research_results,
+        "elapsed_ms": elapsed_ms,
+        "submitted": submitted,
+    }
+    try:
+        os.makedirs(os.path.dirname(BOT_LOG_PATH) or ".", exist_ok=True)
+        with open(BOT_LOG_PATH, "a") as f:
+            f.write(json.dumps(entry) + "\n")
+    except Exception as e:
+        logger.warning(f"Failed to write bot log: {e}")
+
+
+def _notify_slack(tournament: str, submitted: list[dict]):
+    """Send a Slack webhook notification summarising submitted forecasts.
+
+    Reads SLACK_WEBHOOK_URL from the environment.  If the variable is not
+    set the function returns silently.
+    """
+    webhook_url = os.environ.get("SLACK_WEBHOOK_URL", "")
+    if not webhook_url:
+        return
+
+    question_parts = ", ".join(
+        f"{s['title'][:40]} (P={s['prob']:.2f})" for s in submitted
+    )
+    text = (
+        f"MiniSim Bot: Submitted {len(submitted)} forecasts to {tournament}\n"
+        f"Questions: {question_parts}"
+    )
+
+    payload = json.dumps({"text": text}).encode("utf-8")
+    req = urllib.request.Request(
+        webhook_url,
+        data=payload,
+        headers={"Content-Type": "application/json"},
+        method="POST",
+    )
+    try:
+        urllib.request.urlopen(req, timeout=10)
+    except Exception as e:
+        logger.warning(f"Slack notification failed: {e}")
 
 
 def main():
@@ -258,7 +377,7 @@ def main():
     parser.add_argument("--model", type=str, default=None, help="LLM model (e.g., qwen2.5:14b)")
     args = parser.parse_args()
 
-    already_forecasted = _load_forecasted()
+    already_forecasted = _load_forecasted(args.tournament)
     print(f"Loaded {len(already_forecasted)} previously forecasted questions")
 
     while True:
@@ -269,7 +388,7 @@ def main():
             model=args.model,
         )
 
-        _save_forecasted(already_forecasted)
+        _save_forecasted(already_forecasted, args.tournament)
 
         if not args.watch:
             break
