@@ -6,7 +6,7 @@ import pytest
 # ── Kalshi Client ──
 
 def test_kalshi_parse_market():
-    from src.kalshi_client import parse_market
+    from src.markets.kalshi_client import parse_market
 
     raw = {
         "ticker": "KXFED-26MAY-YES",
@@ -34,7 +34,7 @@ def test_kalshi_parse_market():
 
 
 def test_kalshi_parse_resolved_yes():
-    from src.kalshi_client import parse_market
+    from src.markets.kalshi_client import parse_market
 
     raw = {
         "ticker": "TEST",
@@ -53,7 +53,7 @@ def test_kalshi_parse_resolved_yes():
 
 
 def test_kalshi_parse_resolved_no():
-    from src.kalshi_client import parse_market
+    from src.markets.kalshi_client import parse_market
 
     raw = {
         "ticker": "TEST",
@@ -71,7 +71,7 @@ def test_kalshi_parse_resolved_no():
 # ── Manifold Client ──
 
 def test_manifold_parse_market():
-    from src.manifold_client import parse_market
+    from src.markets.manifold_client import parse_market
 
     raw = {
         "id": "abc123",
@@ -96,7 +96,7 @@ def test_manifold_parse_market():
 
 
 def test_manifold_parse_resolved():
-    from src.manifold_client import parse_market
+    from src.markets.manifold_client import parse_market
 
     raw = {
         "id": "xyz",
@@ -115,7 +115,7 @@ def test_manifold_parse_resolved():
 # ── Polymarket Client ──
 
 def test_polymarket_parse_market():
-    from src.polymarket_client import parse_market
+    from src.markets.polymarket_client import parse_market
 
     raw = {
         "id": "12345",
@@ -141,7 +141,7 @@ def test_polymarket_parse_market():
 
 def test_polymarket_parse_with_malformed_prices():
     """Should handle invalid outcomePrices gracefully."""
-    from src.polymarket_client import parse_market
+    from src.markets.polymarket_client import parse_market
 
     raw = {
         "id": "bad",
@@ -161,7 +161,7 @@ def test_polymarket_parse_with_malformed_prices():
 # ── PredictIt Client ──
 
 def test_predictit_parse_market():
-    from src.predictit_client import parse_market
+    from src.markets.predictit_client import parse_market
 
     raw = {
         "id": 7456,
@@ -198,7 +198,7 @@ def test_predictit_parse_market():
 # ── Cross-platform Arbitrage ──
 
 def test_arbitrage_profit_calculation():
-    from src.cross_platform import compute_arbitrage_profit
+    from src.markets.cross_platform import compute_arbitrage_profit
 
     result = compute_arbitrage_profit(0.30, 0.50, "kalshi", "polymarket", 100)
     assert result["is_profitable"]
@@ -212,7 +212,7 @@ def test_arbitrage_profit_calculation():
 
 def test_arbitrage_predictit_high_fees():
     """PredictIt's 15% effective fees should kill most arbitrage."""
-    from src.cross_platform import compute_arbitrage_profit
+    from src.markets.cross_platform import compute_arbitrage_profit
 
     # 10% spread — profitable on Kalshi/Polymarket but not PredictIt
     result = compute_arbitrage_profit(0.40, 0.50, "predictit", "kalshi", 100)

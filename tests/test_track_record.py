@@ -4,7 +4,7 @@ import json
 import tempfile
 import pytest
 
-from src.track_record import TrackRecord
+from src.db.track_record import TrackRecord
 
 
 @pytest.fixture

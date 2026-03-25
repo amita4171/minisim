@@ -21,7 +21,7 @@ import json
 import statistics
 import time
 
-from src.llm_engine import LLMEngine, ANCHOR_PROMPT
+from src.core.llm_engine import LLMEngine, ANCHOR_PROMPT
 
 
 # Resolved questions with known outcomes and rich context
@@ -142,7 +142,7 @@ def run_benchmark(
 
         # Method 2: Swarm
         t0 = time.time()
-        from src.llm_simulation import run_llm_simulation
+        from src.core.llm_simulation import run_llm_simulation
         swarm_result = run_llm_simulation(
             question=bq["q"],
             context=bq["context"],

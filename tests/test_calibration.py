@@ -1,5 +1,5 @@
 """Tests for calibration transformer."""
-from src.calibration import CalibrationTransformer
+from src.core.calibration import CalibrationTransformer
 
 
 def test_unfitted_returns_identity():

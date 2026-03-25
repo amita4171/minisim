@@ -1,5 +1,5 @@
 """Tests for question-specific alpha signals."""
-from src.alpha import _compute_question_alpha, _compute_domain_expertise
+from src.agents.alpha import _compute_question_alpha, _compute_domain_expertise
 
 
 def test_rare_events_get_negative_alpha():

@@ -13,7 +13,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit as st
 
-from src.offline_engine import swarm_score_offline
+from src.core.offline_engine import swarm_score_offline
 
 st.set_page_config(page_title="MiniSim Swarm Prediction", layout="wide")
 st.title("MiniSim — Swarm Prediction Engine")
@@ -316,7 +316,7 @@ with col_clusters:
 st.divider()
 st.subheader("Track Record")
 try:
-    from src.track_record import TrackRecord
+    from src.db.track_record import TrackRecord
     tr = TrackRecord()
     metrics = tr.compute_metrics()
 

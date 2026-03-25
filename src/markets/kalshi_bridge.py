@@ -4,10 +4,10 @@ swarm_score_kalshi_market() is a drop-in replacement for a single-LLM scorer.
 """
 from __future__ import annotations
 
-from src.world_builder import build_world
-from src.agent_factory import generate_population
-from src.simulation_loop import run_simulation
-from src.aggregator import aggregate
+from src.agents.world_builder import build_world
+from src.agents.agent_factory import generate_population
+from src.agents.simulation_loop import run_simulation
+from src.core.aggregator import aggregate
 
 
 def swarm_score_kalshi_market(

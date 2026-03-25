@@ -26,7 +26,7 @@ from __future__ import annotations
 import statistics
 import time
 
-from src.llm_engine import LLMEngine, ANCHOR_PROMPT
+from src.core.llm_engine import LLMEngine, ANCHOR_PROMPT
 
 
 # Routing thresholds (validated on 10-question benchmark)
@@ -58,7 +58,7 @@ def routed_predict(
         result = _run_with_initial_only(question, context, n_agents, market_price,
                                          peer_sample_size, engine)
     else:
-        from src.offline_engine import swarm_score_offline
+        from src.core.offline_engine import swarm_score_offline
         result = swarm_score_offline(question, context, n_agents, 1, market_price, peer_sample_size)
 
     initial_scores = [a["initial_score"] for a in result.get("agents", [])]
@@ -137,7 +137,7 @@ def _run_with_initial_only(
     peer_sample_size: int, engine: LLMEngine,
 ) -> dict:
     """Generate agents with initial forecasts only (no deliberation rounds)."""
-    from src.llm_simulation import run_llm_simulation
+    from src.core.llm_simulation import run_llm_simulation
     return run_llm_simulation(
         question=question,
         context=context,
@@ -154,7 +154,7 @@ def _run_deliberation(
     market_price: float | None, peer_sample_size: int, engine: LLMEngine,
 ) -> dict:
     """Run full LLM simulation with deliberation."""
-    from src.llm_simulation import run_llm_simulation
+    from src.core.llm_simulation import run_llm_simulation
     return run_llm_simulation(
         question=question,
         context=context,

@@ -2,7 +2,7 @@
 import os
 import tempfile
 import pytest
-from src.database import Database
+from src.db.database import Database
 
 
 @pytest.fixture

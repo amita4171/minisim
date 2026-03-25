@@ -68,7 +68,7 @@ def aggregate(agents: list[dict], market_price: float | None = None) -> dict:
     # --- Method 3: Apply Platt scaling calibration if model exists ---
     swarm_prob_raw = swarm_prob
     try:
-        from src.calibration import CalibrationTransformer
+        from src.core.calibration import CalibrationTransformer
         ct = CalibrationTransformer.load()
         if ct.is_fitted:
             swarm_prob = ct.transform(swarm_prob)

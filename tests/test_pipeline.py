@@ -6,7 +6,7 @@ import pytest
 @pytest.mark.slow
 def test_offline_pipeline_end_to_end():
     """Full pipeline: question → world build → agents → simulation → aggregation."""
-    from src.offline_engine import swarm_score_offline
+    from src.core.offline_engine import swarm_score_offline
 
     result = swarm_score_offline(
         question="Will the US economy enter recession in 2026?",
@@ -42,7 +42,7 @@ def test_offline_pipeline_end_to_end():
 @pytest.mark.slow
 def test_calibration_applied_in_pipeline():
     """Verify CalibrationTransformer runs during aggregation."""
-    from src.offline_engine import swarm_score_offline
+    from src.core.offline_engine import swarm_score_offline
 
     result = swarm_score_offline("Will X happen?", n_agents=10, rounds=1, market_price=0.50)
 
@@ -55,7 +55,7 @@ def test_calibration_applied_in_pipeline():
 def test_router_dispatches_correctly():
     """Router should dispatch to single_llm or full_swarm based on variance."""
     # Can't test LLM mode without Ollama, but we can test the offline fallback
-    from src.offline_engine import swarm_score_offline
+    from src.core.offline_engine import swarm_score_offline
 
     # Low variance question (near-certain) should have low stdev
     result = swarm_score_offline(
@@ -72,7 +72,7 @@ def test_router_dispatches_correctly():
 
 def test_cross_platform_matching():
     """Cross-platform question matching works on synthetic data."""
-    from src.cross_platform import find_cross_listed
+    from src.markets.cross_platform import find_cross_listed
 
     markets = [
         {"question": "Will Trump win the 2028 election?", "price": 0.30,
@@ -91,7 +91,7 @@ def test_cross_platform_matching():
 
 def test_fee_aware_arbitrage():
     """Fee calculation produces correct results."""
-    from src.cross_platform import compute_arbitrage_profit
+    from src.markets.cross_platform import compute_arbitrage_profit
 
     # Kalshi 0.40 vs Polymarket 0.55 — should be profitable
     result = compute_arbitrage_profit(0.40, 0.55, "kalshi", "polymarket", 100)
@@ -108,7 +108,7 @@ def test_database_prediction_lifecycle():
     """Full lifecycle: log → query → resolve → metrics."""
     import os
     import tempfile
-    from src.database import Database
+    from src.db.database import Database
 
     fd, path = tempfile.mkstemp(suffix=".db")
     os.close(fd)

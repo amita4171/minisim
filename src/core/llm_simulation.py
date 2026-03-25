@@ -24,7 +24,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 logger = logging.getLogger(__name__)
 
-from src.llm_engine import (
+from src.core.llm_engine import (
     LLMEngine,
     AGENT_SYSTEM_PROMPT,
     AGENT_INITIAL_PROMPT,
@@ -34,9 +34,9 @@ from src.llm_engine import (
     PERSONA_NUDGES,
     DELIBERATION_NUDGES,
 )
-from src.archetypes import BACKGROUNDS, PERSONALITIES, TEMP_TIERS, _make_name
-from src.world_templates import _detect_category, _generate_pressures, build_world_offline
-from src.aggregator import aggregate
+from src.agents.archetypes import BACKGROUNDS, PERSONALITIES, TEMP_TIERS, _make_name
+from src.agents.world_templates import _detect_category, _generate_pressures, build_world_offline
+from src.core.aggregator import aggregate
 
 
 CONCURRENCY = int(os.environ.get("MINISIM_CONCURRENCY", "2"))  # 2 optimal for Apple Silicon GPU
@@ -98,7 +98,7 @@ def run_llm_simulation(
 
     if not engine.is_available():
         print("  LLM not available, falling back to offline engine")
-        from src.offline_engine import swarm_score_offline
+        from src.core.offline_engine import swarm_score_offline
         return swarm_score_offline(question, context, n_agents, n_rounds, market_price, peer_sample_size)
 
     print(f"  LLM engine: {engine.backend}/{engine.model} (concurrency={concurrency})")
@@ -364,7 +364,7 @@ def run_llm_simulation(
 
     # Auto-log to database for calibration tracking
     try:
-        from src.database import Database
+        from src.db.database import Database
         db = Database()
         pred_id = db.log_prediction(
             question=question,

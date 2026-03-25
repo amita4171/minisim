@@ -1,6 +1,6 @@
 """Tests for the calibrated aggregation engine."""
 import pytest
-from src.aggregator import aggregate
+from src.core.aggregator import aggregate
 
 
 def _make_agents(scores, confidences=None):

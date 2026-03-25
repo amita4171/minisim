@@ -17,8 +17,8 @@ import json
 import statistics
 import time
 
-from src.kalshi_client import get_events, parse_market
-from src.offline_engine import swarm_score_offline
+from src.markets.kalshi_client import get_events, parse_market
+from src.core.offline_engine import swarm_score_offline
 
 
 def fetch_backtestable_markets(max_events: int = 500) -> list[dict]:

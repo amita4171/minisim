@@ -21,7 +21,7 @@ def _mock_engine(responses=None):
 @pytest.mark.slow
 def test_llm_simulation_runs_with_mock():
     """Full LLM simulation with mocked engine."""
-    from src.llm_simulation import run_llm_simulation
+    from src.core.llm_simulation import run_llm_simulation
 
     engine = _mock_engine()
     # Also mock the anchor prompt
@@ -55,7 +55,7 @@ def test_llm_simulation_runs_with_mock():
 @pytest.mark.slow
 def test_llm_simulation_fallback_on_failure():
     """When LLM calls fail, agents should use offline fallback."""
-    from src.llm_simulation import run_llm_simulation
+    from src.core.llm_simulation import run_llm_simulation
 
     engine = _mock_engine()
     engine.generate_json.return_value = None  # all calls fail
@@ -74,12 +74,12 @@ def test_llm_simulation_fallback_on_failure():
 
 def test_llm_simulation_offline_fallback_when_unavailable():
     """When engine is offline, should fall back to offline engine."""
-    from src.llm_simulation import run_llm_simulation
+    from src.core.llm_simulation import run_llm_simulation
 
     engine = MagicMock()
     engine.is_available.return_value = False
 
-    with patch("src.offline_engine.swarm_score_offline") as mock_offline:
+    with patch("src.core.offline_engine.swarm_score_offline") as mock_offline:
         mock_offline.return_value = {
             "swarm_probability_yes": 0.42,
             "agents": [],
@@ -95,7 +95,7 @@ def test_concurrency_from_env():
     with patch.dict(os.environ, {"MINISIM_CONCURRENCY": "3"}):
         # Re-import to pick up env var
         import importlib
-        import src.llm_simulation as mod
+        import src.core.llm_simulation as mod
         importlib.reload(mod)
         assert mod.CONCURRENCY == 3
         # Reset

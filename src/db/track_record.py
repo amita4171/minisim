@@ -92,7 +92,7 @@ class TrackRecord:
 
     def resolve_from_kalshi(self):
         """Auto-resolve predictions by checking Kalshi for settled markets."""
-        from src.kalshi_client import get_market
+        from src.markets.kalshi_client import get_market
 
         unresolved = [p for p in self.predictions if p["resolution"] is None and p["source"] == "kalshi"]
         resolved_count = 0

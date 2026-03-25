@@ -17,7 +17,7 @@ import json
 import statistics
 import time
 
-from src.calibration import CalibrationTransformer
+from src.core.calibration import CalibrationTransformer
 
 
 def run_calibration(
@@ -41,9 +41,9 @@ def run_calibration(
 
     # Get predict function
     if mode == "offline":
-        from src.offline_engine import swarm_score_offline as predict_fn
+        from src.core.offline_engine import swarm_score_offline as predict_fn
     else:
-        from src.llm_simulation import run_llm_simulation as predict_fn
+        from src.core.llm_simulation import run_llm_simulation as predict_fn
 
     predictions = []
     outcomes = []
@@ -62,7 +62,7 @@ def run_calibration(
             kwargs["rounds"] = n_rounds
         else:
             kwargs["n_rounds"] = n_rounds
-            from src.llm_engine import LLMEngine
+            from src.core.llm_engine import LLMEngine
             kwargs["engine"] = LLMEngine(model=model)
 
         try:

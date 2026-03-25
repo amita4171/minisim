@@ -21,12 +21,12 @@ from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
-from src.offline_engine import swarm_score_offline
+from src.core.offline_engine import swarm_score_offline
 
 
 def scan_kalshi(limit: int = 50) -> list[dict]:
     """Fetch active Kalshi markets suitable for scanning."""
-    from src.kalshi_client import get_active_markets
+    from src.markets.kalshi_client import get_active_markets
     try:
         markets = get_active_markets(limit=limit)
         # Filter to interesting ones (not sports props, meaningful title)
@@ -55,7 +55,7 @@ def scan_kalshi(limit: int = 50) -> list[dict]:
 
 def scan_polymarket(limit: int = 50) -> list[dict]:
     """Fetch active Polymarket markets suitable for scanning."""
-    from src.polymarket_client import get_active_markets
+    from src.markets.polymarket_client import get_active_markets
     try:
         markets = get_active_markets(limit=limit, min_volume=5000)
         interesting = []
@@ -79,7 +79,7 @@ def scan_polymarket(limit: int = 50) -> list[dict]:
 
 def scan_manifold(limit: int = 50) -> list[dict]:
     """Fetch active Manifold Markets suitable for scanning."""
-    from src.manifold_client import get_active_binary_markets
+    from src.markets.manifold_client import get_active_binary_markets
     try:
         markets = get_active_binary_markets(limit=limit, min_volume=500)
         interesting = []
@@ -103,7 +103,7 @@ def scan_manifold(limit: int = 50) -> list[dict]:
 
 def scan_predictit(limit: int = 50) -> list[dict]:
     """Fetch active PredictIt contracts suitable for scanning."""
-    from src.predictit_client import get_active_markets
+    from src.markets.predictit_client import get_active_markets
     try:
         contracts = get_active_markets()
         interesting = []
@@ -186,7 +186,7 @@ def run_scan(
 
         # Log every prediction to track record
         try:
-            from src.track_record import TrackRecord
+            from src.db.track_record import TrackRecord
             tr = TrackRecord()
             tr.log_prediction(
                 question=market["question"],

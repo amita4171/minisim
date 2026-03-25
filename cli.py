@@ -94,7 +94,7 @@ def cmd_dashboard(args):
 
 def cmd_calibrate(args):
     """Fit or apply calibration model."""
-    from src.calibration import CalibrationTransformer, fit_calibration_from_backtest
+    from src.core.calibration import CalibrationTransformer, fit_calibration_from_backtest
 
     if args.fit:
         ct = fit_calibration_from_backtest(args.backtest_file)
@@ -111,7 +111,7 @@ def cmd_calibrate(args):
 
 def cmd_track_record(args):
     """Show the prediction track record."""
-    from src.track_record import TrackRecord
+    from src.db.track_record import TrackRecord
     tr = TrackRecord()
     tr.print_summary()
 
@@ -123,7 +123,7 @@ def cmd_track_record(args):
 
 def cmd_arbitrage(args):
     """Find cross-platform arbitrage opportunities."""
-    from src.cross_platform import find_arbitrage
+    from src.markets.cross_platform import find_arbitrage
     arbs = find_arbitrage(min_spread=args.min_spread)
     if not arbs:
         print("No arbitrage opportunities found.")

@@ -1,5 +1,5 @@
 """Tests for cross-platform question matching and arbitrage detection."""
-from src.cross_platform import similarity, _normalize, find_cross_listed
+from src.markets.cross_platform import similarity, _normalize, find_cross_listed
 
 
 def test_similarity_identical():

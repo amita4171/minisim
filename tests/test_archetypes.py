@@ -1,5 +1,5 @@
 """Tests for agent archetypes and personality system."""
-from src.archetypes import BACKGROUNDS, PERSONALITIES, TEMP_TIERS, _make_name
+from src.agents.archetypes import BACKGROUNDS, PERSONALITIES, TEMP_TIERS, _make_name
 
 
 def test_backgrounds_not_empty():

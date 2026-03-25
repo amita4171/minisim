@@ -21,7 +21,7 @@ from typing import Optional
 
 import requests
 
-_PROMPT_DIR = os.path.join(os.path.dirname(__file__), "prompts")
+_PROMPT_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "prompts")
 
 
 def _load_prompt(name: str) -> str:

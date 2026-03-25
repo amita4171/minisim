@@ -100,8 +100,8 @@ def main():
     print("-" * 60)
 
     if args.smart:
-        from src.router import routed_predict
-        from src.llm_engine import LLMEngine
+        from src.core.router import routed_predict
+        from src.core.llm_engine import LLMEngine
         engine = LLMEngine(model=args.model)
         result = routed_predict(
             question=args.question,
@@ -113,8 +113,8 @@ def main():
             max_rounds=args.rounds,
         )
     elif args.llm:
-        from src.llm_simulation import run_llm_simulation
-        from src.llm_engine import LLMEngine
+        from src.core.llm_simulation import run_llm_simulation
+        from src.core.llm_engine import LLMEngine
         engine = LLMEngine(model=args.model)
         result = run_llm_simulation(
             question=args.question,
@@ -127,10 +127,10 @@ def main():
         )
     else:
         if args.offline:
-            from src.offline_engine import swarm_score_offline
+            from src.core.offline_engine import swarm_score_offline
             score_fn = swarm_score_offline
         else:
-            from src.kalshi_bridge import swarm_score_kalshi_market
+            from src.markets.kalshi_bridge import swarm_score_kalshi_market
             score_fn = swarm_score_kalshi_market
 
         kwargs = dict(

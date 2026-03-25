@@ -15,7 +15,7 @@ import json
 
 import requests
 
-from src.database import Database
+from src.db.database import Database
 
 BOT_TOKEN = os.environ.get("METACULUS_BOT_TOKEN", "")
 BASE_URL = "https://www.metaculus.com/api"

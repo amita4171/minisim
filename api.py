@@ -26,7 +26,7 @@ from typing import Optional
 from fastapi import BackgroundTasks, Depends, FastAPI, HTTPException, Header
 from pydantic import BaseModel, Field
 
-from src.database import Database
+from src.db.database import Database
 
 app = FastAPI(
     title="MiniSim Forecasting API",
@@ -131,8 +131,8 @@ def _run_prediction(pred_id: str, request: PredictRequest):
     """Run swarm prediction in background."""
     try:
         if request.config.mode == "smart":
-            from src.router import routed_predict
-            from src.llm_engine import LLMEngine
+            from src.core.router import routed_predict
+            from src.core.llm_engine import LLMEngine
             engine = LLMEngine(model=request.config.model)
             result = routed_predict(
                 question=request.question,
@@ -144,7 +144,7 @@ def _run_prediction(pred_id: str, request: PredictRequest):
                 max_rounds=request.config.n_rounds,
             )
         elif request.config.mode == "offline":
-            from src.offline_engine import swarm_score_offline
+            from src.core.offline_engine import swarm_score_offline
             result = swarm_score_offline(
                 question=request.question,
                 context=request.context,
@@ -154,8 +154,8 @@ def _run_prediction(pred_id: str, request: PredictRequest):
                 peer_sample_size=request.config.peer_sample_size,
             )
         else:
-            from src.llm_simulation import run_llm_simulation
-            from src.llm_engine import LLMEngine
+            from src.core.llm_simulation import run_llm_simulation
+            from src.core.llm_engine import LLMEngine
             backend = "ollama" if request.config.mode == "llm-ollama" else "anthropic"
             engine = LLMEngine(backend=backend, model=request.config.model)
             result = run_llm_simulation(

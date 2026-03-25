@@ -47,7 +47,7 @@ def fetch_all_markets(
 
     if "kalshi" in sources:
         try:
-            from src.kalshi_client import get_active_markets
+            from src.markets.kalshi_client import get_active_markets
             markets = get_active_markets(limit=limit_per_source)
             for m in markets:
                 if m["price"] <= 0.05 or m["price"] >= 0.95:
@@ -68,7 +68,7 @@ def fetch_all_markets(
 
     if "polymarket" in sources:
         try:
-            from src.polymarket_client import get_active_markets
+            from src.markets.polymarket_client import get_active_markets
             markets = get_active_markets(limit=limit_per_source, min_volume=1000)
             for m in markets:
                 if m["price"] <= 0.05 or m["price"] >= 0.95:
@@ -86,7 +86,7 @@ def fetch_all_markets(
 
     if "manifold" in sources:
         try:
-            from src.manifold_client import get_active_binary_markets
+            from src.markets.manifold_client import get_active_binary_markets
             markets = get_active_binary_markets(limit=limit_per_source, min_volume=100)
             for m in markets:
                 if m["price"] <= 0.05 or m["price"] >= 0.95:
@@ -104,7 +104,7 @@ def fetch_all_markets(
 
     if "predictit" in sources:
         try:
-            from src.predictit_client import get_active_markets
+            from src.markets.predictit_client import get_active_markets
             markets = get_active_markets()
             for m in markets:
                 all_markets.append({

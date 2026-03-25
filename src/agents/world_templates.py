@@ -12,7 +12,7 @@ import time
 
 import yaml
 
-_DATA_DIR = os.path.join(os.path.dirname(__file__), "data")
+_DATA_DIR = os.path.join(os.path.dirname(os.path.dirname(__file__)), "data")
 
 
 def _load_yaml(name: str):

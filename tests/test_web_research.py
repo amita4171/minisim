@@ -2,21 +2,21 @@
 from unittest.mock import patch, MagicMock
 import pytest
 
-from src.web_research import search_web, _search_tavily, _search_duckduckgo, research_question, assign_research_to_agents
+from src.research.web_research import search_web, _search_tavily, _search_duckduckgo, research_question, assign_research_to_agents
 
 
 def test_search_web_falls_back_to_ddg_without_tavily_key():
     """Without TAVILY_API_KEY, should use DuckDuckGo."""
-    with patch("src.web_research.TAVILY_API_KEY", ""):
-        with patch("src.web_research._search_duckduckgo", return_value=[{"title": "test", "snippet": "test", "url": "", "source": "ddg"}]) as mock_ddg:
+    with patch("src.research.web_research.TAVILY_API_KEY", ""):
+        with patch("src.research.web_research._search_duckduckgo", return_value=[{"title": "test", "snippet": "test", "url": "", "source": "ddg"}]) as mock_ddg:
             results = search_web("test query")
             mock_ddg.assert_called_once()
 
 
 def test_search_web_uses_tavily_when_key_set():
     """With TAVILY_API_KEY, should try Tavily first."""
-    with patch("src.web_research.TAVILY_API_KEY", "fake-key"):
-        with patch("src.web_research._search_tavily", return_value=[{"title": "test", "snippet": "test", "url": "", "source": "tavily"}]) as mock_tav:
+    with patch("src.research.web_research.TAVILY_API_KEY", "fake-key"):
+        with patch("src.research.web_research._search_tavily", return_value=[{"title": "test", "snippet": "test", "url": "", "source": "tavily"}]) as mock_tav:
             results = search_web("test query")
             mock_tav.assert_called_once()
             assert results[0]["source"] == "tavily"
@@ -24,9 +24,9 @@ def test_search_web_uses_tavily_when_key_set():
 
 def test_search_web_tavily_fallback_on_failure():
     """If Tavily fails, should fall back to DuckDuckGo."""
-    with patch("src.web_research.TAVILY_API_KEY", "fake-key"):
-        with patch("src.web_research._search_tavily", return_value=[]):
-            with patch("src.web_research._search_duckduckgo", return_value=[{"title": "ddg", "snippet": "fallback", "url": "", "source": "ddg"}]) as mock_ddg:
+    with patch("src.research.web_research.TAVILY_API_KEY", "fake-key"):
+        with patch("src.research.web_research._search_tavily", return_value=[]):
+            with patch("src.research.web_research._search_duckduckgo", return_value=[{"title": "ddg", "snippet": "fallback", "url": "", "source": "ddg"}]) as mock_ddg:
                 results = search_web("test query")
                 mock_ddg.assert_called_once()
 
@@ -44,7 +44,7 @@ def test_duckduckgo_returns_structured_results():
         ],
     }
 
-    with patch("src.web_research.requests.get", return_value=mock_response):
+    with patch("src.research.web_research.requests.get", return_value=mock_response):
         results = _search_duckduckgo("Federal Reserve")
         assert len(results) >= 1
         assert results[0]["source"] == "duckduckgo_abstract"
@@ -53,7 +53,7 @@ def test_duckduckgo_returns_structured_results():
 
 def test_research_question_generates_perspectives():
     """research_question should generate multiple search perspectives."""
-    with patch("src.web_research.search_web", return_value=[{"title": "t", "snippet": "s", "url": "", "source": "test"}]):
+    with patch("src.research.web_research.search_web", return_value=[{"title": "t", "snippet": "s", "url": "", "source": "test"}]):
         bundles = research_question("Will the Fed cut rates?", n_perspectives=3)
         assert len(bundles) == 3
         labels = [b["perspective"] for b in bundles]
@@ -89,6 +89,6 @@ def test_search_web_respects_max_results():
         ],
     }
 
-    with patch("src.web_research.requests.get", return_value=mock_response):
+    with patch("src.research.web_research.requests.get", return_value=mock_response):
         results = _search_duckduckgo("test", max_results=3)
         assert len(results) <= 3

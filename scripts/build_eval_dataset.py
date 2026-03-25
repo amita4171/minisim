@@ -21,12 +21,12 @@ import json
 import statistics
 import time
 
-from src.database import Database
+from src.db.database import Database
 
 
 def pull_manifold_resolved(target: int = 400) -> list[dict]:
     """Pull resolved binary markets from Manifold."""
-    from src.manifold_client import search_markets, parse_market
+    from src.markets.manifold_client import search_markets, parse_market
 
     print(f"  Pulling Manifold resolved markets (target: {target})...")
     all_markets = []
@@ -80,7 +80,7 @@ def pull_manifold_resolved(target: int = 400) -> list[dict]:
 
 def pull_kalshi_resolved(target: int = 300) -> list[dict]:
     """Pull settled markets from Kalshi."""
-    from src.kalshi_client import get_settled_markets
+    from src.markets.kalshi_client import get_settled_markets
 
     print(f"  Pulling Kalshi settled markets (target: {target})...")
     min_ts = int(time.time()) - (180 * 86400)  # last 180 days

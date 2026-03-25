@@ -63,16 +63,16 @@ MODE_COLLAPSE_TESTS = [
 def _get_predict_fn(mode: str, model: str | None = None):
     """Get the appropriate prediction function for the eval mode."""
     if mode == "offline":
-        from src.offline_engine import swarm_score_offline
+        from src.core.offline_engine import swarm_score_offline
         return swarm_score_offline, {}
     elif mode == "llm-ollama":
-        from src.llm_simulation import run_llm_simulation
-        from src.llm_engine import LLMEngine
+        from src.core.llm_simulation import run_llm_simulation
+        from src.core.llm_engine import LLMEngine
         engine = LLMEngine(backend="ollama", model=model)
         return run_llm_simulation, {"engine": engine}
     elif mode == "llm-anthropic":
-        from src.llm_simulation import run_llm_simulation
-        from src.llm_engine import LLMEngine
+        from src.core.llm_simulation import run_llm_simulation
+        from src.core.llm_engine import LLMEngine
         engine = LLMEngine(backend="anthropic", model=model)
         return run_llm_simulation, {"engine": engine}
     else:

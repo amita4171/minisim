@@ -1,10 +1,10 @@
 """Tests for the offline simulation engine."""
-from src.offline_engine import (
+from src.core.offline_engine import (
     swarm_score_offline,
     generate_population_offline,
     run_simulation_offline,
 )
-from src.world_templates import build_world_offline, _detect_category
+from src.agents.world_templates import build_world_offline, _detect_category
 
 
 def test_detect_category():

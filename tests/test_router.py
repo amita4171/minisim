@@ -2,7 +2,7 @@
 from unittest.mock import patch, MagicMock
 import pytest
 
-from src.llm_engine import LLMEngine
+from src.core.llm_engine import LLMEngine
 
 
 # ── LLM Engine Tests ──
@@ -75,7 +75,7 @@ def test_engine_retry_increments_counter():
 
 def test_router_single_llm_on_low_variance():
     """When agents agree (low stdev), router should use single LLM."""
-    from src.router import LOW_VARIANCE_THRESHOLD
+    from src.core.router import LOW_VARIANCE_THRESHOLD
 
     # Mock the LLM engine and simulation
     mock_engine = MagicMock()
@@ -94,9 +94,9 @@ def test_router_single_llm_on_low_variance():
         "diversity_score": 0.01,
     }
 
-    with patch("src.router._run_with_initial_only", return_value=low_var_result):
-        with patch("src.router._get_single_llm_prediction", return_value=0.12):
-            from src.router import routed_predict
+    with patch("src.core.router._run_with_initial_only", return_value=low_var_result):
+        with patch("src.core.router._get_single_llm_prediction", return_value=0.12):
+            from src.core.router import routed_predict
             result = routed_predict(
                 "Will a meteor hit Earth tomorrow?",
                 engine=mock_engine,
@@ -107,7 +107,7 @@ def test_router_single_llm_on_low_variance():
 
 def test_router_full_swarm_on_high_variance():
     """When agents disagree (high stdev), router should use full swarm."""
-    from src.router import HIGH_VARIANCE_THRESHOLD
+    from src.core.router import HIGH_VARIANCE_THRESHOLD
 
     mock_engine = MagicMock()
     mock_engine.is_available.return_value = True
@@ -125,9 +125,9 @@ def test_router_full_swarm_on_high_variance():
 
     swarm_result = {**high_var_result, "routing": None}
 
-    with patch("src.router._run_with_initial_only", return_value=high_var_result):
-        with patch("src.router._run_deliberation", return_value=swarm_result):
-            from src.router import routed_predict
+    with patch("src.core.router._run_with_initial_only", return_value=high_var_result):
+        with patch("src.core.router._run_deliberation", return_value=swarm_result):
+            from src.core.router import routed_predict
             result = routed_predict(
                 "Will AI replace 10% of jobs by 2028?",
                 engine=mock_engine,
@@ -155,9 +155,9 @@ def test_router_includes_metadata():
         "diversity_score": 0.08,
     }
 
-    with patch("src.router._run_with_initial_only", return_value=mid_var_result):
-        with patch("src.router._run_deliberation", return_value=mid_var_result):
-            from src.router import routed_predict
+    with patch("src.core.router._run_with_initial_only", return_value=mid_var_result):
+        with patch("src.core.router._run_deliberation", return_value=mid_var_result):
+            from src.core.router import routed_predict
             result = routed_predict("Test question?", engine=mock_engine, n_agents=3)
             assert "routing" in result
             assert "route" in result["routing"]
@@ -167,7 +167,7 @@ def test_router_includes_metadata():
 
 def test_router_thresholds():
     """Verify threshold constants are reasonable."""
-    from src.router import LOW_VARIANCE_THRESHOLD, HIGH_VARIANCE_THRESHOLD
+    from src.core.router import LOW_VARIANCE_THRESHOLD, HIGH_VARIANCE_THRESHOLD
     assert 0 < LOW_VARIANCE_THRESHOLD < HIGH_VARIANCE_THRESHOLD < 1
     assert LOW_VARIANCE_THRESHOLD == 0.05
     assert HIGH_VARIANCE_THRESHOLD == 0.10

@@ -1,5 +1,5 @@
 """Tests for world model templates — world building, pressures, evidence."""
-from src.world_templates import (
+from src.agents.world_templates import (
     _detect_category,
     build_world_offline,
     _generate_pressures,

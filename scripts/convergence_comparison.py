@@ -12,13 +12,13 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 import json
 import statistics
 
-from src.offline_engine import (
+from src.core.offline_engine import (
     build_world_offline,
     generate_population_offline,
     run_simulation_offline,
     BACKGROUNDS,
 )
-from src.aggregator import aggregate
+from src.core.aggregator import aggregate
 
 
 QUESTIONS = [

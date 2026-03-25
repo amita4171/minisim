@@ -87,11 +87,11 @@ def submit_comment(post_id: int, comment: str) -> bool:
 
 def run_minisim_prediction(question: str, context: str = "", model: str | None = None) -> dict:
     """Run MiniSim prediction using the router (smart mode)."""
-    from src.llm_engine import LLMEngine
+    from src.core.llm_engine import LLMEngine
     engine = LLMEngine(model=model)
 
     if engine.is_available():
-        from src.router import routed_predict
+        from src.core.router import routed_predict
         return routed_predict(
             question=question,
             context=context,
@@ -100,7 +100,7 @@ def run_minisim_prediction(question: str, context: str = "", model: str | None =
             max_rounds=2,
         )
     else:
-        from src.offline_engine import swarm_score_offline
+        from src.core.offline_engine import swarm_score_offline
         return swarm_score_offline(question, context, n_agents=15, rounds=2)
 
 
@@ -207,7 +207,7 @@ def run_bot(
 
         # Log to track record
         try:
-            from src.database import Database
+            from src.db.database import Database
             db = Database()
             db.log_prediction(
                 question=title,

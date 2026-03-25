@@ -2,7 +2,7 @@
 from unittest.mock import patch, MagicMock
 import pytest
 
-from src.edgar_pipeline import search_fulltext, search_filings, SP500_SAMPLE
+from src.research.edgar_pipeline import search_fulltext, search_filings, SP500_SAMPLE
 
 
 def test_sp500_sample_has_companies():
@@ -31,7 +31,7 @@ def test_search_fulltext_with_mock():
         }
     }
 
-    with patch("src.edgar_pipeline.requests.get", return_value=mock_resp):
+    with patch("src.research.edgar_pipeline.requests.get", return_value=mock_resp):
         results = search_fulltext("revenue guidance", max_results=5)
         assert len(results) == 1
         assert "APPLE" in results[0]["company"]
@@ -41,13 +41,13 @@ def test_search_fulltext_handles_failure():
     mock_resp = MagicMock()
     mock_resp.status_code = 500
 
-    with patch("src.edgar_pipeline.requests.get", return_value=mock_resp):
+    with patch("src.research.edgar_pipeline.requests.get", return_value=mock_resp):
         results = search_fulltext("test")
         assert results == []
 
 
 def test_search_fulltext_handles_exception():
-    with patch("src.edgar_pipeline.requests.get", side_effect=Exception("timeout")):
+    with patch("src.research.edgar_pipeline.requests.get", side_effect=Exception("timeout")):
         results = search_fulltext("test")
         assert results == []
 
@@ -71,7 +71,7 @@ def test_search_filings_with_mock():
         }
     }
 
-    with patch("src.edgar_pipeline.requests.get", return_value=mock_resp):
+    with patch("src.research.edgar_pipeline.requests.get", return_value=mock_resp):
         results = search_filings("TSLA", form_type="8-K")
         assert len(results) == 1
         assert "TESLA" in results[0]["company"]

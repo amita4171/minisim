@@ -25,7 +25,7 @@ logger = logging.getLogger(__name__)
 
 # ── Re-exports from sub-modules (preserve backward compatibility) ──────────
 
-from src.archetypes import (
+from src.agents.archetypes import (
     BACKGROUNDS,
     TEMP_TIERS,
     PERSONALITIES,
@@ -34,7 +34,7 @@ from src.archetypes import (
     _make_name,
 )
 
-from src.world_templates import (
+from src.agents.world_templates import (
     _detect_category,
     _WORLD_TEMPLATES,
     build_world_offline,
@@ -49,7 +49,7 @@ from src.world_templates import (
     _INSIGHT_BANK,
 )
 
-from src.alpha import (
+from src.agents.alpha import (
     _compute_question_alpha,
     _compute_domain_expertise,
 )
@@ -383,14 +383,14 @@ def swarm_score_offline(
     use_web_research: bool = False,
 ) -> dict:
     """Full offline pipeline: world build -> (optional RAG) -> agent gen -> sim -> aggregation."""
-    from src.aggregator import aggregate
+    from src.core.aggregator import aggregate
 
     world = build_world_offline(question, context)
 
     # If no market price, try LLM anchor; fall back to keyword-based estimate
     if market_price is None:
         try:
-            from src.llm_engine import LLMEngine, ANCHOR_PROMPT
+            from src.core.llm_engine import LLMEngine, ANCHOR_PROMPT
             engine = LLMEngine()
             if engine.is_available():
                 result = engine.generate_json(
@@ -407,7 +407,7 @@ def swarm_score_offline(
     # Optional: web research for information-grounded reasoning
     if use_web_research:
         try:
-            from src.web_research import research_question, assign_research_to_agents
+            from src.research.web_research import research_question, assign_research_to_agents
             research_bundles = research_question(question, n_perspectives=4)
             agents = assign_research_to_agents(agents, research_bundles)
             world["web_research"] = [

@@ -23,7 +23,7 @@ import json
 import statistics
 import time
 
-from src.offline_engine import swarm_score_offline
+from src.core.offline_engine import swarm_score_offline
 
 
 # ===================================================================

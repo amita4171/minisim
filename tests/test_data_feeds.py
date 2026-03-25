@@ -2,7 +2,7 @@
 from unittest.mock import patch, MagicMock
 import pytest
 
-from src.data_feeds import get_macro_context, get_stock_price, get_news, get_news_context, build_rich_context, _cached
+from src.research.data_feeds import get_macro_context, get_stock_price, get_news, get_news_context, build_rich_context, _cached
 
 
 def test_cached_returns_same_value():
@@ -43,7 +43,7 @@ def test_get_stock_price_with_mock():
         }
     }
 
-    with patch("src.data_feeds.requests.get", return_value=mock_resp):
+    with patch("src.research.data_feeds.requests.get", return_value=mock_resp):
         result = get_stock_price("AAPL")
         assert result is not None
         assert result["symbol"] == "AAPL"
@@ -53,7 +53,7 @@ def test_get_stock_price_with_mock():
 
 def test_get_stock_price_handles_failure():
     """Should return None on API failure."""
-    with patch("src.data_feeds.requests.get", side_effect=Exception("timeout")):
+    with patch("src.research.data_feeds.requests.get", side_effect=Exception("timeout")):
         result = get_stock_price("INVALID")
         assert result is None
 
@@ -70,7 +70,7 @@ def test_get_news_with_mock():
     mock_resp.status_code = 200
     mock_resp.content = mock_xml.encode()
 
-    with patch("src.data_feeds.requests.get", return_value=mock_resp):
+    with patch("src.research.data_feeds.requests.get", return_value=mock_resp):
         results = get_news("Federal Reserve", max_results=5)
         assert len(results) == 2
         assert "Fed" in results[0]["title"]
@@ -78,14 +78,14 @@ def test_get_news_with_mock():
 
 def test_get_news_handles_failure():
     """Should return empty list on failure."""
-    with patch("src.data_feeds.requests.get", side_effect=Exception("network error")):
+    with patch("src.research.data_feeds.requests.get", side_effect=Exception("network error")):
         results = get_news("test")
         assert results == []
 
 
 def test_get_news_context_returns_string():
     """Should return formatted string with headlines."""
-    with patch("src.data_feeds._cached", return_value=[
+    with patch("src.research.data_feeds._cached", return_value=[
         {"title": "Test headline 1"},
         {"title": "Test headline 2"},
     ]):
@@ -95,8 +95,8 @@ def test_get_news_context_returns_string():
 
 def test_build_rich_context_combines_feeds():
     """Should combine news + macro + market data."""
-    with patch("src.data_feeds.get_news_context", return_value="News: test headlines"):
-        with patch("src.data_feeds.get_macro_context", return_value="Macro: rates at 4.5%"):
-            with patch("src.data_feeds.get_market_snapshot", return_value="Markets: S&P at 5800"):
+    with patch("src.research.data_feeds.get_news_context", return_value="News: test headlines"):
+        with patch("src.research.data_feeds.get_macro_context", return_value="Macro: rates at 4.5%"):
+            with patch("src.research.data_feeds.get_market_snapshot", return_value="Markets: S&P at 5800"):
                 result = build_rich_context("test question")
                 assert "News" in result or "Macro" in result
