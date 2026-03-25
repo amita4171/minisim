@@ -18,14 +18,28 @@ import time
 def _detect_category(question: str) -> str:
     """Heuristically classify a question into econ / political / tech."""
     q = question.lower()
+    # Use word boundary matching for short keywords to avoid substring false positives
+    # e.g., "ai" matching "rain", "gene" matching "general"
+    import re
+
     econ_kw = ["fed", "rate", "inflation", "gdp", "recession", "unemployment", "interest", "economy", "monetary", "fiscal", "stock", "market crash", "s&p", "dow", "treasury"]
     pol_kw = ["election", "president", "congress", "government", "shutdown", "impeach", "vote", "legislation", "bill", "senate", "supreme court", "governor", "partisan", "democrat", "republican", "executive order"]
-    tech_kw = ["ai", "artificial intelligence", "replace", "automat", "robot", "quantum", "spacex", "launch", "biotech", "gene", "crispr", "autonomous", "self-driving", "chip", "semiconductor", "agi", "openai", "google", "apple", "tesla"]
+    tech_kw = ["\\bai\\b", "artificial intelligence", "replace", "automat", "robot", "quantum", "spacex", "launch", "biotech", "\\bgene\\b", "crispr", "autonomous", "self-driving", "chip", "semiconductor", "\\bagi\\b", "openai", "google", "\\bapple\\b", "tesla"]
+
+    def _count(keywords, text):
+        count = 0
+        for kw in keywords:
+            if kw.startswith("\\b"):
+                if re.search(kw, text):
+                    count += 1
+            elif kw in text:
+                count += 1
+        return count
 
     scores = {
-        "econ": sum(1 for kw in econ_kw if kw in q),
-        "political": sum(1 for kw in pol_kw if kw in q),
-        "tech": sum(1 for kw in tech_kw if kw in q),
+        "econ": _count(econ_kw, q),
+        "political": _count(pol_kw, q),
+        "tech": _count(tech_kw, q),
     }
     if max(scores.values()) == 0:
         return "econ"  # default

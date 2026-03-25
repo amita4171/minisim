@@ -228,8 +228,8 @@ Deliberation responses don't need 1024 tokens. Capping at 256 tokens for deliber
 - `test_api.py`: FastAPI endpoint tests (health, auth, predict, resolve, metrics, dashboard)
 - `test_pipeline.py`: End-to-end pipeline, fee-aware arbitrage, database lifecycle
 
-Run fast tests: `pytest -m "not slow"` (0.3s — **74 passing**)
-Run all tests: `pytest` (requires Ollama running — **81 passing**)
+Run fast tests: `pytest -m "not slow"` (3s — **111 passing**)
+Run all tests: `pytest` (requires Ollama running — **118 passing**)
 
 Modules with test coverage: archetypes, aggregator, alpha, API endpoints,
 calibration, cross-platform, database, offline engine, pipeline, router + LLM engine.
