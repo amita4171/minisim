@@ -58,8 +58,8 @@ When no market price is given, the LLM reads the seed context and estimates a ba
 ### Temperature Stratification
 Assigning different temperatures to different agent archetypes (analyst=0.3, contrarian=0.9, creative=1.2) produced genuine diversity. Without this, all agents converge to the same answer regardless of persona.
 
-### Extremized Aggregation (alpha=1.5)
-The swarm's predictions are directionally correct but too moderate — deliberation pulls everything toward center. Extremizing with alpha=1.5 pushes 0.83→0.90, 0.16→0.08. This single change cut Brier from 0.041 to 0.017 on the benchmark.
+### Extremized Aggregation — UPDATE: alpha=1.0 is optimal
+Originally alpha=1.5 cut Brier from 0.041 to 0.017 on the offline benchmark. But on REAL Metaculus resolutions (6 questions) and LLM eval (10 questions), alpha=1.0 consistently outperforms. The offline benchmark was misleading — the model was already overconfident, and extremization amplified bad calls (Zelenskyy-Putin: 0.165→YES, gas prices: 0.65→NO). Alpha sweep on real data: 1.0=0.242, 1.5=0.262, 2.0=0.280. Changed to alpha=1.0 on March 25, 2026. Key lesson: every calibration layer has made things worse on real data — isotonic calibration inflated fake edges, extremization pushed overconfident predictions further wrong. Pull toward market consensus, don't push away.
 
 ### Anti-Mode-Collapse Prompts
 Key prompt techniques that actually worked:
@@ -138,7 +138,7 @@ Tested 7 aggregation strategies on 10-question benchmark:
 6. Single + swarm adjust ±5%: 0.037
 7. Pick more extreme: 0.028
 
-The extremized swarm beat everything by a wide margin. The insight: the swarm IS directionally correct, it's just too moderate.
+The extremized swarm beat everything by a wide margin on the offline benchmark. **However**, on real Metaculus resolutions alpha=1.0 (no extremization) won. The offline benchmark overstated extremization's benefit because it didn't penalize overconfidence on wrong calls. See update in "What Worked" section above.
 
 ### Platt Scaling Calibration
 Fitted on 544-question dataset:

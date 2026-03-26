@@ -160,15 +160,24 @@ The track record is integrated into the Streamlit dashboard with calibration cha
 
 **The swarm has better calibration than market prices** (ECE 0.059 vs 0.073).
 
-### LLM Benchmark (10 Resolved Questions, Qwen 2.5 14B)
+### Real Metaculus Tournament (6 Resolved Questions)
 
-| Method | Brier |
-|--------|-------|
-| **Extremized Swarm** | **0.017** |
-| Single LLM call | 0.037 |
-| Market price | 0.043 |
+| Alpha | Avg Brier |
+|-------|-----------|
+| **1.0 (no extremization)** | **0.242** |
+| 1.5 (old default) | 0.262 |
+| 2.0 | 0.280 |
 
-The extremized swarm beats single LLM by 53% and market by 60%.
+Alpha=1.0 validated as optimal. Extremization hurts on real data — the model overestimates its edge vs market. Changed to alpha=1.0 on March 25, 2026.
+
+### LLM Benchmark (10 Eval Questions, Qwen 2.5 14B)
+
+| Alpha | Avg Brier |
+|-------|-----------|
+| **1.0** | **0.162** |
+| 1.5 | 0.396 |
+
+Same finding: no extremization is best on real LLM eval data.
 
 ### Where Swarm Adds Alpha
 - **Rare event deflation**: correctly pushes down overpriced dramatic scenarios
@@ -201,7 +210,7 @@ Economists, traders, political analysts, journalists, VCs, central bankers, beha
 ### Calibrated Aggregation ([arxiv 2506.00066](https://arxiv.org/abs/2506.00066))
 - **Confidence-weighted averaging** with mind-change bonus
 - **Domain expertise bonus**: +0.20 confidence on domain-matched questions
-- **Extremized aggregation**: Metaculus-style `p^alpha / (p^alpha + (1-p)^alpha)` where alpha=1.25
+- **Extremized aggregation**: Metaculus-style `p^alpha / (p^alpha + (1-p)^alpha)` where alpha=1.0 (no extremization — validated optimal on real data)
 - **Combined**: 60% calibrated + 40% extremized
 
 ### Question-Specific Alpha Signals
@@ -452,7 +461,7 @@ Supported models: Llama 3.1 8B, Mistral 7B, Qwen 2.5, Gemma 2, Phi-3. Auto-detec
 - [x] Cross-platform arbitrage detection **with fee-aware profit calculation**
 - [x] Opportunity scanner (real-time, continuous, all 5 platforms)
 - [x] Track record system with auto-resolution
-- [x] Calibrated aggregation (confidence-weighted + extremized alpha=1.5)
+- [x] Calibrated aggregation (confidence-weighted + alpha=1.0, validated optimal)
 - [x] **Variance-based prediction router** (single LLM vs swarm based on uncertainty)
 - [x] Web search RAG layer
 - [x] Streamlit dashboard (7 panels)
