@@ -38,7 +38,7 @@ Question + Market Price
          |
     [Calibrated Aggregator]
          |  60% calibrated confidence-weighted
-         |  40% extremized (Metaculus-style, alpha=1.25)
+         |  40% extremized (alpha=1.0 — no extremization, validated optimal)
          |  Mind-change bonus: flexible thinkers upweighted
          |  Domain experts get higher confidence weights
          |

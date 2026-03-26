@@ -25,6 +25,14 @@ from datetime import datetime
 from src.core.calibration import CalibrationTransformer
 from src.db.database import Database
 
+try:
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    HAS_MPL = True
+except ImportError:
+    HAS_MPL = False
+
 
 # ── Data loading ──────────────────────────────────────────────────────────────
 
@@ -352,7 +360,47 @@ def generate_report(source: str) -> dict:
         json.dump(report, f, indent=2)
     print(f"  Full report saved to {report_path}")
 
+    # Generate matplotlib calibration plot
+    if HAS_MPL:
+        _generate_calibration_plot(curve, brier_overall, ece, n_resolved)
+    else:
+        print("  matplotlib not installed — skipping PNG plot")
+
     return report
+
+
+def _generate_calibration_plot(curve: list[dict], brier: float, ece: float, n: int):
+    """Save a matplotlib calibration plot to results/calibration_plot.png."""
+    predicted = [b["mean_predicted"] for b in curve if b["actual_rate"] is not None and b["count"] > 0]
+    actual = [b["actual_rate"] for b in curve if b["actual_rate"] is not None and b["count"] > 0]
+    counts = [b["count"] for b in curve if b["actual_rate"] is not None and b["count"] > 0]
+
+    if not predicted:
+        print("  No data for plot")
+        return
+
+    fig, ax = plt.subplots(1, 1, figsize=(7, 7))
+    ax.plot([0, 1], [0, 1], "k--", linewidth=1, label="Perfect calibration")
+    ax.scatter(predicted, actual, s=[c * 80 for c in counts], alpha=0.7, c="#2563eb", zorder=5)
+    ax.plot(predicted, actual, "-o", color="#2563eb", linewidth=2, markersize=6, label="MiniSim")
+
+    for p, a, c in zip(predicted, actual, counts):
+        ax.annotate(f"n={c}", (p, a), textcoords="offset points", xytext=(8, 8), fontsize=9)
+
+    ax.set_xlabel("Predicted Probability", fontsize=12)
+    ax.set_ylabel("Observed Frequency", fontsize=12)
+    ax.set_title(f"MiniSim Calibration (n={n}, Brier={brier:.3f}, ECE={ece:.3f})", fontsize=13)
+    ax.legend(loc="upper left")
+    ax.set_xlim(-0.05, 1.05)
+    ax.set_ylim(-0.05, 1.05)
+    ax.set_aspect("equal")
+    ax.grid(True, alpha=0.3)
+    fig.tight_layout()
+
+    plot_path = os.path.join("results", "calibration_plot.png")
+    fig.savefig(plot_path, dpi=150)
+    plt.close(fig)
+    print(f"  Calibration plot saved to {plot_path}")
 
 
 # ── CLI ───────────────────────────────────────────────────────────────────────

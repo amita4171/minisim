@@ -1,154 +1,156 @@
 """
-Alpha Sweep — Tests different EXTREMIZATION_ALPHA values to find the optimal one.
+Alpha Sweep — Find optimal EXTREMIZATION_ALPHA from resolved predictions.
 
-Temporarily patches src.core.aggregator.EXTREMIZATION_ALPHA for each test value,
-runs the 10 resolved HIST questions from the eval set, and compares Brier scores.
+Re-extremizes stored swarm_probability values with different alpha values
+using the formula: p_ext = p^a / (p^a + (1-p)^a)
+
+No LLM calls needed — works purely from the SQLite database.
 
 Usage:
   python scripts/alpha_sweep.py
-  python scripts/alpha_sweep.py --alphas 1.0,1.25,1.5,2.0
-  python scripts/alpha_sweep.py --agents 20 --rounds 3
+  python scripts/alpha_sweep.py --alphas 1.0,1.1,1.2,1.3,1.5,1.8,2.0
 """
 from __future__ import annotations
 
-import os
-import sys
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
-
 import argparse
 import json
-import time
+import os
+import sys
 
-from scripts.eval_runner import EVAL_QUESTIONS
-from src.core.offline_engine import swarm_score_offline
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+
+from src.db.database import Database
 import src.core.aggregator as aggregator
 
+DEFAULT_ALPHAS = "1.0,1.1,1.2,1.3,1.5,1.8,2.0"
 
-DEFAULT_ALPHAS = "1.0,1.15,1.25,1.35,1.5,1.75,2.0"
+
+def extremize(p: float, alpha: float) -> float:
+    """Apply extremization: p^a / (p^a + (1-p)^a)"""
+    if p <= 0.0 or p >= 1.0:
+        return p
+    pa = p ** alpha
+    qa = (1.0 - p) ** alpha
+    return pa / (pa + qa)
 
 
-def run_alpha_sweep(
-    alphas: list[float],
-    n_agents: int = 15,
-    n_rounds: int = 2,
-) -> dict:
-    """Run Brier-score evaluation across multiple EXTREMIZATION_ALPHA values."""
-    resolved_questions = [eq for eq in EVAL_QUESTIONS if eq["resolution"] is not None]
+def de_extremize(p_ext: float, old_alpha: float) -> float:
+    """Reverse extremization to recover the raw probability."""
+    if p_ext <= 0.0 or p_ext >= 1.0:
+        return p_ext
+    # Inverse: solve p^a / (p^a + (1-p)^a) = p_ext for p
+    # p_ext * (1-p)^a = (1-p_ext) * p^a
+    # (p/(1-p))^a = p_ext / (1-p_ext)
+    # p/(1-p) = (p_ext / (1-p_ext))^(1/a)
+    ratio = (p_ext / (1.0 - p_ext)) ** (1.0 / old_alpha)
+    return ratio / (1.0 + ratio)
+
+
+def run_alpha_sweep(alphas: list[float]) -> dict:
+    """Run Brier-score evaluation across multiple alpha values."""
+    db = Database()
+
+    rows = db.conn.execute(
+        "SELECT id, question, swarm_probability, market_price, resolution "
+        "FROM predictions WHERE resolution IS NOT NULL"
+    ).fetchall()
+    predictions = [dict(r) for r in rows]
+    db.close()
+
+    if not predictions:
+        print("No resolved predictions found. Run resolve_manual.py first.")
+        return {}
+
+    current_alpha = aggregator.EXTREMIZATION_ALPHA
 
     print("=" * 70)
     print("Alpha Sweep — EXTREMIZATION_ALPHA Optimization")
+    print(f"  Current alpha: {current_alpha}")
     print(f"  Testing alphas: {alphas}")
-    print(f"  Resolved questions: {len(resolved_questions)}")
-    print(f"  Agents: {n_agents}, Rounds: {n_rounds}")
+    print(f"  Resolved predictions: {len(predictions)}")
     print("=" * 70)
 
-    original_alpha = aggregator.EXTREMIZATION_ALPHA
     all_results = {}
 
-    try:
-        for alpha in alphas:
-            print(f"\n--- Alpha = {alpha:.2f} ---")
-            aggregator.EXTREMIZATION_ALPHA = alpha
+    for alpha in alphas:
+        brier_scores = []
+        details = []
 
-            brier_scores = []
-            in_range = 0
-            question_details = []
+        for pred in predictions:
+            p_stored = pred["swarm_probability"]
+            resolution = pred["resolution"]
 
-            for eq in resolved_questions:
-                sim = swarm_score_offline(
-                    question=eq["q"],
-                    context=eq.get("context", ""),
-                    n_agents=n_agents,
-                    rounds=n_rounds,
-                    market_price=eq["market_price"],
-                )
-                swarm_p = sim["swarm_probability_yes"]
-                brier = (swarm_p - eq["resolution"]) ** 2
-                brier_scores.append(brier)
+            # De-extremize from current alpha, then re-extremize with test alpha
+            p_raw = de_extremize(p_stored, current_alpha)
+            p_new = extremize(p_raw, alpha)
 
-                in_expected = eq["expected_low"] <= swarm_p <= eq["expected_high"]
-                if in_expected:
-                    in_range += 1
+            brier = (p_new - resolution) ** 2
+            brier_scores.append(brier)
 
-                question_details.append({
-                    "id": eq["id"],
-                    "question": eq["q"],
-                    "resolution": eq["resolution"],
-                    "swarm_p": round(swarm_p, 4),
-                    "brier": round(brier, 4),
-                    "in_range": in_expected,
-                })
+            details.append({
+                "id": pred["id"],
+                "question": pred["question"][:60],
+                "resolution": resolution,
+                "p_stored": round(p_stored, 4),
+                "p_raw": round(p_raw, 4),
+                "p_new": round(p_new, 4),
+                "brier": round(brier, 4),
+            })
 
-                status = " OK " if in_expected else "MISS"
-                print(
-                    f"  [{status}] {eq['id']:10} P={swarm_p:.3f} "
-                    f"res={eq['resolution']:.0f} B={brier:.4f}"
-                )
-
-            avg_brier = sum(brier_scores) / len(brier_scores)
-            print(f"  Avg Brier: {avg_brier:.4f}  In Range: {in_range}/{len(resolved_questions)}")
-
-            all_results[alpha] = {
-                "alpha": alpha,
-                "avg_brier": round(avg_brier, 4),
-                "in_range": in_range,
-                "total_questions": len(resolved_questions),
-                "questions": question_details,
-            }
-    finally:
-        aggregator.EXTREMIZATION_ALPHA = original_alpha
+        avg_brier = sum(brier_scores) / len(brier_scores)
+        all_results[alpha] = {
+            "alpha": alpha,
+            "avg_brier": round(avg_brier, 4),
+            "predictions": details,
+        }
 
     # --- Comparison table ---
     best_alpha = min(all_results, key=lambda a: all_results[a]["avg_brier"])
 
-    print("\n" + "=" * 70)
-    print(f"{'Alpha':<8} {'Brier':<8} {'In Range':<11} {'Best For'}")
+    print(f"\n{'Alpha':<8} {'Avg Brier':<12} {'Notes'}")
     print("-" * 50)
     for alpha in alphas:
         r = all_results[alpha]
-        label = ""
-        if alpha == original_alpha:
-            label = "Current default"
+        notes = []
+        if alpha == current_alpha:
+            notes.append("Current default")
         if alpha == best_alpha:
-            label = ("Lowest Brier, " + label) if label else "Lowest Brier"
-        if alpha <= 1.0:
-            label = label or "Conservative"
+            notes.append("BEST")
+        if alpha == 1.0:
+            notes.append("No extremization")
+        print(f"{alpha:<8.2f} {r['avg_brier']:<12.4f} {', '.join(notes)}")
+
+    # Per-prediction breakdown for best alpha
+    print(f"\n--- Best alpha = {best_alpha:.2f} detail ---")
+    for d in all_results[best_alpha]["predictions"]:
         print(
-            f"{alpha:<8.2f} {r['avg_brier']:<8.3f} "
-            f"{r['in_range']}/{r['total_questions']:<7}  {label}"
+            f"  {d['id']:3d}  P_stored={d['p_stored']:.3f} -> P_raw={d['p_raw']:.3f} "
+            f"-> P_new={d['p_new']:.3f}  res={d['resolution']:.0f}  B={d['brier']:.4f}  "
+            f"{d['question']}"
         )
-    print("=" * 70)
 
     best_brier = all_results[best_alpha]["avg_brier"]
-    print(f"\nRecommendation: alpha={best_alpha:.2f} (Brier={best_brier:.4f})")
-    if best_alpha != original_alpha:
-        current_brier = all_results.get(original_alpha, {}).get("avg_brier")
-        if current_brier is not None:
-            improvement = (current_brier - best_brier) / current_brier * 100
-            print(
-                f"  vs current default ({original_alpha}): "
-                f"{improvement:+.1f}% Brier improvement"
-            )
+    current_brier = all_results.get(current_alpha, {}).get("avg_brier")
 
-    # --- Save results ---
+    print(f"\n{'='*70}")
+    print(f"Recommendation: alpha={best_alpha:.2f} (Avg Brier={best_brier:.4f})")
+    if current_brier is not None and best_alpha != current_alpha:
+        improvement = (current_brier - best_brier) / current_brier * 100
+        print(f"  vs current ({current_alpha}): {improvement:+.1f}% Brier improvement")
+    print(f"{'='*70}")
+
+    # Save results
+    os.makedirs("results", exist_ok=True)
     output = {
-        "sweep_config": {
-            "alphas": alphas,
-            "n_agents": n_agents,
-            "n_rounds": n_rounds,
-            "n_resolved_questions": len(resolved_questions),
-            "original_alpha": original_alpha,
-        },
-        "results": {str(a): all_results[a] for a in alphas},
+        "current_alpha": current_alpha,
         "best_alpha": best_alpha,
         "best_brier": best_brier,
+        "n_predictions": len(predictions),
+        "results": {str(a): {"alpha": a, "avg_brier": all_results[a]["avg_brier"]} for a in alphas},
     }
-
-    os.makedirs("results", exist_ok=True)
-    output_path = "results/alpha_sweep.json"
-    with open(output_path, "w") as f:
+    with open("results/alpha_sweep.json", "w") as f:
         json.dump(output, f, indent=2)
-    print(f"\nSaved to {output_path}")
+    print(f"\nSaved to results/alpha_sweep.json")
 
     return output
 
@@ -156,14 +158,9 @@ def run_alpha_sweep(
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Alpha Sweep — EXTREMIZATION_ALPHA optimizer")
     parser.add_argument(
-        "--alphas",
-        type=str,
-        default=DEFAULT_ALPHAS,
-        help=f"Comma-separated alpha values to test (default: {DEFAULT_ALPHAS})",
+        "--alphas", type=str, default=DEFAULT_ALPHAS,
+        help=f"Comma-separated alpha values (default: {DEFAULT_ALPHAS})",
     )
-    parser.add_argument("--agents", type=int, default=15, help="Number of agents (default: 15)")
-    parser.add_argument("--rounds", type=int, default=2, help="Number of rounds (default: 2)")
     args = parser.parse_args()
-
     alpha_list = [float(a.strip()) for a in args.alphas.split(",")]
-    run_alpha_sweep(alphas=alpha_list, n_agents=args.agents, n_rounds=args.rounds)
+    run_alpha_sweep(alphas=alpha_list)

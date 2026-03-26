@@ -62,26 +62,54 @@ def resolve_interactive(db: Database, predictions: list[dict]) -> list[tuple[int
 
 
 def resolve_batch(db: Database, predictions: list[dict], batch_path: str) -> list[tuple[int, float]]:
-    """Resolve predictions from a JSON file mapping ticker -> resolution."""
-    with open(batch_path) as f:
-        batch_data: dict[str, float] = json.load(f)
+    """Resolve predictions from a batch JSON file.
 
-    # Build ticker -> prediction mapping
+    Supports two formats:
+      - Simple: {"ticker_id": 1.0, ...}
+      - Structured: {"resolutions": [{"id": 195, "resolution": 1, ...}, ...]}
+        (skips entries with resolution == -1)
+    """
+    with open(batch_path) as f:
+        batch_data = json.load(f)
+
+    # Build lookup maps
     ticker_map: dict[str, dict] = {}
+    id_map: dict[int, dict] = {}
     for pred in predictions:
         ticker = pred.get("ticker")
         if ticker:
             ticker_map[ticker] = pred
+        id_map[pred["id"]] = pred
 
     resolved = []
-    for ticker, resolution in batch_data.items():
-        if ticker not in ticker_map:
-            print(f"  Warning: ticker '{ticker}' not found among unresolved predictions, skipping")
-            continue
-        pred = ticker_map[ticker]
-        db.resolve(pred["id"], resolution)
-        resolved.append((pred["id"], resolution))
-        print(f"  Resolved #{pred['id']} (ticker={ticker}): {resolution}")
+
+    if isinstance(batch_data, dict) and "resolutions" in batch_data:
+        # Structured format with resolutions array
+        for entry in batch_data["resolutions"]:
+            res_val = entry.get("resolution")
+            if res_val is None or res_val == -1:
+                print(f"  Skipping id={entry.get('id')} (resolution={res_val})")
+                continue
+            pred_id = entry.get("id")
+            pred = id_map.get(pred_id)
+            if not pred:
+                print(f"  Warning: prediction id={pred_id} not found among unresolved predictions, skipping")
+                continue
+            res_float = float(res_val)
+            db.resolve(pred["id"], res_float)
+            resolved.append((pred["id"], res_float))
+            print(f"  Resolved #{pred['id']}: {res_float}  ({entry.get('question', '')[:50]})")
+    else:
+        # Simple ticker -> resolution format
+        items = batch_data.items() if isinstance(batch_data, dict) else []
+        for ticker, resolution in items:
+            if ticker not in ticker_map:
+                print(f"  Warning: ticker '{ticker}' not found among unresolved predictions, skipping")
+                continue
+            pred = ticker_map[ticker]
+            db.resolve(pred["id"], resolution)
+            resolved.append((pred["id"], resolution))
+            print(f"  Resolved #{pred['id']} (ticker={ticker}): {resolution}")
 
     return resolved
 

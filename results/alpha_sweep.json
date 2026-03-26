@@ -1,0 +1,637 @@
+{
+  "sweep_config": {
+    "alphas": [
+      1.0,
+      1.15,
+      1.25,
+      1.35,
+      1.5,
+      1.75,
+      2.0
+    ],
+    "n_agents": 10,
+    "n_rounds": 2,
+    "n_resolved_questions": 10,
+    "original_alpha": 1.5
+  },
+  "results": {
+    "1.0": {
+      "alpha": 1.0,
+      "avg_brier": 0.3253,
+      "in_range": 0,
+      "total_questions": 10,
+      "questions": [
+        {
+          "id": "HIST-001",
+          "question": "Will the Fed raise rates at the December 2024 FOMC meeting?",
+          "resolution": 0.0,
+          "swarm_p": 0.1977,
+          "brier": 0.0391,
+          "in_range": false
+        },
+        {
+          "id": "HIST-002",
+          "question": "Will the Fed cut rates in December 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.8759,
+          "brier": 0.0154,
+          "in_range": false
+        },
+        {
+          "id": "HIST-003",
+          "question": "Will OpenAI release a video generation model in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.4905,
+          "brier": 0.2596,
+          "in_range": false
+        },
+        {
+          "id": "HIST-004",
+          "question": "Will Russia and Ukraine agree to a ceasefire in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9886,
+          "brier": 0.9773,
+          "in_range": false
+        },
+        {
+          "id": "HIST-005",
+          "question": "Will Biden be the Democratic nominee for the 2024 presidential election?",
+          "resolution": 0.0,
+          "swarm_p": 0.9892,
+          "brier": 0.9785,
+          "in_range": false
+        },
+        {
+          "id": "HIST-006",
+          "question": "Will India win the 2024 T20 Cricket World Cup?",
+          "resolution": 1.0,
+          "swarm_p": 0.9068,
+          "brier": 0.0087,
+          "in_range": false
+        },
+        {
+          "id": "HIST-007",
+          "question": "Will Apple release a mixed reality headset in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9842,
+          "brier": 0.0002,
+          "in_range": false
+        },
+        {
+          "id": "HIST-008",
+          "question": "Was 2024 the hottest year on record?",
+          "resolution": 1.0,
+          "swarm_p": 0.9886,
+          "brier": 0.0001,
+          "in_range": false
+        },
+        {
+          "id": "HIST-009",
+          "question": "Will the S&P 500 close above 5,000 in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9769,
+          "brier": 0.0005,
+          "in_range": false
+        },
+        {
+          "id": "HIST-010",
+          "question": "Will China invade Taiwan in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9867,
+          "brier": 0.9736,
+          "in_range": false
+        }
+      ]
+    },
+    "1.15": {
+      "alpha": 1.15,
+      "avg_brier": 0.2975,
+      "in_range": 0,
+      "total_questions": 10,
+      "questions": [
+        {
+          "id": "HIST-001",
+          "question": "Will the Fed raise rates at the December 2024 FOMC meeting?",
+          "resolution": 0.0,
+          "swarm_p": 0.9699,
+          "brier": 0.9407,
+          "in_range": false
+        },
+        {
+          "id": "HIST-002",
+          "question": "Will the Fed cut rates in December 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.8876,
+          "brier": 0.0126,
+          "in_range": false
+        },
+        {
+          "id": "HIST-003",
+          "question": "Will OpenAI release a video generation model in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9965,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-004",
+          "question": "Will Russia and Ukraine agree to a ceasefire in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9917,
+          "brier": 0.9835,
+          "in_range": false
+        },
+        {
+          "id": "HIST-005",
+          "question": "Will Biden be the Democratic nominee for the 2024 presidential election?",
+          "resolution": 0.0,
+          "swarm_p": 0.2247,
+          "brier": 0.0505,
+          "in_range": false
+        },
+        {
+          "id": "HIST-006",
+          "question": "Will India win the 2024 T20 Cricket World Cup?",
+          "resolution": 1.0,
+          "swarm_p": 0.9722,
+          "brier": 0.0008,
+          "in_range": false
+        },
+        {
+          "id": "HIST-007",
+          "question": "Will Apple release a mixed reality headset in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9882,
+          "brier": 0.0001,
+          "in_range": false
+        },
+        {
+          "id": "HIST-008",
+          "question": "Was 2024 the hottest year on record?",
+          "resolution": 1.0,
+          "swarm_p": 0.9222,
+          "brier": 0.0061,
+          "in_range": false
+        },
+        {
+          "id": "HIST-009",
+          "question": "Will the S&P 500 close above 5,000 in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9821,
+          "brier": 0.0003,
+          "in_range": false
+        },
+        {
+          "id": "HIST-010",
+          "question": "Will China invade Taiwan in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9902,
+          "brier": 0.9805,
+          "in_range": false
+        }
+      ]
+    },
+    "1.25": {
+      "alpha": 1.25,
+      "avg_brier": 0.4014,
+      "in_range": 0,
+      "total_questions": 10,
+      "questions": [
+        {
+          "id": "HIST-001",
+          "question": "Will the Fed raise rates at the December 2024 FOMC meeting?",
+          "resolution": 0.0,
+          "swarm_p": 0.9738,
+          "brier": 0.9483,
+          "in_range": false
+        },
+        {
+          "id": "HIST-002",
+          "question": "Will the Fed cut rates in December 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.8947,
+          "brier": 0.0111,
+          "in_range": false
+        },
+        {
+          "id": "HIST-003",
+          "question": "Will OpenAI release a video generation model in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9972,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-004",
+          "question": "Will Russia and Ukraine agree to a ceasefire in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9932,
+          "brier": 0.9864,
+          "in_range": false
+        },
+        {
+          "id": "HIST-005",
+          "question": "Will Biden be the Democratic nominee for the 2024 presidential election?",
+          "resolution": 0.0,
+          "swarm_p": 0.9936,
+          "brier": 0.9872,
+          "in_range": false
+        },
+        {
+          "id": "HIST-006",
+          "question": "Will India win the 2024 T20 Cricket World Cup?",
+          "resolution": 1.0,
+          "swarm_p": 0.9243,
+          "brier": 0.0057,
+          "in_range": false
+        },
+        {
+          "id": "HIST-007",
+          "question": "Will Apple release a mixed reality headset in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9902,
+          "brier": 0.0001,
+          "in_range": false
+        },
+        {
+          "id": "HIST-008",
+          "question": "Was 2024 the hottest year on record?",
+          "resolution": 1.0,
+          "swarm_p": 0.6991,
+          "brier": 0.0905,
+          "in_range": false
+        },
+        {
+          "id": "HIST-009",
+          "question": "Will the S&P 500 close above 5,000 in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9848,
+          "brier": 0.0002,
+          "in_range": false
+        },
+        {
+          "id": "HIST-010",
+          "question": "Will China invade Taiwan in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9919,
+          "brier": 0.9839,
+          "in_range": false
+        }
+      ]
+    },
+    "1.35": {
+      "alpha": 1.35,
+      "avg_brier": 0.3934,
+      "in_range": 0,
+      "total_questions": 10,
+      "questions": [
+        {
+          "id": "HIST-001",
+          "question": "Will the Fed raise rates at the December 2024 FOMC meeting?",
+          "resolution": 0.0,
+          "swarm_p": 0.977,
+          "brier": 0.9545,
+          "in_range": false
+        },
+        {
+          "id": "HIST-002",
+          "question": "Will the Fed cut rates in December 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9014,
+          "brier": 0.0097,
+          "in_range": false
+        },
+        {
+          "id": "HIST-003",
+          "question": "Will OpenAI release a video generation model in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9977,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-004",
+          "question": "Will Russia and Ukraine agree to a ceasefire in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9943,
+          "brier": 0.9886,
+          "in_range": false
+        },
+        {
+          "id": "HIST-005",
+          "question": "Will Biden be the Democratic nominee for the 2024 presidential election?",
+          "resolution": 0.0,
+          "swarm_p": 0.9946,
+          "brier": 0.9892,
+          "in_range": false
+        },
+        {
+          "id": "HIST-006",
+          "question": "Will India win the 2024 T20 Cricket World Cup?",
+          "resolution": 1.0,
+          "swarm_p": 0.9303,
+          "brier": 0.0049,
+          "in_range": false
+        },
+        {
+          "id": "HIST-007",
+          "question": "Will Apple release a mixed reality headset in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9917,
+          "brier": 0.0001,
+          "in_range": false
+        },
+        {
+          "id": "HIST-008",
+          "question": "Was 2024 the hottest year on record?",
+          "resolution": 1.0,
+          "swarm_p": 0.9741,
+          "brier": 0.0007,
+          "in_range": false
+        },
+        {
+          "id": "HIST-009",
+          "question": "Will the S&P 500 close above 5,000 in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9869,
+          "brier": 0.0002,
+          "in_range": false
+        },
+        {
+          "id": "HIST-010",
+          "question": "Will China invade Taiwan in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9932,
+          "brier": 0.9864,
+          "in_range": false
+        }
+      ]
+    },
+    "1.5": {
+      "alpha": 1.5,
+      "avg_brier": 0.3946,
+      "in_range": 0,
+      "total_questions": 10,
+      "questions": [
+        {
+          "id": "HIST-001",
+          "question": "Will the Fed raise rates at the December 2024 FOMC meeting?",
+          "resolution": 0.0,
+          "swarm_p": 0.9809,
+          "brier": 0.9622,
+          "in_range": false
+        },
+        {
+          "id": "HIST-002",
+          "question": "Will the Fed cut rates in December 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9105,
+          "brier": 0.008,
+          "in_range": false
+        },
+        {
+          "id": "HIST-003",
+          "question": "Will OpenAI release a video generation model in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9982,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-004",
+          "question": "Will Russia and Ukraine agree to a ceasefire in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9955,
+          "brier": 0.991,
+          "in_range": false
+        },
+        {
+          "id": "HIST-005",
+          "question": "Will Biden be the Democratic nominee for the 2024 presidential election?",
+          "resolution": 0.0,
+          "swarm_p": 0.9958,
+          "brier": 0.9916,
+          "in_range": false
+        },
+        {
+          "id": "HIST-006",
+          "question": "Will India win the 2024 T20 Cricket World Cup?",
+          "resolution": 1.0,
+          "swarm_p": 0.9382,
+          "brier": 0.0038,
+          "in_range": false
+        },
+        {
+          "id": "HIST-007",
+          "question": "Will Apple release a mixed reality headset in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9934,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-008",
+          "question": "Was 2024 the hottest year on record?",
+          "resolution": 1.0,
+          "swarm_p": 0.9955,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-009",
+          "question": "Will the S&P 500 close above 5,000 in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9893,
+          "brier": 0.0001,
+          "in_range": false
+        },
+        {
+          "id": "HIST-010",
+          "question": "Will China invade Taiwan in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9946,
+          "brier": 0.9892,
+          "in_range": false
+        }
+      ]
+    },
+    "1.75": {
+      "alpha": 1.75,
+      "avg_brier": 0.3957,
+      "in_range": 0,
+      "total_questions": 10,
+      "questions": [
+        {
+          "id": "HIST-001",
+          "question": "Will the Fed raise rates at the December 2024 FOMC meeting?",
+          "resolution": 0.0,
+          "swarm_p": 0.9855,
+          "brier": 0.9712,
+          "in_range": false
+        },
+        {
+          "id": "HIST-002",
+          "question": "Will the Fed cut rates in December 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9236,
+          "brier": 0.0058,
+          "in_range": false
+        },
+        {
+          "id": "HIST-003",
+          "question": "Will OpenAI release a video generation model in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9987,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-004",
+          "question": "Will Russia and Ukraine agree to a ceasefire in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9966,
+          "brier": 0.9932,
+          "in_range": false
+        },
+        {
+          "id": "HIST-005",
+          "question": "Will Biden be the Democratic nominee for the 2024 presidential election?",
+          "resolution": 0.0,
+          "swarm_p": 0.9969,
+          "brier": 0.9938,
+          "in_range": false
+        },
+        {
+          "id": "HIST-006",
+          "question": "Will India win the 2024 T20 Cricket World Cup?",
+          "resolution": 1.0,
+          "swarm_p": 0.9868,
+          "brier": 0.0002,
+          "in_range": false
+        },
+        {
+          "id": "HIST-007",
+          "question": "Will Apple release a mixed reality headset in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9952,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-008",
+          "question": "Was 2024 the hottest year on record?",
+          "resolution": 1.0,
+          "swarm_p": 0.9967,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-009",
+          "question": "Will the S&P 500 close above 5,000 in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.992,
+          "brier": 0.0001,
+          "in_range": false
+        },
+        {
+          "id": "HIST-010",
+          "question": "Will China invade Taiwan in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9961,
+          "brier": 0.9922,
+          "in_range": false
+        }
+      ]
+    },
+    "2.0": {
+      "alpha": 2.0,
+      "avg_brier": 0.4024,
+      "in_range": 0,
+      "total_questions": 10,
+      "questions": [
+        {
+          "id": "HIST-001",
+          "question": "Will the Fed raise rates at the December 2024 FOMC meeting?",
+          "resolution": 0.0,
+          "swarm_p": 0.9886,
+          "brier": 0.9773,
+          "in_range": false
+        },
+        {
+          "id": "HIST-002",
+          "question": "Will the Fed cut rates in December 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9343,
+          "brier": 0.0043,
+          "in_range": false
+        },
+        {
+          "id": "HIST-003",
+          "question": "Will OpenAI release a video generation model in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9989,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-004",
+          "question": "Will Russia and Ukraine agree to a ceasefire in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9973,
+          "brier": 0.9946,
+          "in_range": false
+        },
+        {
+          "id": "HIST-005",
+          "question": "Will Biden be the Democratic nominee for the 2024 presidential election?",
+          "resolution": 0.0,
+          "swarm_p": 0.9975,
+          "brier": 0.995,
+          "in_range": false
+        },
+        {
+          "id": "HIST-006",
+          "question": "Will India win the 2024 T20 Cricket World Cup?",
+          "resolution": 1.0,
+          "swarm_p": 0.9575,
+          "brier": 0.0018,
+          "in_range": false
+        },
+        {
+          "id": "HIST-007",
+          "question": "Will Apple release a mixed reality headset in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.7615,
+          "brier": 0.0569,
+          "in_range": false
+        },
+        {
+          "id": "HIST-008",
+          "question": "Was 2024 the hottest year on record?",
+          "resolution": 1.0,
+          "swarm_p": 0.9973,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-009",
+          "question": "Will the S&P 500 close above 5,000 in 2024?",
+          "resolution": 1.0,
+          "swarm_p": 0.9936,
+          "brier": 0.0,
+          "in_range": false
+        },
+        {
+          "id": "HIST-010",
+          "question": "Will China invade Taiwan in 2024?",
+          "resolution": 0.0,
+          "swarm_p": 0.9969,
+          "brier": 0.9938,
+          "in_range": false
+        }
+      ]
+    }
+  },
+  "best_alpha": 1.15,
+  "best_brier": 0.2975
+}

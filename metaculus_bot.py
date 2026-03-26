@@ -65,7 +65,7 @@ def submit_forecast(question_id: int, probability: float) -> bool:
         },
         timeout=15,
     )
-    return resp.status_code == 200
+    return resp.status_code in (200, 201)
 
 
 def submit_comment(post_id: int, comment: str) -> bool:

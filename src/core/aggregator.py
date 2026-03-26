@@ -13,7 +13,7 @@ Methods:
 from __future__ import annotations
 
 # Named constants — validated on benchmarks, documented in ENGINEERING_NOTES.md
-EXTREMIZATION_ALPHA = 1.5        # Logit-space extremization factor (validated on 10-question benchmark)
+EXTREMIZATION_ALPHA = 1.0        # No extremization — alpha sweep on real Metaculus resolutions showed 1.0 is optimal
 CONFIDENCE_WEIGHT = 0.4          # Weight for confidence-weighted average
 EXTREMIZED_WEIGHT = 0.6          # Weight for extremized average (0.4 + 0.6 = 1.0)
 MIND_CHANGE_THRESHOLD = 0.05     # Minimum shift to get mind-change bonus

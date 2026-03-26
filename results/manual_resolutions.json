@@ -1,0 +1,88 @@
+{
+  "resolved_at": "2026-03-25",
+  "resolved_by": "manual_research",
+  "notes": "Resolutions determined via web research on March 25, 2026. Only includes questions with confident, verifiable outcomes.",
+  "resolutions": [
+    {
+      "id": 195,
+      "question": "Will gas prices in the US reach a new all-time high before April 2026?",
+      "resolution": 0,
+      "confidence": "HIGH",
+      "our_probability": 0.65,
+      "brier_contribution": 0.4225,
+      "reasoning": "All-time record is $5.02/gal (June 2022). Current price ~$3.96/gal as of March 23, 2026. Only 6 days remain before April. Mathematically impossible to close $1.06 gap. RESOLUTION: NO."
+    },
+    {
+      "id": 201,
+      "question": "Will Donald Trump and Xi Jinping meet in person before April 3, 2026?",
+      "resolution": 0,
+      "confidence": "HIGH",
+      "our_probability": 0.50,
+      "brier_contribution": 0.25,
+      "reasoning": "White House confirmed March 25 that Trump-Xi summit moved to May 14-15 in Beijing. Original March 31-April 2 dates cancelled due to Iran war. RESOLUTION: NO."
+    },
+    {
+      "id": 204,
+      "question": "Will Volodymyr Zelenskyy and Vladimir Putin meet in person before [deadline]?",
+      "resolution": 1,
+      "confidence": "HIGH",
+      "our_probability": 0.165,
+      "brier_contribution": 0.6972,
+      "reasoning": "Wikipedia confirms '2026 United States-Ukraine-Russia meetings in Geneva'. PBS reports Putin and Zelensky had first one-on-one meeting. RESOLUTION: YES. Our 16.5% was badly wrong — this is our worst miss."
+    },
+    {
+      "id": 212,
+      "question": "Will Cloudflare experience another critical incident before May 2026?",
+      "resolution": 1,
+      "confidence": "HIGH",
+      "our_probability": 0.649,
+      "brier_contribution": 0.1232,
+      "reasoning": "Multiple confirmed incidents: WAF global outage March 3 (89 min), Dashboard/API outage March 18, Pages API errors March 19. RESOLUTION: YES. Our 64.9% was reasonable."
+    },
+    {
+      "id": 213,
+      "question": "Will any AI model achieve a score of 95% or higher on the GPQA Diamond?",
+      "resolution": 1,
+      "confidence": "HIGH",
+      "our_probability": 0.722,
+      "brier_contribution": 0.0773,
+      "reasoning": "Artificial Analysis leaderboard shows GPT-5.4 at 97%, Claude Opus 4.6 at 95% on GPQA Diamond. Multiple models have crossed 95%. RESOLUTION: YES. Our 72.2% was decent but under-confident."
+    },
+    {
+      "id": 205,
+      "question": "[RESTATED] - moved question",
+      "resolution": -1,
+      "confidence": "N/A",
+      "our_probability": 0.50,
+      "brier_contribution": null,
+      "reasoning": "Question was restated/moved. Should be excluded from Brier calculation."
+    },
+    {
+      "id": 206,
+      "question": "[MOVED] - moved question",
+      "resolution": -1,
+      "confidence": "N/A",
+      "our_probability": 0.50,
+      "brier_contribution": null,
+      "reasoning": "Question was moved. Should be excluded from Brier calculation."
+    }
+  ],
+  "summary": {
+    "total_resolved": 5,
+    "excluded_moved": 2,
+    "resolutions_yes": 3,
+    "resolutions_no": 2,
+    "avg_brier": 0.3140,
+    "best_prediction": "Cloudflare incident (ID 212): P=0.649, Brier=0.123",
+    "worst_prediction": "Zelenskyy-Putin meeting (ID 204): P=0.165, Brier=0.697"
+  },
+  "not_yet_resolvable": [
+    {"id": 185, "question": "Iran FIFA World Cup participation", "note": "Iran says boycotting US but not WC. Still unfolding. Tournament starts June 2026."},
+    {"id": 188, "question": "US ground invasion of Iran before May 2026", "note": "Active war with air campaign + troop deployment. No ground invasion yet but situation escalating daily."},
+    {"id": 194, "question": "1kt meteor strike March/April 2026", "note": "No 1kt strike in March so far. April still remaining."},
+    {"id": 195, "question": "Gas prices all-time high before April", "note": "RESOLVED NO above. Only 6 days left, $1.06 gap."},
+    {"id": 198, "question": "US measles elimination status", "note": "PAHO review in November 2026. Official status not yet changed."},
+    {"id": 207, "question": "Pam Bondi out before May 2026", "note": "Still serving as AG. Deadline is May."},
+    {"id": 210, "question": "FAA-certified eVTOL open to public", "note": "FAA pilot program launching summer 2026. No public service yet."}
+  ]
+}
